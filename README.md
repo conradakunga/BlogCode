@@ -3,6 +3,8 @@ Code for the examples on my blog - https://conradakunga.com/blog
 
 
 # April 2020
+**25 April** - [Extracting Bytes From a F# String](https://www.conradakunga.com/blog/2020/04/25/extracting-bytes-from-a-f-string/) - A quick way to extract the bytes from a string
+
 **14 April** - [Count vs Length vs Any–Checking Collection Emptiness](https://www.conradakunga.com/blog/2020/04/14/count-vs-length-vs-any-checking-collection-emptiness/) - The various ways of checking a collection is empty and bench-marking their performance
 
 **10 April** - [Properties Under The Hood](https://www.conradakunga.com/blog/2020/04/10/properties-under-the-hood/) - what does the compiler do when it finds properties in your code?
