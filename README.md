@@ -1,7 +1,9 @@
-# Blog
+﻿# Blog
 Code for the examples on my blog - https://conradakunga.com/blog
 
 # May 2020
+
+**28 May** - [Joining strings - part 1 ](https://www.conradakunga.com/blog/joining-strings-part-1/) Concatenation with the + operator 
 
 **19 May** - [Using curl in PowerShell](https://www.conradakunga.com/blog/using-curl-in-powershell/) - how to use the curl utility without clashing with the PowerShell alias
 
