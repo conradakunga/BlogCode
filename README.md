@@ -1,9 +1,12 @@
 ﻿# Blog
 Code for the examples on my blog - https://conradakunga.com/blog
 
+# June 2020
+
+**15 June** - [Joining Strings - Part 2](https://www.conradakunga.com/blog/joining-strings-part-2/) - joining strings using `String.Concat` 
 # May 2020
 
-**28 May** - [Joining strings - part 1 ](https://www.conradakunga.com/blog/joining-strings-part-1/) Concatenation with the + operator 
+**28 May** - [Joining strings - part 1 ](https://www.conradakunga.com/blog/joining-strings-part-1/) Concatenation with the `+` operator 
 
 **19 May** - [Using curl in PowerShell](https://www.conradakunga.com/blog/using-curl-in-powershell/) - how to use the curl utility without clashing with the PowerShell alias
 
