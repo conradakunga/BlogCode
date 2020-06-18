@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace StringConcat
 {
@@ -21,6 +22,18 @@ namespace StringConcat
             var clown = String.Concat("Herschel", "Shmoikel", "Pinchas", "Yerucham", "Krustofsky");
 
             Console.WriteLine(clown);
+
+            var list = new List<string>();
+
+            list.Add(son);
+            list.Add(daughter);
+            list.Add(mother);
+            list.Add(clown);
+
+            var characters = String.Concat(list);
+
+            Console.WriteLine(characters);
+
         }
     }
 }
