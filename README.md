@@ -1,6 +1,10 @@
 ﻿# Blog
 Code for the examples on my blog - https://conradakunga.com/blog
 
+# November 2020
+
+**9 November 2020** - [Getting Now Playing Information From WQXR In .NET](https://www.conradakunga.com/blog/getting-now-playing-information-from-wqxr-in-net/) - Reverse engineering getting the now playing information from the WXQR radio station using the API
+
 # June 2020
 **25 June** - [Joining Strings - Part 3](https://www.conradakunga.com/blog/joining-strings-part-3/) - Joining strings using the `StringBuilder`
 
