@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Net.Http;
-using Newtonsoft.Json.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
-namespace GetSpecifiedChannel
+namespace GetTypedSpecifiedChannel
 {
     class Program
     {
@@ -11,9 +12,9 @@ namespace GetSpecifiedChannel
         {
             var url = "https://api.wnyc.org/api/v1/whats_on/wqxr-special2";
 
-            using (var client = new HttpClient(new HttpClientHandler() { AllowAutoRedirect = true }))
+            using (var client = new HttpClient())
             {
-                var formattedResult = "";
+                var result = "";
 
                 // Make the initial request
                 var response = await client.GetAsync(url, HttpCompletionOption.ResponseHeadersRead);
@@ -26,26 +27,33 @@ namespace GetSpecifiedChannel
                     if (finalResponse.IsSuccessStatusCode)
                     {
                         // Now make the request for the json
-                        var jsonResult = await finalResponse.Content.ReadAsStringAsync();
-                        // Format the json
-                        formattedResult = JToken.Parse(jsonResult).ToString();
+                        result = await finalResponse.Content.ReadAsStringAsync();
                     }
                     else
                     {
-                       Console.WriteLine($"Could not get the result, error: {finalResponse.StatusCode}");
+                        Console.WriteLine($"Could not get the result, error: {finalResponse.StatusCode}");
                     }
                 }
                 else
                 {
                     // This isn't a redirect. Read the response
-                    formattedResult = JToken.Parse(await response.Content.ReadAsStringAsync()).ToString();
+                    result = await response.Content.ReadAsStringAsync();
                 }
 
-                // Output the json
-                Console.Write(formattedResult);
+                // Type the response
+                var currentItem = JsonConvert.DeserializeObject<Current>(result);
+
+                // Output the results
+
+                var sb = new StringBuilder();
+
+                sb.AppendLine($"The current track playing is: {currentItem.CurrentPlaylistItem.CatalogEntry.Title}");
+                sb.AppendLine($"The composer is: {currentItem.CurrentPlaylistItem.CatalogEntry.Composer.Name}");
+                sb.AppendLine($"It is playing on:  {currentItem.CurrentShow.Title}");
+
+                Console.Write(sb);
 
             }
         }
     }
-
 }
