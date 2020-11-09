@@ -47,9 +47,9 @@ namespace GetTypedSpecifiedChannel
 
                 var sb = new StringBuilder();
 
-                sb.AppendLine($"The current track playing is: {currentItem.CurrentPlaylistItem.CatalogEntry.Title}");
-                sb.AppendLine($"The composer is: {currentItem.CurrentPlaylistItem.CatalogEntry.Composer.Name}");
-                sb.AppendLine($"It is playing on:  {currentItem.CurrentShow.Title}");
+                sb.AppendLine($"The current track playing is: {currentItem?.CurrentPlaylistItem?.CatalogEntry?.Title}");
+                sb.AppendLine($"The composer is: {currentItem?.CurrentPlaylistItem?.CatalogEntry?.Composer?.Name}");
+                sb.AppendLine($"It is playing on:  {currentItem?.CurrentShow?.Title}");
 
                 Console.Write(sb);
 
