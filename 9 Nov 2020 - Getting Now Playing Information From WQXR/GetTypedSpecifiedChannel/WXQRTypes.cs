@@ -180,6 +180,17 @@ namespace GetTypedSpecifiedChannel
         [JsonProperty("start")]
         public string Start { get; set; }
     }
+    public partial class Soloist
+    {
+        [JsonProperty("instruments")]
+        public List<string> Instruments { get; set; }
+
+        [JsonProperty("musician")]
+        public Composer Musician { get; set; }
+
+        [JsonProperty("role")]
+        public string Role { get; set; }
+    }
 
     public partial class Image
     {
