@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(Configuration)'=='Release'">
+    <Message Text="Copying files from  $(TargetDir) to C:\Temp" Importance="High" />
+    <Exec Command="copy $(TargetDir)* C:\Temp" />
+  </Target>
+</Project>
