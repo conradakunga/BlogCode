@@ -9,12 +9,14 @@ namespace RecordExample.Tests
         [Fact]
         public void Person_Is_Constructed_Correctly()
         {
-            var p = new Person(
-                firstName: "Bart",
-                surname: "Simpson",
-                dateOfBirth: new DateTime(2000, 1, 1),
-                nickName: "JoJo");
-                
+            var p = new Person()
+            {
+                FirstName = "Bart",
+                Surname = "Simpson",
+                DateOfBirth = new DateTime(2000, 1, 1),
+                NickName = "JoJo"
+            };
+
             p.FirstName.Should().Be("Bart");
             p.Surname.Should().Be("Simpson");
             p.DateOfBirth.Should().Be(new DateTime(2000, 1, 1));
