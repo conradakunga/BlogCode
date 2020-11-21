@@ -46,5 +46,29 @@ namespace RecordExample.Tests
 
 
         }
+        [Fact]
+        public void Person_Record_Comparions_Are_On_Values()
+        {
+            var bart = new Person()
+            {
+                FirstName = "Bart",
+                Surname = "Simpson",
+                DateOfBirth = new DateTime(2000, 1, 1),
+                NickName = "JoJo"
+            };
+
+            var bartTwo = new Person()
+            {
+                FirstName = "Bart",
+                Surname = "Simpson",
+                DateOfBirth = new DateTime(2000, 1, 1),
+                NickName = "JoJo"
+            };
+
+            (bart == bartTwo).Should().BeTrue();
+            ReferenceEquals(bart, bartTwo).Should().BeFalse();
+
+
+        }
     }
 }
