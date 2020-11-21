@@ -67,7 +67,7 @@ namespace GetTypedSpecifiedChannel
         public string Attribution { get; set; }
 
         [JsonProperty("soloists")]
-        public List<object> Soloists { get; set; }
+        public List<Soloist> Soloists { get; set; }
 
         [JsonProperty("mm_uid")]
         public long MmUid { get; set; }
