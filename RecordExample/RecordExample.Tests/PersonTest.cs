@@ -69,6 +69,7 @@ namespace RecordExample.Tests
             ReferenceEquals(bart, bartTwo).Should().BeFalse();
 
 
+
         }
     }
 }
