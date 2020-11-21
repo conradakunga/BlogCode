@@ -3,6 +3,8 @@ Code for the examples on my blog - https://conradakunga.com/blog
 
 # November 2020
 
+**21 November 2020** - [Refactoring With Records](https://github.com/conradakunga/BlogCode/tree/master/21%20Nov%202020%20-%20Refactoring%20With%20Records) - Refactoring code to use the record construct introduced in C# 9
+
 **12 November 2020** - [Conditional Logic In MSBuild](https://www.conradakunga.com/blog/conditional-logic-in-msbuild/) - using MSBuild to control the build process and output notifications
 
 **9 November 2020** - [Getting Now Playing Information From WQXR In .NET](https://www.conradakunga.com/blog/getting-now-playing-information-from-wqxr-in-net/) - Reverse engineering getting the now playing information from the WXQR radio station using the API
