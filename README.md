@@ -3,7 +3,7 @@ Code for the examples on my blog - https://conradakunga.com/blog
 
 # November 2020
 
-23 November 2020 - Http Redirects using HttpClient - a closer look at how http redirects are handled by the HttpClient
+**23 November 2020** - [Http Redirects using HttpClient](https://www.conradakunga.com/blog/http-redirects-using-httpclient/) - a closer look at how http redirects are handled by the HttpClient
 
 **21 November 2020** - [Refactoring With Records](https://www.conradakunga.com/blog/refactoring-with-records-in-c/) - Refactoring code to use the record construct introduced in C# 9
 
