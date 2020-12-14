@@ -1,5 +1,9 @@
 # Blog
-Code for the examples on my blog - https://conradakunga.com/blog
+Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
+
+# December 2020
+
+**14 December 2020** - [HTTP Header Validation](https://www.conradakunga.com/blog/beware-of-httpclient-header-validations/) - potential problems that can be caused from failing to set HTTP Headers
 
 # November 2020
 
