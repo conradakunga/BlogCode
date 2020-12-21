@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # December 2020
 
+**21 December 2020** - [Improving HttpClient Requests](https://www.conradakunga.com/blog/improving-httpclient-requests/) - improving http redirection management with the HttpClient
+
 **14 December 2020** - [HTTP Header Validation](https://www.conradakunga.com/blog/beware-of-httpclient-header-validations/) - potential problems that can be caused from failing to set HTTP Headers
 
 # November 2020
