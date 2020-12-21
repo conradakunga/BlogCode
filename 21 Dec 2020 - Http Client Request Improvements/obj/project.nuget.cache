@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "236p5cSkoUW88kY0358HgiPG8Skb1gq9cjIGzY44CzHqVWm9q6GeSJZGmNGEDr0e7xjopPiE/Phf2XDe/U9XnQ==",
+  "dgSpecHash": "u2k4A3BpHDtZiqIsN+dpimqMjj2ccI+HnidaHLeHCSdxWnVYMfSh7tdEfTgVIkL9oesTs1jbgFuYCX0oQiDS+g==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\BlogCode\\HttpClientRequest\\HttpClientRequest.csproj",
+  "projectFilePath": "c:\\Projects\\BlogCode\\21 Dec 2020 - Http Client Request Improvements\\HttpClientRequest.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

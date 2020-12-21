@@ -1289,11 +1289,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\BlogCode\\HttpClientRequest\\HttpClientRequest.csproj",
+      "projectUniqueName": "c:\\Projects\\BlogCode\\21 Dec 2020 - Http Client Request Improvements\\HttpClientRequest.csproj",
       "projectName": "HttpClientRequest",
-      "projectPath": "C:\\Projects\\BlogCode\\HttpClientRequest\\HttpClientRequest.csproj",
+      "projectPath": "c:\\Projects\\BlogCode\\21 Dec 2020 - Http Client Request Improvements\\HttpClientRequest.csproj",
       "packagesPath": "C:\\Users\\conrada\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\BlogCode\\HttpClientRequest\\obj\\",
+      "outputPath": "c:\\Projects\\BlogCode\\21 Dec 2020 - Http Client Request Improvements\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
