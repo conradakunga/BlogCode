@@ -20,8 +20,6 @@ namespace GDPR
             var reg = new Regex("\"vendor-title\">(?<company>.*?)<.*?vendor-privacy-notice\".*?href=\"(?<url>.*?)\"",
                 RegexOptions.Compiled);
 
-            Log.Information(reg.ToString());
-
             // Load the vendors into a string, and replace all newlines with spaces to mitigate
             // formatting issues from irregular use of the newline
             var vendors = File.ReadAllText("vendors.html").Replace(Environment.NewLine, " ");
