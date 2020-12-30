@@ -3,7 +3,7 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # December 2020
 
-**30 December 2020** - [What Do You Actually Agree To When You Accept Cookies](https://www.conradakunga.com/blog/what-do-you-actually-agree-to-when-you-accept-cookies/) - the implications of data collection and the potential organizations with access to it.
+**30 December 2020** - [What Do You Actually Agree To When You Accept Cookies](https://www.conradakunga.com/blog/what-do-you-actually-agree-to-when-you-accept-all-cookies/) - the implications of data collection and the potential organizations with access to it.
 
 **21 December 2020** - [Improving HttpClient Requests](https://www.conradakunga.com/blog/improving-httpclient-requests/) - improving http redirection management with the HttpClient
 
