@@ -37,7 +37,7 @@ namespace GDPR
                       Index = index + 1,
                       Name = match.Groups["company"].Value,
                       URL = match.Groups["url"].Value
-                  }).Distinct();
+                  });
 
             // Create a string builder to progressively build the markdown
             var sb = new StringBuilder();
