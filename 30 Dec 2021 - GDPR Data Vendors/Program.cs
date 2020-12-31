@@ -30,8 +30,14 @@ namespace GDPR
             Log.Information("There were {num} matches", matches.Count);
 
             // extract the vendor number, name and their url, ordering by the name first.
-            var vendorInfo = matches.OrderBy(x => x.Groups["company"].Value).Select((x, i) =>
-                  new { Index = i + 1, Name = x.Groups["company"].Value, URL = x.Groups["url"].Value }).Distinct();
+            var vendorInfo = matches.OrderBy(match => match.Groups["company"].Value)
+                .Select((match, index) =>
+                  new
+                  {
+                      Index = index + 1,
+                      Name = match.Groups["company"].Value,
+                      URL = match.Groups["url"].Value
+                  }).Distinct();
 
             // Create a string builder to progressively build the markdown
             var sb = new StringBuilder();
