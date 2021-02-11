@@ -25,7 +25,7 @@ Listing As At 30 December 2020 08:10 GMT
 |21|adality GmbH|[https://adality.de/en/privacy/](https://adality.de/en/privacy/)|
 |22|ADARA MEDIA UNLIMITED|[https://adara.com/privacy-promise/](https://adara.com/privacy-promise/)|
 |23|adbility media GmbH|[https://www.adbility-media.com/datenschutzerklaerung/](https://www.adbility-media.com/datenschutzerklaerung/)|
-|24|ADCELL | Firstlead GmbH|[https://www.adcell.de/agb#sector_6](https://www.adcell.de/agb#sector_6)|
+|24|ADCELL - Firstlead GmbH|[https://www.adcell.de/agb#sector_6](https://www.adcell.de/agb#sector_6)|
 |25|AdClear GmbH|[https://www.adclear.de/datenschutzerklaerung/](https://www.adclear.de/datenschutzerklaerung/)|
 |26|AdColony, Inc.|[https://www.adcolony.com/privacy-policy/](https://www.adcolony.com/privacy-policy/)|
 |27|AddApptr GmbH|[https://www.addapptr.com/data-privacy](https://www.addapptr.com/data-privacy)|
