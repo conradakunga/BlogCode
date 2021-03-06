@@ -1,9 +1,13 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
-# February 2020
+# March 2021
 
-**2 Feb 2020** - [Using Regex MatchEvaluators](https://www.conradakunga.com/blog/using-regex-matchevaluators/) - how to use regular expression match evaluators to solve interesting problems
+**6 Mar 2021** - [Inheritance In Business Logic Is Likely A Code Smell - Part 1 ](https://www.conradakunga.com/blog/inheritance-in-business-logic-is-likely-a-code-smell-part-1/) - If you are using class inheritance to solve business problems, you are likely doing something wrong.
+
+# February 2021
+
+**2 Feb 2021** - [Using Regex MatchEvaluators](https://www.conradakunga.com/blog/using-regex-matchevaluators/) - how to use regular expression match evaluators to solve interesting problems
 # December 2020
 
 **30 December 2020** - [What Do You Actually Agree To When You Accept Cookies](https://www.conradakunga.com/blog/what-do-you-actually-agree-to-when-you-accept-all-cookies/) - the implications of data collection and the potential organizations with access to it.
