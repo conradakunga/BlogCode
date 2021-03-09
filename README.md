@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # March 2021
 
+**9 Mar 2021** - [Handling Nulls & Empty Strings With System.Text.Json](https://www.conradakunga.com/blog/handling-null-and-empty-strings-with-system-text-json/) - Your options when it comes to handling nulls & empty strings with the System.Text.Json engine.
+
 **6 Mar 2021** - [Inheritance In Business Logic Is Likely A Code Smell - Part 1 ](https://www.conradakunga.com/blog/inheritance-in-business-logic-is-likely-a-code-smell-part-1/) - If you are using class inheritance to solve business problems, you are likely doing something wrong.
 
 # February 2021
