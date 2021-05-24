@@ -3,7 +3,7 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # May 2020
 
-**24 May 2021** -[ About Default Interfaces](https://www.conradakunga.com/blog/about-default-interface-impementations/https://www.conradakunga.com/blog/about-default-interface-impementations/) - Application of C# default interface methods
+**24 May 2021** -[ About Default Interfaces](https://www.conradakunga.com/blog/about-default-interface-impementations/) - Application of C# default interface methods
 
 # March 2021
 
