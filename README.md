@@ -1,9 +1,12 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
+# June 2021
 
-# May 2020
+**11 June 2021** - [Tip - TimeSpan Minutes vs TotalMinutes](https://www.conradakunga.com/blog/tip-timespan-minutes-vs-totalminutes/) - The difference between `Minutes` and `TotalMinutes` when subtracting `TimeSpans` is very subtle.
 
-**24 May 2021** -[ About Default Interfaces](https://www.conradakunga.com/blog/about-default-interface-impementations/) - Application of C# default interface methods
+# May 2021
+
+**24 May 2021** -[About Default Interfaces](https://www.conradakunga.com/blog/about-default-interface-impementations/) - Application of C# default interface methods
 
 # March 2021
 
