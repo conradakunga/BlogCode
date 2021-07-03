@@ -1,5 +1,8 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
+# July 2021
+
+**2 July 2021** - [F# Doesn't Support C# Types Using Init Modifiers](https://www.conradakunga.com/blog/beware-f-doesnt-support-c-types-using-init-modifiers/) - Interop from C# fails when you use the `init` property modifierr.
 # June 2021
 
 **11 June 2021** - [Tip - TimeSpan Minutes vs TotalMinutes](https://www.conradakunga.com/blog/tip-timespan-minutes-vs-totalminutes/) - The difference between `Minutes` and `TotalMinutes` when subtracting `TimeSpans` is very subtle.
