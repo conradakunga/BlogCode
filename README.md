@@ -2,9 +2,9 @@
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 # July 2021
 
-**25 July 2021** - [Better Assertion Testing With FluentAssertons](https://www.conradakunga.com/blog/better-assertion-testing-with-fluentassertions/) - Write cleaner, eaiser to understand tests that can be read by users of other testing frameworks
+**25 July 2021** - [Better Assertion Testing With FluentAssertons](https://www.conradakunga.com/blog/better-assertion-testing-with-fluentassertions/) - Write cleaner, easier to understand tests that can be read by users of other testing frameworks
 
-**2 July 2021** - [F# Doesn't Support C# Types Using Init Modifiers](https://www.conradakunga.com/blog/beware-f-doesnt-support-c-types-using-init-modifiers/) - Interop from C# fails when you use the `init` property modifierr.
+**2 July 2021** - [F# Doesn't Support C# Types Using Init Modifiers](https://www.conradakunga.com/blog/beware-f-doesnt-support-c-types-using-init-modifiers/) - Interop from C# fails when you use the `init` property modifier.
 # June 2021
 
 **11 June 2021** - [Tip - TimeSpan Minutes vs TotalMinutes](https://www.conradakunga.com/blog/tip-timespan-minutes-vs-totalminutes/) - The difference between `Minutes` and `TotalMinutes` when subtracting `TimeSpans` is very subtle.
@@ -34,7 +34,7 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # November 2020
 
-**23 November 2020** - [Http Redirects using HttpClient](https://www.conradakunga.com/blog/http-redirects-using-httpclient/) - a closer look at how http redirects are handled by the HttpClient
+**23 November 2020** - [HTTP Redirects using HttpClient](https://www.conradakunga.com/blog/http-redirects-using-httpclient/) - a closer look at how http redirects are handled by the HttpClient
 
 **21 November 2020** - [Refactoring With Records](https://www.conradakunga.com/blog/refactoring-with-records-in-c/) - Refactoring code to use the record construct introduced in C# 9
 
