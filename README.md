@@ -2,6 +2,8 @@
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 # July 2021
 
+**29 July 2021** - Reducing Bugs Through Better Domain Design - How to reduce bugs and improve re-usability and maintainability from better domain design.
+ 
 **25 July 2021** - [Better Assertion Testing With FluentAssertons](https://www.conradakunga.com/blog/better-assertion-testing-with-fluentassertions/) - Write cleaner, easier to understand tests that can be read by users of other testing frameworks
 
 **2 July 2021** - [F# Doesn't Support C# Types Using Init Modifiers](https://www.conradakunga.com/blog/beware-f-doesnt-support-c-types-using-init-modifiers/) - Interop from C# fails when you use the `init` property modifier.
