@@ -2,7 +2,7 @@
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 # July 2021
 
-**29 July 2021** - Reducing Bugs Through Better Domain Design - How to reduce bugs and improve re-usability and maintainability from better domain design.
+**29 July 2021** - [Reducing Bugs Through Better Domain Design](https://www.conradakunga.com/blog/reducing-bugs-and-increasing-maintainability-through-better-domain-design/) - How to reduce bugs and improve re-usability and maintainability from better domain design.
  
 **25 July 2021** - [Better Assertion Testing With FluentAssertons](https://www.conradakunga.com/blog/better-assertion-testing-with-fluentassertions/) - Write cleaner, easier to understand tests that can be read by users of other testing frameworks
 
