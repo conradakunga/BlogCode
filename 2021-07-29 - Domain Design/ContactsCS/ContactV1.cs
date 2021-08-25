@@ -19,15 +19,7 @@ namespace ContactsCS
                 return null;
             }
         }
-        public string DisplayAge
-        {
-            get
-            {
-                if (DateOfBirth.HasValue)
-                    return $"{DateTime.Today.Year - DateOfBirth.Value.Year}";
-                return "Age unknown";
-            }
-        }
+        public string DisplayAge => Age == null ? "Unknown" : $"{Age}";
         public ContactV1(string firstName, string surname, DateTime dateOfBirth, string emailAddress, string phoneNumber)
             : this(firstName, surname, emailAddress, phoneNumber)
         {

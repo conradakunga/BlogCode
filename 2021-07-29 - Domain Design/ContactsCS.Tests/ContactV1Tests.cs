@@ -15,7 +15,7 @@ namespace ContactsCS.Tests
             {
                 var james = new ContactV1("james", "bond", new DateTime(year, 1, 1), "james@gmail.com", "32423424");
             });
-            ex.Should().BeOfType<ArgumentNullException>();
+            ex.Should().BeOfType<ArgumentOutOfRangeException>();
         }
         [Fact]
         public void InvalidContactByValuesCannotBeConstructed()
@@ -24,7 +24,7 @@ namespace ContactsCS.Tests
             {
                 var james = new ContactV1("", "", new DateTime(2000, 1, 1), "", "");
             });
-            ex.Should().BeOfType<ArgumentOutOfRangeException>();
+            ex.Should().BeOfType<ArgumentNullException>();
         }
         [Theory]
         [InlineData(1950, 1, 71)]

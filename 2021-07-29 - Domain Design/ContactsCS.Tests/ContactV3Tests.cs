@@ -13,7 +13,7 @@ namespace ContactsCS.Tests
             var surname = "Bond";
             var dateOfBirth = new DateTime(1930, 1, 1);
             var emailAddress = "ShakenNotStirred@gmail.com";
-            var phoneNumber = "0721000000";
+            var phoneNumber = "254721000000";
 
             var james = new ContactV3(firstName: firstName,
                                       surname: surname,
@@ -26,7 +26,7 @@ namespace ContactsCS.Tests
             james.DateOfBirth.Should().Be(dateOfBirth);
             james.EmailAddress.DisplayName.Should().Be(emailAddress);
             james.EmailAddress.Address.Should().Be(emailAddress);
-            james.PhoneNumber.DisplayShortNumber.Should().Be(phoneNumber);
+            james.PhoneNumber.DisplayShortNumber.Should().Be("0721000000");
             james.PhoneNumber.DisplayFullNumber.Should().Be("254721000000");
 
 
