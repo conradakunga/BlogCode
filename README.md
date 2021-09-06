@@ -3,7 +3,7 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # Septemper 2021
 
-**6 September 2021** - [30 Days Of .NET 6 - Day 1 DateOnly](https://www.conradakunga.com/blog/30-days-of-net-6-dateonly-type/) - A look at the new DateOnly type.
+**6 September 2021** - [30 Days Of .NET 6 - Day 1 - DateOnly](https://www.conradakunga.com/blog/30-days-of-net-6-dateonly-type/) - A look at the new DateOnly type.
 # July 2021
 
 **29 July 2021** - [Reducing Bugs Through Better Domain Design](https://www.conradakunga.com/blog/reducing-bugs-and-increasing-maintainability-through-better-domain-design/) - How to reduce bugs and improve re-usability and maintainability from better domain design.
