@@ -1,0 +1,16 @@
+C:\Projects\BlogCode\TimeOnlyDay3\obj\Debug\net6.0\TimeOnlyDay3.csproj.AssemblyReference.cache
+C:\Projects\BlogCode\TimeOnlyDay3\obj\Debug\net6.0\TimeOnlyDay3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\BlogCode\TimeOnlyDay3\obj\Debug\net6.0\TimeOnlyDay3.AssemblyInfoInputs.cache
+C:\Projects\BlogCode\TimeOnlyDay3\obj\Debug\net6.0\TimeOnlyDay3.AssemblyInfo.cs
+C:\Projects\BlogCode\TimeOnlyDay3\obj\Debug\net6.0\TimeOnlyDay3.ImplicitNamespaceImports.cs
+C:\Projects\BlogCode\TimeOnlyDay3\obj\Debug\net6.0\TimeOnlyDay3.csproj.CoreCompileInputs.cache
+C:\Projects\BlogCode\TimeOnlyDay3\bin\Debug\net6.0\TimeOnlyDay3.exe
+C:\Projects\BlogCode\TimeOnlyDay3\bin\Debug\net6.0\TimeOnlyDay3.deps.json
+C:\Projects\BlogCode\TimeOnlyDay3\bin\Debug\net6.0\TimeOnlyDay3.runtimeconfig.json
+C:\Projects\BlogCode\TimeOnlyDay3\bin\Debug\net6.0\TimeOnlyDay3.dll
+C:\Projects\BlogCode\TimeOnlyDay3\bin\Debug\net6.0\TimeOnlyDay3.pdb
+C:\Projects\BlogCode\TimeOnlyDay3\obj\Debug\net6.0\TimeOnlyDay3.dll
+C:\Projects\BlogCode\TimeOnlyDay3\obj\Debug\net6.0\refint\TimeOnlyDay3.dll
+C:\Projects\BlogCode\TimeOnlyDay3\obj\Debug\net6.0\TimeOnlyDay3.pdb
+C:\Projects\BlogCode\TimeOnlyDay3\obj\Debug\net6.0\TimeOnlyDay3.genruntimeconfig.cache
+C:\Projects\BlogCode\TimeOnlyDay3\obj\Debug\net6.0\ref\TimeOnlyDay3.dll
