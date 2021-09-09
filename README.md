@@ -1,7 +1,9 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
-# Septemper 2021
+# September 2021
+
+9 September 2021 - [30 Days Of .NET 6 - Day 4 - LINQ Improvements - MaxBy & MinBy](https://www.conradakunga.com/blog/30-days-of-net-6-day-4-linq-improvements-maxby-minby/) - LINQ improvements - the MaxBy and MinBy extension methods
 
 **8 September 2021** - [30 Days Of .NET 6 - Day 3 - TimeOnly](https://www.conradakunga.com/blog/30-days-of-net-6-day-3-timeonly-type/) - A look at the new `TimeOnly` type.
 
