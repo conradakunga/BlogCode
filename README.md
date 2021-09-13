@@ -3,6 +3,7 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # September 2021
 
+**13 September 2021** - [Priority Queue](https://www.conradakunga.com/blog/30-days-of-net-6-day-6-priority-queue/) - the new PriorityQueue class
 **10 September 2021** - [Math API Additions](https://www.conradakunga.com/blog/30-days-of-net-6-day-5-mathematics-api-additions/) - there have been some additions to the Math class.
 
 **9 September 2021** - [30 Days Of .NET 6 - Day 4 - LINQ Improvements - MaxBy & MinBy](https://www.conradakunga.com/blog/30-days-of-net-6-day-4-linq-improvements-maxby-minby/) - LINQ improvements - the MaxBy and MinBy extension methods
