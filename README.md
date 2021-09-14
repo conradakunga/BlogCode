@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # September 2021
 
+**14 September 2021** - [Simpler Web Applicaton Development](https://www.conradakunga.com/blog/30-days-of-net-6-day-7-simpler-web-application-development/) - it is now simpler to write web applications using the minimal API feature set.
+
 **13 September 2021** - [Priority Queue](https://www.conradakunga.com/blog/30-days-of-net-6-day-6-priority-queue/) - the new PriorityQueue class
 
 **10 September 2021** - [Math API Additions](https://www.conradakunga.com/blog/30-days-of-net-6-day-5-mathematics-api-additions/) - there have been some additions to the Math class.
