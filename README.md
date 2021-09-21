@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # September 2021
 
+**21 September 2021** - [Control Of Serialization Of Object Cycles](https://www.conradakunga.com/blog/30-days-of-net-6-day-8-control-of-serialization-of-object-cycles/) - You have additional control of how circular objects are serialized with the System.Text.Json serializer
+
 **14 September 2021** - [Simpler Web Applicaton Development](https://www.conradakunga.com/blog/30-days-of-net-6-day-7-simpler-web-application-development/) - it is now simpler to write web applications using the minimal API feature set.
 
 **13 September 2021** - [Priority Queue](https://www.conradakunga.com/blog/30-days-of-net-6-day-6-priority-queue/) - the new PriorityQueue class
