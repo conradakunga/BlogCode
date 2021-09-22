@@ -3,46 +3,48 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # September 2021
 
-**21 September 2021** - [Control Of Serialization Of Object Cycles](https://www.conradakunga.com/blog/30-days-of-net-6-day-8-control-of-serialization-of-object-cycles/) - You have additional control of how circular objects are serialized with the System.Text.Json serializer
+**22 September** - [LINQ Improvements - DistinctBy](https://www.conradakunga.com/blog/30-days-of-net-6-day-9-linq-improvements-distinctby/) - The DistinctBy extension method.
 
-**14 September 2021** - [Simpler Web Applicaton Development](https://www.conradakunga.com/blog/30-days-of-net-6-day-7-simpler-web-application-development/) - it is now simpler to write web applications using the minimal API feature set.
+**21 September** - [Control Of Serialization Of Object Cycles](https://www.conradakunga.com/blog/30-days-of-net-6-day-8-control-of-serialization-of-object-cycles/) - You have additional control of how circular objects are serialized with the System.Text.Json serializer
 
-**13 September 2021** - [Priority Queue](https://www.conradakunga.com/blog/30-days-of-net-6-day-6-priority-queue/) - the new PriorityQueue class
+**14 September** - [Simpler Web Applicaton Development](https://www.conradakunga.com/blog/30-days-of-net-6-day-7-simpler-web-application-development/) - it is now simpler to write web applications using the minimal API feature set.
 
-**10 September 2021** - [Math API Additions](https://www.conradakunga.com/blog/30-days-of-net-6-day-5-mathematics-api-additions/) - there have been some additions to the Math class.
+**13 September** - [Priority Queue](https://www.conradakunga.com/blog/30-days-of-net-6-day-6-priority-queue/) - the new PriorityQueue class
 
-**9 September 2021** - [30 Days Of .NET 6 - Day 4 - LINQ Improvements - MaxBy & MinBy](https://www.conradakunga.com/blog/30-days-of-net-6-day-4-linq-improvements-maxby-minby/) - LINQ improvements - the MaxBy and MinBy extension methods
+**10 September** - [Math API Additions](https://www.conradakunga.com/blog/30-days-of-net-6-day-5-mathematics-api-additions/) - there have been some additions to the Math class.
 
-**8 September 2021** - [30 Days Of .NET 6 - Day 3 - TimeOnly](https://www.conradakunga.com/blog/30-days-of-net-6-day-3-timeonly-type/) - A look at the new `TimeOnly` type.
+**9 September** - [30 Days Of .NET 6 - Day 4 - LINQ Improvements - MaxBy & MinBy](https://www.conradakunga.com/blog/30-days-of-net-6-day-4-linq-improvements-maxby-minby/) - LINQ improvements - the MaxBy and MinBy extension methods
 
-**6 September 2021** - [30 Days Of .NET 6 - Day 1 - DateOnly](https://www.conradakunga.com/blog/30-days-of-net-6-dateonly-type/) - A look at the new `DateOnly` type.
+**8 September** - [30 Days Of .NET 6 - Day 3 - TimeOnly](https://www.conradakunga.com/blog/30-days-of-net-6-day-3-timeonly-type/) - A look at the new `TimeOnly` type.
+
+**6 September** - [30 Days Of .NET 6 - Day 1 - DateOnly](https://www.conradakunga.com/blog/30-days-of-net-6-dateonly-type/) - A look at the new `DateOnly` type.
 
 # July 2021
 
-**29 July 2021** - [Reducing Bugs Through Better Domain Design](https://www.conradakunga.com/blog/reducing-bugs-and-increasing-maintainability-through-better-domain-design/) - How to reduce bugs and improve re-usability and maintainability from better domain design.
+**29 July** - [Reducing Bugs Through Better Domain Design](https://www.conradakunga.com/blog/reducing-bugs-and-increasing-maintainability-through-better-domain-design/) - How to reduce bugs and improve re-usability and maintainability from better domain design.
  
-**25 July 2021** - [Better Assertion Testing With FluentAssertons](https://www.conradakunga.com/blog/better-assertion-testing-with-fluentassertions/) - Write cleaner, easier to understand tests that can be read by users of other testing frameworks
+**25 July** - [Better Assertion Testing With FluentAssertons](https://www.conradakunga.com/blog/better-assertion-testing-with-fluentassertions/) - Write cleaner, easier to understand tests that can be read by users of other testing frameworks
 
-**2 July 2021** - [F# Doesn't Support C# Types Using Init Modifiers](https://www.conradakunga.com/blog/beware-f-doesnt-support-c-types-using-init-modifiers/) - Interop from C# fails when you use the `init` property modifier.
+**2 July** - [F# Doesn't Support C# Types Using Init Modifiers](https://www.conradakunga.com/blog/beware-f-doesnt-support-c-types-using-init-modifiers/) - Interop from C# fails when you use the `init` property modifier.
 # June 2021
 
-**11 June 2021** - [Tip - TimeSpan Minutes vs TotalMinutes](https://www.conradakunga.com/blog/tip-timespan-minutes-vs-totalminutes/) - The difference between `Minutes` and `TotalMinutes` when subtracting `TimeSpans` is very subtle.
+**11 June** - [Tip - TimeSpan Minutes vs TotalMinutes](https://www.conradakunga.com/blog/tip-timespan-minutes-vs-totalminutes/) - The difference between `Minutes` and `TotalMinutes` when subtracting `TimeSpans` is very subtle.
 
 # May 2021
 
-**24 May 2021** -[About Default Interfaces](https://www.conradakunga.com/blog/about-default-interface-impementations/) - Application of C# default interface methods
+**24 May** -[About Default Interfaces](https://www.conradakunga.com/blog/about-default-interface-impementations/) - Application of C# default interface methods
 
 # March 2021
 
-**24 Mar 2021** - [Using System.Text.Json To Enforce API Logic](https://www.conradakunga.com/blog/using-system-text-json-to-enforce-api-logic/) - How use `System.Text.Json` To Enforce API Logic
+**24 Mar** - [Using System.Text.Json To Enforce API Logic](https://www.conradakunga.com/blog/using-system-text-json-to-enforce-api-logic/) - How use `System.Text.Json` To Enforce API Logic
 
-**9 Mar 2021** - [Handling Nulls & Empty Strings With System.Text.Json](https://www.conradakunga.com/blog/handling-null-and-empty-strings-with-system-text-json/) - Your options when it comes to handling nulls & empty strings with the System.Text.Json engine.
+**9 Mar** - [Handling Nulls & Empty Strings With System.Text.Json](https://www.conradakunga.com/blog/handling-null-and-empty-strings-with-system-text-json/) - Your options when it comes to handling nulls & empty strings with the System.Text.Json engine.
 
-**6 Mar 2021** - [Inheritance In Business Logic Is Likely A Code Smell - Part 1 ](https://www.conradakunga.com/blog/inheritance-in-business-logic-is-likely-a-code-smell-part-1/) - If you are using class inheritance to solve business problems, you are likely doing something wrong.
+**6 Mar** - [Inheritance In Business Logic Is Likely A Code Smell - Part 1 ](https://www.conradakunga.com/blog/inheritance-in-business-logic-is-likely-a-code-smell-part-1/) - If you are using class inheritance to solve business problems, you are likely doing something wrong.
 
 # February 2021
 
-**2 Feb 2021** - [Using Regex MatchEvaluators](https://www.conradakunga.com/blog/using-regex-matchevaluators/) - how to use regular expression match evaluators to solve interesting problems
+**2 Feb** - [Using Regex MatchEvaluators](https://www.conradakunga.com/blog/using-regex-matchevaluators/) - how to use regular expression match evaluators to solve interesting problems
 # December 2020
 
 **30 December 2020** - [What Do You Actually Agree To When You Accept Cookies](https://www.conradakunga.com/blog/what-do-you-actually-agree-to-when-you-accept-all-cookies/) - the implications of data collection and the potential organizations with access to it.
