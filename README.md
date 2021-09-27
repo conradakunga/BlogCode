@@ -3,7 +3,7 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # September 2021
 
-**27 September** - [LINQ Improvements](https://www.conradakunga.com/blog/30-days-of-net-6-day-11-linq-improvements-range-support/) - Support For Indexes & Ranges - LINQ now allows you to use indexes and ranges in expressions.
+**27 September** - [LINQ Improvements - Support For Indexes & Ranges](https://www.conradakunga.com/blog/30-days-of-net-6-day-11-linq-improvements-range-support/) - LINQ now allows you to use indexes and ranges in expressions.
 
 **22 September** - [LINQ Improvements - DistinctBy](https://www.conradakunga.com/blog/30-days-of-net-6-day-9-linq-improvements-distinctby/) - The DistinctBy extension method.
 
