@@ -3,9 +3,11 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # September 2021
 
+**27 September** - [LINQ Improvements](https://www.conradakunga.com/blog/30-days-of-net-6-day-11-linq-improvements-range-support/) - Support For Indexes & Ranges - LINQ now allows you to use indexes and ranges in expressions.
+
 **22 September** - [LINQ Improvements - DistinctBy](https://www.conradakunga.com/blog/30-days-of-net-6-day-9-linq-improvements-distinctby/) - The DistinctBy extension method.
 
-**21 September** - [Control Of Serialization Of Object Cycles](https://www.conradakunga.com/blog/30-days-of-net-6-day-8-control-of-serialization-of-object-cycles/) - You have additional control of how circular objects are serialized with the System.Text.Json serializer
+**21 September** - [Control Of Serialization Of Object Cycles](https://www.conradakunga.com/blog/30-days-of-net-6-day-8-control-of-serialization-of-object-cycles/) - You have additional control of how circular objects are serialized with the `System.Text.Json` serializer
 
 **14 September** - [Simpler Web Applicaton Development](https://www.conradakunga.com/blog/30-days-of-net-6-day-7-simpler-web-application-development/) - it is now simpler to write web applications using the minimal API feature set.
 
