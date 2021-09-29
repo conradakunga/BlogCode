@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # September 2021
 
+**29 September** - [LINQ Improvements - Chunk](https://www.conradakunga.com/blog/30-days-of-net-6-day-13-linq-improvements-chunk/) - You can use the new Chunk method to partition collections into multiple collections of a specified size.
+
 **28 September** - [Collection Count Performance Improvement](https://www.conradakunga.com/blog/30-days-of-net-6-day-12-collection-count-performance-improvement/) - `TryGetNonEnumeratedCount` - a new method intended to allow you to cheaply determine the size of a collection.
 
 **27 September** - [LINQ Improvements - Support For Indexes & Ranges](https://www.conradakunga.com/blog/30-days-of-net-6-day-11-linq-improvements-range-support/) - LINQ now allows you to use indexes and ranges in expressions.
