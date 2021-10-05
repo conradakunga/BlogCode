@@ -3,7 +3,7 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # October 2021
 
-**5 October** - [SOCKS Proxy Support](https://www.conradakunga.com/blog/30-days-of-net-6-day-15-socks-proxy-support/) - You can now connect using SOCKS 4 and 5 proxy serviers
+**5 October** - [SOCKS Proxy Support](https://www.conradakunga.com/blog/30-days-of-net-6-day-15-socks-proxy-support/) - You can now connect using SOCKS 4 and 5 proxy servers
 
 # September 2021
 
