@@ -1,6 +1,10 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+# October 2021
+
+**5 October** - [SOCKS Proxy Support](https://www.conradakunga.com/blog/30-days-of-net-6-day-15-socks-proxy-support/) - You can now connect using SOCKS 4 and 5 proxy serviers
+
 # September 2021
 
 **29 September** - [LINQ Improvements - Chunk](https://www.conradakunga.com/blog/30-days-of-net-6-day-13-linq-improvements-chunk/) - You can use the new Chunk method to partition collections into multiple collections of a specified size.
