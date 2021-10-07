@@ -23,6 +23,8 @@ namespace EmptyString
         {
             if (value == null)
                 writer.WriteStringValue("");
+            else
+                writer.WriteStringValue(value);
         }
     }
 }
