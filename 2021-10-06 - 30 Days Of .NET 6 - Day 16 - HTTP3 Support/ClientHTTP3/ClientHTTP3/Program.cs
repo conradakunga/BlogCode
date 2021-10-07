@@ -11,7 +11,7 @@ httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, ch
 var client = new HttpClient(httpClientHandler)
     {
         // Specify that requests should be for HTTP/3
-        DefaultRequestVersion = HttpVersion.Version3o0,
+        DefaultRequestVersion = HttpVersion.Version30,
         DefaultVersionPolicy = HttpVersionPolicy.RequestVersionExact
     };
 
