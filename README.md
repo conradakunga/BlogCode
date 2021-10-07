@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # October 2021
 
+**7 October** - [HTTP/3 Support](https://www.conradakunga.com/blog/30-days-of-net-6-day-16-http3-support/) - .NET 6 now supports HTTP/3
+
 **5 October** - [SOCKS Proxy Support](https://www.conradakunga.com/blog/30-days-of-net-6-day-15-socks-proxy-support/) - You can now connect using SOCKS 4 and 5 proxy servers
 
 # September 2021
