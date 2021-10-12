@@ -3,29 +3,29 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # October 2021
 
-**12 October** - [New Timer - PeriodicTimer](https://www.conradakunga.com/blog/30-days-of-net-6-day-17-new-timer-periodic-timer/) - .NET 6 has a new timer for use in async contexts - the `PeriodicTimer`
+**12 October** - [30 Days Of .NET 6 - Day 17 - New Timer - PeriodicTimer](https://www.conradakunga.com/blog/30-days-of-net-6-day-17-new-timer-periodic-timer/) - .NET 6 has a new timer for use in async contexts - the `PeriodicTimer`
 
-**7 October** - [HTTP/3 Support](https://www.conradakunga.com/blog/30-days-of-net-6-day-16-http3-support/) - .NET 6 now supports HTTP/3
+**7 October** - [30 Days Of .NET 6 - Day 16 - HTTP/3 Support](https://www.conradakunga.com/blog/30-days-of-net-6-day-16-http3-support/) - .NET 6 now supports HTTP/3
 
-**5 October** - [SOCKS Proxy Support](https://www.conradakunga.com/blog/30-days-of-net-6-day-15-socks-proxy-support/) - You can now connect using SOCKS 4 and 5 proxy servers
+**5 October** - [30 Days Of .NET 15 - Day 10 - SOCKS Proxy Support](https://www.conradakunga.com/blog/30-days-of-net-6-day-15-socks-proxy-support/) - You can now connect using SOCKS 4 and 5 proxy servers
 
 # September 2021
 
-**29 September** - [LINQ Improvements - Chunk](https://www.conradakunga.com/blog/30-days-of-net-6-day-13-linq-improvements-chunk/) - You can use the new Chunk method to partition collections into multiple collections of a specified size.
+**29 September** - [30 Days Of .NET 6 - Day 13 - LINQ Improvements - Chunk](https://www.conradakunga.com/blog/30-days-of-net-6-day-13-linq-improvements-chunk/) - You can use the new Chunk method to partition collections into multiple collections of a specified size.
 
-**28 September** - [Collection Count Performance Improvement](https://www.conradakunga.com/blog/30-days-of-net-6-day-12-collection-count-performance-improvement/) - `TryGetNonEnumeratedCount` - a new method intended to allow you to check if you can cheaply determine the size of a collection.
+**28 September** - [30 Days Of .NET 6 - Day 12 - Collection Count Performance Check](https://www.conradakunga.com/blog/30-days-of-net-6-day-12-collection-count-performance-improvement/) - `TryGetNonEnumeratedCount` - a new method intended to allow you to check if you can cheaply determine the size of a collection.
 
-**27 September** - [LINQ Improvements - Support For Indexes & Ranges](https://www.conradakunga.com/blog/30-days-of-net-6-day-11-linq-improvements-range-support/) - LINQ now allows you to use indexes and ranges in expressions.
+**27 September** - [30 Days Of .NET 6 - Day 11 - LINQ Improvements - Support For  Ranges](https://www.conradakunga.com/blog/30-days-of-net-6-day-11-linq-improvements-range-support/) - LINQ now allows you to use indexes and ranges in expressions.
 
-**22 September** - [LINQ Improvements - DistinctBy](https://www.conradakunga.com/blog/30-days-of-net-6-day-9-linq-improvements-distinctby/) - The DistinctBy extension method.
+**22 September** - [30 Days Of .NET 6 - Day 9 - LINQ Improvements - DistinctBy](https://www.conradakunga.com/blog/30-days-of-net-6-day-9-linq-improvements-distinctby/) - The DistinctBy extension method.
 
-**21 September** - [Control Of Serialization Of Object Cycles](https://www.conradakunga.com/blog/30-days-of-net-6-day-8-control-of-serialization-of-object-cycles/) - You have additional control of how circular objects are serialized with the `System.Text.Json` serializer
+**21 September** - [30 Days Of .NET 6 - Day 8 - Control Of Serialization Of Object Cycles](https://www.conradakunga.com/blog/30-days-of-net-6-day-8-control-of-serialization-of-object-cycles/) - You have additional control of how circular objects are serialized with the `System.Text.Json` serializer
 
-**14 September** - [Simpler Web Applicaton Development](https://www.conradakunga.com/blog/30-days-of-net-6-day-7-simpler-web-application-development/) - it is now simpler to write web applications using the minimal API feature set.
+**14 September** - [30 Days Of .NET 6 - Day 7 - Simpler Web Application Development](https://www.conradakunga.com/blog/30-days-of-net-6-day-7-simpler-web-application-development/) - it is now simpler to write web applications using the minimal API feature set.
 
-**13 September** - [Priority Queue](https://www.conradakunga.com/blog/30-days-of-net-6-day-6-priority-queue/) - the new PriorityQueue class
+**13 September** - [30 Days Of .NET 6 - Day 6 Priority Queue](https://www.conradakunga.com/blog/30-days-of-net-6-day-6-priority-queue/) - the new PriorityQueue class
 
-**10 September** - [Math API Additions](https://www.conradakunga.com/blog/30-days-of-net-6-day-5-mathematics-api-additions/) - there have been some additions to the Math class.
+**10 September** - [30 Days Of .NET 6 - Day 5 - Math API Additions](https://www.conradakunga.com/blog/30-days-of-net-6-day-5-mathematics-api-additions/) - there have been some additions to the Math class.
 
 **9 September** - [30 Days Of .NET 6 - Day 4 - LINQ Improvements - MaxBy & MinBy](https://www.conradakunga.com/blog/30-days-of-net-6-day-4-linq-improvements-maxby-minby/) - LINQ improvements - the MaxBy and MinBy extension methods
 
