@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # October 2021
 
+**21 October** - [30 Days If .NET 6 - Da7 19 - Record Structs](https://www.conradakunga.com/blog/30-days-of-net-6-day-19-record-structs/) - .NET 6 has a new `record struct` construct where `record` execution is applied to `structs`.
+
 **12 October** - [30 Days Of .NET 6 - Day 17 - New Timer - PeriodicTimer](https://www.conradakunga.com/blog/30-days-of-net-6-day-17-new-timer-periodic-timer/) - .NET 6 has a new timer for use in async contexts - the `PeriodicTimer`
 
 **7 October** - [30 Days Of .NET 6 - Day 16 - HTTP/3 Support](https://www.conradakunga.com/blog/30-days-of-net-6-day-16-http3-support/) - .NET 6 now supports HTTP/3
