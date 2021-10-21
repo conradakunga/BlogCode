@@ -1,4 +1,5 @@
 ﻿using EFTest;
+using Microsoft.EntityFrameworkCore;
 
 using (var ctx = new PersonContext())
 {
@@ -19,8 +20,8 @@ using (var ctx = new PersonContext())
         ctx.SaveChanges();
     }
 
-    // List all the people
-    var people = ctx.People.ToList();
+    // Load all the people, and their hobbies
+    var people = ctx.People.Include(x=> x.Hobbies).ToList();
     foreach (var person in people)
     {
         // Print their name
