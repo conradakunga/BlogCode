@@ -1,6 +1,10 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+# November 2021
+
+**4 November** - [30 Days Of .NET 6 - Day 23 - Nullable References](https://www.conradakunga.com/blog/30-days-of-net-6-day-23-nullable-references/) - How nullable references help catch potential bugs at compile time.
+
 # October 2021
 
 **27 October** - [30 Days Of .NET 6 - Json Property Ordering](https://www.conradakunga.com/blog/30-days-of-net-6-day-20-json-property-ordering/) - How to control the order of the serialization of Json attributes
