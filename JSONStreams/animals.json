@@ -1,0 +1,14 @@
+[
+    {
+      "name": "Monkey",
+      "legs": 4
+    },
+    {
+      "name": "Donkey",
+      "legs": 4
+    },
+    {
+      "name": "Grasshopper",
+      "legs": 6
+    }
+  ]
