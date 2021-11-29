@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # November 2021
 
+**29 November** - [30 Days Of .NET 6 - Day 28 - JSON Serialization To & From Streams](https://www.conradakunga.com/blog/30-days-of-net-6-day-28-json-serialization-to-from-streams/) - How to serialize JSON to a stream and to deserialize JSON from a stream.
+
 **19 November** - [30 Days Of .NET 6 - Day 27 - Extended Property Patterns](https://www.conradakunga.com/blog/30-days-of-net-6-day-27-extended-property-patterns/) - Using extended property patterns to simplify filtering.
 
 **4 November** - [30 Days Of .NET 6 - Day 23 - Nullable References](https://www.conradakunga.com/blog/30-days-of-net-6-day-23-nullable-references/) - How nullable references help catch potential bugs at compile time.
