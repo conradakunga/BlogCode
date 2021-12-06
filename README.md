@@ -1,6 +1,10 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+# December 2021
+
+6 December - [30 Days Of .NET 6 - Day 29 - Writing Raw JSON Using Utf8JsonWriter](https://www.conradakunga.com/blog/30-days-of-net-6-day-29-writing-raw-json/) - How to customize Json serliazation
+
 # November 2021
 
 **29 November** - [30 Days Of .NET 6 - Day 28 - JSON Serialization To & From Streams](https://www.conradakunga.com/blog/30-days-of-net-6-day-28-json-serialization-to-from-streams/) - How to serialize JSON to a stream and to deserialize JSON from a stream.
