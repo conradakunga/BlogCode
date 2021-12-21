@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # December 2021
 
+21 December - [30 Days Of .NET 6 - Day 30 - Simplified Argument Null Checks](https://www.conradakunga.com/blog/30-days-of-net-6-day-30-simplified-argument-null-checks/) - How to simplify code that does checks for null arguments.
+
 6 December - [30 Days Of .NET 6 - Day 29 - Writing Raw JSON Using Utf8JsonWriter](https://www.conradakunga.com/blog/30-days-of-net-6-day-29-writing-raw-json/) - How to customize Json serliazation
 
 # November 2021
