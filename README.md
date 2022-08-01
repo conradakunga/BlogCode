@@ -1,6 +1,21 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+# August 2022
+
+1 Aug - [Using HttpClient To Post JSON In C# & .NET](https://www.conradakunga.com/blog/using-httpclient-to-post-json-in-c-net/)
+
+# May 2022
+25 May - [Mapping Inherited Immutable Classes Using Dapper](https://www.conradakunga.com/blog/beware-mapping-inherited-immutable-classes-using-dapper/)
+
+# April 2022
+
+28 April - [Adding Multiple Items To A HashSet In C#](https://www.conradakunga.com/blog/adding-multiple-items-to-a-hashset-in-c/)
+
+# March 2022
+
+29 Mar - [Cleaner Code With Switch Expressions In C#](https://www.conradakunga.com/blog/cleaner-code-with-swtich-expressions-in-c/)
+
 # December 2021
 
 21 December - [30 Days Of .NET 6 - Day 30 - Simplified Argument Null Checks](https://www.conradakunga.com/blog/30-days-of-net-6-day-30-simplified-argument-null-checks/) - How to simplify code that does checks for null arguments.
