@@ -17,8 +17,11 @@ using (var client = new TcpClient(hostname: domain, port: port))
         await stream.AuthenticateAsClientAsync(targetHost: domain);
         // retrieve the certificate
         var certificate = new X509Certificate2(certificate: stream.RemoteCertificate);
-        // Get the main parameters
-        var subject = certificate.Subject;
-        var Issuer = certificate.Issuer;
+        if (certificate != null)
+        {
+            // Get the main parameters
+            var subject = certificate.Subject;
+            var Issuer = certificate.Issuer;
+        }
     }
 }
