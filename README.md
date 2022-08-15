@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # August 2022
 
+15 Aug - [A better way to build and maintain URLs](https://www.conradakunga.com/blog/building-urls-in-c-without-concatenation-or-interpolation/)
+
 1 Aug - [Using HttpClient To Post JSON In C# & .NET](https://www.conradakunga.com/blog/using-httpclient-to-post-json-in-c-net/)
 
 # May 2022
