@@ -16,6 +16,8 @@ var query = new Dictionary<string, string>()
     {"Weight" , "70"},
     {"BirthYear", "2000"}
 };
+
+// Project the dictionary into a collection of name/value pairs and join them into a string
 var queryString = string.Join('&', query.Select(q => $"{q.Key}={q.Value}"));
 
 var builder = new UriBuilder("https", "localhost", 5000, "Customers", $"?{queryString}");
