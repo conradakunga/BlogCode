@@ -1,6 +1,10 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+# October 2022
+
+2 Oct - [Tip - Grouping Using LINQ In VB.NET](https://www.conradakunga.com/blog/tip-grouping-correctly-in-linq-with-vbnet/) - 
+A gotcha in the syntax of how to correctly group using VB.NET
 # August 2022
 
 15 Aug - [A better way to build and maintain URLs](https://www.conradakunga.com/blog/building-urls-in-c-without-concatenation-or-interpolation/)
