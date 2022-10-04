@@ -2,6 +2,7 @@
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
 # October 2022
+3 Oct - [Using LINQ To Filter A List Of Strings Containing Words In Another List](https://www.conradakunga.com/blog/tip-using-linq-to-filter-a-list-of-strings-containing-words-in-another-list/)
 
 2 Oct - [Tip - Grouping Using LINQ In VB.NET](https://www.conradakunga.com/blog/tip-grouping-correctly-in-linq-with-vbnet/) - 
 A gotcha in the syntax of how to correctly group using VB.NET
