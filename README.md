@@ -2,6 +2,9 @@
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
 # October 2022
+
+13 Oct - [Tip - Simpler LINQ Ordering In .NET 7](https://www.conradakunga.com/blog/tip-simpler-linq-ordering-in-net-7/)
+
 3 Oct - [Tip - Using LINQ To Filter A List Of Strings Containing Words In Another List](https://www.conradakunga.com/blog/tip-using-linq-to-filter-a-list-of-strings-containing-words-in-another-list/)
 
 2 Oct - [Tip - Grouping Using LINQ In VB.NET](https://www.conradakunga.com/blog/tip-grouping-correctly-in-linq-with-vbnet/) - 
