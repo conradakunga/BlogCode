@@ -1,7 +1,4 @@
 ﻿var agents = new Agent[] { new Agent("James", "Bond"), new Agent("Evelyn", "Salt"), new Agent("Jason", "Bourne"), new Agent("Jane", "Bond") };
-//agents.Order(new AgentComparer()).Dump();
-
-//var orderedAgents = agents.OrderBy(agent => agent).ToList();
 
 var orderedAgents = agents.OrderBy(agent => agent.Surname)
     .ThenBy(agent => agent.FirstName).ToList();
