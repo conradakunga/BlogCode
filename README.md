@@ -5,7 +5,7 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 15 Oct - [Microsecond Precision In .NET](https://www.conradakunga.com/blog/microsecond-precision-in-net/) - How to handle microsecond precision in .NET and an improved way to do it in .NET 7
 
-14 Oct - [How To Order Classes And Records In C#](https://www.conradakunga.com/blog/how-to-order-classes-and-records-in-c/) - Using `Comparers` by implementing the `IComparer` interface to allow for flexible sorting of collectons of classes and records.
+14 Oct - [How To Order Classes And Records In C#](https://www.conradakunga.com/blog/how-to-order-classes-and-records-in-c/) - Using `Comparers` by implementing the `IComparer` interface to allow for flexible sorting of collections of classes and records.
 
 13 Oct - [Tip - Simpler LINQ Ordering In .NET 7](https://www.conradakunga.com/blog/tip-simpler-linq-ordering-in-net-7/)
 
