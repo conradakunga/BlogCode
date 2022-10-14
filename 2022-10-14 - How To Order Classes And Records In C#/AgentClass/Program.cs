@@ -5,12 +5,12 @@ var orderedAgents = agents.OrderBy(agent => agent.Surname)
 
 PrintCollection(orderedAgents);
 
-// Order using the comparer
+// Order
 var newlyOrderedAgents = agents.OrderBy(agent => agent).ToList();
 
 PrintCollection(newlyOrderedAgents);
 
-// Order using the comparer (new syntax)
+// Order (new syntax)
 var moreNewlyOrderedAgents = agents.Order().ToList();
 
 PrintCollection(moreNewlyOrderedAgents);
