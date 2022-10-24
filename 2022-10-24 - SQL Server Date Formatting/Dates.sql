@@ -1,3 +1,5 @@
+DECLARE @Date DATE;
+
 -- Full Date
 SET @Date = '24 October 2022';
 

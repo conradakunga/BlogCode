@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # October 2022
 
+24 Oct - [Constructing Dates In SQL](https://www.conradakunga.com/blog/tip-sql-server-management-studio-constructing-dates/) - SQL Server parse strings in various date formats into valid dates.
+
 15 Oct - [Microsecond Precision In .NET](https://www.conradakunga.com/blog/microsecond-precision-in-net/) - How to handle microsecond precision in .NET and an improved way to do it in .NET 7
 
 14 Oct - [How To Order Classes And Records In C#](https://www.conradakunga.com/blog/how-to-order-classes-and-records-in-c/) - Using `Comparers` by implementing the `IComparer` interface to allow for flexible sorting of collections of classes and records.
