@@ -1,6 +1,10 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+# November 2022
+
+12 Nov - [The Required Keyword in C# 11 & .NET 7](https://www.conradakunga.com/blog/required-keyword-in-c-11-net-7/) - How to use the required keyboard to write terser, more maintainable code.
+
 # October 2022
 
 24 Oct - [Constructing Dates In SQL](https://www.conradakunga.com/blog/tip-sql-server-management-studio-constructing-dates/) - SQL Server parse strings in various date formats into valid dates.
