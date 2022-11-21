@@ -2,6 +2,7 @@
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
 # November 2022
+21 Nov - [Deserializing Null Values From JSON](https://www.conradakunga.com/blog/handling-null-and-empty-strings-with-systemtextjson-part-2/) - How to do custom deserialization of values in JSON payloads.
 
 12 Nov - [The Required Keyword in C# 11 & .NET 7](https://www.conradakunga.com/blog/required-keyword-in-c-11-net-7/) - How to use the required keyboard to write terser, more maintainable code.
 
