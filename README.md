@@ -1,6 +1,10 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+# February 2023
+
+**14 Feb** - [Building Directory Paths In C#](https://www.conradakunga.com/blog/building-directory-paths-in-c/) - How to use Path.Combine for better manipulation and building of file system paths.
+
 # November 2022
 
 26 Nov - [Indexing SQL Server NVARCHAR(MAX) Columns](https://www.conradakunga.com/blog/how-to-index-a-nvarcharmax-table-in-sql-server/) - How to get around restrictions around the indexing of NVARCHAR(MAX) SQL Server database columns.
