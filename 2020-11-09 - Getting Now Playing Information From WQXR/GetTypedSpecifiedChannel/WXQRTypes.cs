@@ -1,212 +1,212 @@
 using System;
 using System.Collections.Generic;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace GetTypedSpecifiedChannel
 {
     public partial class Current
     {
-        [JsonProperty("has_playlists")]
+        [JsonPropertyName("has_playlists")]
         public bool HasPlaylists { get; set; }
 
-        [JsonProperty("future")]
+        [JsonPropertyName("future")]
         public List<object> Future { get; set; }
 
-        [JsonProperty("current_show")]
+        [JsonPropertyName("current_show")]
         public CurrentShow CurrentShow { get; set; }
 
-        [JsonProperty("expires")]
+        [JsonPropertyName("expires")]
         public DateTimeOffset Expires { get; set; }
 
-        [JsonProperty("current_playlist_item")]
+        [JsonPropertyName("current_playlist_item")]
         public CurrentPlaylistItem CurrentPlaylistItem { get; set; }
     }
 
     public partial class CurrentPlaylistItem
     {
-        [JsonProperty("start_time_ts")]
-        public long StartTimeTs { get; set; }
+        [JsonPropertyName("start_time_ts")]
+        public decimal StartTimeTs { get; set; }
 
-        [JsonProperty("stream")]
+        [JsonPropertyName("stream")]
         public string Stream { get; set; }
 
-        [JsonProperty("playlist_entry_id")]
+        [JsonPropertyName("playlist_entry_id")]
         public long PlaylistEntryId { get; set; }
 
-        [JsonProperty("start_time")]
+        [JsonPropertyName("start_time")]
         public DateTimeOffset StartTime { get; set; }
 
-        [JsonProperty("playlist_page_url")]
+        [JsonPropertyName("playlist_page_url")]
         public Uri PlaylistPageUrl { get; set; }
 
-        [JsonProperty("comments_url")]
+        [JsonPropertyName("comments_url")]
         public string CommentsUrl { get; set; }
 
-        [JsonProperty("iso_start_time")]
+        [JsonPropertyName("iso_start_time")]
         public DateTimeOffset IsoStartTime { get; set; }
 
-        [JsonProperty("catalog_entry")]
+        [JsonPropertyName("catalog_entry")]
         public CatalogEntry CatalogEntry { get; set; }
     }
 
     public partial class CatalogEntry
     {
-        [JsonProperty("reclabel")]
+        [JsonPropertyName("reclabel")]
         public Reclabel Reclabel { get; set; }
 
-        [JsonProperty("conductor")]
+        [JsonPropertyName("conductor")]
         public object Conductor { get; set; }
 
-        [JsonProperty("catno")]
+        [JsonPropertyName("catno")]
         public string Catno { get; set; }
 
-        [JsonProperty("composer")]
+        [JsonPropertyName("composer")]
         public Composer Composer { get; set; }
 
-        [JsonProperty("attribution")]
+        [JsonPropertyName("attribution")]
         public string Attribution { get; set; }
 
-        [JsonProperty("soloists")]
+        [JsonPropertyName("soloists")]
         public List<Soloist> Soloists { get; set; }
 
-        [JsonProperty("mm_uid")]
+        [JsonPropertyName("mm_uid")]
         public long MmUid { get; set; }
 
-        [JsonProperty("title")]
+        [JsonPropertyName("title")]
         public string Title { get; set; }
 
-        [JsonProperty("url")]
+        [JsonPropertyName("url")]
         public Uri Url { get; set; }
 
-        [JsonProperty("additional_composers")]
+        [JsonPropertyName("additional_composers")]
         public List<Composer> AdditionalComposers { get; set; }
 
-        [JsonProperty("audio_may_download")]
+        [JsonPropertyName("audio_may_download")]
         public bool AudioMayDownload { get; set; }
 
-        [JsonProperty("length")]
+        [JsonPropertyName("length")]
         public long Length { get; set; }
 
-        [JsonProperty("pk")]
+        [JsonPropertyName("pk")]
         public long Pk { get; set; }
 
-        [JsonProperty("arkiv_link")]
+        [JsonPropertyName("arkiv_link")]
         public Uri ArkivLink { get; set; }
 
-        [JsonProperty("audio")]
+        [JsonPropertyName("audio")]
         public Uri Audio { get; set; }
 
-        [JsonProperty("ensemble")]
+        [JsonPropertyName("ensemble")]
         public Composer Ensemble { get; set; }
 
-        [JsonProperty("additional_ensembles")]
+        [JsonPropertyName("additional_ensembles")]
         public List<object> AdditionalEnsembles { get; set; }
     }
 
     public partial class Composer
     {
-        [JsonProperty("url")]
+        [JsonPropertyName("url")]
         public string Url { get; set; }
 
-        [JsonProperty("pk")]
+        [JsonPropertyName("pk")]
         public long Pk { get; set; }
 
-        [JsonProperty("slug")]
+        [JsonPropertyName("slug")]
         public string Slug { get; set; }
 
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
     }
 
     public partial class Reclabel
     {
-        [JsonProperty("url")]
+        [JsonPropertyName("url")]
         public string Url { get; set; }
 
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
     }
 
     public partial class CurrentShow
     {
-        [JsonProperty("iso_start")]
+        [JsonPropertyName("iso_start")]
         public DateTimeOffset IsoStart { get; set; }
 
-        [JsonProperty("description")]
+        [JsonPropertyName("description")]
         public string Description { get; set; }
 
-        [JsonProperty("fullImage")]
+        [JsonPropertyName("fullImage")]
         public Image FullImage { get; set; }
 
-        [JsonProperty("site_id")]
+        [JsonPropertyName("site_id")]
         public long SiteId { get; set; }
 
-        [JsonProperty("start_ts")]
-        public long StartTs { get; set; }
+        [JsonPropertyName("start_ts")]
+        public decimal StartTs { get; set; }
 
-        [JsonProperty("iso_end")]
+        [JsonPropertyName("iso_end")]
         public DateTimeOffset IsoEnd { get; set; }
 
-        [JsonProperty("listImage")]
+        [JsonPropertyName("listImage")]
         public Image ListImage { get; set; }
 
-        [JsonProperty("pk")]
+        [JsonPropertyName("pk")]
         public long Pk { get; set; }
 
-        [JsonProperty("show_url")]
+        [JsonPropertyName("show_url")]
         public Uri ShowUrl { get; set; }
 
-        [JsonProperty("end")]
+        [JsonPropertyName("end")]
         public string End { get; set; }
 
-        [JsonProperty("title")]
+        [JsonPropertyName("title")]
         public string Title { get; set; }
 
-        [JsonProperty("url")]
+        [JsonPropertyName("url")]
         public Uri Url { get; set; }
 
-        [JsonProperty("end_ts")]
-        public long EndTs { get; set; }
+        [JsonPropertyName("end_ts")]
+        public decimal EndTs { get; set; }
 
-        [JsonProperty("schedule_ref")]
+        [JsonPropertyName("schedule_ref")]
         public string ScheduleRef { get; set; }
 
-        [JsonProperty("group_slug")]
+        [JsonPropertyName("group_slug")]
         public string GroupSlug { get; set; }
 
-        [JsonProperty("detailImage")]
+        [JsonPropertyName("detailImage")]
         public Image DetailImage { get; set; }
 
-        [JsonProperty("start")]
+        [JsonPropertyName("start")]
         public string Start { get; set; }
     }
     public partial class Soloist
     {
-        [JsonProperty("instruments")]
+        [JsonPropertyName("instruments")]
         public List<string> Instruments { get; set; }
 
-        [JsonProperty("musician")]
+        [JsonPropertyName("musician")]
         public Composer Musician { get; set; }
 
-        [JsonProperty("role")]
+        [JsonPropertyName("role")]
         public string Role { get; set; }
     }
 
     public partial class Image
     {
-        [JsonProperty("url")]
+        [JsonPropertyName("url")]
         public Uri Url { get; set; }
 
-        [JsonProperty("width")]
+        [JsonPropertyName("width")]
         public long Width { get; set; }
 
-        [JsonProperty("caption")]
+        [JsonPropertyName("caption")]
         public string Caption { get; set; }
 
-        [JsonProperty("type")]
+        [JsonPropertyName("type")]
         public string Type { get; set; }
 
-        [JsonProperty("height")]
+        [JsonPropertyName("height")]
         public long Height { get; set; }
     }
 }
