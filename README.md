@@ -1,5 +1,8 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
+# March 2023
+
+**28 Mar** - [How To Use C# List Pattern Matching Practically](https://www.conradakunga.com/blog/how-to-use-c-list-pattern-matching-practically/) - How to use List Patterns for the elegant solution of common problems.
 
 # February 2023
 
