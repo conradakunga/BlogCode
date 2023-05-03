@@ -1,5 +1,10 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
+
+# May 2023
+
+**3 May 2023** [Writing Maintainable, Testable Code That Depends On The Current Time](https://www.conradakunga.com/blog/writing-testable-code-that-depends-on-the-current-time/) - how to use interfaces to mock implementations that can be used to improve testing, maintainability and composability of components.
+
 # March 2023
 
 **28 Mar** - [How To Use C# List Pattern Matching Practically](https://www.conradakunga.com/blog/how-to-use-c-list-pattern-matching-practically/) - How to use List Patterns for the elegant solution of common problems.
