@@ -1,6 +1,6 @@
 namespace Greeter.Logic;
 
-interface IClock
+public interface IClock
 {
     public DateTime Now { get; }
 }
