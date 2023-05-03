@@ -1,9 +1,9 @@
 ﻿namespace Greeter.Logic;
 public sealed class Greeter
 {
-    public string Greet()
+    public string Greet(DateTime dateTime)
     {
-        return DateTime.Now.Hour switch
+        return dateTime.Hour switch
         {
             >= 0 and < 13 => "Good Morning",
             >= 13 and < 16 => "Good Afternoon",
