@@ -1,6 +1,10 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+# July 2023
+
+**21 Jul** [Tip - Adding x-request-id to a HTTP request without changing case](https://www.conradakunga.com/blog/projecting-named-tuples-in-entity-framework-core/) - a workaround around a problem where the HttpClient changes the case of this particular header when it is added.
+
 # May 2023
 
 **3 May 2023** [Writing Maintainable, Testable Code That Depends On The Current Time](https://www.conradakunga.com/blog/writing-testable-code-that-depends-on-the-current-time/) - how to use interfaces to mock implementations that can be used to improve testing, maintainability and composability of components.
