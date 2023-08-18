@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # August 2023
 
+**18 Aug 2023** [Defining Relationships With Enum Attributes For Enum Values In C#](https://www.conradakunga.com/blog/enum-attributes-for-enum-values-in-c/) - How to use attributes to enforce relationships between `Enums`
+
 **8 Aug 2023** [Tip - Using JsonSerializationOptions With Refit](https://www.conradakunga.com/blog/tip-using-jsonserializationoptions-with-refit/) - how to control the serialization and deserialization of objects when using Refit
 
 # July 2023
