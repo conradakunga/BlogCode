@@ -1,4 +1,6 @@
-﻿var vehicle = new Vehicle(Model.Camry);
+﻿using AttributeLinkage;
+
+var vehicle = new Vehicle(Model.Camry);
 Console.WriteLine($"Model: {vehicle.Model}");
 Console.WriteLine($"Make: {vehicle.Make}");
 
