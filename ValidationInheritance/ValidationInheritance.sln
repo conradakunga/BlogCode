@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationInheritanceLibrary", "ValidationInheritanceLibrary\ValidationInheritanceLibrary.csproj", "{2F81FB2E-FB77-467D-B60A-927886E6E55D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationInheritanceTests", "ValidationInheritanceTests\ValidationInheritanceTests.csproj", "{E521EFDA-E789-4728-8327-2387683A7467}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F81FB2E-FB77-467D-B60A-927886E6E55D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F81FB2E-FB77-467D-B60A-927886E6E55D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F81FB2E-FB77-467D-B60A-927886E6E55D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F81FB2E-FB77-467D-B60A-927886E6E55D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E521EFDA-E789-4728-8327-2387683A7467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E521EFDA-E789-4728-8327-2387683A7467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E521EFDA-E789-4728-8327-2387683A7467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E521EFDA-E789-4728-8327-2387683A7467}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
