@@ -1,6 +1,10 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+# April 2023
+
+**6 April 2024** - Using Inheritance With FluentValidation - How to leverage inheritance to write less, and more powerful, validation code.
+
 # August 2023
 
 **18 Aug 2023** [Defining Relationships With Enum Attributes For Enum Values In C#](https://www.conradakunga.com/blog/enum-attributes-for-enum-values-in-c/) - How to use attributes to enforce relationships between `Enums`
