@@ -1,4 +1,6 @@
 
+namespace AttributeLinkage;
+
 public enum Model
 {
     [MakeOf(Make.Toyota)]
@@ -10,3 +12,6 @@ public enum Model
     [MakeOf(Make.Subaru)]
     Legacy
 }
+
+
+
