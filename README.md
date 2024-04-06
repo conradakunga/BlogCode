@@ -3,7 +3,7 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # April 2023
 
-**6 April 2024** - Using Inheritance With FluentValidation - How to leverage inheritance to write less, and more powerful, validation code.
+**6 April 2024** [Using Inheritance With FluentValidation](https://www.conradakunga.com/blog/using-inheritance-with-fluentvalidation/) - How to leverage inheritance to write less, and more powerful, validation code.
 
 # August 2023
 
