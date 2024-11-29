@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # November 2024
 
+**29 August** [Improved Collection Shuffling In F# 9](https://www.conradakunga.com/blog/improved-collection-shuffling-in-f-9/) Improvements to collections to support shuffling
+
 **28 August 2024** [Truncating Numbers In C#](https://www.conradakunga.com/blog/truncating-numbers-in-c/) - How to truncate numbers in C#
 
 # April 2024
