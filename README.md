@@ -1,7 +1,11 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
-# April 2023
+# November 2024
+
+**28 August 2024** [Truncating Numbers In C#](https://www.conradakunga.com/blog/truncating-numbers-in-c/) - How to truncate numbers in C#
+
+# April 2024
 
 **6 April 2024** [Using Inheritance With FluentValidation](https://www.conradakunga.com/blog/using-inheritance-with-fluentvalidation/) - How to leverage inheritance to write less, and more powerful, validation code.
 
