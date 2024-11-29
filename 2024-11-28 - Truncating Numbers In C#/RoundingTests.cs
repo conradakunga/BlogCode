@@ -12,6 +12,7 @@ public class RoundingTests
     [InlineData(123.455, 123.45)]
     [InlineData(123.456, 123.45)]
     [InlineData(123.459, 123.45)]
+    [InlineData(123.460, 123.46)]
     public void TruncationIsDoneCorrectly(decimal input, decimal expected)
     {
         Math.Round(input, 2, MidpointRounding.ToZero).Should().Be(expected);
