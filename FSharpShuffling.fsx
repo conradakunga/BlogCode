@@ -6,8 +6,7 @@ let numbers = [ 0 .. 9 ]
 
 // Wite a function that shuffles a passed list and returns a new one
 let shuffle list =
-    let rand = Random()
-    list |> List.sortBy (fun _ -> rand.Next())
+    list |> List.sortBy (fun _ -> Random.Shared.Next())
 
 // Shuffle the numbers
 let shuffledNumbers = shuffle numbers
