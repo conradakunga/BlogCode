@@ -3,11 +3,11 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # December 2024
 
-**9 December 202** [Writing Minimal APIs For HEAD Requests](https://www.conradakunga.com/blog/writing-minmial-apis-for-head-requests/) How to write minimal APIs to handle HEAD requests.
+**9 December 202** [Writing Minimal APIs For HEAD Requests](https://www.conradakunga.com/blog/writing-minmial-apis-for-head-requests/) - How to write minimal APIs to handle HEAD requests.
 
 # November 2024
 
-**29 August 2024** [Improved Collection Shuffling In F# 9](https://www.conradakunga.com/blog/improved-collection-shuffling-in-f-9/) Improvements to collections to support shuffling
+**29 August 2024** [Improved Collection Shuffling In F# 9](https://www.conradakunga.com/blog/improved-collection-shuffling-in-f-9/) - Improvements to collections to support shuffling
 
 **28 August 2024** [Truncating Numbers In C#](https://www.conradakunga.com/blog/truncating-numbers-in-c/) - How to truncate numbers in C#
 
