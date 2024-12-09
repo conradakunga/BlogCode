@@ -1,3 +1,5 @@
+using SpiesAPI;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -14,28 +16,65 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+var spies = new List<Spy>();
 
-app.MapGet("/weatherforecast", () =>
+// List all spies
+app.MapGet("/Spies", () =>
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+    // Fetch all spies from the database
+    return Results.Ok(spies);
+});
+
+// Get a spy by ID
+app.MapGet("/Spies/{id:guid}", (Guid id) =>
+{
+    //Fetch requested spy from database
+    var spy = spies.SingleOrDefault(x => x.ID == id);
+    if (spy is null)
+        return Results.NotFound();
+    return Results.Ok(spy);
+});
+
+// Create a spy
+app.MapPost("/Spies", (CreateSpyRequest request) =>
+{
+    //Create a spy
+    var spy = new Spy(Guid.NewGuid(), request.Name, request.DateOfBirth);
+    // Add to database
+    spies.Add(spy);
+    return Results.Created($"/Spies/{spy.ID}", spy);
+});
+
+// Update a spy's details
+app.MapPut("/Spies", (UpdateSpyRequest request) =>
+{
+    //Fetch spy from database
+    var spy = spies.SingleOrDefault(x => x.ID == request.ID);
+    if (spy is null)
+        return Results.NotFound();
+    spies.Remove(spy);
+    var updatedSpy = spy with { Name = request.Name, DateOfBirth = request.DateOfBirth };
+    spies.Add(updatedSpy);
+    return Results.NoContent();
+});
+
+// Delete a spy
+app.MapDelete("/Spies/{id:guid}", (Guid id) =>
+{
+    var spy = spies.SingleOrDefault(x => x.ID == id);
+    if (spy is null)
+        return Results.NotFound();
+    spies.Remove(spy);
+    return Results.NoContent();
+});
+
+// HEAD request to check for existence
+app.MapMethods("/Spies/{id:guid}", [HttpMethod.Head.Method], (Guid id) =>
+{
+    // Query the database for existence of the spy by ID
+    if (spies.Any(x => x.ID == id))
+        return Results.Ok();
+    return Results.NotFound();
+});
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
