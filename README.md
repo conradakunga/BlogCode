@@ -1,7 +1,7 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
-# December 2020
+# December 2024
 
 **9 December 202** [Writing Minimal APIs For HEAD Requests](https://www.conradakunga.com/blog/writing-minmial-apis-for-head-requests/) How to write minimal APIs to handle HEAD requests.
 
