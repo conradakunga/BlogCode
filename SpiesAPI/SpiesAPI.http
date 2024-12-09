@@ -1,0 +1,6 @@
+@SpiesAPI_HostAddress = http://localhost:5013
+
+GET {{SpiesAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
