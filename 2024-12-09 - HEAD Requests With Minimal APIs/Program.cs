@@ -46,10 +46,10 @@ app.MapPost("/Spies", (CreateSpyRequest request) =>
 });
 
 // Update a spy's details
-app.MapPut("/Spies", (UpdateSpyRequest request) =>
+app.MapPut("/Spies/{id:guid}", (UpdateSpyRequest request, Guid id) =>
 {
     //Fetch spy from database
-    var spy = spies.SingleOrDefault(x => x.ID == request.ID);
+    var spy = spies.SingleOrDefault(x => x.ID == id);
     if (spy is null)
         return Results.NotFound();
     spies.Remove(spy);
