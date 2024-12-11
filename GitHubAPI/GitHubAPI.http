@@ -1,0 +1,7 @@
+@GitHubAPI_HostAddress = http://localhost:5113
+@UserName=conradakunga
+
+GET {{GitHubAPI_HostAddress}}/Info/{{UserName}}
+Accept: application/json
+
+###
