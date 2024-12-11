@@ -24,7 +24,7 @@ builder.Services.AddHttpClient(httpClientName, (provider, client) =>
     logger.LogInformation("The configured user agent is {UserAgent}", settings.UserAgent);
     // Set the base address with the configured settings
     client.BaseAddress = new Uri(settings.GitHubAPI);
-    // Set the user agent to be added by default to all requets
+    // Set the user agent to be added by default to all requests
     client.DefaultRequestHeaders.Add("User-Agent", settings.UserAgent);
 });
 
