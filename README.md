@@ -3,7 +3,9 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # December 2024
 
-**9 December 202** [Writing Minimal APIs For HEAD Requests](https://www.conradakunga.com/blog/writing-minmial-apis-for-head-requests/) - How to write minimal APIs to handle HEAD requests.
+**11 December 2024** [Loading & Using Application Settings](https://www.conradakunga.com/blog/loading-using-application-settings/) - how to retrieve settings valies from an application.
+
+**9 December 2024** [Writing Minimal APIs For HEAD Requests](https://www.conradakunga.com/blog/writing-minmial-apis-for-head-requests/) - How to write minimal APIs to handle HEAD requests.
 
 # November 2024
 
