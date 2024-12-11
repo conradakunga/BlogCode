@@ -3,33 +3,33 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # December 2024
 
-**11 December 2024** [Loading & Using Application Settings](https://www.conradakunga.com/blog/loading-using-application-settings/) - how to retrieve settings valies from an application.
+**11 December 2024** - [Loading & Using Application Settings](https://www.conradakunga.com/blog/loading-using-application-settings/) - how to retrieve settings valies from an application.
 
-**9 December 2024** [Writing Minimal APIs For HEAD Requests](https://www.conradakunga.com/blog/writing-minmial-apis-for-head-requests/) - How to write minimal APIs to handle HEAD requests.
+**9 December 2024** - [Writing Minimal APIs For HEAD Requests](https://www.conradakunga.com/blog/writing-minmial-apis-for-head-requests/) - How to write minimal APIs to handle HEAD requests.
 
 # November 2024
 
-**29 August 2024** [Improved Collection Shuffling In F# 9](https://www.conradakunga.com/blog/improved-collection-shuffling-in-f-9/) - Improvements to collections to support shuffling
+**29 August 2024** - [Improved Collection Shuffling In F# 9](https://www.conradakunga.com/blog/improved-collection-shuffling-in-f-9/) - Improvements to collections to support shuffling
 
-**28 August 2024** [Truncating Numbers In C#](https://www.conradakunga.com/blog/truncating-numbers-in-c/) - How to truncate numbers in C#
+**28 August 2024** - [Truncating Numbers In C#](https://www.conradakunga.com/blog/truncating-numbers-in-c/) - How to truncate numbers in C#
 
 # April 2024
 
-**6 April 2024** [Using Inheritance With FluentValidation](https://www.conradakunga.com/blog/using-inheritance-with-fluentvalidation/) - How to leverage inheritance to write less, and more powerful, validation code.
+**6 April 2024** - [Using Inheritance With FluentValidation](https://www.conradakunga.com/blog/using-inheritance-with-fluentvalidation/) - How to leverage inheritance to write less, and more powerful, validation code.
 
 # August 2023
 
-**18 Aug 2023** [Defining Relationships With Enum Attributes For Enum Values In C#](https://www.conradakunga.com/blog/enum-attributes-for-enum-values-in-c/) - How to use attributes to enforce relationships between `Enums`
+**18 Aug 2023** - [Defining Relationships With Enum Attributes For Enum Values In C#](https://www.conradakunga.com/blog/enum-attributes-for-enum-values-in-c/) - How to use attributes to enforce relationships between `Enums`
 
-**8 Aug 2023** [Tip - Using JsonSerializationOptions With Refit](https://www.conradakunga.com/blog/tip-using-jsonserializationoptions-with-refit/) - how to control the serialization and deserialization of objects when using Refit
+**8 Aug 2023** - [Tip - Using JsonSerializationOptions With Refit](https://www.conradakunga.com/blog/tip-using-jsonserializationoptions-with-refit/) - how to control the serialization and deserialization of objects when using Refit
 
 # July 2023
 
-**21 Jul** [Tip - Adding x-request-id to a HTTP request without changing case](https://www.conradakunga.com/blog/projecting-named-tuples-in-entity-framework-core/) - a workaround around a problem where the HttpClient changes the case of this particular header when it is added.
+**21 Jul** - [Tip - Adding x-request-id to a HTTP request without changing case](https://www.conradakunga.com/blog/projecting-named-tuples-in-entity-framework-core/) - a workaround around a problem where the HttpClient changes the case of this particular header when it is added.
 
 # May 2023
 
-**3 May 2023** [Writing Maintainable, Testable Code That Depends On The Current Time](https://www.conradakunga.com/blog/writing-testable-code-that-depends-on-the-current-time/) - how to use interfaces to mock implementations that can be used to improve testing, maintainability and composability of components.
+**3 May 2023** - [Writing Maintainable, Testable Code That Depends On The Current Time](https://www.conradakunga.com/blog/writing-testable-code-that-depends-on-the-current-time/) - how to use interfaces to mock implementations that can be used to improve testing, maintainability and composability of components.
 
 # March 2023
 
