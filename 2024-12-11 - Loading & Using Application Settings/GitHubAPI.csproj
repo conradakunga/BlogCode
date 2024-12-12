@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+    <PackageReference Include="serilog.sinks.console" Version="6.0.0" />
   </ItemGroup>
 
 </Project>

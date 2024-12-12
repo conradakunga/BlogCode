@@ -1,5 +1,12 @@
 using System.Text.Json.Serialization;
 using Microsoft.Extensions.Options;
+using Serilog;
+
+// Create our own logger to use before the
+// application one can be spun up
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .CreateLogger();
 
 // Create a constant for the HttpClient name
 const string httpClientName = "GitHubClient";
@@ -16,7 +23,7 @@ builder.Services.AddHttpClient(httpClientName, (provider, client) =>
 {
     // Get a logger from the DI contaoner
     var logger = provider.GetRequiredService<ILogger<APISettings>>();
-    // Log some infromation
+    // Log some information
     logger.LogInformation("Call to retrieve HttpClient");
     // Get the settings from the DI container
     var settings = provider.GetRequiredService<IOptions<APISettings>>().Value;
@@ -31,6 +38,8 @@ builder.Services.AddHttpClient(httpClientName, (provider, client) =>
 //Fetch the API settings and bind them to a custom object
 var apiSettings = new APISettings();
 builder.Configuration.GetSection(nameof(APISettings)).Bind(apiSettings);
+
+Log.Information("Custom logger reports the URL is {URL}", apiSettings.GitHubAPI);
 
 // Build the web application
 var app = builder.Build();
