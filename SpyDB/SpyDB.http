@@ -1,0 +1,6 @@
+@SpyDB_HostAddress = http://localhost:5038
+
+GET {{SpyDB_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
