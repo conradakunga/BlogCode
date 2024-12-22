@@ -3,7 +3,7 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # December 2024
 
-*22 December 2024* - [Caching In .NET Applications & The Hybrid Cache](https://www.conradakunga.com/blog/caching-in-net-applications-the-hybrid-cache/) - two cache implementations and the improvements in the HybridCache
+**22 December 2024** - [Caching In .NET Applications & The Hybrid Cache](https://www.conradakunga.com/blog/caching-in-net-applications-the-hybrid-cache/) - two cache implementations and the improvements in the HybridCache
 
 **11 December 2024** - [Loading & Using Application Settings](https://www.conradakunga.com/blog/loading-using-application-settings/) - how to retrieve settings valies from an application.
 
