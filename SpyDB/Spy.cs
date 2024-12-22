@@ -1,0 +1,1 @@
+public record Spy(string FullNames, DateOnly DateOfBirth, string Service);
