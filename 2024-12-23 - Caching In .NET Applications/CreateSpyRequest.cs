@@ -1,0 +1,1 @@
+public record CreateSpyRequest(string FullNames, int Age, string Service);

@@ -1,1 +1,1 @@
-public record Spy(string FullNames, int Age, string Service);
+public record Spy(int Id, string FullNames, int Age, string Service);

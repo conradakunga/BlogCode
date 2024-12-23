@@ -10,20 +10,20 @@ const string allSpiesKey = nameof(allSpiesKey);
 
 // Create an in-memory list to represent a database
 
-Spy[] allSpies =
+List<Spy> allSpies =
 [
-    new Spy("James Bond", 60, "MI-5"),
-    new Spy("Eve Moneypenny", 35, "MI-5"),
-    new Spy("Harry Pearce", 65, "MI-5"),
-    new Spy("Jason Bourne", 45, "CIA"),
-    new Spy("Evelyn Salt", 30, "CIA"),
-    new Spy("Vesper Lynd", 35, "MI-6"),
-    new Spy("Q", 30, "MI-6"),
-    new Spy("Ethan Hunt", 45, "IMF"),
-    new Spy("Luther Stickell", 48, "IMF"),
-    new Spy("Benji Dunn", 36, "IMF"),
-    new Spy("Adam Carter", 40, "MI-5"),
-    new Spy("Ros Myers", 37, "MI-5")
+    new Spy(1, "James Bond", 60, "MI-5"),
+    new Spy(2, "Eve Moneypenny", 35, "MI-5"),
+    new Spy(3, "Harry Pearce", 65, "MI-5"),
+    new Spy(4, "Jason Bourne", 45, "CIA"),
+    new Spy(5, "Evelyn Salt", 30, "CIA"),
+    new Spy(6, "Vesper Lynd", 35, "MI-6"),
+    new Spy(7, "Q", 30, "MI-6"),
+    new Spy(8, "Ethan Hunt", 45, "IMF"),
+    new Spy(9, "Luther Stickell", 48, "IMF"),
+    new Spy(10, "Benji Dunn", 36, "IMF"),
+    new Spy(11, "Adam Carter", 40, "MI-5"),
+    new Spy(12, "Ros Myers", 37, "MI-5")
 ];
 
 var builder = WebApplication.CreateBuilder(args);
@@ -100,7 +100,6 @@ app.MapGet("/GetSpiesHybridCache",
             };
 
 
-           
             return await cache.GetOrCreateAsync(allSpiesKey, async localCancellationToken =>
                 {
                     logger.LogInformation("Populating from the database");
@@ -112,6 +111,47 @@ app.MapGet("/GetSpiesHybridCache",
         })
     .WithName("GetSpiesFromHybridCache");
 
+app.MapGet("/ViewSpyHybridCache/{id:int}", (int id) =>
+{
+    // Try and find the spy in the cache
+    var spy = allSpies.SingleOrDefault(x => x.Id == id);
+
+    // If null, wasn't found
+    if (spy == null)
+        return Results.NotFound();
+
+    return Results.Ok(spy);
+}).WithName("ViewSpyFromCache");
+
+app.MapPost("/CreteSpiesHybridCache",
+        async (CreateSpyRequest request, HybridCache cache, CancellationToken token) =>
+        {
+            // Add the spy to the list. The ID generation is simplistic and should not be done
+            // like this in production as it isn't thread-safe
+            var newSpy = new Spy(allSpies.Count + 1, request.FullNames, request.Age, request.Service);
+            await AddSpyAsync(newSpy, token);
+            // Invalidate the cache
+            await cache.RemoveAsync(allSpiesKey, token);
+            // Here we should redirect to the new Spy
+            return Results.Created($"Spies/{newSpy.Id}", newSpy);
+        })
+    .WithName("CreateSpyWithHybridCache");
+
+app.MapDelete("/DeleteSpyHybridCache/{id:int}",
+        async (int id, HybridCache cache, CancellationToken token) =>
+        {
+            var removedSpies = allSpies.RemoveAll(x => x.Id == id);
+
+            // Check of any spies were removed
+            if (removedSpies == 0)
+                return Results.NotFound();
+
+            // If we are here, a spy was removed. Invalidate the cache
+            await cache.RemoveAsync(allSpiesKey, token);
+            // Return status
+            return Results.NoContent();
+        })
+    .WithName("DeleteSpyWithHybridCache");
 app.Run();
 
 return;
@@ -121,5 +161,12 @@ async Task<Spy[]> GetAllSpiesAsync(CancellationToken token)
 {
     // Wait for 5 seconds to simulate work
     await Task.Delay(TimeSpan.FromSeconds(5), token);
-    return allSpies;
+    return allSpies.ToArray();
+}
+
+async Task AddSpyAsync(Spy spy, CancellationToken token)
+{
+    // Wait for 5 seconds to simulate work
+    await Task.Delay(TimeSpan.FromSeconds(5), token);
+    allSpies.Add(spy);
 }
