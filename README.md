@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # December 2024
 
+**25 December 2024** - [Correctly Processing CSV Files](https://www.conradakunga.com/blog/correctly-processing-csv-files-in-c-net/) - how to correctly read and write CSV files
+
 **22 December 2024** - [Caching In .NET Applications & The Hybrid Cache](https://www.conradakunga.com/blog/caching-in-net-applications-the-hybrid-cache/) - two cache implementations and the improvements in the HybridCache
 
 **11 December 2024** - [Loading & Using Application Settings](https://www.conradakunga.com/blog/loading-using-application-settings/) - how to retrieve settings valies from an application.
