@@ -10,7 +10,7 @@ using CsvHelper.Configuration;
 // // Skip the first row, as it is a header
 // foreach (var line in rows.Skip(1))
 // {
-//     // Split each row into an array of columbs by comma
+//     // Split each row into an array of columns by comma
 //     var columns = line.Split(",");
 //     // Using the columns, create a spy
 //     spies.Add(new Spy(columns[0], Convert.ToInt32(columns[1]), columns[2]));
@@ -18,10 +18,23 @@ using CsvHelper.Configuration;
 
 {
     // Create a reader
+    using var reader = new StreamReader("Data.csv");
+    using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+    // Create an IEnumerable of Spy
+    var allSpies = csv.GetRecords<Spy>();
+    // Actually read the spy from file and process
+    foreach (var spy in allSpies)
+    {
+        Console.WriteLine($"Name {spy.Name}, Age {spy.Age}, Service {spy.Service}");
+    }
+}
+
+{
+    // Create a reader
     using var reader = new StreamReader("Data2.csv");
     // Create a csv reader
     using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
-    // Regiser our classmap
+    // Register our classmap
     csv.Context.RegisterClassMap<SpyMap>();
     // Create an IEnumerable of Spy
     var allSpies = csv.GetRecords<Spy>();
@@ -32,7 +45,7 @@ using CsvHelper.Configuration;
     }
 }
 {
-    // Cretate a configuration
+    // Create a configuration
     var config = new CsvConfiguration(CultureInfo.InvariantCulture)
     {
         HasHeaderRecord = false
@@ -54,8 +67,8 @@ using CsvHelper.Configuration;
 {
     List<Spy> spies =
     [
-        new Spy{Name="James Bond",Age=50,Service="MI-6"},
-        new Spy{Name="Vesper Lynd",Age=35,Service="MI-6"}
+        new Spy { Name = "James Bond", Age = 50, Service = "MI-6" },
+        new Spy { Name = "Vesper Lynd", Age = 35, Service = "MI-6" }
     ];
     var config = new CsvConfiguration(CultureInfo.InvariantCulture)
     {
@@ -68,8 +81,8 @@ using CsvHelper.Configuration;
 {
     List<Spy> spies =
     [
-        new Spy{Name="James Bond",Age=50,Service="MI-6"},
-        new Spy{Name="Vesper Lynd",Age=35,Service="MI-6"}
+        new Spy { Name = "James Bond", Age = 50, Service = "MI-6" },
+        new Spy { Name = "Vesper Lynd", Age = 35, Service = "MI-6" }
     ];
     using var writer = new StreamWriter("OutputNamedHeader.csv");
     using var csv = new CsvWriter(writer, CultureInfo.InvariantCulture);
