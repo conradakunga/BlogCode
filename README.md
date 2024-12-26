@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # December 2024
 
+**26 December 2024** - [Using The Lock In C# & .NET 9](https://www.conradakunga.com/blog/using-the-lock-in-c-net-9/) - how to use locks to write thread-safe code
+
 **25 December 2024** - [Correctly Processing CSV Files](https://www.conradakunga.com/blog/correctly-processing-csv-files-in-c-net/) - how to correctly read and write CSV files
 
 **22 December 2024** - [Caching In .NET Applications & The Hybrid Cache](https://www.conradakunga.com/blog/caching-in-net-applications-the-hybrid-cache/) - two cache implementations and the improvements in the HybridCache
