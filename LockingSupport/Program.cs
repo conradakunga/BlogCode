@@ -21,15 +21,15 @@ var account = new Account();
 List<Task> tasks = [];
 for (var i = 0; i < 25; i++)
 {
-    tasks.Add(Task.Run(async () =>
+    tasks.Add(Task.Run(() =>
     {
-        await account.Deposit(1000);
+        account.Deposit(1000);
         Log.Information("The balance after deposit is {Balance:#,0.00}", account.Balance);
     }));
 
-    tasks.Add(Task.Run(async () =>
+    tasks.Add(Task.Run(() =>
     {
-        await account.Withdraw(1000);
+        account.Withdraw(1000);
         Log.Information("The balance after withdrawal is {Balance:#,0.00}", account.Balance);
     }));
 }

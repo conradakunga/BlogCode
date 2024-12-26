@@ -2,19 +2,22 @@ namespace LockingSupport;
 
 public sealed class Account
 {
+    private readonly Lock _lock = new();
     public decimal Balance { get; private set; }
 
-    public async Task Deposit(decimal amount)
+    public void Deposit(decimal amount)
     {
-        // Simulate work to increment balance
-        await Task.Delay(TimeSpan.FromSeconds(1));
-        Balance += amount;
+        lock (_lock)
+        {
+            Balance += amount;
+        }
     }
 
-    public async Task Withdraw(decimal amount)
+    public void Withdraw(decimal amount)
     {
-        // Simulate work to decrement balance
-        await Task.Delay(TimeSpan.FromSeconds(1));
-        Balance -= amount;
+        using (_lock.EnterScope())
+        {
+            Balance -= amount;
+        }
     }
 }
