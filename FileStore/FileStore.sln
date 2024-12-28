@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStore", "FileStore\FileStore.csproj", "{137EFA86-C504-4770-8C36-2A69C55562C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStoreTests", "FileStoreTests\FileStoreTests.csproj", "{286FFCFA-81B5-4C62-8ACE-305A9BA004A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{137EFA86-C504-4770-8C36-2A69C55562C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{137EFA86-C504-4770-8C36-2A69C55562C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{137EFA86-C504-4770-8C36-2A69C55562C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{137EFA86-C504-4770-8C36-2A69C55562C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{286FFCFA-81B5-4C62-8ACE-305A9BA004A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{286FFCFA-81B5-4C62-8ACE-305A9BA004A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{286FFCFA-81B5-4C62-8ACE-305A9BA004A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{286FFCFA-81B5-4C62-8ACE-305A9BA004A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
