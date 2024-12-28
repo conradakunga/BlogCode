@@ -1,14 +1,18 @@
+using System;
+using System.IO;
 using System.Text;
-using FileStore;
+using System.Threading;
+using System.Threading.Tasks;
 using FileStore.Implementations;
 using FluentAssertions;
+using Xunit;
 
 namespace FileStoreTests;
 
-public class SqlLiteFileStoreTests
+public class SqlLiteFileStoreTests : IDisposable
 {
     private const string UserID = "user";
-    private const string ConnectionString = "Data Source=Files.db";
+    private const string ConnectionString = "Data Source=Testing.db";
 
     [Fact]
     public async Task NonExistent_ID_Check_Returns_False()
@@ -87,5 +91,13 @@ public class SqlLiteFileStoreTests
 
         // Assert the data hasn't changed
         data.Should().BeEquivalentTo(uploadData);
+
+        // Cleanup
+        await store.Delete(meta.ID);
+    }
+
+    public void Dispose()
+    {
+        File.Delete(ConnectionString);
     }
 }

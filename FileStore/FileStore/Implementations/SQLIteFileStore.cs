@@ -13,22 +13,21 @@ public sealed class SqlIteFileStore : IFileStore
         _connectionString = connectionString;
         _userID = userID;
         // Create table if it doesnt exist
-        const string sql = """
-                           create table main.Files
-                           (
-                               Id       TEXT not null
-                                   constraint pk_Files
-                                       primary key,
-                               FileName text not null,
-                               UserID   TEXT not null,
-                               Data     BLOB not null
-                           );
-                           
-                           create index main.ix_ID_Name
-                               on main.Files (Id, UserID, FileName);
-                           
-                           
-                           """;
+        const string tableSql = """
+                                create table main.Files
+                                (
+                                    Id       TEXT not null
+                                        constraint pk_Files
+                                            primary key,
+                                    FileName text not null,
+                                    UserID   TEXT not null,
+                                    Data     BLOB not null
+                                );
+                                """;
+        const string indexSql = """
+                                create index main.ix_ID_Name
+                                    on main.Files (Id, UserID, FileName);
+                                """;
         // Check if table exists
         using (var cn = new SqliteConnection(_connectionString))
         {
@@ -36,7 +35,8 @@ public sealed class SqlIteFileStore : IFileStore
                 "SELECT count(1) FROM sqlite_master WHERE type='table' AND name='Files'");
             if (meta == 0)
             {
-                cn.Execute(sql);
+                cn.Execute(tableSql);
+                cn.Execute(indexSql);
             }
         }
     }

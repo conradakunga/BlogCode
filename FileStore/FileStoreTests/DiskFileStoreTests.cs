@@ -1,7 +1,11 @@
-﻿using System.Text;
-using FileStore;
+﻿using System;
+using System.IO;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 using FileStore.Implementations;
 using FluentAssertions;
+using Xunit;
 
 namespace FileStoreTests;
 
@@ -69,7 +73,6 @@ public class DiskFileStoreTests
         // Assert the name is valid
         meta.FileName.Should().Be(fileName);
 
-
         // Assert Exists works
         var exists = await store.Exists(meta.ID);
         exists.Should().BeTrue();
@@ -87,5 +90,8 @@ public class DiskFileStoreTests
 
         // Assert the data hasn't changed
         data.Should().BeEquivalentTo(uploadData);
+        
+        // Cleanup
+        await store.Delete(meta.ID);
     }
 }
