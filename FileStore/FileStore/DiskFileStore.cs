@@ -1,6 +1,6 @@
 ﻿namespace FileStore;
 
-public sealed class DiskFileStore
+public sealed class DiskFileStore : IFileStore
 {
     private const string Metadata = "METADATA";
     private readonly string _fileStorePath;
