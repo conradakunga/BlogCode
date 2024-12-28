@@ -65,7 +65,7 @@ public sealed class DiskFileStore
         // Build expected path of the file & metadata file
         var storeFile = Path.Combine(_fileStorePath, id.ToString());
         var storeFileMetadata = Path.Combine(_fileStoreMetaDataPath, id.ToString());
-        if (!File.Exists(storeFileMetadata))
+        if (!File.Exists(storeFile))
             throw new FileNotFoundException("File not found", id.ToString());
 
         File.Delete(storeFile);
