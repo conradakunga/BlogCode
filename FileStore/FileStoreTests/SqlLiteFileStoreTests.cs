@@ -1,17 +1,19 @@
-﻿using System.Text;
+using System.Text;
 using FileStore;
 using FluentAssertions;
 
 namespace FileStoreTests;
 
-public class DiskFileStoreTests
+public class SqlLiteFileStoreTests
 {
     private const string UserID = "user";
+    private const string ConnectionString = "Data Source=Files.db";
 
     [Fact]
     public async Task NonExistent_ID_Check_Returns_False()
     {
-        var store = new DiskFileStore(Path.GetTempPath(), UserID);
+        const string userID = "user";
+        var store = new SqlIteFileStore(ConnectionString, userID);
         var exists = await store.Exists(Guid.NewGuid());
         exists.Should().BeFalse();
     }
@@ -19,7 +21,7 @@ public class DiskFileStoreTests
     [Fact]
     public async Task Download_NonExistent_ID_Throws_Exception()
     {
-        var store = new DiskFileStore(Path.GetTempPath(), UserID);
+        var store = new SqlIteFileStore(ConnectionString, UserID);
         var ex = await Record.ExceptionAsync(() => store.Download(Guid.NewGuid(), CancellationToken.None));
         ex.Should().BeOfType<FileNotFoundException>();
     }
@@ -27,7 +29,7 @@ public class DiskFileStoreTests
     [Fact]
     public async Task File_Upload_And_Delete_Is_Successful()
     {
-        var store = new DiskFileStore(Path.GetTempPath(), UserID);
+        var store = new SqlIteFileStore(ConnectionString, UserID);
         // Create a new temp file with some known text
         var testFile = Path.GetTempFileName();
         var uploadData = Encoding.Default.GetBytes("This is some test data");
@@ -52,7 +54,7 @@ public class DiskFileStoreTests
     public async Task File_Upload_And_Download_Is_Successful()
     {
         const string fileName = "File.txt";
-        var store = new DiskFileStore(Path.GetTempPath(), UserID);
+        var store = new SqlIteFileStore(ConnectionString, UserID);
         // Create a new temp file with some known text
         var testFile = Path.GetTempFileName();
         var uploadData = Encoding.Default.GetBytes("This is some test data");
@@ -67,7 +69,6 @@ public class DiskFileStoreTests
         meta.ID.Should().NotBeEmpty();
         // Assert the name is valid
         meta.FileName.Should().Be(fileName);
-
 
         // Assert Exists works
         var exists = await store.Exists(meta.ID);
