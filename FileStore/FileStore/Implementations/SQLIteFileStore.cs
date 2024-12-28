@@ -7,12 +7,16 @@ public sealed class SqlIteFileStore : IFileStore
 {
     private readonly string _connectionString;
     private readonly string _userID;
-
     public SqlIteFileStore(string connectionString, string userID)
+    
     {
         _connectionString = connectionString;
         _userID = userID;
+        //
         // Create table if it doesnt exist
+        //
+        
+        // Table scripts
         const string tableSql = """
                                 create table main.Files
                                 (
@@ -24,6 +28,7 @@ public sealed class SqlIteFileStore : IFileStore
                                     Data     BLOB not null
                                 );
                                 """;
+        
         const string indexSql = """
                                 create index main.ix_ID_Name
                                     on main.Files (Id, UserID, FileName);
@@ -55,10 +60,9 @@ public sealed class SqlIteFileStore : IFileStore
 
     public async Task<FileMetaData> Upload(Stream fileStream, string fileName, CancellationToken token)
     {
+        // Generate ID
         var id = Guid.CreateVersion7();
-
         token.ThrowIfCancellationRequested();
-
         byte[] data;
         using (var memoryStream = new MemoryStream())
         {

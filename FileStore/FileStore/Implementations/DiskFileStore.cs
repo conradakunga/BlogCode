@@ -2,7 +2,6 @@
 
 public sealed class DiskFileStore : IFileStore
 {
-    private const string Metadata = "METADATA";
     private readonly string _fileStorePath;
     private readonly string _fileStoreMetaDataPath;
 
@@ -10,10 +9,10 @@ public sealed class DiskFileStore : IFileStore
     {
         ArgumentException.ThrowIfNullOrEmpty(rootPath, nameof(rootPath));
         ArgumentException.ThrowIfNullOrEmpty(userID, nameof(userID));
-        // Setup the user specific folder for file storage
+        // Set up the user specific folder for file storage
         _fileStorePath = Path.Combine(rootPath, userID);
-        // Setup the user specific folder for file metadata storage
-        _fileStoreMetaDataPath = Path.Combine(rootPath, userID, Metadata);
+        // Set up the user specific folder for file metadata storage
+        _fileStoreMetaDataPath = Path.Combine(rootPath, userID, "METADATA");
 
         if (!Directory.Exists(_fileStorePath))
             Directory.CreateDirectory(_fileStorePath);
@@ -28,7 +27,6 @@ public sealed class DiskFileStore : IFileStore
         var storeFileMetaData = Path.Combine(_fileStoreMetaDataPath, id.ToString());
         if (!File.Exists(storeFileMetaData))
             throw new FileNotFoundException("File not found", id.ToString());
-
         return new FileMetaData(await File.ReadAllTextAsync(storeFileMetaData, token), id);
     }
 
@@ -36,17 +34,13 @@ public sealed class DiskFileStore : IFileStore
     {
         // Generate a new identifier
         var id = Guid.CreateVersion7();
-
         token.ThrowIfCancellationRequested();
-
         // Build file path. Past here, we cannot cancel
         var storeFile = Path.Combine(_fileStorePath, id.ToString());
         var storeFileMetaData = Path.Combine(_fileStoreMetaDataPath, id.ToString());
-
         // Write the file data
         await using (var stream = new FileStream(storeFile, FileMode.Create))
             await fileStream.CopyToAsync(stream, CancellationToken.None);
-
         // Write the file metadata
         await File.WriteAllTextAsync(storeFileMetaData, fileName, token);
         // Return metadata object
@@ -67,7 +61,6 @@ public sealed class DiskFileStore : IFileStore
         var storeFileMetadata = Path.Combine(_fileStoreMetaDataPath, id.ToString());
         if (!File.Exists(storeFile))
             throw new FileNotFoundException("File not found", id.ToString());
-
         File.Delete(storeFile);
         File.Delete(storeFileMetadata);
         return Task.CompletedTask;
@@ -77,12 +70,9 @@ public sealed class DiskFileStore : IFileStore
     {
         // Build expected path of the file
         var storeFile = Path.Combine(_fileStorePath, id.ToString());
-
         if (!File.Exists(storeFile))
             throw new FileNotFoundException("File not found", storeFile);
-
         token.ThrowIfCancellationRequested();
-
         // Return an async Stream
         return await Task.FromResult(new FileStream(storeFile, FileMode.Open, FileAccess.Read, FileShare.Read, 4096,
             true));
