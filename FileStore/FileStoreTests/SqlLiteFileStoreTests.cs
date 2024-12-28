@@ -1,5 +1,6 @@
 using System.Text;
 using FileStore;
+using FileStore.Implementations;
 using FluentAssertions;
 
 namespace FileStoreTests;

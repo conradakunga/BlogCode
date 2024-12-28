@@ -1,4 +1,4 @@
-﻿namespace FileStore;
+﻿namespace FileStore.Implementations;
 
 public sealed class DiskFileStore : IFileStore
 {

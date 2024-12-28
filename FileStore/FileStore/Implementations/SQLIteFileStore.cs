@@ -1,7 +1,7 @@
 using Dapper;
 using Microsoft.Data.Sqlite;
 
-namespace FileStore;
+namespace FileStore.Implementations;
 
 public sealed class SqlIteFileStore : IFileStore
 {
@@ -17,12 +17,17 @@ public sealed class SqlIteFileStore : IFileStore
                            create table main.Files
                            (
                                Id       TEXT not null
-                                   constraint Files_pk
+                                   constraint pk_Files
                                        primary key,
                                FileName text not null,
                                UserID   TEXT not null,
                                Data     BLOB not null
                            );
+                           
+                           create index main.ix_ID_Name
+                               on main.Files (Id, UserID, FileName);
+                           
+                           
                            """;
         // Check if table exists
         using (var cn = new SqliteConnection(_connectionString))
