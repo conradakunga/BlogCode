@@ -7,6 +7,22 @@ namespace FileStoreTests;
 public class DiskFileStoreTests
 {
     [Fact]
+    public async Task NonExistent_ID_Check_Returns_False()
+    {
+        var store = new DiskFileStore(Path.GetTempPath());
+        var exists = await store.Exists(Guid.NewGuid(), CancellationToken.None);
+        exists.Should().BeFalse();
+    }
+
+    [Fact]
+    public async Task Download_NonExistent_ID_Throws_Exception()
+    {
+        var store = new DiskFileStore(Path.GetTempPath());
+        var ex = await Record.ExceptionAsync(() => store.Download(Guid.NewGuid(), CancellationToken.None));
+        ex.Should().BeOfType<FileNotFoundException>();
+    }
+
+    [Fact]
     public async Task File_Upload_And_Download_Is_Successful()
     {
         var store = new DiskFileStore(Path.GetTempPath());

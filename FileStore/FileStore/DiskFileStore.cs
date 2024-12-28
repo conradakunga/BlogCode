@@ -6,6 +6,7 @@ public sealed class DiskFileStore
 
     public DiskFileStore(string fileStorePath)
     {
+        ArgumentException.ThrowIfNullOrEmpty(fileStorePath);
         _fileStorePath = fileStorePath;
     }
 
@@ -23,10 +24,10 @@ public sealed class DiskFileStore
         return id;
     }
 
-    public Task<bool> Exists(Guid id, CancellationToken token)
+    public async Task<bool> Exists(Guid id, CancellationToken token)
     {
         var fileStorePath = Path.Combine(_fileStorePath, id.ToString());
-        return Task.FromResult(File.Exists(fileStorePath));
+        return await Task.FromResult(File.Exists(fileStorePath));
     }
 
     public async Task<Stream> Download(Guid id, CancellationToken token)
