@@ -3,19 +3,21 @@
 public sealed class DiskFileStore
 {
     private readonly string _fileStorePath;
+    private readonly string _userID;
 
-    public DiskFileStore(string fileStorePath)
+    public DiskFileStore(string fileStorePath, string userID)
     {
         ArgumentException.ThrowIfNullOrEmpty(fileStorePath);
         _fileStorePath = fileStorePath;
+        _userID = userID;
     }
 
-    public async Task<Guid> Upload(Stream fileStream, string userID, CancellationToken token)
+    public async Task<Guid> Upload(Stream fileStream, CancellationToken token)
     {
         // Generate a new identifier
         var id = Guid.CreateVersion7();
         // Check if per-user directory exists, create if not
-        var fileStoreUserDirectory = Path.Combine(_fileStorePath, userID);
+        var fileStoreUserDirectory = Path.Combine(_fileStorePath, _userID);
         if (!Directory.Exists(fileStoreUserDirectory))
             Directory.CreateDirectory(fileStoreUserDirectory);
 
@@ -29,16 +31,16 @@ public sealed class DiskFileStore
         return id;
     }
 
-    public async Task<bool> Exists(Guid id, string userID)
+    public async Task<bool> Exists(Guid id)
     {
-        var fileStorePath = Path.Combine(_fileStorePath, userID, id.ToString());
+        var fileStorePath = Path.Combine(_fileStorePath, _userID, id.ToString());
         return await Task.FromResult(File.Exists(fileStorePath));
     }
 
-    public async Task<Stream> Download(Guid id, string userID, CancellationToken token)
+    public async Task<Stream> Download(Guid id, CancellationToken token)
     {
         // Build expected path of the file
-        var filePath = Path.Combine(_fileStorePath, userID, id.ToString());
+        var filePath = Path.Combine(_fileStorePath, _userID, id.ToString());
 
         if (!File.Exists(filePath))
             throw new FileNotFoundException("File not found", filePath);
