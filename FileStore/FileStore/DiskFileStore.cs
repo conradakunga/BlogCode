@@ -8,6 +8,7 @@ public sealed class DiskFileStore
     public DiskFileStore(string fileStorePath, string userID)
     {
         ArgumentException.ThrowIfNullOrEmpty(fileStorePath);
+        ArgumentException.ThrowIfNullOrEmpty(userID);
         _fileStorePath = fileStorePath;
         _userID = userID;
     }
