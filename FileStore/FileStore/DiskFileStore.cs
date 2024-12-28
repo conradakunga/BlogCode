@@ -10,8 +10,9 @@ public sealed class DiskFileStore
     {
         ArgumentException.ThrowIfNullOrEmpty(rootPath, nameof(rootPath));
         ArgumentException.ThrowIfNullOrEmpty(userID, nameof(userID));
-
+        // Setup the user specific folder for file storage
         _fileStorePath = Path.Combine(rootPath, userID);
+        // Setup the user specific folder for file metadata storage
         _fileStoreMetaDataPath = Path.Combine(rootPath, userID, Metadata);
 
         if (!Directory.Exists(_fileStorePath))
@@ -23,6 +24,7 @@ public sealed class DiskFileStore
 
     public async Task<FileMetaData> GetMetaData(Guid id, CancellationToken token)
     {
+        // Build expected path of the file
         var storeFileMetaData = Path.Combine(_fileStoreMetaDataPath, id.ToString());
         if (!File.Exists(storeFileMetaData))
             throw new FileNotFoundException("File not found", id.ToString());
@@ -53,12 +55,14 @@ public sealed class DiskFileStore
 
     public async Task<bool> Exists(Guid id)
     {
+        // Build expected path of the file
         var storeFile = Path.Combine(_fileStorePath, id.ToString());
         return await Task.FromResult(File.Exists(storeFile));
     }
 
     public Task Delete(Guid id)
     {
+        // Build expected path of the file & metadata file
         var storeFile = Path.Combine(_fileStorePath, id.ToString());
         var storeFileMetadata = Path.Combine(_fileStoreMetaDataPath, id.ToString());
         if (!File.Exists(storeFileMetadata))
