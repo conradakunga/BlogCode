@@ -60,13 +60,13 @@ app.MapGet("/v1/Download/{id:Guid}",
         // Get the metadata
         var meta = await store.GetMetaData(id, token);
 
-        if (!new FileExtensionContentTypeProvider().TryGetContentType(meta.Name, out var contentType))
+        if (!new FileExtensionContentTypeProvider().TryGetContentType(meta.FileName, out var contentType))
         {
             contentType = "application/octet-stream";
         }
 
         // Return file as attachment
-        return Results.File(await store.Download(id, token), contentType, meta.Name, enableRangeProcessing: true);
+        return Results.File(await store.Download(id, token), contentType, meta.FileName, enableRangeProcessing: true);
     });
 
 app.MapGet("/v1/MetaData/{id:Guid}",

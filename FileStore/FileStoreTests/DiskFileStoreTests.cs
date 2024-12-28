@@ -52,6 +52,7 @@ public class DiskFileStoreTests
     [Fact]
     public async Task File_Upload_And_Download_Is_Successful()
     {
+        const string fileName = "File.txt";
         var store = new DiskFileStore(Path.GetTempPath(), UserID);
         // Create a new temp file with some known text
         var testFile = Path.GetTempFileName();
@@ -59,12 +60,14 @@ public class DiskFileStoreTests
         // Save the temp file
         await File.WriteAllBytesAsync(testFile, uploadData);
         // Upload the file
-        var meta = await store.Upload(new FileStream(testFile, FileMode.Open), "File.txt", CancellationToken.None);
+        var meta = await store.Upload(new FileStream(testFile, FileMode.Open), fileName, CancellationToken.None);
 
         // Asser valid return
         meta.Should().NotBeNull();
         // Assert the ID is valid
         meta.ID.Should().NotBeEmpty();
+        // Assert the name is valid
+        meta.FileName.Should().Be(fileName);
 
 
         // Assert Exists works

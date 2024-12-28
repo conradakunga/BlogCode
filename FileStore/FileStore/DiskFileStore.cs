@@ -47,6 +47,7 @@ public sealed class DiskFileStore
 
         // Write the file metadata
         await File.WriteAllTextAsync(storeFileMetaData, fileName, token);
+        // Return metadata object
         return new FileMetaData(fileName, id);
     }
 
