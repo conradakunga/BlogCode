@@ -11,7 +11,7 @@ public class DiskFileStoreTests
     {
         const string userID = "user";
         var store = new DiskFileStore(Path.GetTempPath());
-        var exists = await store.Exists(Guid.NewGuid(), userID, CancellationToken.None);
+        var exists = await store.Exists(Guid.NewGuid(), userID);
         exists.Should().BeFalse();
     }
 
@@ -42,7 +42,7 @@ public class DiskFileStoreTests
 
 
         // Assert Exists works
-        var exists = await store.Exists(id, userID, CancellationToken.None);
+        var exists = await store.Exists(id, userID);
         exists.Should().BeTrue();
 
         // Download immediately
