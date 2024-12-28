@@ -10,12 +10,16 @@ public sealed class DiskFileStore
         _fileStorePath = fileStorePath;
     }
 
-    public async Task<Guid> Upload(Stream fileStream, CancellationToken token)
+    public async Task<Guid> Upload(Stream fileStream, string userID, CancellationToken token)
     {
         // Generate a new identifier
         var id = Guid.CreateVersion7();
-        // Write to disk
-        var fileStorePath = Path.Combine(_fileStorePath, id.ToString());
+        // Check if per-user directory exists, create if not
+        var fileStoreUserDirectory = Path.Combine(_fileStorePath, userID);
+        if (!Directory.Exists(fileStoreUserDirectory))
+            Directory.CreateDirectory(fileStoreUserDirectory);
+        // Build file path
+        var fileStorePath = Path.Combine(fileStoreUserDirectory, id.ToString());
         await using (var stream = new FileStream(fileStorePath, FileMode.Create))
         {
             await fileStream.CopyToAsync(stream, token);
@@ -24,16 +28,16 @@ public sealed class DiskFileStore
         return id;
     }
 
-    public async Task<bool> Exists(Guid id, CancellationToken token)
+    public async Task<bool> Exists(Guid id, string userID, CancellationToken token)
     {
-        var fileStorePath = Path.Combine(_fileStorePath, id.ToString());
+        var fileStorePath = Path.Combine(_fileStorePath, userID, id.ToString());
         return await Task.FromResult(File.Exists(fileStorePath));
     }
 
-    public async Task<Stream> Download(Guid id, CancellationToken token)
+    public async Task<Stream> Download(Guid id, string userID, CancellationToken token)
     {
         // Build expected path of the file
-        var filePath = Path.Combine(_fileStorePath, id.ToString());
+        var filePath = Path.Combine(_fileStorePath, userID, id.ToString());
 
         if (!File.Exists(filePath))
         {
