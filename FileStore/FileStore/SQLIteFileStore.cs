@@ -13,17 +13,17 @@ public sealed class SqlIteFileStore
         _connectionString = connectionString;
         _userID = userID;
         // Create table if it doesnt exist
-        var sql = """
-                  create table main.Files
-                  (
-                      Id       TEXT not null
-                          constraint Files_pk
-                              primary key,
-                      FileName text not null,
-                      UserID   TEXT not null,
-                      Data     BLOB not null
-                  );
-                  """;
+        const string sql = """
+                           create table main.Files
+                           (
+                               Id       TEXT not null
+                                   constraint Files_pk
+                                       primary key,
+                               FileName text not null,
+                               UserID   TEXT not null,
+                               Data     BLOB not null
+                           );
+                           """;
         // Check if table exists
         using (var cn = new SqliteConnection(_connectionString))
         {
