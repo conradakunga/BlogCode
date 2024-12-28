@@ -21,12 +21,10 @@ public sealed class DiskFileStore
 
         token.ThrowIfCancellationRequested();
 
-        // Build file path
+        // Build file path. Past here, we cannot cancel
         var fileStorePath = Path.Combine(fileStoreUserDirectory, id.ToString());
         await using (var stream = new FileStream(fileStorePath, FileMode.Create))
-        {
             await fileStream.CopyToAsync(stream, CancellationToken.None);
-        }
 
         return id;
     }
@@ -43,9 +41,7 @@ public sealed class DiskFileStore
         var filePath = Path.Combine(_fileStorePath, userID, id.ToString());
 
         if (!File.Exists(filePath))
-        {
             throw new FileNotFoundException("File not found", filePath);
-        }
 
         token.ThrowIfCancellationRequested();
 
