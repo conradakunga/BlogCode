@@ -3,7 +3,7 @@ using Microsoft.Data.Sqlite;
 
 namespace FileStore;
 
-public class SqlIteFileStore
+public sealed class SqlIteFileStore
 {
     private readonly string _connectionString;
     private readonly string _userID;

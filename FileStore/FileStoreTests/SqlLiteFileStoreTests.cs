@@ -12,8 +12,7 @@ public class SqlLiteFileStoreTests
     [Fact]
     public async Task NonExistent_ID_Check_Returns_False()
     {
-        const string userID = "user";
-        var store = new SqlIteFileStore(ConnectionString, userID);
+        var store = new SqlIteFileStore(ConnectionString, UserID);
         var exists = await store.Exists(Guid.NewGuid());
         exists.Should().BeFalse();
     }
