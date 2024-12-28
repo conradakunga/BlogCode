@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStore", "FileStore\File
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStoreTests", "FileStoreTests\FileStoreTests.csproj", "{286FFCFA-81B5-4C62-8ACE-305A9BA004A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{037F02EC-0E36-43FF-A220-943330401CC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{286FFCFA-81B5-4C62-8ACE-305A9BA004A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{286FFCFA-81B5-4C62-8ACE-305A9BA004A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{286FFCFA-81B5-4C62-8ACE-305A9BA004A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{037F02EC-0E36-43FF-A220-943330401CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{037F02EC-0E36-43FF-A220-943330401CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{037F02EC-0E36-43FF-A220-943330401CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{037F02EC-0E36-43FF-A220-943330401CC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -2,54 +2,84 @@
 
 public sealed class DiskFileStore
 {
+    private const string Metadata = "METADATA";
     private readonly string _fileStorePath;
-    private readonly string _userID;
+    private readonly string _fileStoreMetaDataPath;
 
-    public DiskFileStore(string fileStorePath, string userID)
+    public DiskFileStore(string rootPath, string userID)
     {
-        ArgumentException.ThrowIfNullOrEmpty(fileStorePath);
-        ArgumentException.ThrowIfNullOrEmpty(userID);
-        _fileStorePath = fileStorePath;
-        _userID = userID;
+        ArgumentException.ThrowIfNullOrEmpty(rootPath, nameof(rootPath));
+        ArgumentException.ThrowIfNullOrEmpty(userID, nameof(userID));
+
+        _fileStorePath = Path.Combine(rootPath, userID);
+        _fileStoreMetaDataPath = Path.Combine(rootPath, userID, Metadata);
+
+        if (!Directory.Exists(_fileStorePath))
+            Directory.CreateDirectory(_fileStorePath);
+
+        if (!Directory.Exists(_fileStoreMetaDataPath))
+            Directory.CreateDirectory(_fileStoreMetaDataPath);
     }
 
-    public async Task<Guid> Upload(Stream fileStream, CancellationToken token)
+    public async Task<FileMetaData> GetMetaData(Guid id, CancellationToken token)
+    {
+        var storeFileMetaData = Path.Combine(_fileStoreMetaDataPath, id.ToString());
+        if (!File.Exists(storeFileMetaData))
+            throw new FileNotFoundException("File not found", id.ToString());
+
+        return new FileMetaData(await File.ReadAllTextAsync(storeFileMetaData, token), id);
+    }
+
+    public async Task<FileMetaData> Upload(Stream fileStream, string fileName, CancellationToken token)
     {
         // Generate a new identifier
         var id = Guid.CreateVersion7();
-        // Check if per-user directory exists, create if not
-        var fileStoreUserDirectory = Path.Combine(_fileStorePath, _userID);
-        if (!Directory.Exists(fileStoreUserDirectory))
-            Directory.CreateDirectory(fileStoreUserDirectory);
 
         token.ThrowIfCancellationRequested();
 
         // Build file path. Past here, we cannot cancel
-        var fileStorePath = Path.Combine(fileStoreUserDirectory, id.ToString());
-        await using (var stream = new FileStream(fileStorePath, FileMode.Create))
+        var storeFile = Path.Combine(_fileStorePath, id.ToString());
+        var storeFileMetaData = Path.Combine(_fileStoreMetaDataPath, id.ToString());
+
+        // Write the file data
+        await using (var stream = new FileStream(storeFile, FileMode.Create))
             await fileStream.CopyToAsync(stream, CancellationToken.None);
 
-        return id;
+        // Write the file metadata
+        await File.WriteAllTextAsync(storeFileMetaData, fileName, token);
+        return new FileMetaData(fileName, id);
     }
 
     public async Task<bool> Exists(Guid id)
     {
-        var fileStorePath = Path.Combine(_fileStorePath, _userID, id.ToString());
-        return await Task.FromResult(File.Exists(fileStorePath));
+        var storeFile = Path.Combine(_fileStorePath, id.ToString());
+        return await Task.FromResult(File.Exists(storeFile));
+    }
+
+    public Task Delete(Guid id)
+    {
+        var storeFile = Path.Combine(_fileStorePath, id.ToString());
+        var storeFileMetadata = Path.Combine(_fileStoreMetaDataPath, id.ToString());
+        if (!File.Exists(storeFileMetadata))
+            throw new FileNotFoundException();
+
+        File.Delete(storeFile);
+        File.Delete(storeFileMetadata);
+        return Task.CompletedTask;
     }
 
     public async Task<Stream> Download(Guid id, CancellationToken token)
     {
         // Build expected path of the file
-        var filePath = Path.Combine(_fileStorePath, _userID, id.ToString());
+        var storeFile = Path.Combine(_fileStorePath, id.ToString());
 
-        if (!File.Exists(filePath))
-            throw new FileNotFoundException("File not found", filePath);
+        if (!File.Exists(storeFile))
+            throw new FileNotFoundException("File not found", storeFile);
 
         token.ThrowIfCancellationRequested();
 
         // Return an async Stream
-        return await Task.FromResult(new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read, 4096,
+        return await Task.FromResult(new FileStream(storeFile, FileMode.Open, FileAccess.Read, FileShare.Read, 4096,
             true));
     }
 }

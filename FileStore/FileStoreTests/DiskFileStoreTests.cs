@@ -26,30 +26,56 @@ public class DiskFileStoreTests
     }
 
     [Fact]
-    public async Task File_Upload_And_Download_Is_Successful()
+    public async Task File_Upload_And_Delete_Is_Successful()
     {
-        var store = new DiskFileStore(Path.GetTempPath(), "user");
+        var store = new DiskFileStore(Path.GetTempPath(), UserID);
         // Create a new temp file with some known text
         var testFile = Path.GetTempFileName();
         var uploadData = Encoding.Default.GetBytes("This is some test data");
         // Save the temp file
         await File.WriteAllBytesAsync(testFile, uploadData);
         // Upload the file
-        var id = await store.Upload(new FileStream(testFile, FileMode.Open), CancellationToken.None);
+        var meta = await store.Upload(new FileStream(testFile, FileMode.Open), "File.txt", CancellationToken.None);
 
+        // Assert Exists works
+        var exists = await store.Exists(meta.ID);
+        exists.Should().BeTrue();
+
+        // Delete
+        await store.Delete(meta.ID);
+
+        // Asser Exists no longer works
+        exists = await store.Exists(meta.ID);
+        exists.Should().BeFalse();
+    }
+
+    [Fact]
+    public async Task File_Upload_And_Download_Is_Successful()
+    {
+        var store = new DiskFileStore(Path.GetTempPath(), UserID);
+        // Create a new temp file with some known text
+        var testFile = Path.GetTempFileName();
+        var uploadData = Encoding.Default.GetBytes("This is some test data");
+        // Save the temp file
+        await File.WriteAllBytesAsync(testFile, uploadData);
+        // Upload the file
+        var meta = await store.Upload(new FileStream(testFile, FileMode.Open), "File.txt", CancellationToken.None);
+
+        // Asser valid return
+        meta.Should().NotBeNull();
         // Assert the ID is valid
-        id.Should().NotBeEmpty();
+        meta.ID.Should().NotBeEmpty();
 
 
         // Assert Exists works
-        var exists = await store.Exists(id);
+        var exists = await store.Exists(meta.ID);
         exists.Should().BeTrue();
 
         // Download immediately
         byte[] data;
         using (var ms = new MemoryStream())
         {
-            await (await store.Download(id, CancellationToken.None)).CopyToAsync(ms);
+            await (await store.Download(meta.ID, CancellationToken.None)).CopyToAsync(ms);
             data = ms.ToArray();
         }
 
