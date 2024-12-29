@@ -1,5 +1,6 @@
 using API;
 using FileStore.Implementations;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.Options;
@@ -12,7 +13,13 @@ Log.Logger = new LoggerConfiguration()
 try
 {
     var builder = WebApplication.CreateBuilder(args);
+    // Setup logging
     builder.Services.AddSerilog();
+    // Set up the upload limit at infrastructure level
+    builder.Services.Configure<FormOptions>(options =>
+    {
+        options.MultipartBodyLengthLimit = 5 * 1024 * 1024; // 10 MB
+    });
     builder.Services.Configure<DiskFileStoreSettings>(builder.Configuration.GetSection(nameof(DiskFileStoreSettings)));
     var app = builder.Build();
 

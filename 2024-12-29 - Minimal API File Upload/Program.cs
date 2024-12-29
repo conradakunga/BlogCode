@@ -1,5 +1,12 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.AspNetCore.Http.Features;
 
+var builder = WebApplication.CreateBuilder(args);
+// Configure max form data size
+builder.Services.Configure<FormOptions>(options =>
+{
+    // Prevent upload of data greater than 5MB
+    options.MultipartBodyLengthLimit = 5 * 1024 * 1024;
+});
 var app = builder.Build();
 
 // The location that uploaded files will be stored
@@ -9,9 +16,6 @@ const string fileStoreLocation = "/Users/rad/Projects/Temp/Conrad/Uploaded";
 // Create the location, if it doesn't exist
 if (!Directory.Exists(fileStoreLocation))
     Directory.CreateDirectory(fileStoreLocation);
-
-// The max file size, 5MB
-const int maxFileSize = 5 * 1024 * 1024;
 
 // Allowed file extensions
 string[] allowedFileExtensions = [".jpg", ".jpeg", ".png", ".gif", ".pdf", ".docx", ".xlsx"];
@@ -25,17 +29,10 @@ app.MapPost("/Upload", async (IFormFile file, ILogger<Program> logger) =>
             return Results.BadRequest("File is empty");
         }
 
-        // Abort for files larger than the threshold
-        if (file.Length > maxFileSize)
-        {
-            logger.LogWarning("Uploaded file {FileName} is larger than the allowed size", maxFileSize);
-            return Results.BadRequest("File larger than the allowed size");
-        }
-
         // Validate the extension. If the extension is NOT in the array of allowed
         // extensions, block it
         var fileExtension = Path.GetExtension(file.FileName);
-        if (allowedFileExtensions.All(ext => fileExtension != ext))
+        if (!allowedFileExtensions.Contains(fileExtension))
         {
             logger.LogWarning("Uploaded file {FileName} is a {Extension} which is blocked", file.FileName,
                 fileExtension);
