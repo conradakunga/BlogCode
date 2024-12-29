@@ -52,7 +52,7 @@ public sealed class SqlIteFileStore : IFileStore
     {
         await using (var cn = new SqliteConnection(_connectionString))
         {
-            var meta = cn.QuerySingleOrDefault<FileMetaData>(
+            var meta = await cn.QuerySingleOrDefaultAsync(
                 "SELECT Id, FileName, DateCreated from Files Where Id = @id AND UserID = @userID",
                 new { id, userID = _userID });
             if (meta == null)
@@ -112,7 +112,7 @@ public sealed class SqlIteFileStore : IFileStore
     {
         await using (var cn = new SqliteConnection(_connectionString))
         {
-            var data = cn.QuerySingleOrDefault<byte[]>(
+            var data = await cn.QuerySingleOrDefaultAsync<byte[]>(
                 "SELECT Data from Files Where Id = @id AND UserID = @userID", new { id, userID = _userID });
             if (data == null)
                 throw new FileNotFoundException("File not found", id.ToString());

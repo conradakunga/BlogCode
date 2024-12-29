@@ -9,8 +9,8 @@ public sealed class DiskFileStore : IFileStore
 
     public DiskFileStore(string rootPath, string userID)
     {
-        ArgumentException.ThrowIfNullOrEmpty(rootPath, nameof(rootPath));
-        ArgumentException.ThrowIfNullOrEmpty(userID, nameof(userID));
+        ArgumentException.ThrowIfNullOrEmpty(rootPath);
+        ArgumentException.ThrowIfNullOrEmpty(userID);
         // Set up the user specific folder for file storage
         _fileStorePath = Path.Combine(rootPath, userID);
         // Set up the user specific folder for file metadata storage
