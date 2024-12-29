@@ -80,4 +80,4 @@ app.MapGet("/v1/MetaData/{id:Guid}",
         return Results.Ok(await store.GetMetaData(id, token));
     });
 
-app.Run();
+await app.RunAsync();
