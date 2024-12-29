@@ -73,7 +73,7 @@ public sealed class SqlIteFileStore : IFileStore
             data = memoryStream.ToArray();
         }
 
-        var dateCrated = DateTime.Now;
+        var dateCrated = DateTime.UtcNow;
         var param = new DynamicParameters();
         param.Add("Id", id);
         param.Add("FileName", fileName);

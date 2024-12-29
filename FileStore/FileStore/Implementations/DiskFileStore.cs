@@ -45,7 +45,7 @@ public sealed class DiskFileStore : IFileStore
         await using (var stream = new FileStream(storeFile, FileMode.Create))
             await fileStream.CopyToAsync(stream, CancellationToken.None);
         // Create metadata
-        var meta = new FileMetaData(fileName, id, DateTime.Now);
+        var meta = new FileMetaData(fileName, id, DateTime.UtcNow);
         // Write the file metadata
         await File.WriteAllTextAsync(storeFileMetaData, JsonSerializer.Serialize(meta), token);
         // Return metadata object
