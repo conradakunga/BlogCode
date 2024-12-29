@@ -18,7 +18,7 @@ try
     // Set up the upload limit at infrastructure level
     builder.Services.Configure<FormOptions>(options =>
     {
-        options.MultipartBodyLengthLimit = 5 * 1024 * 1024; // 10 MB
+        options.MultipartBodyLengthLimit = 5 * 1024 * 1024;
     });
     builder.Services.Configure<DiskFileStoreSettings>(builder.Configuration.GetSection(nameof(DiskFileStoreSettings)));
     var app = builder.Build();
