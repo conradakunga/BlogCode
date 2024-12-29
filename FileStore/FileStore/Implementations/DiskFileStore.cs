@@ -1,4 +1,6 @@
-﻿namespace FileStore.Implementations;
+﻿using System.Text.Json;
+
+namespace FileStore.Implementations;
 
 public sealed class DiskFileStore : IFileStore
 {
@@ -27,7 +29,8 @@ public sealed class DiskFileStore : IFileStore
         var storeFileMetaData = Path.Combine(_fileStoreMetaDataPath, id.ToString());
         if (!File.Exists(storeFileMetaData))
             throw new FileNotFoundException("File not found", id.ToString());
-        return new FileMetaData(await File.ReadAllTextAsync(storeFileMetaData, token), id);
+        var meta = JsonSerializer.Deserialize<FileMetaData>(await File.ReadAllTextAsync(storeFileMetaData, token))!;
+        return meta;
     }
 
     public async Task<FileMetaData> Upload(Stream fileStream, string fileName, CancellationToken token)
@@ -41,10 +44,12 @@ public sealed class DiskFileStore : IFileStore
         // Write the file data
         await using (var stream = new FileStream(storeFile, FileMode.Create))
             await fileStream.CopyToAsync(stream, CancellationToken.None);
+        // Create metadata
+        var meta = new FileMetaData(fileName, id, DateTime.Now);
         // Write the file metadata
-        await File.WriteAllTextAsync(storeFileMetaData, fileName, token);
+        await File.WriteAllTextAsync(storeFileMetaData, JsonSerializer.Serialize(meta), token);
         // Return metadata object
-        return new FileMetaData(fileName, id);
+        return meta;
     }
 
     public async Task<bool> Exists(Guid id)

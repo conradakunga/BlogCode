@@ -7,28 +7,30 @@ public sealed class SqlIteFileStore : IFileStore
 {
     private readonly string _connectionString;
     private readonly string _userID;
+
     public SqlIteFileStore(string connectionString, string userID)
-    
+
     {
         _connectionString = connectionString;
         _userID = userID;
         //
         // Create table if it doesnt exist
         //
-        
+
         // Table scripts
         const string tableSql = """
                                 create table main.Files
                                 (
-                                    Id       TEXT not null
+                                    Id          TEXT not null
                                         constraint pk_Files
                                             primary key,
-                                    FileName text not null,
-                                    UserID   TEXT not null,
-                                    Data     BLOB not null
+                                    FileName    text not null,
+                                    UserID      TEXT not null,
+                                    Data        BLOB not null,
+                                    UploadDate TEXT not null
                                 );
                                 """;
-        
+
         const string indexSql = """
                                 create index main.ix_ID_Name
                                     on main.Files (Id, UserID, FileName);
@@ -51,7 +53,8 @@ public sealed class SqlIteFileStore : IFileStore
         await using (var cn = new SqliteConnection(_connectionString))
         {
             var meta = cn.QuerySingleOrDefault<FileMetaData>(
-                "SELECT Id, FileName from Files Where Id = @id AND UserID = @userID", new { id, userID = _userID });
+                "SELECT Id, FileName, DateCreated from Files Where Id = @id AND UserID = @userID",
+                new { id, userID = _userID });
             if (meta == null)
                 throw new FileNotFoundException("File not found", id.ToString());
             return meta;
@@ -70,18 +73,20 @@ public sealed class SqlIteFileStore : IFileStore
             data = memoryStream.ToArray();
         }
 
+        var dateCrated = DateTime.Now;
         var param = new DynamicParameters();
         param.Add("Id", id);
         param.Add("FileName", fileName);
         param.Add("UserID", _userID);
         param.Add("Data", data);
+        param.Add("DateCreated", dateCrated);
 
         await using (var cn = new SqliteConnection(_connectionString))
         {
             await cn.ExecuteAsync("INSERT INTO Files VALUES (@Id, @FileName, @UserID,@Data)", param);
         }
 
-        return new FileMetaData(fileName, id);
+        return new FileMetaData(fileName, id, dateCrated);
     }
 
     public async Task<bool> Exists(Guid id)

@@ -44,9 +44,9 @@ app.MapPost("/v1/Upload/",
             return Results.BadRequest();
 
         var store = new DiskFileStore(settings.Value.Path, userID);
-        var id = await store.Upload(file.OpenReadStream(), file.FileName, token);
-        // Return the new ID
-        return Results.Ok(id);
+        var fileMetaData = await store.Upload(file.OpenReadStream(), file.FileName, token);
+        // Return the metadata
+        return Results.Ok(fileMetaData);
     }).DisableAntiforgery();
 
 app.MapGet("/v1/Download/{id:Guid}",

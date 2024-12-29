@@ -1,3 +1,3 @@
 namespace FileStore;
 
-public record FileMetaData(string FileName, Guid ID);
+public record FileMetaData(string FileName, Guid ID, DateTime UploadDate);

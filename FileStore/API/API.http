@@ -1,6 +1,22 @@
 @API_HostAddress = http://localhost:5001
 
-GET {{API_HostAddress}}/weatherforecast/
+@ID=29B46E91-C919-448C-95D6-19CB19A2F4F9
+
+### Is the API running
+GET {{API_HostAddress}}/Info/ HTTP/2
 Accept: application/json
 
-###
+### Does the ID Exist
+HEAD {{API_HostAddress}}/v1/Exists/{{ID}}
+userID: Conrad
+Accept: application/json
+
+### Delete The ID
+DELETE {{API_HostAddress}}/v1/Delete/{{ID}}
+userID: Conrad
+Accept: application/json
+
+### Get file metadata
+GET {{API_HostAddress}}/v1/MetaData/{{ID}}
+userID: Conrad
+Accept: application/json

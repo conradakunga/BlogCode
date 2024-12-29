@@ -67,6 +67,8 @@ public class DiskFileStoreTests
         meta.ID.Should().NotBeEmpty();
         // Assert the name is valid
         meta.FileName.Should().Be(fileName);
+        // Assert valid date creation
+        meta.UploadDate.Should().BeCloseTo(DateTime.Now,TimeSpan.FromMilliseconds(100));
 
         // Assert Exists works
         var exists = await store.Exists(meta.ID);
