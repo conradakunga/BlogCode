@@ -18,12 +18,13 @@ try
     // Set up the upload limit at infrastructure level
     builder.Services.Configure<FormOptions>(options =>
     {
+        // Default to 5MB
         options.MultipartBodyLengthLimit = 5 * 1024 * 1024;
     });
     builder.Services.Configure<DiskFileStoreSettings>(builder.Configuration.GetSection(nameof(DiskFileStoreSettings)));
     var app = builder.Build();
 
-    app.MapMethods("/v1/Exists/{id:Guid}", ["Head"],
+    app.MapMethods("/v1/Exists/{id:Guid}", [HttpMethod.Head.Method],
         async (Guid id, [FromHeader] string userID, IOptions<DiskFileStoreSettings> settings) =>
         {
             var store = new DiskFileStore(settings.Value.Path, userID);
