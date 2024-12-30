@@ -123,7 +123,7 @@ app.MapGet("/ViewSpyHybridCache/{id:int}", (int id) =>
     return Results.Ok(spy);
 }).WithName("ViewSpyFromCache");
 
-app.MapPost("/CreteSpiesHybridCache",
+app.MapPost("/CreateSpyHybridCache",
         async (CreateSpyRequest request, HybridCache cache, CancellationToken token) =>
         {
             // Add the spy to the list. The ID generation is simplistic and should not be done
