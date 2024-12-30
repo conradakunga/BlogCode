@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # December 2024
 
+**30 December 2024** - [Downloading Files With ASP.NET Core Minimal API](https://www.conradakunga.com/blog/downloading-files-with-aspnet-core-minimal-api/) - How to download files with Minimal API
+
 **29 December 2024** - [Uploading Files With ASP.NET Core Minimal API](https://www.conradakunga.com/blog/uploading-files-with-aspnet-core-minimal-api/) - How to upload files with Minimal API
 
 **26 December 2024** - [Using The Lock In C# & .NET 9](https://www.conradakunga.com/blog/using-the-lock-in-c-net-9/) - how to use locks to write thread-safe code
