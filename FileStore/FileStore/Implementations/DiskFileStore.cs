@@ -66,7 +66,9 @@ public sealed class DiskFileStore : IFileStore
         var storeFileMetadata = Path.Combine(_fileStoreMetaDataPath, id.ToString());
         if (!File.Exists(storeFile))
             throw new FileNotFoundException("File not found", id.ToString());
+        // Delete file
         File.Delete(storeFile);
+        // Delete metadata
         File.Delete(storeFileMetadata);
         return Task.CompletedTask;
     }
