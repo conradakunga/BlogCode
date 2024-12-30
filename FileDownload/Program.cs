@@ -45,7 +45,7 @@ app.MapGet("/Download/{fileName}", (string fileName, ILogger<Program> logger) =>
         // Open a stream to the file
         var stream = new FileStream(storeFileName, FileMode.Open, FileAccess.Read, FileShare.Read, 4096,
             true);
-        // Return file as attachment asynchronously in chunks directly to browser
+        // Return file inline asynchronously in chunks directly to browser
         return Results.File(stream, contentType, enableRangeProcessing: true);
     })
     .WithName("DownloadFile");
