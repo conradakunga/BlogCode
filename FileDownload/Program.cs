@@ -2,7 +2,6 @@ using System.Net.Mime;
 using Microsoft.AspNetCore.StaticFiles;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddHttpContextAccessor();
 var app = builder.Build();
 
 // The location that uploaded files will be stored
