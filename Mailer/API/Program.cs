@@ -64,7 +64,7 @@ app.MapPost("/v3/SendGmailNormalAlert", async (Alert alert, GmailAlertSender mai
 app.MapPost("/v3/SendGmailEmergencyAlert", async ([FromBody] Alert alert, [FromServices] GmailAlertSender mailer,
     [FromServices] ILogger<Program> logger) =>
 {
-    logger.LogInformation("{Info}", mailer.Configuration);
+    logger.LogInformation("Active Configuration: {Configuration}", mailer.Configuration);
     var gmailAlert = new GmailAlert(alert.Title, alert.Message);
     var alertID = await mailer.SendAlert(gmailAlert);
     return Results.Ok(alertID);
