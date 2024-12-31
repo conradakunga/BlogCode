@@ -1,3 +1,5 @@
+namespace API;
+
 public class Settings
 {
     public string GmailUserName { get; set; } = "";
