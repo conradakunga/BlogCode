@@ -10,8 +10,13 @@ builder.Services.Configure<Settings>(builder.Configuration.GetSection(nameof(Set
 var appSettings = new Settings();
 builder.Configuration.GetSection(nameof(Settings)).Bind(appSettings);
 // Register our GmailSender, passing our settings
-builder.Services.AddSingleton(new GmailAlertSender(appSettings.GmailPort, appSettings.GmailUserName,
-    appSettings.GmailPassword));
+builder.Services.AddSingleton<GmailAlertSender>(provider =>
+{
+    // Fetch the settings from the DI Container
+    var settings = provider.GetService<IOptions<Settings>>()!.Value;
+    return new GmailAlertSender(settings.GmailPort, settings.GmailUserName,
+        settings.GmailPassword);
+});
 var app = builder.Build();
 
 app.MapPost("/v1/SendGmailNormalAlert", async (Alert alert) =>
