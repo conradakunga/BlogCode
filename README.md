@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # December 2024
 
+**31 December 2024** - [Dependency Injection In C# & .NET Part 1 - Introduction & Basic Implementation](https://www.conradakunga.com/blog/dependency-injection-in-c-net-introduction-and-basic-implementation/) - Dependency Injection Introduction
+
 **30 December 2024** - [Downloading Files With ASP.NET Core Minimal API](https://www.conradakunga.com/blog/downloading-files-with-aspnet-core-minimal-api/) - How to download files with Minimal API
 
 **29 December 2024** - [Uploading Files With ASP.NET Core Minimal API](https://www.conradakunga.com/blog/uploading-files-with-aspnet-core-minimal-api/) - How to upload files with Minimal API
