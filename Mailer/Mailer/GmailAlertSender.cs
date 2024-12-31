@@ -2,17 +2,18 @@ namespace Mailer;
 
 public sealed class GmailAlertSender
 {
-    private int _port;
-    private string _username;
-    private string _password;
+    private readonly int _port;
+    private readonly string _username;
+    private readonly string _password;
+    public string Configuration { get; }
 
     public GmailAlertSender(int port, string username, string password)
     {
         _port = port;
         _username = username;
         _password = password;
+        Configuration = $"Configuration - Port: {_port}; Username: {_username}; Password: {_password}";
     }
-
     public async Task<string> SendAlert(GmailAlert message)
     {
         await Task.Delay(TimeSpan.FromSeconds(5));

@@ -2,11 +2,13 @@ namespace Mailer;
 
 public sealed class Office365AlertSender
 {
-    private string _key;
+    private readonly string _key;
+    public string Configuration { get; }
 
     public Office365AlertSender(string key)
     {
         _key = key;
+        Configuration = $"Configuration - Key: {_key}";
     }
 
     public async Task<string> SendAlert(Office365Alert message)

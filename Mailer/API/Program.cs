@@ -4,11 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
+// Register our settings for DI
 builder.Services.Configure<Settings>(builder.Configuration.GetSection(nameof(Settings)));
-
-// Declare our class and bind it to the settings
-var appSettings = new Settings();
-builder.Configuration.GetSection(nameof(Settings)).Bind(appSettings);
 // Register our GmailSender, passing our settings
 builder.Services.AddSingleton<GmailAlertSender>(provider =>
 {
@@ -64,8 +61,10 @@ app.MapPost("/v3/SendGmailNormalAlert", async (Alert alert, GmailAlertSender mai
     return Results.Ok(alertID);
 });
 
-app.MapPost("/v3/SendGmailEmergencyAlert", async ([FromBody] Alert alert, [FromServices] GmailAlertSender mailer) =>
+app.MapPost("/v3/SendGmailEmergencyAlert", async ([FromBody] Alert alert, [FromServices] GmailAlertSender mailer,
+    [FromServices] ILogger<Program> logger) =>
 {
+    logger.LogInformation("{Info}", mailer.Configuration);
     var gmailAlert = new GmailAlert(alert.Title, alert.Message);
     var alertID = await mailer.SendAlert(gmailAlert);
     return Results.Ok(alertID);
