@@ -1,6 +1,6 @@
 namespace API;
 
-public class Settings
+public class GmailSettings
 {
     public string GmailUserName { get; set; } = "";
     public string GmailPassword { get; set; } = "";
