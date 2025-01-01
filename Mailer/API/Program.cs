@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Register our settings for DI
 builder.Services.Configure<GmailSettings>(builder.Configuration.GetSection(nameof(GmailSettings)));
 builder.Services.Configure<Office365Settings>(builder.Configuration.GetSection(nameof(Office365Settings)));
+builder.Services.Configure<ZohoSettings>(builder.Configuration.GetSection(nameof(ZohoSettings)));
 // Register our GmailSender, passing our settings
 builder.Services.AddSingleton<GmailAlertSender>(provider =>
 {
@@ -31,13 +32,21 @@ builder.Services.AddSingleton<Office365AlertSender>(provider =>
 //     return new Office365AlertSender(settings.Key);
 // });
 
-// Register our generic Gmail sender, passing our settings
+// // Register our generic Gmail sender, passing our settings
+// builder.Services.AddSingleton<IAlertSender>(provider =>
+// {
+//     // Fetch the settings from the DI Container
+//     var settings = provider.GetService<IOptions<GmailSettings>>()!.Value;
+//     return new GmailAlertSender(settings.GmailPort, settings.GmailUserName,
+//         settings.GmailPassword);
+// });
+
+// Register our generic Zoho sender, passing our settings
 builder.Services.AddSingleton<IAlertSender>(provider =>
 {
     // Fetch the settings from the DI Container
-    var settings = provider.GetService<IOptions<GmailSettings>>()!.Value;
-    return new GmailAlertSender(settings.GmailPort, settings.GmailUserName,
-        settings.GmailPassword);
+    var settings = provider.GetService<IOptions<ZohoSettings>>()!.Value;
+    return new ZohoAlertSender(settings.OrganizationID, settings.SecretKey);
 });
 
 var app = builder.Build();
