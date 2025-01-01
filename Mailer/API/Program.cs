@@ -22,6 +22,24 @@ builder.Services.AddSingleton<Office365AlertSender>(provider =>
     var settings = provider.GetService<IOptions<Office365Settings>>()!.Value;
     return new Office365AlertSender(settings.Key);
 });
+
+// // Register our generic office365 sender, passing our settings
+// builder.Services.AddSingleton<IAlertSender>(provider =>
+// {
+//     // Fetch the settings from the DI Container
+//     var settings = provider.GetService<IOptions<Office365Settings>>()!.Value;
+//     return new Office365AlertSender(settings.Key);
+// });
+
+// Register our generic Gmail sender, passing our settings
+builder.Services.AddSingleton<IAlertSender>(provider =>
+{
+    // Fetch the settings from the DI Container
+    var settings = provider.GetService<IOptions<GmailSettings>>()!.Value;
+    return new GmailAlertSender(settings.GmailPort, settings.GmailUserName,
+        settings.GmailPassword);
+});
+
 var app = builder.Build();
 
 app.MapPost("/v1/SendGmailNormalAlert", async (Alert alert) =>
@@ -91,6 +109,24 @@ app.MapPost("/v4/SendOffice365EmergencyAlert", async ([FromBody] Alert alert,
     logger.LogInformation("Active Configuration: {Configuration}", mailer.Configuration);
     var office365Alert = new Office365Alert(alert.Title, alert.Message);
     var alertID = await mailer.SendAlert(office365Alert);
+    return Results.Ok(alertID);
+});
+
+app.MapPost("/v5/SendNormalAlert", async ([FromBody] Alert alert,
+    [FromServices] IAlertSender mailer) =>
+{
+    // Map the client provide alert to the server side alert
+    var genericAlert = new GeneralAlert(alert.Title, alert.Message);
+    var alertID = await mailer.SendAlert(genericAlert);
+    return Results.Ok(alertID);
+});
+app.MapPost("/v5/SendEmergencyAlert", async ([FromBody] Alert alert,
+    [FromServices] IAlertSender mailer, [FromServices] ILogger<Program> logger) =>
+{
+    logger.LogInformation("Active Configuration: {Configuration}", mailer.Configuration);
+    // Map the client provide alert to the server side alert
+    var genericAlert = new GeneralAlert(alert.Title, alert.Message);
+    var alertID = await mailer.SendAlert(genericAlert);
     return Results.Ok(alertID);
 });
 

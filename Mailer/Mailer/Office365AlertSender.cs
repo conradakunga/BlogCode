@@ -1,6 +1,6 @@
 namespace Mailer;
 
-public sealed class Office365AlertSender
+public sealed class Office365AlertSender : IAlertSender
 {
     private readonly string _key;
     public string Configuration { get; }
@@ -12,6 +12,13 @@ public sealed class Office365AlertSender
     }
 
     public async Task<string> SendAlert(Office365Alert message)
+    {
+        await Task.Delay(TimeSpan.FromSeconds(5));
+        return Guid.NewGuid().ToString();
+    }
+
+    // New method that sends a generic GeneralAlert
+    public async Task<string> SendAlert(GeneralAlert message)
     {
         await Task.Delay(TimeSpan.FromSeconds(5));
         return Guid.NewGuid().ToString();
