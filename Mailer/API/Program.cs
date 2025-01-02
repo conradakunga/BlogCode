@@ -26,6 +26,14 @@ builder.Services.AddSingleton<Office365AlertSender>(provider =>
     return new Office365AlertSender(settings.Key);
 });
 
+// Register our Zoho sender, passing our settings
+builder.Services.AddSingleton<ZohoAlertSender>(provider =>
+{
+    // Fetch the settings from the DI Container
+    var settings = provider.GetService<IOptions<ZohoSettings>>()!.Value;
+    return new ZohoAlertSender(settings.OrganizationID, settings.SecretKey);
+});
+
 // Create an instance of the class to hold the settings
 var generalSettings = new GeneralSettings();
 // Bind the new class to the settings defined in the appsettings.json
@@ -65,6 +73,31 @@ switch (generalSettings.AlertSender)
 
 // Add support for OptionsMonitor
 builder.Services.AddSingleton<IOptionsMonitor<GeneralSettings>, OptionsMonitor<GeneralSettings>>();
+
+// Add support for an AlertSender factory
+builder.Services.AddSingleton<IAlertSenderFactory, AlertSenderFactory>();
+
+// Keyed services registration
+// Register GmailAlertSender as a keyed singleton
+builder.Services.AddKeyedSingleton<IAlertSender, GmailAlertSender>(AlertSender.Gmail, (provider, _) =>
+{
+    var settings = provider.GetRequiredService<IOptions<GmailSettings>>().Value;
+    return new GmailAlertSender(settings.GmailPort, settings.GmailUserName, settings.GmailPassword);
+});
+
+// Register Office365AlertSender as a keyed singleton
+builder.Services.AddKeyedSingleton<IAlertSender, Office365AlertSender>(AlertSender.Office365, (provider, _) =>
+{
+    var settings = provider.GetRequiredService<IOptions<Office365Settings>>().Value;
+    return new Office365AlertSender(settings.Key);
+});
+
+// Register ZohoAlertSender as a keyed singleton
+builder.Services.AddKeyedSingleton<IAlertSender, ZohoAlertSender>(AlertSender.Zoho, (provider, _) =>
+{
+    var settings = provider.GetRequiredService<IOptions<ZohoSettings>>().Value;
+    return new ZohoAlertSender(settings.OrganizationID, settings.SecretKey);
+});
 
 var app = builder.Build();
 
@@ -123,7 +156,7 @@ app.MapPost("/v6/SendEmergencyAlert", async ([FromBody] Alert alert,
 {
     var settings = settingsMonitor.CurrentValue;
     logger.LogInformation("Current Sender: {Configuration}", settings.AlertSender);
-    IAlertSender mailer = null!;
+    IAlertSender mailer;
     switch (settings.AlertSender)
     {
         case AlertSender.Gmail:
@@ -143,6 +176,75 @@ app.MapPost("/v6/SendEmergencyAlert", async ([FromBody] Alert alert,
             throw new ArgumentException("Configured alert sender not found");
     }
 
+    var genericAlert = new GeneralAlert(alert.Title, alert.Message);
+    await mailer.SendAlert(genericAlert);
+
+    return Results.Ok();
+});
+
+app.MapPost("/v7/SendEmergencyAlert", async ([FromBody] Alert alert,
+    IOptionsMonitor<GeneralSettings> settingsMonitor, [FromServices] IAlertSenderFactory factory,
+    [FromServices] ILogger<Program> logger) =>
+{
+    var settings = settingsMonitor.CurrentValue;
+    logger.LogInformation("Current Sender: {Configuration}", settings.AlertSender);
+    // Create a mailer using the injected factory
+    var mailer = factory.CreateAlertSender(settings.AlertSender);
+    var genericAlert = new GeneralAlert(alert.Title, alert.Message);
+    await mailer.SendAlert(genericAlert);
+
+    return Results.Ok();
+});
+
+app.MapPost("/v8/SendEmergencyAlert", async ([FromBody] Alert alert,
+    IOptionsMonitor<GeneralSettings> settingsMonitor, IServiceProvider provider,
+    [FromServices] ILogger<Program> logger) =>
+{
+    var settings = settingsMonitor.CurrentValue;
+    logger.LogInformation("Current Sender: {Configuration}", settings.AlertSender);
+    // Retrieve sender from DI 
+    IAlertSender mailer = settings.AlertSender switch
+    {
+        AlertSender.Gmail => provider.GetRequiredService<GmailAlertSender>(),
+        AlertSender.Office365 => provider.GetRequiredService<Office365AlertSender>(),
+        AlertSender.Zoho => provider.GetRequiredService<ZohoAlertSender>(),
+        _ => throw new ArgumentException("Unsupported alert sender selected")
+    };
+    var genericAlert = new GeneralAlert(alert.Title, alert.Message);
+    await mailer.SendAlert(genericAlert);
+
+    return Results.Ok();
+});
+
+app.MapPost("/v9/SendEmergencyAlert", async ([FromBody] Alert alert, IOptionsMonitor<GeneralSettings> settingsMonitor,
+    [FromKeyedServices(AlertSender.Zoho)] IAlertSender zohoAlertSender,
+    [FromKeyedServices(AlertSender.Office365)] IAlertSender office365AlertSender,
+    [FromKeyedServices(AlertSender.Gmail)] IAlertSender gmailAlertSender, [FromServices] ILogger<Program> logger) =>
+{
+    var settings = settingsMonitor.CurrentValue;
+    logger.LogInformation("Current Sender: {Configuration}", settings.AlertSender);
+    // Retrieve sender from DI 
+    IAlertSender mailer = settings.AlertSender switch
+    {
+        AlertSender.Gmail => gmailAlertSender,
+        AlertSender.Office365 => office365AlertSender,
+        AlertSender.Zoho => zohoAlertSender,
+        _ => throw new ArgumentException("Unsupported alert sender selected")
+    };
+    var genericAlert = new GeneralAlert(alert.Title, alert.Message);
+    await mailer.SendAlert(genericAlert);
+
+    return Results.Ok();
+});
+
+app.MapPost("/v10/SendEmergencyAlert", async ([FromBody] Alert alert,
+    IOptionsMonitor<GeneralSettings> settingsMonitor, IServiceProvider provider,
+    [FromServices] ILogger<Program> logger) =>
+{
+    var settings = settingsMonitor.CurrentValue;
+    logger.LogInformation("Current Sender: {Configuration}", settings.AlertSender);
+    // Retrieve sender from DI 
+    var mailer = provider.GetRequiredKeyedService<IAlertSender>(settings.AlertSender);
     var genericAlert = new GeneralAlert(alert.Title, alert.Message);
     await mailer.SendAlert(genericAlert);
 
