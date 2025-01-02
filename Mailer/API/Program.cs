@@ -63,31 +63,15 @@ switch (generalSettings.AlertSender)
         break;
 }
 
-var app = builder.Build();
+// Add support for OptionsMonitor
+builder.Services.AddSingleton<IOptionsMonitor<GeneralSettings>, OptionsMonitor<GeneralSettings>>();
 
-app.MapPost("/v1/SendGmailNormalAlert", async (Alert alert) =>
-{
-    var mailer =
-        new GmailAlertSender(400, "username", "password");
-    var gmailAlert = new GmailAlert(alert.Title, alert.Message);
-    var alertID = await mailer.SendAlert(gmailAlert);
-    return Results.Ok(alertID);
-});
+var app = builder.Build();
 
 app.MapPost("/v1/SendGmailEmergencyAlert", async (Alert alert) =>
 {
     var mailer =
         new GmailAlertSender(400, "username", "password");
-    var gmailAlert = new GmailAlert(alert.Title, alert.Message);
-    var alertID = await mailer.SendAlert(gmailAlert);
-    return Results.Ok(alertID);
-});
-
-app.MapPost("/v2/SendGmailNormalAlert", async (Alert alert, IOptions<GmailSettings> settings) =>
-{
-    var gmailSettings = settings.Value;
-    var mailer =
-        new GmailAlertSender(gmailSettings.GmailPort, gmailSettings.GmailUserName, gmailSettings.GmailPassword);
     var gmailAlert = new GmailAlert(alert.Title, alert.Message);
     var alertID = await mailer.SendAlert(gmailAlert);
     return Results.Ok(alertID);
@@ -103,26 +87,12 @@ app.MapPost("/v2/SendGmailEmergencyAlert", async (Alert alert, IOptions<GmailSet
     return Results.Ok(alertID);
 });
 
-app.MapPost("/v3/SendGmailNormalAlert", async (Alert alert, GmailAlertSender mailer) =>
-{
-    var gmailAlert = new GmailAlert(alert.Title, alert.Message);
-    var alertID = await mailer.SendAlert(gmailAlert);
-    return Results.Ok(alertID);
-});
-
 app.MapPost("/v3/SendGmailEmergencyAlert", async ([FromBody] Alert alert, [FromServices] GmailAlertSender mailer,
     [FromServices] ILogger<Program> logger) =>
 {
     logger.LogInformation("Active Configuration: {Configuration}", mailer.Configuration);
     var gmailAlert = new GmailAlert(alert.Title, alert.Message);
     var alertID = await mailer.SendAlert(gmailAlert);
-    return Results.Ok(alertID);
-});
-
-app.MapPost("/v4/SendOffice365NormalAlert", async (Alert alert, Office365AlertSender mailer) =>
-{
-    var office365Alert = new Office365Alert(alert.Title, alert.Message);
-    var alertID = await mailer.SendAlert(office365Alert);
     return Results.Ok(alertID);
 });
 
@@ -135,14 +105,6 @@ app.MapPost("/v4/SendOffice365EmergencyAlert", async ([FromBody] Alert alert,
     return Results.Ok(alertID);
 });
 
-app.MapPost("/v5/SendNormalAlert", async ([FromBody] Alert alert,
-    [FromServices] IAlertSender mailer) =>
-{
-    // Map the client provide alert to the server side alert
-    var genericAlert = new GeneralAlert(alert.Title, alert.Message);
-    var alertID = await mailer.SendAlert(genericAlert);
-    return Results.Ok(alertID);
-});
 app.MapPost("/v5/SendEmergencyAlert", async ([FromBody] Alert alert,
     [FromServices] IAlertSender mailer, [FromServices] ILogger<Program> logger) =>
 {
@@ -151,6 +113,40 @@ app.MapPost("/v5/SendEmergencyAlert", async ([FromBody] Alert alert,
     var genericAlert = new GeneralAlert(alert.Title, alert.Message);
     var alertID = await mailer.SendAlert(genericAlert);
     return Results.Ok(alertID);
+});
+
+
+app.MapPost("/v6/SendEmergencyAlert", async ([FromBody] Alert alert,
+    IOptionsMonitor<GeneralSettings> settingsMonitor, IOptions<GmailSettings> gmailOptions,
+    IOptions<Office365Settings> office365Options, IOptions<ZohoSettings> zohoOptions,
+    [FromServices] ILogger<Program> logger) =>
+{
+    var settings = settingsMonitor.CurrentValue;
+    logger.LogInformation("Current Sender: {Configuration}", settings.AlertSender);
+    IAlertSender mailer = null!;
+    switch (settings.AlertSender)
+    {
+        case AlertSender.Gmail:
+            var gmailSettings = gmailOptions.Value;
+            mailer = new GmailAlertSender(gmailSettings.GmailPort, gmailSettings.GmailUserName,
+                gmailSettings.GmailPassword);
+            break;
+        case AlertSender.Office365:
+            var office365Settings = office365Options.Value;
+            mailer = new Office365AlertSender(office365Settings.Key);
+            break;
+        case AlertSender.Zoho:
+            var zohoSettings = zohoOptions.Value;
+            mailer = new ZohoAlertSender(zohoSettings.OrganizationID, zohoSettings.SecretKey);
+            break;
+        default:
+            throw new ArgumentException("Configured alert sender not found");
+    }
+
+    var genericAlert = new GeneralAlert(alert.Title, alert.Message);
+    await mailer.SendAlert(genericAlert);
+
+    return Results.Ok();
 });
 
 app.Run();
