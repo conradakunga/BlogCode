@@ -216,28 +216,7 @@ app.MapPost("/v8/SendEmergencyAlert", async ([FromBody] Alert alert,
     return Results.Ok();
 });
 
-app.MapPost("/v9/SendEmergencyAlert", async ([FromBody] Alert alert, IOptionsMonitor<GeneralSettings> settingsMonitor,
-    [FromKeyedServices(AlertSender.Zoho)] IAlertSender zohoAlertSender,
-    [FromKeyedServices(AlertSender.Office365)] IAlertSender office365AlertSender,
-    [FromKeyedServices(AlertSender.Gmail)] IAlertSender gmailAlertSender, [FromServices] ILogger<Program> logger) =>
-{
-    var settings = settingsMonitor.CurrentValue;
-    logger.LogInformation("Current Sender: {Configuration}", settings.AlertSender);
-    // Retrieve sender from DI 
-    IAlertSender mailer = settings.AlertSender switch
-    {
-        AlertSender.Gmail => gmailAlertSender,
-        AlertSender.Office365 => office365AlertSender,
-        AlertSender.Zoho => zohoAlertSender,
-        _ => throw new ArgumentException("Unsupported alert sender selected")
-    };
-    var genericAlert = new GeneralAlert(alert.Title, alert.Message);
-    await mailer.SendAlert(genericAlert);
-
-    return Results.Ok();
-});
-
-app.MapPost("/v10/SendEmergencyAlert", async ([FromBody] Alert alert,
+app.MapPost("/v9/SendEmergencyAlert", async ([FromBody] Alert alert,
     IOptionsMonitor<GeneralSettings> settingsMonitor, IServiceProvider provider,
     [FromServices] ILogger<Program> logger) =>
 {
