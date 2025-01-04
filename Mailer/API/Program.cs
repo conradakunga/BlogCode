@@ -230,4 +230,56 @@ app.MapPost("/v9/SendEmergencyAlert", async ([FromBody] Alert alert,
     return Results.Ok();
 });
 
+app.MapPost("/v10/SendEmergencyAlert", async ([FromBody] Alert alert, GmailAlertSender gmailAlertSender,
+    Office365AlertSender office365AlertSender, ZohoAlertSender zohoAlertSender,
+    [FromServices] ILogger<Program> logger) =>
+{
+    // Create the alert
+    var genericAlert = new GeneralAlert(alert.Title, alert.Message);
+    // Create the Zoho task that always runs
+    var zohoTask = zohoAlertSender.SendAlert(genericAlert);
+    if (TimeOnly.FromDateTime(DateTime.Now) < new TimeOnly(12, 0, 0, 0))
+    {
+        // It is before midday. Use the gmail Sender, and also send a copy using Zoho.
+        // Create two tasks for this work and run them in parallel
+        var gmailTask = gmailAlertSender.SendAlert(genericAlert);
+        var morningResults = await Task.WhenAll(gmailTask, zohoTask);
+        return Results.Ok(morningResults);
+    }
+
+    // It is after midday. Use the gmail Sender, and also send a copy using Zoho.
+    // Create two tasks for this work and run them in parallel
+    var office365Task = office365AlertSender.SendAlert(genericAlert);
+    var afternoonResults = await Task.WhenAll(office365Task, zohoTask);
+    return Results.Ok(afternoonResults);
+});
+
+app.MapPost("/v11/SendEmergencyAlert", async ([FromBody] Alert alert,
+    IServiceProvider provider, [FromServices] ILogger<Program> logger) =>
+{
+    // Retrieve the senders from DI
+    var zohoAlertSender = provider.GetRequiredService<ZohoAlertSender>();
+    var office365AlertSender = provider.GetRequiredService<Office365AlertSender>();
+    var gmailAlertSender = provider.GetRequiredService<GmailAlertSender>();
+
+    // Create the alert
+    var genericAlert = new GeneralAlert(alert.Title, alert.Message);
+    // Create the Zoho task that always runs
+    var zohoTask = zohoAlertSender.SendAlert(genericAlert);
+    if (TimeOnly.FromDateTime(DateTime.Now) < new TimeOnly(12, 0, 0, 0))
+    {
+        // It is before midday. Use the gmail Sender, and also send a copy using Zoho.
+        // Create task for this work and then in parallel with Zoho
+        var gmailTask = gmailAlertSender.SendAlert(genericAlert);
+        var morningResults = await Task.WhenAll(gmailTask, zohoTask);
+        return Results.Ok(morningResults);
+    }
+
+    // It is after midday. Use the gmail Sender, and also send a copy using Zoho.
+    // Create task for this work and then in parallel with Zoho
+    var office365Task = office365AlertSender.SendAlert(genericAlert);
+    var afternoonResults = await Task.WhenAll(office365Task, zohoTask);
+    return Results.Ok(afternoonResults);
+});
+
 app.Run();
