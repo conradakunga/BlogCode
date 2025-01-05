@@ -2,8 +2,15 @@ using API;
 using Mailer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using Serilog;
+
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .CreateLogger();
 
 var builder = WebApplication.CreateBuilder(args);
+// Register serilog
+builder.Services.AddSerilog();
 // Register our settings for DI
 builder.Services.Configure<GmailSettings>(builder.Configuration.GetSection(nameof(GmailSettings)));
 builder.Services.Configure<Office365Settings>(builder.Configuration.GetSection(nameof(Office365Settings)));
@@ -79,10 +86,10 @@ builder.Services.AddSingleton<IAlertSenderFactory, AlertSenderFactory>();
 
 // Keyed services registration
 // Register GmailAlertSender as a keyed singleton
-builder.Services.AddKeyedSingleton<IAlertSender, GmailAlertSender>(AlertSender.Gmail, (provider, _) =>
+builder.Services.AddKeyedSingleton<IAlertSender, FakeGmailAlertSender>(AlertSender.Gmail, (provider, _) =>
 {
     var settings = provider.GetRequiredService<IOptions<GmailSettings>>().Value;
-    return new GmailAlertSender(settings.GmailPort, settings.GmailUserName, settings.GmailPassword);
+    return new FakeGmailAlertSender(settings.GmailPort, settings.GmailUserName, settings.GmailPassword);
 });
 
 // Register Office365AlertSender as a keyed singleton
@@ -97,6 +104,13 @@ builder.Services.AddKeyedSingleton<IAlertSender, ZohoAlertSender>(AlertSender.Zo
 {
     var settings = provider.GetRequiredService<IOptions<ZohoSettings>>().Value;
     return new ZohoAlertSender(settings.OrganizationID, settings.SecretKey);
+});
+
+// Register GmailAlert sender that can have swapped implementations
+builder.Services.AddSingleton<IGmailAlertSender, FakeGmailAlertSender>(provider =>
+{
+    var settings = provider.GetRequiredService<IOptions<GmailSettings>>().Value;
+    return new FakeGmailAlertSender(settings.GmailPort, settings.GmailUserName, settings.GmailPassword);
 });
 
 var app = builder.Build();
@@ -177,9 +191,9 @@ app.MapPost("/v6/SendEmergencyAlert", async ([FromBody] Alert alert,
     }
 
     var genericAlert = new GeneralAlert(alert.Title, alert.Message);
-    await mailer.SendAlert(genericAlert);
+    var result = await mailer.SendAlert(genericAlert);
 
-    return Results.Ok();
+    return Results.Ok(result);
 });
 
 app.MapPost("/v7/SendEmergencyAlert", async ([FromBody] Alert alert,
@@ -191,9 +205,9 @@ app.MapPost("/v7/SendEmergencyAlert", async ([FromBody] Alert alert,
     // Create a mailer using the injected factory
     var mailer = factory.CreateAlertSender(settings.AlertSender);
     var genericAlert = new GeneralAlert(alert.Title, alert.Message);
-    await mailer.SendAlert(genericAlert);
+    var result = await mailer.SendAlert(genericAlert);
 
-    return Results.Ok();
+    return Results.Ok(result);
 });
 
 app.MapPost("/v8/SendEmergencyAlert", async ([FromBody] Alert alert,
@@ -211,9 +225,8 @@ app.MapPost("/v8/SendEmergencyAlert", async ([FromBody] Alert alert,
         _ => throw new ArgumentException("Unsupported alert sender selected")
     };
     var genericAlert = new GeneralAlert(alert.Title, alert.Message);
-    await mailer.SendAlert(genericAlert);
-
-    return Results.Ok();
+    var result = await mailer.SendAlert(genericAlert);
+    return Results.Ok(result);
 });
 
 app.MapPost("/v9/SendEmergencyAlert", async ([FromBody] Alert alert,
@@ -225,9 +238,8 @@ app.MapPost("/v9/SendEmergencyAlert", async ([FromBody] Alert alert,
     // Retrieve sender from DI 
     var mailer = provider.GetRequiredKeyedService<IAlertSender>(settings.AlertSender);
     var genericAlert = new GeneralAlert(alert.Title, alert.Message);
-    await mailer.SendAlert(genericAlert);
-
-    return Results.Ok();
+    var result = await mailer.SendAlert(genericAlert);
+    return Results.Ok(result);
 });
 
 app.MapPost("/v10/SendEmergencyAlert", async ([FromBody] Alert alert, GmailAlertSender gmailAlertSender,
@@ -280,6 +292,15 @@ app.MapPost("/v11/SendEmergencyAlert", async ([FromBody] Alert alert,
     var office365Task = office365AlertSender.SendAlert(genericAlert);
     var afternoonResults = await Task.WhenAll(office365Task, zohoTask);
     return Results.Ok(afternoonResults);
+});
+
+app.MapPost("/v12/SendEmergencyAlert", async ([FromBody] Alert alert,
+    IServiceProvider provider, [FromServices] ILogger<Program> logger) =>
+{
+    var genericAlert = new GeneralAlert(alert.Title, alert.Message);
+    var gmailAlertSender = provider.GetRequiredService<IGmailAlertSender>();
+    var result = await gmailAlertSender.SendAlert(genericAlert);
+    return Results.Ok(result);
 });
 
 app.Run();

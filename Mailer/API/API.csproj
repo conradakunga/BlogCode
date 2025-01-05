@@ -10,4 +10,8 @@
     <ProjectReference Include="..\Mailer\Mailer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+  </ItemGroup>
+
 </Project>

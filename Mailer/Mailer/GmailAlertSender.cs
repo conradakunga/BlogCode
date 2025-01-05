@@ -1,6 +1,6 @@
 namespace Mailer;
 
-public sealed class GmailAlertSender : IAlertSender
+public sealed class GmailAlertSender : IGmailAlertSender
 {
     private readonly int _port;
     private readonly string _username;
