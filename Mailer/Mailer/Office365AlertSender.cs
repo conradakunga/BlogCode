@@ -1,6 +1,6 @@
 namespace Mailer;
 
-public sealed class Office365AlertSender : IAlertSender
+public sealed class Office365AlertSender : IOffice365AlertSender
 {
     private readonly string _key;
     public string Configuration { get; }

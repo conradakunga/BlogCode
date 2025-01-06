@@ -19,7 +19,7 @@ public sealed class FakeGmailAlertSender : IGmailAlertSender
 
     public Task<string> SendAlert(GeneralAlert message)
     {
-        Log.Information("FAKE sending alert - {Title} : {Body}", message.Title, message.Message);
-        return Task.FromResult(Guid.NewGuid().ToString());
+        Log.Information("FAKE Gmail sending alert - {Title} : {Body}", message.Title, message.Message);
+        return Task.FromResult(Guid.Parse("FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF").ToString());
     }
 }
