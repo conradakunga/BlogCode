@@ -16,6 +16,6 @@ public sealed class FakeOffice365AlertSender : IOffice365AlertSender
     public Task<string> SendAlert(GeneralAlert message)
     {
         Log.Information("FAKE Office 365 sending alert - {Title} : {Body}", message.Title, message.Message);
-        return Task.FromResult(Guid.Parse("EEEEEEEE-EEEE-EEEE-EEEE-EEEEEEEEEEEE").ToString());
+        return Task.FromResult(Guid.Parse("eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee").ToString());
     }
 }

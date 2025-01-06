@@ -18,6 +18,6 @@ public sealed class FakeZohoAlertSender : IZohoAlertSender
     public Task<string> SendAlert(GeneralAlert message)
     {
         Log.Information("FAKE Zoho sending alert - {Title} : {Body}", message.Title, message.Message);
-        return Task.FromResult(Guid.Parse("FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF").ToString());
+        return Task.FromResult(Guid.Parse("dddddddd-dddd-dddd-dddd-dddddddddddd").ToString());
     }
 }
