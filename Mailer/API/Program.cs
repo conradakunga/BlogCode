@@ -363,6 +363,41 @@ app.MapPost("/v13/SendEmergencyAlert", async ([FromBody] Alert alert,
     return Results.Ok(afternoonResults);
 });
 
+app.MapPost("/v14/SendEmergencyAlert", async ([FromBody] Alert alert,
+    IServiceProvider provider, [FromServices] TimeProvider timeProvider, [FromServices] ILogger<Program> logger) =>
+{
+    // Retrieve the senders from DI
+    var zohoAlertSender = provider.GetKeyedService<IZohoAlertSender>(AlertSender.Zoho)!;
+    var office365AlertSender = provider.GetKeyedService<IOffice365AlertSender>(AlertSender.Office365)!;
+    var gmailAlertSender = provider.GetKeyedService<IGmailAlertSender>(AlertSender.Gmail)!;
+
+    // Create the alpha alert
+    var genericAlert = new GeneralAlert(alert.Title, alert.Message);
+    var senderAlpha = new GeneralAlertSenderAlpha(zohoAlertSender);
+    var alphaResult = await senderAlpha.SendAlert(genericAlert.Title, genericAlert.Message);
+
+    // Create the beta alert
+    var senderBeta = new GeneralAlertSenderBeta();
+    //
+    // Other logic here
+    //
+
+    // Set the sender to Zoho
+    senderBeta.AlertSender = zohoAlertSender;
+    var betaResult = await senderBeta.SendAlert(genericAlert.Title, genericAlert.Message);
+    // Reset the sender to Office365
+    senderBeta.AlertSender = office365AlertSender;
+    betaResult = await senderBeta.SendAlert(genericAlert.Title, genericAlert.Message);
+
+    // Create the charlie result
+    var senderCharlie = new GeneralAlertSenderCharlie();
+    // Send using Zoho
+    var charlieResult = await senderCharlie.SendAlert(zohoAlertSender, genericAlert.Title, genericAlert.Message);
+    // Send using Office
+    charlieResult = await senderCharlie.SendAlert(office365AlertSender, genericAlert.Title, genericAlert.Message);
+    
+    return Results.Ok();
+});
 app.Run();
 
 public abstract partial class Program;
