@@ -145,6 +145,14 @@ builder.Services.AddSingleton<IGmailAlertSender, FakeGmailAlertSender>(provider 
 // Register the system time provider
 builder.Services.AddSingleton(TimeProvider.System);
 
+// Register a singleton service
+builder.Services.AddSingleton<SingletonNumberGenerator>();
+// Register a transient service
+builder.Services.AddTransient<TransientNumberGenerator>();
+// Register our scoped services
+builder.Services.AddScoped<ScopedNumberGenerator>();
+builder.Services.AddScoped<ScopedComplexService>();
+
 var app = builder.Build();
 
 app.MapPost("/v1/SendGmailEmergencyAlert", async (Alert alert) =>
@@ -395,9 +403,28 @@ app.MapPost("/v14/SendEmergencyAlert", async ([FromBody] Alert alert,
     var charlieResult = await senderCharlie.SendAlert(zohoAlertSender, genericAlert.Title, genericAlert.Message);
     // Send using Office
     charlieResult = await senderCharlie.SendAlert(office365AlertSender, genericAlert.Title, genericAlert.Message);
-    
+
     return Results.Ok();
 });
+
+app.MapPost("/v15/Singleton",
+    (SingletonNumberGenerator first, SingletonNumberGenerator second) =>
+    {
+        return Results.Ok(new[] { first.Number, second.Number });
+    });
+
+app.MapPost("/v15/Transient",
+    (TransientNumberGenerator first, TransientNumberGenerator second) =>
+    {
+        return Results.Ok(new[] { first.Number, second.Number });
+    });
+
+app.MapPost("/v15/Scoped",
+    (ScopedNumberGenerator generator, ScopedComplexService complexService) =>
+    {
+        return Results.Ok(new[] { generator.Number, complexService.Number });
+    });
+
 app.Run();
 
 public abstract partial class Program;
