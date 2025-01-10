@@ -1,6 +1,10 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+# January 2025
+
+**10 January 2025** - [Unit Testing Fractional Values In C# & .NET](https://www.conradakunga.com/blog/unit-testing-fractional-values-in-c-net/) - How to test fractional values
+
 # December 2024
 
 **31 December 2024** - [Dependency Injection In C# & .NET Part 1 - Introduction & Basic Implementation](https://www.conradakunga.com/blog/dependency-injection-in-c-net-introduction-and-basic-implementation/) - Dependency Injection Introduction
