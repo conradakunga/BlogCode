@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # January 2025
 
+**11 January 2025** - [Validating .NET Settings Part 1 - Manual Validation](https://www.conradakunga.com/blog/validating-net-settings-part-1-manual-validation/) - Manually validating settings
+
 **10 January 2025** - [Unit Testing Fractional Values In C# & .NET](https://www.conradakunga.com/blog/unit-testing-fractional-values-in-c-net/) - How to test fractional values
 
 # December 2024
