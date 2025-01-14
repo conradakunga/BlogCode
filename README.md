@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # January 2025
 
+**13 January 2025** - [Validating .NET Settings Part 4 - Validating Using IValidateOptions](https://www.conradakunga.com/blog/validating-net-settings-part-4-validating-using-ivalidateoptions/) - Validating settings with IValidateOptions
+
 **13 January 2025** - [Validating .NET Settings Part 3 - Validating Using Data Annotations](https://www.conradakunga.com/blog/validating-net-settings-part-3-validating-using-data-annotations/) - Validating settings with Data Annotations
 
 **12 January 2025** - [Validating .NET Settings Part 2 - Validating Using FluentValidation](https://www.conradakunga.com/blog/validating-net-settings-part-2-validating-using-fluentvalidation/) - Validating settings with FluentValidation
