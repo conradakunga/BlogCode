@@ -3,7 +3,9 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # January 2025
 
-**13 January 2025** - [Validating .NET Settings Part 4 - Validating Using IValidateOptions](https://www.conradakunga.com/blog/validating-net-settings-part-4-validating-using-ivalidateoptions/) - Validating settings with IValidateOptions
+**15 January 2025** - [Locale & Culture Support For Kenyan Languages In .NET](https://www.conradakunga.com/blog/locale-culture-support-for-kenyan-languages-in-net/) - Localization Support For Kenyan Languages
+
+**14 January 2025** - [Validating .NET Settings Part 4 - Validating Using IValidateOptions](https://www.conradakunga.com/blog/validating-net-settings-part-4-validating-using-ivalidateoptions/) - Validating settings with IValidateOptions
 
 **13 January 2025** - [Validating .NET Settings Part 3 - Validating Using Data Annotations](https://www.conradakunga.com/blog/validating-net-settings-part-3-validating-using-data-annotations/) - Validating settings with Data Annotations
 
