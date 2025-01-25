@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # January 2025
 
+**24 January 2025** - [Using LINQ GroupJoin To Perform Grouped Joins](https://www.conradakunga.com/blog/using-linq-groupjoin-to-perform-grouped-joins/) - LINQ GroupJoin 
+
 **15 January 2025** - [Locale & Culture Support For Kenyan Languages In .NET](https://www.conradakunga.com/blog/locale-culture-support-for-kenyan-languages-in-net/) - Localization Support For Kenyan Languages
 
 **14 January 2025** - [Validating .NET Settings Part 4 - Validating Using IValidateOptions](https://www.conradakunga.com/blog/validating-net-settings-part-4-validating-using-ivalidateoptions/) - Validating settings with IValidateOptions
