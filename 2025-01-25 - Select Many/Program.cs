@@ -29,6 +29,15 @@ foreach (var hobby in hobbies)
     Console.WriteLine(hobby);
 }
 
+var distinctHobbies = people.SelectMany(x => x.Hobbies)
+    .Distinct()
+    .ToArray();
+
+foreach (var hobby in distinctHobbies)
+{
+    Console.WriteLine(hobby);
+}
+
 var results = people.SelectMany(p => p.Hobbies,
     (person, hobby) =>
         new { PersonName = person.Name, Hobby = hobby }).ToArray();
