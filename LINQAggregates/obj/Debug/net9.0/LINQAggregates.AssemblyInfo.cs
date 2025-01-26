@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LINQAggregates")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a6403470b8428bd65284d8ee95b46c8f4a47003")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4d167e71e11ebe2bc48fc07c16943bfd4e00747")]
 [assembly: System.Reflection.AssemblyProductAttribute("LINQAggregates")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LINQAggregates")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

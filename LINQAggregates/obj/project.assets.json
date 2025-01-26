@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/rad/Projects/blog/BlogCode/2025-01-25 - Select Many/LINQAggregates/LINQAggregates.csproj",
+      "projectUniqueName": "/Users/rad/Projects/blog/BlogCode/LINQAggregates/LINQAggregates.csproj",
       "projectName": "LINQAggregates",
-      "projectPath": "/Users/rad/Projects/blog/BlogCode/2025-01-25 - Select Many/LINQAggregates/LINQAggregates.csproj",
+      "projectPath": "/Users/rad/Projects/blog/BlogCode/LINQAggregates/LINQAggregates.csproj",
       "packagesPath": "/Users/rad/.nuget/packages/",
-      "outputPath": "/Users/rad/Projects/blog/BlogCode/2025-01-25 - Select Many/LINQAggregates/obj/",
+      "outputPath": "/Users/rad/Projects/blog/BlogCode/LINQAggregates/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/rad/.nuget/NuGet/NuGet.Config"
