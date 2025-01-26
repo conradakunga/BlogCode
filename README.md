@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # January 2025
 
+**26 January 2025** - [Using LINQ Aggregate & AggregateBy To Perform Aggregate Computations](https://www.conradakunga.com/blog/using-linq-aggregate-aggregateby-to-perform-aggregate-computations/) - LINQ `Aggregate` & `AggregateBy` to pefrom aggregations 
+
 **25 January 2025** - [Using LINQ SelectMany To Flatten Collections](https://www.conradakunga.com/blog/using-linq-selectmany-to-flatten-collections/) - LINQ `SelectMany` to flatten collections 
 
 **24 January 2025** - [Using LINQ GroupJoin To Perform Grouped Joins](https://www.conradakunga.com/blog/using-linq-groupjoin-to-perform-grouped-joins/) - LINQ `GroupJoin' to perform joins 
