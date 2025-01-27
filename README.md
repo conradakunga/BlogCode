@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # January 2025
 
+**27 January 2025** - [Using LINQ Zip To Combine Collections](https://www.conradakunga.com/blog/using-linq-zip-to-combine-collections/) - LINQ `Zip` to combine collections. 
+
 **26 January 2025** - [Using LINQ Aggregate & AggregateBy To Perform Aggregate Computations](https://www.conradakunga.com/blog/using-linq-aggregate-aggregateby-to-perform-aggregate-computations/) - LINQ `Aggregate` & `AggregateBy` to pefrom aggregations 
 
 **25 January 2025** - [Using LINQ SelectMany To Flatten Collections](https://www.conradakunga.com/blog/using-linq-selectmany-to-flatten-collections/) - LINQ `SelectMany` to flatten collections 
