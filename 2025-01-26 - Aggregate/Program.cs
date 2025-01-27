@@ -12,10 +12,12 @@ var sum = numbers.Aggregate(
         // Running total increases by the VALUE of each element
         runningTotal: intermediateComputation.runningTotal + element,
         // Element count increases by the COUNT of each element
-        elementCount: intermediateComputation.elementCount += 1
+        elementCount: intermediateComputation.elementCount + 1
     ),
     // Use our final values to compute the average
-    result => result.elementCount > 0 ? result.runningTotal / result.elementCount : 0);
+    result => result.elementCount > 0 
+        ? result.runningTotal / result.elementCount : 0);
+
 Console.WriteLine(sum);
 
 Transaction[] transactions =
