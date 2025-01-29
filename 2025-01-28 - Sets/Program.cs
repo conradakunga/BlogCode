@@ -1,5 +1,6 @@
 ﻿int[] left = [1, 2, 3, 4, 5, 6, 7];
 int[] right = [5, 6, 7, 8, 9, 10];
+int[] other = [1, 1, 1, 2];
 
 // Return items only in the left collection
 var leftOnly = left.Except(right).ToList();
@@ -29,4 +30,10 @@ Console.WriteLine();
 var unique = left.Except(right).Union(right.Except(left)).ToList();
 // Write to console
 unique.ForEach(x => Console.Write($"{x} "));
+Console.WriteLine();
+
+// Returns distinct elements in collection
+var distinct = other.Distinct().ToList();
+// Write to console
+distinct.ForEach(x => Console.Write($"{x} "));
 Console.WriteLine();
