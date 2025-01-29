@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # January 2025
 
+**29 January 2025** - [Using Indexes With LINQ](https://www.conradakunga.com/blog/using-indexes-with-linq/) - Accessing collection indexes with LINQ 
+
 **28 January 2025** - [Set Operations With LINQ](https://www.conradakunga.com/blog/set-operations-with-linq/) - Set theory with LINQ 
 
 **27 January 2025** - [Using LINQ Zip To Combine Collections](https://www.conradakunga.com/blog/using-linq-zip-to-combine-collections/) - LINQ `Zip` to combine collections. 
