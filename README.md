@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # January 2025
 
+**30 January 2025** - [Lazy Initialization With System.Lazy](https://www.conradakunga.com/blog/lazy-initialization-with-systemlazy/) - Using `System.Lazy` for lazy object initialization 
+
 **29 January 2025** - [Using Indexes With LINQ](https://www.conradakunga.com/blog/using-indexes-with-linq/) - Accessing collection indexes with LINQ 
 
 **28 January 2025** - [Set Operations With LINQ](https://www.conradakunga.com/blog/set-operations-with-linq/) - Set theory with LINQ 
