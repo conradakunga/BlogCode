@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # January 2025
 
+**31 January 2025** - [Beware - Mapping Classes With ReadOnly Properties Using Dapper With VB.NET, C# & F#](https://www.conradakunga.com/blog/beware-mapping-classes-with-readonly-properties-using-dapper-in-vb-c-f/) - Dapper Issue With ReadOnly Properties in VB.NET
+
 **30 January 2025** - [Lazy Initialization With System.Lazy](https://www.conradakunga.com/blog/lazy-initialization-with-systemlazy/) - Using `System.Lazy` for lazy object initialization 
 
 **29 January 2025** - [Using Indexes With LINQ](https://www.conradakunga.com/blog/using-indexes-with-linq/) - Accessing collection indexes with LINQ 
