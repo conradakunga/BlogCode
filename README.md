@@ -1,6 +1,10 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+# February 2025
+
+**1 February 2025** - [Scheduling Tasks With The PeriodicTimer](https://www.conradakunga.com/blog/scheduling-tasks-with-the-periodictimer/) - Scheduling tasks with the periodic timer
+
 # January 2025
 
 **31 January 2025** - [Beware - Mapping Classes With ReadOnly Properties Using Dapper With VB.NET, C# & F#](https://www.conradakunga.com/blog/beware-mapping-classes-with-readonly-properties-using-dapper-in-vb-c-f/) - Dapper Issue With ReadOnly Properties in VB.NET
