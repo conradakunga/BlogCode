@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # February 2025
 
+**1 February 2025** - [Using LINQ UnionBy To Merge Collections](https://www.conradakunga.com/blog/using-linq-unionby-to-merge-collections/) - LINQ `UnionBy` to merge collections.
+
 **1 February 2025** - [Scheduling Tasks With The PeriodicTimer](https://www.conradakunga.com/blog/scheduling-tasks-with-the-periodictimer/) - Scheduling tasks with the periodic timer
 
 # January 2025
