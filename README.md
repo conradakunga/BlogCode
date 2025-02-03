@@ -3,7 +3,9 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # February 2025
 
-**1 February 2025** - [Using LINQ UnionBy To Merge Collections](https://www.conradakunga.com/blog/using-linq-unionby-to-merge-collections/) - LINQ `UnionBy` to merge collections.
+**2 February 2025** - [Using LINQ Concat To Merge Collections](https://www.conradakunga.com/blog/using-linq-concat-to-merge-collectons/) - LINQ `Concat` to merge collections.
+
+**2 February 2025** - [Using LINQ UnionBy To Merge Collections](https://www.conradakunga.com/blog/using-linq-unionby-to-merge-collections/) - LINQ `UnionBy` to merge collections.
 
 **1 February 2025** - [Scheduling Tasks With The PeriodicTimer](https://www.conradakunga.com/blog/scheduling-tasks-with-the-periodictimer/) - Scheduling tasks with the periodic timer
 
@@ -145,6 +147,7 @@ A gotcha in the syntax of how to correctly group using VB.NET
 **27 October** - [30 Days Of .NET 6 - Json Property Ordering](https://www.conradakunga.com/blog/30-days-of-net-6-day-20-json-property-ordering/) - How to control the order of the serialization of Json attributes
 
 **21 October** - [Saving Collections Of Primitives In Entity Framework Core](https://www.conradakunga.com/blog/saving-collections-of-primitives-in-entity-framework-core/) - How to persist collections of primitive in Entity Framework Core
+
 **21 October** - [30 Days Of .NET 6 - Day 19 - Record Structs](https://www.conradakunga.com/blog/30-days-of-net-6-day-19-record-structs/) - .NET 6 has a new `record struct` construct where `record` execution is applied to `structs`.
 
 **12 October** - [30 Days Of .NET 6 - Day 17 - New Timer - PeriodicTimer](https://www.conradakunga.com/blog/30-days-of-net-6-day-17-new-timer-periodic-timer/) - .NET 6 has a new timer for use in async contexts - the `PeriodicTimer`
