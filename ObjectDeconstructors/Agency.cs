@@ -1,0 +1,1 @@
+public record Agency(string Name, string Motto, DateOnly DateFounded);
