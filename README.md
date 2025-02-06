@@ -3,7 +3,11 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # February 2025
 
-**4 February 2025** - [Using Deconstructors In C#](https://www.conradakunga.com/blog/using-deconstructors-in-c/) - Using Deconstructors In C# 
+**6 February 2025** - [Using LINQ OfType To Filter Collections By Type](https://www.conradakunga.com/blog/using-linq-oftype-to-filter-collections-by-type/) - LINQ `OfType` to filter collections 
+
+**5 February 2025** - [Using Deconstructors In C#](https://www.conradakunga.com/blog/using-deconstructors-in-c/) - Using Deconstructors In C# 
+
+**4 February 2025** - [Using LINQ Repeat To Generate Copies Of Objects](https://www.conradakunga.com/blog/using-linq-repeat-to-generate-copies-of-objects/) - LINQ `Repeat` to generate objects.
 
 **3 February 2025** - [Using LINQ Concat To Merge Collections](https://www.conradakunga.com/blog/using-linq-concat-to-merge-collectons/) - LINQ `Concat` to merge collections.
 
