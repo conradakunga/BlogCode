@@ -12,6 +12,8 @@ Log.Information("The date of birth is {DateOfBirth}", spy.DateOfBirth);
 
 var (firstName, surname, dateOfBirth) = spy;
 
+//(string firstName, string surname, DateOnly dateOfBirth) = spy;
+
 Log.Information("The first name is {FirstName}", firstName);
 Log.Information("The surname name is {Surname}", surname);
 Log.Information("The date of birth is {DateOfBirth}", dateOfBirth);
