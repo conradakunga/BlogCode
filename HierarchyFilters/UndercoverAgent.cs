@@ -1,0 +1,1 @@
+public record UndercoverAgent : Agent;
