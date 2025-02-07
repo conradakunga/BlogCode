@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # February 2025
 
+**7 February 2025** - [Parallelizing Work With C# & .NET](https://www.conradakunga.com/blog/parallelizing-work-with-c-net/) - Parallelizing work
+
 **6 February 2025** - [Using LINQ OfType To Filter Collections By Type](https://www.conradakunga.com/blog/using-linq-oftype-to-filter-collections-by-type/) - LINQ `OfType` to filter collections 
 
 **5 February 2025** - [Using Deconstructors In C#](https://www.conradakunga.com/blog/using-deconstructors-in-c/) - Using Deconstructors In C# 
