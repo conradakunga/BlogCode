@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # February 2025
 
+**9 February 2025** - [Immutable Types In C# & .NET](https://www.conradakunga.com/blog/immutable-types-in-c-net/) - Immutable types
+
 **8 February 2025** - [Pipelining Task Results With Task.WhenEach](https://www.conradakunga.com/blog/pipelining-task-results-with-taskwheneach/) - Using `Task.WhenEach`
 
 **7 February 2025** - [Parallelizing Work With C# & .NET](https://www.conradakunga.com/blog/parallelizing-work-with-c-net/) - Parallelizing work
