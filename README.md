@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # February 2025
 
+**14 February 2025** - [Getting The Executing .NET Version](https://www.conradakunga.com/blog/getting-the-executing-net-version/) - Get executing .NET version 
+
 **12 February 2025** - [Using Base64 To Encode Binary Data](https://www.conradakunga.com/blog/using-base64-to-encode-binary-data/) - Using Base64 to encode binary data 
 
 **11 February 2025** - [Is That String Null, Empty, Or WhiteSpace?](https://www.conradakunga.com/blog/is-that-string-null-empty-or-whitespace/) - Various ways to check for empty strings 
