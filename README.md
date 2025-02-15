@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # February 2025
 
+**15 February 2025** - [Using Frozen Collections For Immutability](https://www.conradakunga.com/blog/using-frozen-collections-for-immutability/) - Get executing .NET version 
+
 **14 February 2025** - [Getting The Executing .NET Version](https://www.conradakunga.com/blog/getting-the-executing-net-version/) - Get executing .NET version 
 
 **12 February 2025** - [Using Base64 To Encode Binary Data](https://www.conradakunga.com/blog/using-base64-to-encode-binary-data/) - Using Base64 to encode binary data 
