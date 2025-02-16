@@ -12,4 +12,8 @@
     <ProjectReference Include="..\ValidateLinks.Core\ValidateLinks.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+  </ItemGroup>
+
 </Project>
