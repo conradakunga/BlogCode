@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # February 2025
 
+**16 February 2025** - [View Request & Response Headers For HTTP Requests In C# & .NET](https://www.conradakunga.com/blog/view-request-response-headers-for-http-requests/) - Using the `DelegatingHandler` to log headers 
+
 **15 February 2025** - [Using Frozen Collections For Immutability](https://www.conradakunga.com/blog/using-frozen-collections-for-immutability/) - Get executing .NET version 
 
 **14 February 2025** - [Getting The Executing .NET Version](https://www.conradakunga.com/blog/getting-the-executing-net-version/) - Get executing .NET version 
