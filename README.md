@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # February 2025
 
+**19 February 2025** - [Some Useful Integer Helper Methods In .NET](https://www.conradakunga.com/blog/some-useful-integer-helper-methods-in-net/) - Useful `Integer` helper methods 
+
 **16 February 2025** - [View Request & Response Headers For HTTP Requests In C# & .NET](https://www.conradakunga.com/blog/view-request-response-headers-for-http-requests/) - Using the `DelegatingHandler` to log headers 
 
 **15 February 2025** - [Using Frozen Collections For Immutability](https://www.conradakunga.com/blog/using-frozen-collections-for-immutability/) - Get executing .NET version 
