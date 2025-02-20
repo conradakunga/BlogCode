@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # February 2025
 
+**21 February 2025** - [Enums & Enum Flags In C# & .NET For Dummies](https://www.conradakunga.com/blog/enum-enum-flags-in-c-net-for-dummies/) - How to use `enums` 
+
 **19 February 2025** - [Some Useful Integer Helper Methods In .NET](https://www.conradakunga.com/blog/some-useful-integer-helper-methods-in-net/) - Useful `Integer` helper methods 
 
 **16 February 2025** - [View Request & Response Headers For HTTP Requests In C# & .NET](https://www.conradakunga.com/blog/view-request-response-headers-for-http-requests/) - Using the `DelegatingHandler` to log headers 
