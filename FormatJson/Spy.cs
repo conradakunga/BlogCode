@@ -1,0 +1,1 @@
+public record Spy(string FullName, string ActiveAgency, byte OfficialAge, bool Active);
