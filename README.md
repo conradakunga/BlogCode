@@ -3,7 +3,9 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # February 2025
 
-**21 February 2025** - [Enums & Enum Flags In C# & .NET For Dummies](https://www.conradakunga.com/blog/enum-enum-flags-in-c-net-for-dummies/) - How to use `enums` 
+**21 February 2025** - [Configuring JSON Responses With ASP.NET](https://www.conradakunga.com/blog/configuring-json-responses-with-aspnet/) - Configuring JSON reponses on ASP.NET applications. 
+
+**20 February 2025** - [Enums & Enum Flags In C# & .NET For Dummies](https://www.conradakunga.com/blog/enum-enum-flags-in-c-net-for-dummies/) - How to use `enums` 
 
 **19 February 2025** - [Some Useful Integer Helper Methods In .NET](https://www.conradakunga.com/blog/some-useful-integer-helper-methods-in-net/) - Useful `Integer` helper methods 
 
