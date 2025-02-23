@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # February 2025
 
+**22 February 2025** - [Using Case Insensitive Dictionary Keys In C# & .NET](https://www.conradakunga.com/blog/using-case-insensitive-dictionary-keys-in-c-net/) - How to use case insensitive directory keys. 
+
 **21 February 2025** - [Configuring JSON Responses With ASP.NET](https://www.conradakunga.com/blog/configuring-json-responses-with-aspnet/) - Configuring JSON reponses on ASP.NET applications. 
 
 **20 February 2025** - [Enums & Enum Flags In C# & .NET For Dummies](https://www.conradakunga.com/blog/enum-enum-flags-in-c-net-for-dummies/) - How to use `enums` 
