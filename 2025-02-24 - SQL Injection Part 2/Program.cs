@@ -21,13 +21,19 @@ app.MapPost("/Login", (SqliteConnection cn, ILogger<Program> logger, LoginReques
     // Add the parameters
     //
 
-    // Username
+    // Create the Username parameter
     var paramUsername = cmd.CreateParameter();
+    // Set the data type
     paramUsername.SqliteType = SqliteType.Text;
+    // Set the paramter name
     paramUsername.ParameterName = "@Username";
+    // Set the paramter size
     paramUsername.Size = 100;
+    // Set the parameter value
     paramUsername.Value = request.Username;
+    // Add the parameter to the command object
     cmd.Parameters.Add(paramUsername);
+    
     // Password
     cmd.Parameters.AddWithValue("@Password", request.Password).Size = 100;
 
