@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # February 2025
 
+**24 February 2025** - [How SQL Injection Works - Part 2](https://www.conradakunga.com/blog/how-sql-injection-works-part-2/) - How SQL Injection works - part 2
+
 **23 February 2025** - [How SQL Injection Works - Part 1](https://www.conradakunga.com/blog/how-sql-injection-works-part-1/) - How SQL Injection works - part 1 
 
 **22 February 2025** - [Using Case Insensitive Dictionary Keys In C# & .NET](https://www.conradakunga.com/blog/using-case-insensitive-dictionary-keys-in-c-net/) - How to use case insensitive directory keys. 
