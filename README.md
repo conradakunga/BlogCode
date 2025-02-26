@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # February 2025
 
+**25 February 2025** - [Simpler .NET Data Access With Dapper - Part 1](https://www.conradakunga.com/blog/how-sql-injection-works-part-2/) - Dapper Part 1
+
 **24 February 2025** - [How SQL Injection Works - Part 2](https://www.conradakunga.com/blog/how-sql-injection-works-part-2/) - How SQL Injection works - part 2
 
 **23 February 2025** - [How SQL Injection Works - Part 1](https://www.conradakunga.com/blog/how-sql-injection-works-part-1/) - How SQL Injection works - part 1 
