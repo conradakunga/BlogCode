@@ -3,7 +3,9 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # February 2025
 
-**26 February 2025** - [Dapper Part 2 - Querying The Database](https://www.conradakunga.com/blog/dapper-part-2-querying-the-database/) - Dapper Part 2 - queriying the database
+**27 February 2025** - [Dapper Part 3 - Executing Queries](https://www.conradakunga.com/blog/dapper-part-3-executing-queries/) - Dapper Part 3 - Executing Queries
+
+**26 February 2025** - [Dapper Part 2 - Querying The Database](https://www.conradakunga.com/blog/dapper-part-2-querying-the-database/) - Dapper Part 2 - queryiing the database
 
 **25 February 2025** - [Simpler .NET Data Access With Dapper - Part 1](https://www.conradakunga.com/blog/how-sql-injection-works-part-2/) - Dapper Part 1
 
