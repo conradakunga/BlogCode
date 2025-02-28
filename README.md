@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # February 2025
 
+**28 February 2025** - [Dapper Part 4 - Passing Data To And From The Database](https://www.conradakunga.com/blog/dapper-part-4-passing-data-to-and-from-the-database/) - Dapper Part 4 - Passing data between client and server
+
 **27 February 2025** - [Dapper Part 3 - Executing Queries](https://www.conradakunga.com/blog/dapper-part-3-executing-queries/) - Dapper Part 3 - Executing Queries
 
 **26 February 2025** - [Dapper Part 2 - Querying The Database](https://www.conradakunga.com/blog/dapper-part-2-querying-the-database/) - Dapper Part 2 - queryiing the database
