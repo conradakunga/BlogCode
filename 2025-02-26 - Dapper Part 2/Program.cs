@@ -8,7 +8,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSingleton<SqlConnection>(_ => new SqlConnection(connectionString));
 
 var app = builder.Build();
-// Ensure our database is created and seeded
 
 app.MapGet("/List", (SqlConnection cn, ILogger<Program> logger) =>
 {
