@@ -10,7 +10,7 @@ builder.Services.AddSingleton<SqlConnection>(_ => new SqlConnection(connectionSt
 
 var app = builder.Build();
 
-app.MapGet("/Purge", async (SqlConnection cn, ILogger<Program> logger) =>
+app.MapGet("/Purge", async (SqlConnection cn) =>
 {
     const string query = """
                          DELETE FROM
@@ -21,7 +21,7 @@ app.MapGet("/Purge", async (SqlConnection cn, ILogger<Program> logger) =>
     await cn.ExecuteAsync(query);
 });
 
-app.MapGet("/PurgeByStatus/{status:bool}", async (SqlConnection cn, ILogger<Program> logger, bool status) =>
+app.MapGet("/PurgeByStatus/{status:bool}", async (SqlConnection cn, bool status) =>
 {
     const string query = """
                          DELETE FROM
@@ -36,7 +36,7 @@ app.MapGet("/PurgeByStatus/{status:bool}", async (SqlConnection cn, ILogger<Prog
     await cn.ExecuteAsync(query, param);
 });
 
-app.MapGet("/PurgeByStatusProcedure/{status:bool}", async (SqlConnection cn, ILogger<Program> logger, bool status) =>
+app.MapGet("/PurgeByStatusProcedure/{status:bool}", async (SqlConnection cn, bool status) =>
 {
     var param = new DynamicParameters();
     param.Add("Status", status);
@@ -44,7 +44,7 @@ app.MapGet("/PurgeByStatusProcedure/{status:bool}", async (SqlConnection cn, ILo
     await cn.ExecuteAsync("[Spies.PurgeByStatus]", param);
 });
 
-app.MapGet("/Admin", async (SqlConnection cn, ILogger<Program> logger) =>
+app.MapGet("/Admin", async (SqlConnection cn) =>
 {
     const string query = """
                          CREATE TABLE Temp

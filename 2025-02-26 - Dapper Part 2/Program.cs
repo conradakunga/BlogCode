@@ -24,7 +24,7 @@ app.MapGet("/List", (SqlConnection cn, ILogger<Program> logger) =>
     return Results.Ok(spies);
 });
 
-app.MapGet("/ActiveList", (SqlConnection cn, ILogger<Program> logger) =>
+app.MapGet("/ActiveList", (SqlConnection cn) =>
 {
     const string query = """
                          SELECT
@@ -40,7 +40,7 @@ app.MapGet("/ActiveList", (SqlConnection cn, ILogger<Program> logger) =>
     return Results.Ok(spies);
 });
 
-app.MapGet("/ActiveByHeight/{height:decimal}", (SqlConnection cn, ILogger<Program> logger, decimal height) =>
+app.MapGet("/ActiveByHeight/{height:decimal}", (SqlConnection cn, decimal height) =>
 {
     const string query = """
                          SELECT
@@ -56,7 +56,7 @@ app.MapGet("/ActiveByHeight/{height:decimal}", (SqlConnection cn, ILogger<Progra
     return Results.Ok(spies);
 });
 
-app.MapGet("/ActiveListComputed", (SqlConnection cn, ILogger<Program> logger) =>
+app.MapGet("/ActiveListComputed", (SqlConnection cn) =>
 {
     const string query = """
                          SELECT
@@ -72,7 +72,7 @@ app.MapGet("/ActiveListComputed", (SqlConnection cn, ILogger<Program> logger) =>
     return Results.Ok(spies);
 });
 
-app.MapGet("/Spy/{id:int}", (SqlConnection cn, ILogger<Program> logger, int id) =>
+app.MapGet("/Spy/{id:int}", (SqlConnection cn, int id) =>
 {
     const string query = """
                          SELECT
@@ -88,13 +88,13 @@ app.MapGet("/Spy/{id:int}", (SqlConnection cn, ILogger<Program> logger, int id) 
     return Results.NotFound();
 });
 
-app.MapGet("/ListByStatus/{status:bool}", (SqlConnection cn, ILogger<Program> logger, bool status) =>
+app.MapGet("/ListByStatus/{status:bool}", (SqlConnection cn, bool status) =>
 {
     var spies = cn.Query<V1.Spy>("[Spies.GetByStatus]", new { Status = status }).AsList();
     return Results.Ok(spies);
 });
 
-app.MapGet("/ActiveSpyCount/", (SqlConnection cn, ILogger<Program> logger) =>
+app.MapGet("/ActiveSpyCount/", (SqlConnection cn) =>
 {
     var spyCount = cn.QuerySingle<int>("SELECT COUNT(1) FROM Spies WHERE Active=1");
     return Results.Ok(spyCount);

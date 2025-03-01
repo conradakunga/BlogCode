@@ -1,6 +1,5 @@
 using System.Data;
 using Dapper;
-using Microsoft.AspNetCore.Components.Web;
 using Microsoft.Data.SqlClient;
 
 const string connectionString = "data source=10.211.55.2;database=Spies;uid=sa;pwd=YourStrongPassword123;Encrypt=false";
@@ -12,7 +11,7 @@ builder.Services.AddSingleton<SqlConnection>(_ => new SqlConnection(connectionSt
 
 var app = builder.Build();
 
-app.MapGet("/GetSpyDetails/{id:int}", async (SqlConnection cn, ILogger<Program> logger, int id) =>
+app.MapGet("/GetSpyDetails/{id:int}", async (SqlConnection cn, int id) =>
 {
     var param = new DynamicParameters();
     // Add the input parameter - the ID
@@ -33,7 +32,7 @@ app.MapGet("/GetSpyDetails/{id:int}", async (SqlConnection cn, ILogger<Program> 
     return new { Name = name, DateOfBirth = dateOfBirth, Active = active };
 });
 
-app.MapGet("/ServerDate", async (SqlConnection cn, ILogger<Program> logger) =>
+app.MapGet("/ServerDate", async (SqlConnection cn) =>
 {
     // Execute the function
     var result = await cn.QuerySingleAsync<DateTime>("SELECT GETDATE()");
@@ -41,7 +40,7 @@ app.MapGet("/ServerDate", async (SqlConnection cn, ILogger<Program> logger) =>
     return result;
 });
 
-app.MapGet("/GetActiveSpyCountByStatus/{status:bool}", async (SqlConnection cn, ILogger<Program> logger, bool status) =>
+app.MapGet("/GetActiveSpyCountByStatus/{status:bool}", async (SqlConnection cn, bool status) =>
 {
     // Set up the parameters
     var param = new DynamicParameters();
