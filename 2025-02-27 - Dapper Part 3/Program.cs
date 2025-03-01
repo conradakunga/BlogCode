@@ -2,9 +2,10 @@ using Dapper;
 using Microsoft.Data.SqlClient;
 
 const string connectionString = "data source=10.211.55.2;database=Spies;uid=sa;pwd=YourStrongPassword123;Encrypt=false";
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Setup DI to inject a Sqlite connection
+// Setup DI to inject a SQL Server connection
 builder.Services.AddSingleton<SqlConnection>(_ => new SqlConnection(connectionString));
 
 var app = builder.Build();

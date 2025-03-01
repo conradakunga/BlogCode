@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.Data.SqlClient;
 
 const string connectionString = "data source=10.211.55.2;database=Spies;uid=sa;pwd=YourStrongPassword123;Encrypt=false";
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Setup DI to inject a Sql Server connection
