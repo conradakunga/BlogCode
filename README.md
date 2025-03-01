@@ -1,6 +1,10 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+# March 2025
+
+**1 March 2025** - [Dapper Part 5 - Passing Data In Bulk To The Database](https://www.conradakunga.com/blog/dapper-part-5-passing-data-in-bulk-to-the-database/) - Dapper Part 5 - Table valued parameters
+
 # February 2025
 
 **28 February 2025** - [Dapper Part 4 - Passing Data To And From The Database](https://www.conradakunga.com/blog/dapper-part-4-passing-data-to-and-from-the-database/) - Dapper Part 4 - Passing data between client and server
