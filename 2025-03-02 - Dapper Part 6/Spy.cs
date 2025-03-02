@@ -1,0 +1,1 @@
+public sealed record Spy(int SpyID, string Name, DateTime DateOfBirth, decimal Height, bool Active);

@@ -1,0 +1,1 @@
+public sealed record Agency(int AgencyID, string Name, DateTime FoundationDate, string History);
