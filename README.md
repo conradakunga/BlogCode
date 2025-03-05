@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # March 2025
 
+**5 March 2025** - [Dapper Part 9 - Using Dynamic Types](https://www.conradakunga.com/blog/dapper-part-9-using-dynamic-types/) - Dapper Part 9 - Dynamic types
+
 **4 March 2025** - [Dapper Part 8 - Controlling Database Timeouts](https://www.conradakunga.com/blog/dapper-part-8-controlling-database-timeouts/) - Dapper Part 8 - Timeouts
 
 **3 March 2025** - [Dapper Part 7 - Adding DateOnly & TimeOnly Support](https://www.conradakunga.com/blog/dapper-part-7-adding-dateonly-timeonly-support/) - Dapper Part 7 - adding `DateOnly` and  `TimeOnly` support 
