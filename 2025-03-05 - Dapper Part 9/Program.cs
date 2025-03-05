@@ -1,6 +1,5 @@
 using Dapper;
 using Microsoft.Data.SqlClient;
-using Microsoft.VisualBasic.CompilerServices;
 
 const string connectionString = "data source=.;database=Spies;uid=sa;pwd=YourStrongPassword123;Encrypt=false";
 
@@ -8,9 +7,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Setup DI to inject a Sql Server connection
 builder.Services.AddSingleton<SqlConnection>(_ => new SqlConnection(connectionString));
-
-// Set the default timeout to 2 minutes
-SqlMapper.Settings.CommandTimeout = TimeSpan.FromMinutes(2).Seconds;
 
 var app = builder.Build();
 
