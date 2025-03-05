@@ -9,9 +9,6 @@ var builder = WebApplication.CreateBuilder(args);
 // Setup DI to inject a Sql Server connection
 builder.Services.AddSingleton<SqlConnection>(_ => new SqlConnection(connectionString));
 
-// Set the default timeout to 2 minutes
-SqlMapper.Settings.CommandTimeout = TimeSpan.FromMinutes(2).Seconds;
-
 var app = builder.Build();
 
 app.MapGet("/Info/{spyID:int}", async (SqlConnection cn, int spyID) =>
