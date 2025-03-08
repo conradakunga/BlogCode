@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # March 2025
 
+**8 March 2025** - [Dapper Part 12 - Alternative Bulk Insert Technique](https://www.conradakunga.com/blog/dapper-part-12-alternative-bulk-insert-technique/) - Dapper Part 12 - alternative bulk insert
+
 **7 March 2025** - [Dapper Part 11 - Using Inhertiance](https://www.conradakunga.com/blog/dapper-part-11-using-inheritance/) - Dapper Part 11 - Inheritance
 
 **6 March 2025** - [Dapper Part 10 - Handling Cancellations](https://www.conradakunga.com/blog/dapper-part-10-handling-cancellations/) - Dapper Part 10 - Cancellation
