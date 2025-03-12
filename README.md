@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # March 2025
 
+**12 March 2025** - [Dapper Part 15 - Using the IN Clause](https://www.conradakunga.com/blog/dapper-part-15-using-the-in-clause/) - Dapper Part 15 - Using the IN Clause
+
 **11 March 2025** - [Dapper Part 14 - Multithreading](https://www.conradakunga.com/blog/dapper-part-14-multithreading/) - Dapper Part 14 - Multithreading
 
 **10 March 2025** - [Dapper Part 13 - Using Transactions](https://www.conradakunga.com/blog/dapper-part-13-using-transactions/) - Dapper Part 13 - Using Transactions
