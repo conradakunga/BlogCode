@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # March 2025
 
+**13 March 2025** - [Beware - Order Of DataTable Column Definitions Matters For User Defined Table Type Mapping](https://www.conradakunga.com/blog/beware-order-of-datatable-column-definitions-matters-for-user-defined-table-type-mapping/) - Gotcha when mapping to user-defined table types.
+
 **12 March 2025** - [Dapper Part 15 - Using the IN Clause](https://www.conradakunga.com/blog/dapper-part-15-using-the-in-clause/) - Dapper Part 15 - Using the IN Clause
 
 **11 March 2025** - [Dapper Part 14 - Multithreading](https://www.conradakunga.com/blog/dapper-part-14-multithreading/) - Dapper Part 14 - Multithreading
