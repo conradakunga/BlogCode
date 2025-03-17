@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # March 2025
 
+**17 March 2025** - [Conditionally Output XML Or JSON Using ASP.NET Minimal API](https://www.conradakunga.com/blog/conditionally-output-xml-or-json-using-aspnet-minimal-api/) - ASP.NET Content Negotiation
+
 **16 March 2025** - [Changing The Port Of An ASP.NET Web Application Or API](https://www.conradakunga.com/blog/changing-the-port-of-an-aspnet-web-application-or-api/) - Changing The Port Of An ASP.NET Web Application Or API 
 
 **15 March 2025** - [Controlling Publishing Of Satellite Resource Assemblies](https://www.conradakunga.com/blog/controlling-publishing-of-satellite-resource-assemblies/) - Controlling Publishing Of Satellite Resource Assemblies
