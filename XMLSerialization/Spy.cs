@@ -1,5 +1,3 @@
-using System;
-
 namespace XMLSerialization;
 
 public class Spy

@@ -1,10 +1,6 @@
-using System.IO;
 using System.Net.Mime;
 using System.Runtime.Serialization;
-using System.Threading;
-using System.Threading.Tasks;
 using Carter;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Net.Http.Headers;
 
 public class XMLResponseNegotiator : IResponseNegotiator

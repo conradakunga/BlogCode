@@ -1,9 +1,5 @@
-using System;
 using Carter;
 using Carter.Response;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Routing;
 
 namespace XMLSerialization;
 
