@@ -7,6 +7,7 @@ builder.Services.AddCarter(configurator: c =>
 {
     // Register a XML response negotiator
     c.WithResponseNegotiator<XMLResponseNegotiator>();
+    // Register a CSV response negotiator
     c.WithResponseNegotiator<CSVResponseNegotiator>();
 });
 
