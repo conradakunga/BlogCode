@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # March 2025
 
+**19 March 2025** - [Organizing .NET Projects With Solutions](https://www.conradakunga.com/blog/organizing-net-projects-with-solutions/) - Organizing projects with solutions 
+
 **18 March 2025** - [Conditionally Output CSV Using ASP.NET Minimal API](https://www.conradakunga.com/blog/conditionally-output-csv-using-aspnet-minimal-api/) - ASP.NET Content Negotiation for CSV
 
 **17 March 2025** - [Conditionally Output XML Or JSON Using ASP.NET Minimal API](https://www.conradakunga.com/blog/conditionally-output-xml-or-json-using-aspnet-minimal-api/) - ASP.NET Content Negotiation for XML
