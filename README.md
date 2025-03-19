@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # March 2025
 
+**20 March 2025** - [SLNX - New .NET Solution File Format](https://www.conradakunga.com/blog/slnx-new-net-solution-file-format/) - The new .SLNX format 
+
 **19 March 2025** - [Organizing .NET Projects With Solutions](https://www.conradakunga.com/blog/organizing-net-projects-with-solutions/) - Organizing projects with solutions 
 
 **18 March 2025** - [Conditionally Output CSV Using ASP.NET Minimal API](https://www.conradakunga.com/blog/conditionally-output-csv-using-aspnet-minimal-api/) - ASP.NET Content Negotiation for CSV
