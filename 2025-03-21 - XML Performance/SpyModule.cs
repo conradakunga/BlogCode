@@ -1,3 +1,4 @@
+using Bogus;
 using Carter;
 using Carter.Response;
 
@@ -11,15 +12,13 @@ public class SpyModule : ICarterModule
         // Set the route path
         app.MapGet("/", (HttpResponse resp) =>
         {
-            // Create object
-            var spy = new Spy()
-            {
-                Name = "James Bond",
-                DateOfBirth = new DateTime(1960, 1, 1)
-            };
+            // Create and configure faker
+            var faker = new Faker<Spy>()
+                .RuleFor(s => s.Name, f => f.Person.FullName)
+                .RuleFor(s => s.DateOfBirth, f => f.Date.Past(50));
 
             // Delegate the handling via content negotiation
-            return resp.Negotiate(spy);
+            return resp.Negotiate(faker.Generate(10));
         });
     }
 }

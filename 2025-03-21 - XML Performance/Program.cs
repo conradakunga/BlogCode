@@ -1,4 +1,6 @@
 using Carter;
+using Microsoft.IO;
+using XMLSerialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,8 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCarter(configurator: c =>
 {
     // Register a XML response negotiator
-    c.WithResponseNegotiator<XMLResponseNegotiator>();
+    c.WithResponseNegotiator<XmlResponseNegotiator>();
 });
+
+builder.Services.AddSingleton<RecyclableMemoryStreamManager>();
 
 var app = builder.Build();
 

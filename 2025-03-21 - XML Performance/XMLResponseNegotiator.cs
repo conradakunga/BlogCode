@@ -1,10 +1,20 @@
 using System.Net.Mime;
 using System.Runtime.Serialization;
 using Carter;
+using Microsoft.IO;
 using Microsoft.Net.Http.Headers;
 
-public class XMLResponseNegotiator : IResponseNegotiator
+namespace XMLSerialization;
+
+public sealed class XmlResponseNegotiator : IResponseNegotiator
 {
+    private readonly RecyclableMemoryStreamManager _streamManager;
+
+    public XmlResponseNegotiator(RecyclableMemoryStreamManager streamManager)
+    {
+        _streamManager = streamManager;
+    }
+
     // Establish if the client had indicated it will accept xml
     public bool CanHandle(MediaTypeHeaderValue accept)
     {
@@ -20,10 +30,10 @@ public class XMLResponseNegotiator : IResponseNegotiator
         // Create a serializer for the model type, T
         var serializer = new DataContractSerializer(typeof(T));
 
-        // Create a memory stream
-        using (var ms = new MemoryStream())
+        // Acquire the shared memory stream
+        await using (var ms = _streamManager.GetStream())
         {
-            // Write the object
+            // Write the object to the stream
             serializer.WriteObject(ms, model);
 
             // Set the stream position to 0, for writing to the response
