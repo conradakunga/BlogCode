@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # March 2025
 
+**24 March 2025** - [Using State Machines - Part 1 : Introduction](https://www.conradakunga.com/blog/using-state-machines-part-1-introduction/) - Using state machines introduction.
+
 **22 March 2025** - [Threading Issue When Populating MemoryCache](https://www.conradakunga.com/blog/threading-issue-when-populating-memorycache/) - Threading issue when using `MemoryCache`
 
 **21 March 2025** - [Improving ASP.NET Content Negotiation XML Serialization Performance Using A RecyclableMemoryStream](https://www.conradakunga.com/blog/improving-aspnet-content-negotiation-xml-serialization-performance-using-a-recyclablememorystream/) - Using the RecyclableMemoryStream
