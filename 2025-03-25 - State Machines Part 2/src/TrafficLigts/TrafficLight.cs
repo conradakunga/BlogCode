@@ -1,4 +1,5 @@
 using Stateless;
+using Stateless.Graph;
 
 namespace StateMachineSample;
 
@@ -7,7 +8,7 @@ public sealed class TrafficLight
     private readonly TimeProvider _provider;
     private readonly StateMachine<Status, Trigger> _stateMachine;
     public Status CurrentStatus => _stateMachine.State;
-    public DateOnly[] holidays;
+    private readonly DateOnly[] _holidays;
 
     public TrafficLight(TimeProvider provider)
     {
@@ -17,7 +18,7 @@ public sealed class TrafficLight
         var newYearsDay = new DateOnly(2025, 1, 1);
 
         // Set the array
-        holidays = [christmasDay, boxingDay, newYearsDay];
+        _holidays = [christmasDay, boxingDay, newYearsDay];
 
         // Assign the provider
         _provider = provider;
@@ -58,7 +59,7 @@ public sealed class TrafficLight
         //Fetch the current ate
         var currentDate = DateOnly.FromDateTime(_provider.GetLocalNow().Date);
         // Check if holidays contain the current date
-        if (holidays.Any(x => x.Month == currentDate.Month && x.Day == currentDate.Day))
+        if (_holidays.Any(x => x.Month == currentDate.Month && x.Day == currentDate.Day))
         {
             _stateMachine.Fire(Trigger.PublicHolidayTimerTick);
         }
