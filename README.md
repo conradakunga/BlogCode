@@ -3,6 +3,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # March 2025
 
+**27 March 2025** - [Using State Machines - Part 4 - Using Multiple Triggers](https://www.conradakunga.com/blog/using-state-machines-part-4-using-multiple-triggers/) - Using state machines - multiple triggers.
+
+**26 March 2025** - [Using State Machines - Part 3 - Setting Initial State](https://www.conradakunga.com/blog/using-state-machines-part-3-setting-initial-state/) - Using state machines - setting initial state.
+
 **25 March 2025** - [Using State Machines - Part 2 - Basic Usage](https://www.conradakunga.com/blog/using-state-machines-part-2-basic-usage/) - Using state machines implementation.
 
 **24 March 2025** - [Using State Machines - Part 1 : Introduction](https://www.conradakunga.com/blog/using-state-machines-part-1-introduction/) - Using state machines introduction.
