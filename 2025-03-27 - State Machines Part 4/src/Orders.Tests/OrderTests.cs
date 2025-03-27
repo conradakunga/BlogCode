@@ -1,8 +1,6 @@
-﻿using System.Diagnostics;
-using FluentAssertions;
-using Orders;
+﻿using FluentAssertions;
 
-namespace StateMachine.Tests;
+namespace Orders.Tests;
 
 public class OrderTests
 {

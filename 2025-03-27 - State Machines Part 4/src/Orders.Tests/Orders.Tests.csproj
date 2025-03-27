@@ -5,8 +5,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
-    <AssemblyName>StateMachine.Tests</AssemblyName>
-    <RootNamespace>StateMachine.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
