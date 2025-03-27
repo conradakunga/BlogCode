@@ -75,4 +75,21 @@ public class TrafficLightTests
         light.Transition();
         light.CurrentStatus.Should().Be(Status.AmberFromRed);
     }
+
+    [Theory]
+    [InlineData(Status.AmberFromRed, Status.Green)]
+    [InlineData(Status.Green, Status.AmberFromGreen)]
+    [InlineData(Status.AmberFromGreen, Status.Red)]
+    public void Lights_State_Is_Loaded_Correctly(Status initialState, Status nextState)
+    {
+        var currentDate = DateTime.Now;
+        var provider = new FakeTimeProvider();
+        // Set time to midday
+        provider.SetUtcNow(new DateTimeOffset(currentDate.Year, currentDate.Month, currentDate.Day, 12, 0, 0,
+            TimeSpan.Zero));
+        var light = new TrafficLight(provider, initialState);
+        light.CurrentStatus.Should().Be(initialState);
+        light.Transition();
+        light.CurrentStatus.Should().Be(nextState);
+    }
 }

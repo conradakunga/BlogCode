@@ -10,7 +10,7 @@ public sealed class TrafficLight
     public Status CurrentStatus => _stateMachine.State;
     private readonly DateOnly[] _holidays;
 
-    public TrafficLight(TimeProvider provider)
+    public TrafficLight(TimeProvider provider, Status state = Status.Red)
     {
         // Declare a bunch of holidays
         var christmasDay = new DateOnly(2025, 12, 25);
@@ -24,7 +24,7 @@ public sealed class TrafficLight
         _provider = provider;
 
         // Create the state machine, and set the initial state as red
-        _stateMachine = new StateMachine<Status, Trigger>(Status.Red);
+        _stateMachine = new StateMachine<Status, Trigger>(state);
 
         //
         // Configure state machine
