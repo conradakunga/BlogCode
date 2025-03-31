@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TrafficLights\Calls.csproj" />
+    <ProjectReference Include="..\Calls\Calls.csproj" />
   </ItemGroup>
 
 </Project>
