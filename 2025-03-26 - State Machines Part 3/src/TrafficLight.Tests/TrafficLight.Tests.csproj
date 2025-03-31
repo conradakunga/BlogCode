@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TrafficLigts\StateMachineSample.csproj" />
+    <ProjectReference Include="..\TrafficLights\StateMachineSample.csproj" />
   </ItemGroup>
 
 </Project>
