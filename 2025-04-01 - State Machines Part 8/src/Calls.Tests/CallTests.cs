@@ -1,5 +1,4 @@
 ﻿using FluentAssertions;
-using Microsoft.Extensions.Time.Testing;
 using Serilog;
 using Xunit.Abstractions;
 using Xunit.Sdk;
