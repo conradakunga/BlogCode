@@ -1,6 +1,11 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+# April 2025
+
+
+**28 March 2025** - [Using State Machines In .NET - Part 9 - Calling Asynchronous Methods](https://www.conradakunga.com/blog/using-state-machines-in-net-part-9-calling-asynchronous-methods/) - Using state machines - async methods.
+
 # March 2025
 
 **28 March 2025** - [Using State Machines In .NET - Part 5 - Using Complex & Nested States](https://www.conradakunga.com/blog/using-state-machines-in-net-part-5-using-complex-nested-states/) - Using state machines - nested states.
