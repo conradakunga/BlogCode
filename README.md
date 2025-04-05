@@ -4,12 +4,14 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 # April 2025
 
 
-**28 March 2025** - [Using State Machines In .NET - Part 9 - Calling Asynchronous Methods](https://www.conradakunga.com/blog/using-state-machines-in-net-part-9-calling-asynchronous-methods/) - Using state machines - async methods.
+**5 April 2025** - [Using State Machines In .NET - Part 9 - Calling Asynchronous Methods](https://www.conradakunga.com/blog/using-state-machines-in-net-part-9-calling-asynchronous-methods/) - Using state machines - async methods.
+**2 April 2025** - [Using State Machines In .NET - Part 8 - Firing Events Before State Change](https://www.conradakunga.com/blog/using-state-machines-in-net-part-8-firing-events-before-state-change/) - Firing events before state change. 
 
 # March 2025
 
+**31 March 2025** - [Using State Machines In .NET - Part 7 - Conditional State Transitions](https://www.conradakunga.com/blog/using-state-machines-in-net-part-7-conditional-state-transitions/) - Conditional state transitions
+**30 March 2025** - [Using State Machines In .NET - Part 6 - Firing Events On State Change](https://www.conradakunga.com/blog/using-state-machines-in-net-part-6-firing-events-on-state-change/) - Events on state change
 **28 March 2025** - [Using State Machines In .NET - Part 5 - Using Complex & Nested States](https://www.conradakunga.com/blog/using-state-machines-in-net-part-5-using-complex-nested-states/) - Using state machines - nested states.
-
 **27 March 2025** - [Using State Machines - Part 4 - Using Multiple Triggers](https://www.conradakunga.com/blog/using-state-machines-part-4-using-multiple-triggers/) - Using state machines - multiple triggers.
 
 **26 March 2025** - [Using State Machines - Part 3 - Setting Initial State](https://www.conradakunga.com/blog/using-state-machines-part-3-setting-initial-state/) - Using state machines - setting initial state.
