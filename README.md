@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 # April 2025
 
 
+**6 April 2025** - [Using State Machines In .NET - Part 10 - Generating State Diagrams](https://www.conradakunga.com/blog/using-state-machines-in-net-part-10-generating-state-diagrams/) - Using state machines - generating state diagrams.
+
 **5 April 2025** - [Using State Machines In .NET - Part 9 - Calling Asynchronous Methods](https://www.conradakunga.com/blog/using-state-machines-in-net-part-9-calling-asynchronous-methods/) - Using state machines - async methods.
 
 **2 April 2025** - [Using State Machines In .NET - Part 8 - Firing Events Before State Change](https://www.conradakunga.com/blog/using-state-machines-in-net-part-8-firing-events-before-state-change/) - Firing events before state change. 
