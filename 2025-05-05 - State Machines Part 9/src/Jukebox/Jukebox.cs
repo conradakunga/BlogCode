@@ -18,8 +18,7 @@ public sealed class Jukebox
         // Configure state machine
         //
         _stateMachine.Configure(Status.Ready)
-            .Permit(Trigger.Play, Status.Playing)
-            .Permit(Trigger.Pause, Status.Paused);
+            .Permit(Trigger.Play, Status.Playing);
 
         _stateMachine.Configure(Status.Playing)
             .Permit(Trigger.Stop, Status.Ready)
