@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 # April 2025
 
 
+**7 April 2025** - [Using State Machines In .NET - Part 11 - Logic Based On How A State Was Transitioned](https://www.conradakunga.com/blog/using-state-machines-in-net-part-11-logic-based-on-how-a-state-was-transitioned/) - Using state machines - conditional transitioning events.
+
 **6 April 2025** - [Using State Machines In .NET - Part 10 - Generating State Diagrams](https://www.conradakunga.com/blog/using-state-machines-in-net-part-10-generating-state-diagrams/) - Using state machines - generating state diagrams.
 
 **5 April 2025** - [Using State Machines In .NET - Part 9 - Calling Asynchronous Methods](https://www.conradakunga.com/blog/using-state-machines-in-net-part-9-calling-asynchronous-methods/) - Using state machines - async methods.
