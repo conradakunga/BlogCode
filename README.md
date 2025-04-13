@@ -4,6 +4,14 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 # April 2025
 
 
+**13 April 2025** - [Using Serilog & Structured Logging In Testing - Part 3 - Testing Log Messages](https://www.conradakunga.com/blog/using-serilog-structured-logging-in-testing-part-3-testing-log-messages/) - Testing log messages 
+
+**12 April 2025** - [Using Serilog & Structured Logging In Testing - Part 2 - Configuring Logging Destinations](https://www.conradakunga.com/blog/using-serilog-structured-logging-in-testing-part-2-configuring-logging-destinations/) - Logging to Elastic Search & Seq
+
+**11 April 2025** - [Using Serilog & Structured Logging In Testing - Part 1 - Logging Test Output](https://www.conradakunga.com/blog/using-serilog-structured-logging-in-testing-part-1-logging-test-output/) - Logging test output
+
+**9 April 2025** - [Using State Machines In .NET - Part 12 - State Activation & Entry](https://www.conradakunga.com/blog/using-state-machines-in-net-part-12-state-activation-entry/) - Using state machines - state activation & entry.
+
 **7 April 2025** - [Using State Machines In .NET - Part 11 - Logic Based On How A State Was Transitioned](https://www.conradakunga.com/blog/using-state-machines-in-net-part-11-logic-based-on-how-a-state-was-transitioned/) - Using state machines - conditional transitioning events.
 
 **6 April 2025** - [Using State Machines In .NET - Part 10 - Generating State Diagrams](https://www.conradakunga.com/blog/using-state-machines-in-net-part-10-generating-state-diagrams/) - Using state machines - generating state diagrams.
