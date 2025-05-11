@@ -4,6 +4,24 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 # April 2025
 
 
+**10 May 2025** - [Flexible Leveraging Of appsettings.json In .NET Applications]https://www.conradakunga.com/blog/flexible-leveraging-of-appsettingsjson-in-net-applications/) - AppSettings.json leveraging
+
+**8 May 2025** - [Computing SHA256 & Other Checksums In C# & .NET](https://www.conradakunga.com/blog/computing-sha256-other-checksums-in-c-net/) - Checksum Computations
+
+**7 May 2025** - [Dapper Part 16 - Consideration When Passing Parameters](https://www.conradakunga.com/blog/dapper-part-16-consideration-when-passing-parameters/) - Consideration When Passing Dapper Parameters
+
+**6 May 2025** - [Tip - Command Text & Stored Procedure Specification In Dapper](https://www.conradakunga.com/blog/tip-command-text-stored-procedure-specification-in-dapper/) - Simplified Dapper execution
+
+
+# May 2025
+
+**16 April 2025** - [Resolve IPAddress From Domain In C#
+](https://www.conradakunga.com/blog/resolve-ipaddress-from-domain-in-c/) - Resolving IP Addresses 
+
+
+**14 April 2025** - [Beware - Environment.NewLine Is Not A Silver Bullet ](https://www.conradakunga.com/blog/beware-environmentnewline-is-not-a-silver-bullet/) - NewLine gotchas. 
+
+
 **13 April 2025** - [Using Serilog & Structured Logging In Testing - Part 3 - Testing Log Messages](https://www.conradakunga.com/blog/using-serilog-structured-logging-in-testing-part-3-testing-log-messages/) - Testing log messages 
 
 **12 April 2025** - [Using Serilog & Structured Logging In Testing - Part 2 - Configuring Logging Destinations](https://www.conradakunga.com/blog/using-serilog-structured-logging-in-testing-part-2-configuring-logging-destinations/) - Logging to Elastic Search & Seq
