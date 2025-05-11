@@ -7,8 +7,12 @@ Console.WriteLine(Environment.MachineName);
 
 // Load our company settings, that are mandatory
 builder.Configuration.AddJsonFile("companysettings.json", optional: false);
-// Load optional developer-specific settings
-builder.Configuration.AddJsonFile($"appsettings.{Environment.MachineName}.json", optional: true);
+
+if (builder.Environment.IsDevelopment())
+{
+    // Load optional developer-specific settings
+    builder.Configuration.AddJsonFile($"appsettings.{Environment.MachineName}.json", optional: true);
+}
 
 // Configure options DI
 builder.Services.AddOptions<SystemSettings>()
