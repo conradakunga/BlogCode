@@ -3,7 +3,9 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # May 2025
 
-**13 May 2025** - [Overriding appsettings.json Via Command Line](https://www.conradakunga.com/blog/overriding-appsettingsjson-via-command-line/) - Overriding settings
+**14 May 2025** - [Overriding appsettings.json Via Environment Variables](https://www.conradakunga.com/blog/overriding-appsettingsjson-via-environment-variables/)) - Overriding settings via environment vars
+
+**13 May 2025** - [Overriding appsettings.json Via Command Line](https://www.conradakunga.com/blog/overriding-appsettingsjson-via-command-line/) - Overriding settings via command line
 
 **11 May 2025** - [Setting The Staging & Production Environments During Development](https://www.conradakunga.com/blog/setting-the-staging-production-environments-during-development/) - Setting environments
 
