@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # May 2025
 
+**16 May 2025** - [Order of Settings Precedence for .NET Applications](https://www.conradakunga.com/blog/order-of-settings-precedence-for-net-applications/) - precedence of settings
+
 **14 May 2025** - [Overriding appsettings.json Via Environment Variables](https://www.conradakunga.com/blog/overriding-appsettingsjson-via-environment-variables/) - Overriding settings via environment vars
 
 **13 May 2025** - [Overriding appsettings.json Via Command Line](https://www.conradakunga.com/blog/overriding-appsettingsjson-via-command-line/) - Overriding settings via command line
