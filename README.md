@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # May 2025
 
+**24 May 2025** - [Using Tuples In Deconstructors](https://www.conradakunga.com/blog/using-tuples-in-deconstructors/) - Using tuples in deconstructors 
+
 **23 May 2025** - [Not All .NET Exceptions Can Be Caught - The Case Of StackOverflow](https://www.conradakunga.com/blog/not-all-net-exceptions-can-be-caught-the-case-of-stack-overflow/) - Stack Overflows cannot be caught 
 
 **21 May 2025** - [Determining the Operating System SQL Server Is Running On Remotely](https://www.conradakunga.com/blog/determining-the-operating-system-sql-server-is-running-on-remotely/) - How to determine the operating system SQL Server is running on.
