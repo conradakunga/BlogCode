@@ -3,7 +3,11 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # May 2025
 
-**16 May 2025** - [Order of Settings Precedence for .NET Applications](https://www.conradakunga.com/blog/order-of-settings-precedence-for-net-applications/) - precedence of settings
+**23 May 2025** - [Not All .NET Exceptions Can Be Caught - The Case Of StackOverflow](https://www.conradakunga.com/blog/not-all-net-exceptions-can-be-caught-the-case-of-stack-overflow/) - Stack Overflows cannot be caught 
+
+**21 May 2025** - [Determining the Operating System SQL Server Is Running On Remotely](https://www.conradakunga.com/blog/determining-the-operating-system-sql-server-is-running-on-remotely/) - How to determine the operating system SQL Server is running on.
+
+**16 May 2025** - [Order of Settings Precedence for .NET Applications](https://www.conradakunga.com/blog/order-of-settings-precedence-for-net-applications/) - Precedence of settings
 
 **14 May 2025** - [Overriding appsettings.json Via Environment Variables](https://www.conradakunga.com/blog/overriding-appsettingsjson-via-environment-variables/) - Overriding settings via environment vars
 
