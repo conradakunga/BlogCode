@@ -1,7 +1,13 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+# June 2025
+
+**2 Jun 2025** - [Using the Generic Math Interface in C# & .NET](https://www.conradakunga.com/blog/using-the-generic-math-interface-in-c-net/) - Simplifying numeric logic with the generic math interface
+
 # May 2025
+
+**28 May 2025** - [Calling Async Methods In Constructors In C#](https://www.conradakunga.com/blog/calling-async-methods-in-constructors/) - How do deal with async logic when setting object state 
 
 **24 May 2025** - [Using Tuples In Deconstructors](https://www.conradakunga.com/blog/using-tuples-in-deconstructors/) - Using tuples in deconstructors 
 
