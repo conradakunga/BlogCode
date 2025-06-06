@@ -3,6 +3,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # June 2025
 
+**5 Jun 2025** - [How to Deserialize JSON Using HttpClient Using C# In .NET](https://www.conradakunga.com/blog/how-to-deserialize-json-using-httpclient-in-using-c-in-net/) - JSON Deserialization options
+
+**3 Jun 2025** - [Exposing Collections As Read-Only In C# & .NET](https://www.conradakunga.com/blog/exposing-collections-as-read-only-in-c-net/) - How to expose collections safely.
+
 **2 Jun 2025** - [Using the Generic Math Interface in C# & .NET](https://www.conradakunga.com/blog/using-the-generic-math-interface-in-c-net/) - Simplifying numeric logic with the generic math interface
 
 # May 2025
