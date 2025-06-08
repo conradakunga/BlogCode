@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # June 2025
 
+**7 Jun 2025** - [C# Dictionary Usage Optimizations - TryAdd](https://www.conradakunga.com/blog/c-dictionary-usage-optimizations-tryadd/) - C# Dictionary Usage Optimizations - TryAdd
+
 **5 Jun 2025** - [How to Deserialize JSON Using HttpClient Using C# In .NET](https://www.conradakunga.com/blog/how-to-deserialize-json-using-httpclient-in-using-c-in-net/) - JSON Deserialization options
 
 **3 Jun 2025** - [Exposing Collections As Read-Only In C# & .NET](https://www.conradakunga.com/blog/exposing-collections-as-read-only-in-c-net/) - How to expose collections safely.
