@@ -42,7 +42,7 @@ type Account =
     
 
 // Create a list of Account
-let accounts : Account list = [
+let accounts = [
     Current myCurrentAccount
     Savings mySavingsAccount
     MobileMoney myMobileMoneyAccount
@@ -53,4 +53,5 @@ accounts |> List.iter (fun account ->
     match account with
     | Current acc -> printfn "Current Account: %s, Balance: %s" acc.AccountNumber (acc.Balance.ToString("#,0"))
     | Savings acc -> printfn "Savings Account: %s, Rate: %M%%, Balance: %s" acc.AccountNumber acc.InterestRate (acc.Balance.ToString("#,0"))
+    | MobileMoney acc -> printfn "Mobile Money Account: Phone Number: %s, Balance: %s" acc.MobilePhoneNumber (acc.Balance.ToString("#,0"))
 )
