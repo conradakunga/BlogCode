@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # June 2025
 
+**14 Jun 2025** - [F# Discriminated Unions & Their Benefits](https://www.conradakunga.com/blog/f-discriminated-unions-their-benefits/) - F# Discriminated Unions 
+
 **8 Jun 2025** - [C# Dictionary Usage Optimizations - TryGet](https://www.conradakunga.com/blog/c-dictionary-usage-optimizations-tryget/) - C# Dictionary Usage Optimizations - TryGet
 
 **7 Jun 2025** - [C# Dictionary Usage Optimizations - TryAdd](https://www.conradakunga.com/blog/c-dictionary-usage-optimizations-tryadd/) - C# Dictionary Usage Optimizations - TryAdd
