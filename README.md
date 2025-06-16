@@ -3,6 +3,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # June 2025
 
+**16 Jun 2025** - [Locale Considerations When Parsing Dates](https://www.conradakunga.com/blog/locale-considerations-when-parsing-dates/) - Locale considerations when parsing dates. 
+
+**15 Jun 2025** - [Don't Parse - TryParse](https://www.conradakunga.com/blog/dont-parse-tryparse/) - Parsing data safely. 
+
 **14 Jun 2025** - [F# Discriminated Unions & Their Benefits](https://www.conradakunga.com/blog/f-discriminated-unions-their-benefits/) - F# Discriminated Unions 
 
 **8 Jun 2025** - [C# Dictionary Usage Optimizations - TryGet](https://www.conradakunga.com/blog/c-dictionary-usage-optimizations-tryget/) - C# Dictionary Usage Optimizations - TryGet
