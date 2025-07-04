@@ -1,6 +1,10 @@
 # Blog
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+# July 2025
+
+**3 Jun 2025** - [Writing Debugger-Friendly Objects in C# & .NET](https://www.conradakunga.com/blog/writing-debugger-friendly-objects-in-c-net/) - Writting debugger-friendly objects 
+
 # June 2025
 
 **27 Jun 2025** - [Connecting to Secured RabbitMQ Over SSL in C# With EasyNetQ](https://www.conradakunga.com/blog/connecting-to-secured-rabbitmq-over-ssl-in-c-with-easynetq/) - Connect to RabbitMQ over SSL.
