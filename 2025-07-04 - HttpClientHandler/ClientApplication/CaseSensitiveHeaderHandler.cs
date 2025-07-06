@@ -6,6 +6,10 @@ public sealed class CaseSensitiveHeaderHandler :
 
     public CaseSensitiveHeaderHandler(string headerName, string headerValue)
     {
+        // Validate the incoming values
+        ArgumentException.ThrowIfNullOrWhiteSpace(headerName);
+        ArgumentException.ThrowIfNullOrWhiteSpace(headerValue);
+        // Set the values
         _headerName = headerName;
         _headerValue = headerValue;
     }
