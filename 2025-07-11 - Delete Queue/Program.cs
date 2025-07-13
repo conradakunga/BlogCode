@@ -25,7 +25,7 @@ async Task Main()
 
         // Delete the queue
         Log.Information("Deleting {Queue} ...", queue.Name);
-        await mc.DeleteQueueAsync(queue.Vhost, queue.Name);
+        await mc.DeleteQueueAsync(queue);
 
         Log.Information("Deleted {Queue}", queue.Name);
     }
