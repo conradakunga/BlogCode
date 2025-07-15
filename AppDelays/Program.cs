@@ -26,7 +26,9 @@ var cts = new CancellationTokenSource();
 // Invoke method, and pass delay and token
 await ComplexOperation(10, cts.Token);
 Log.Information("Completed long task");
+return;
 
+// Complex method here that has a delay within
 async Task ComplexOperation(int delayInSeconds, CancellationToken token)
 {
     await Task.Delay(TimeSpan.FromSeconds(delayInSeconds), token);
