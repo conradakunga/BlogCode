@@ -2,24 +2,20 @@
 
 Log.Logger = new LoggerConfiguration().WriteTo.Console().CreateLogger();
 
-// // Start fake task
-// Log.Information("Starting a long task");
-// // Sleep for 10 seconds synchronously
-// Thread.Sleep(TimeSpan.FromSeconds(10));
-// Log.Information("Completed long task");
-//
+// Start fake task
+Log.Information("Starting a long task");
+// Sleep for 10 seconds synchronously
+Thread.Sleep(TimeSpan.FromSeconds(10));
+Log.Information("Completed long task");
+
+
+// Start fake task
+Log.Information("Starting a long task");
+// Sleep for 10 seconds asynchronously
+await Task.Delay(TimeSpan.FromSeconds(10));
+Log.Information("Completed long task");
 
 // // Start fake task
-// Log.Information("Starting a long task");
-// // Sleep for 10 seconds asynchronously
-// await Task.Delay(TimeSpan.FromSeconds(10));
-// Log.Information("Completed long task");
-
-// // Start fake task
-// Log.Information("Starting a long task");
-// // Call complex method, requesting a 10 second delay 
-// // and pass a cancellation token
-
 Log.Information("Starting a long task");
 // Create a cancellation token source
 var cts = new CancellationTokenSource();
