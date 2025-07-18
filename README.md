@@ -3,6 +3,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # July 2025
 
+**17 Jun 2025** - [Sending Email In C# & .NET - Part 1 - Introduction](https://www.conradakunga.com/blog/sending-email-in-c-net-part-1-introduction/) - Sending email - part 1
+
 **16 Jun 2025** - [Pet Peeve - Properly Pluralizing Counts In C# & .NET](https://www.conradakunga.com/blog/pet-peeve-properly-pluralizing-counts-in-c-net/) - Pluralizing counts
 
 **14 Jun 2025** - [How to Wait in C# & .NET](https://www.conradakunga.com/blog/how-to-wait-in-c-net/) - How to wait in applications
