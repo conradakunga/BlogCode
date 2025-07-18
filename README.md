@@ -3,6 +3,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # July 2025
 
+**16 Jun 2025** - [Pet Peeve - Properly Pluralizing Counts In C# & .NET](https://www.conradakunga.com/blog/pet-peeve-properly-pluralizing-counts-in-c-net/) - Pluralizing counts
+
+**14 Jun 2025** - [How to Wait in C# & .NET](https://www.conradakunga.com/blog/how-to-wait-in-c-net/) - How to wait in applications
+
 **10 Jun 2025** - [Determining The Architecture Of An Emulated 32 Bit Running Process In .NET On Windows](https://www.conradakunga.com/blog/determining-the-architecture-of-an-emulated-32-bit-running-process-in-net-on-windows/) - Determing architecture of a running process
 
 **6 Jun 2025** - [Get IP Address Of Web Server From ASP.NET WebAPI EndPoint](https://www.conradakunga.com/blog/get-ip-address-of-web-server-from-aspnet-webapi-endpoint/) - Injecting the IServer into endpoints
