@@ -3,6 +3,12 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 # July 2025
 
+**20 Jun 2025** - [Sending Email In C# & .NET - Part 4 - Using Office 365 & MS Graph API](https://www.conradakunga.com/blog/sending-email-in-c-net-part-4-using-office-365-ms-graph-api/) - Sending email - part 4
+
+**19 Jun 2025** - [Sending Email In C# & .NET - Part 3 - Using Gmail](https://www.conradakunga.com/blog/sending-email-in-c-net-part-3-using-gmail/) - Sending email - part 3
+
+**18 Jun 2025** - [Sending Email In C# & .NET - Part 2 - Delivery](https://www.conradakunga.com/blog/sending-email-in-c-net-part-2-delivery/) - Sending email - part 2 - delivery
+
 **17 Jun 2025** - [Sending Email In C# & .NET - Part 1 - Introduction](https://www.conradakunga.com/blog/sending-email-in-c-net-part-1-introduction/) - Sending email - part 1
 
 **16 Jun 2025** - [Pet Peeve - Properly Pluralizing Counts In C# & .NET](https://www.conradakunga.com/blog/pet-peeve-properly-pluralizing-counts-in-c-net/) - Pluralizing counts
