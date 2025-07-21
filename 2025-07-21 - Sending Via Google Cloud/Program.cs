@@ -1,52 +1,61 @@
-﻿using Azure.Identity;
-using Microsoft.Graph;
-using Microsoft.Graph.Models;
-using Microsoft.Graph.Users.Item.SendMail;
+﻿using System.Text;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Gmail.v1;
+using Google.Apis.Gmail.v1.Data;
+using Google.Apis.Services;
+using MimeKit;
 
-const string applicationID = "APPLICATION_ID";
-const string tenantID = "TENANT_ID";
-const string secretValue = "CLIENT_SECRET";
-const string fromAddress = "cakunga@innova.co.ke";
-const string toAddress = "conradakunga@gmail.com";
+// Setup our parameters
+const string applicationName = "EmailAppDesktopClient";
+const string fromAddress = "conradakunga@gmail.com";
+const string toAddress = "cakunga@innova.co.ke";
 
 try
 {
-    // Set our scopes to the default
-    var scopes = new[] { "https://graph.microsoft.com/.default" };
+    // Set our desired scopes
+    var scopes = new[] { GmailService.Scope.GmailSend };
 
-    // Create TokenCredential
-    var credential = new ClientSecretCredential(tenantID, applicationID, secretValue);
-
-    // Create Graph client
-    var graphClient = new GraphServiceClient(credential, scopes);
-
-    // Build email
-    var message = new Message
+    // Read our credentials from JSON
+    UserCredential credential;
+    await using (var stream = new FileStream("client_secrets.json", FileMode.Open, FileAccess.Read))
     {
-        Subject = "Test Email",
-        Body = new ItemBody
-        {
-            ContentType = BodyType.Text,
-            Content = "Test email"
-        },
-        ToRecipients =
-        [
-            new Recipient
-            {
-                EmailAddress = new EmailAddress
-                {
-                    Address = toAddress
-                }
-            }
-        ]
+        credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(GoogleClientSecrets.FromStream(stream).Secrets,
+            scopes, "user", CancellationToken.None
+        );
+    }
+
+    // Initialize the service
+    var service = new GmailService(new BaseClientService.Initializer
+    {
+        HttpClientInitializer = credential,
+        ApplicationName = applicationName
+    });
+
+    // Create a MIME message
+    var email = new MimeMessage();
+    email.From.Add(new MailboxAddress(fromAddress, fromAddress));
+    email.To.Add(new MailboxAddress(toAddress, toAddress));
+    email.Subject = "Test Subject";
+    email.Body = new TextPart("plain")
+    {
+        Text = "Test Email"
     };
 
-    // Send email
-    await graphClient.Users[fromAddress].SendMail.PostAsync(new SendMailPostRequestBody
+    // Encode the message
+    using var memoryStream = new MemoryStream();
+    email.WriteTo(memoryStream);
+    var rawMessage = Convert.ToBase64String(memoryStream.ToArray())
+        .Replace('+', '-').Replace('/', '_').Replace("=", "");
+
+    // Create a message
+    var message = new Message
     {
-        Message = message
-    });
-    
+        Raw = rawMessage,
+    };
+
+    // Send the message
+    await service.Users.Messages.Send(message, "me").ExecuteAsync();
+
     Console.WriteLine("Message sent");
 }
 catch (Exception ex)

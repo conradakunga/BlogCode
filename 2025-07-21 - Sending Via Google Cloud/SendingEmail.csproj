@@ -1,16 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Azure.Identity" Version="1.14.2" />
-    <PackageReference Include="Microsoft.Graph" Version="5.86.0" />
-    <PackageReference Include="Microsoft.Identity.Client" Version="4.74.0" />
-  </ItemGroup>
-
+    <ItemGroup>
+        <PackageReference Include="Google.Apis.Auth" Version="1.70.0"/>
+        <PackageReference Include="Google.Apis.Gmail.v1" Version="1.70.0.3833"/>
+        <PackageReference Include="MimeKit" Version="4.13.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Update="client_secrets.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
 </Project>
