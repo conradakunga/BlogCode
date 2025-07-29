@@ -4,9 +4,11 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## July 2025
 
-**26 Jun 2025** - [Sending Email In C# & .NET - Part 8 - Sending HTML Email Using SMTP](https://www.conradakunga.com/blog/sending-email-in-c-net-part-8-sending-html-email-using-smtp/) - Sending inline images using SMTP
+**28 Jun 2025** - [Sending Email In C# & .NET - Part 9 - Sending Multiple Format Email Using SMTP](https://www.conradakunga.com/blog/sending-email-in-c-net-part-9-sending-multiple-format-email-using-smtp/) - Sending mutli-format email
 
-**25 Jun 2025** - [Sending Email In C# & .NET - Part 7 - Sending Inline Images Using SMTP](https://www.conradakunga.com/blog/sending-email-in-c-net-part-7-sending-inline-images-using-smtp/) - Sending inline images using SMTP
+**27 Jun 2025** - [Sending Email In C# & .NET - Part 8 - Sending HTML Email Using SMTP](https://www.conradakunga.com/blog/sending-email-in-c-net-part-8-sending-html-email-using-smtp/) - Sending inline images using SMTP
+
+**26 Jun 2025** - [Sending Email In C# & .NET - Part 7 - Sending Inline Images Using SMTP](https://www.conradakunga.com/blog/sending-email-in-c-net-part-7-sending-inline-images-using-smtp/) - Sending inline images using SMTP
 
 **24 Jun 2025** - [Displaying User-Friendly TimeSpans In C# & .NET](https://www.conradakunga.com/blog/displaying-user-friendly-timespans-in-csharp-net/) - Displaying `TimeSpan` objects
 
