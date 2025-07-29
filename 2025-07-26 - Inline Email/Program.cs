@@ -3,28 +3,41 @@ using System.Net.Mail;
 using System.Net.Mime;
 using Serilog;
 
-// Setup logging
-Log.Logger = new LoggerConfiguration().WriteTo.Console().CreateLogger();
-
-// MaiMessage property
+// Image from file system
 {
+    // Setup logging
+    Log.Logger = new LoggerConfiguration().WriteTo.Console().CreateLogger();
+
     var mail = new MailMessage();
     mail.From = new MailAddress("operations@MI5.co.uk", "M");
     mail.To.Add(new MailAddress("jbond@MI5.co.uk", "James Bond"));
-    mail.Subject = "Happy Birthday";
-    mail.Body = """
-                <html><body>
-                Good afternoon.
-                <br>
-                Have a <B>happy birthday</B> today!
-                <br>
-                <br>
-                <i>Warmest regards, M<i/>
-                </body></html>
-                """;
+    mail.Subject = "Happy Birthday James";
 
-    // Set the body format as HTML
-    mail.IsBodyHtml = true;
+    // HTML body with image reference to linked resource by ID
+    const string htmlBody = """
+                            <html><body>
+                            Good afternoon.
+                            <br>
+                            Have a happy birthday today!
+                            <br>
+                            <br>
+                            <img src='cid:Image1' />
+                            </body></html>
+                            """;
+
+    // AlternateView for HTML with linked image
+    var htmlView = AlternateView.CreateAlternateViewFromString(htmlBody, null, MediaTypeNames.Text.Html);
+
+    // Load image and link it to the HTML view
+    var passPortPhoto = new LinkedResource("jamesBond.png", MediaTypeNames.Image.Png)
+    {
+        ContentId = "Image1",
+        ContentType = new ContentType(MediaTypeNames.Image.Png),
+        TransferEncoding = TransferEncoding.Base64
+    };
+
+    htmlView.LinkedResources.Add(passPortPhoto);
+    mail.AlternateViews.Add(htmlView);
 
     // Create SMTPClient
     var smtpClient = new SmtpClient
@@ -46,26 +59,43 @@ Log.Logger = new LoggerConfiguration().WriteTo.Console().CreateLogger();
         Log.Error(ex, "Error sending email");
     }
 }
-// Alternate view 
+// Image from stream  
 {
+    // Setup logging
+    Log.Logger = new LoggerConfiguration().WriteTo.Console().CreateLogger();
+
     var mail = new MailMessage();
     mail.From = new MailAddress("operations@MI5.co.uk", "M");
     mail.To.Add(new MailAddress("jbond@MI5.co.uk", "James Bond"));
-    mail.Subject = "Happy Birthday James";
-    const string html = """
-                        <html><body>
-                        Good afternoon.
-                        <br>
-                        Have a <B>happy birthday</B> today!
-                        <br>
-                        <br>
-                        <i>Warmest regards, M<i/>
-                        </body></html>
-                        """;
+    mail.Subject = "Happy Birthday James Again";
 
-    // AlternateView for HTML
-    var htmlView = AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html);
+    // HTML body with image reference to linked resource by ID
+    const string htmlBody = """
+                            <html><body>
+                            Good afternoon.
+                            <br>
+                            Have a happy birthday today!
+                            <br>
+                            <br>
+                            <img src='cid:Image1' />
+                            </body></html>
+                            """;
 
+    // AlternateView for HTML with linked image
+    var htmlView = AlternateView.CreateAlternateViewFromString(htmlBody, null, MediaTypeNames.Text.Html);
+
+    // This can be sourced from anywhere - API, Blob, database, etc 
+    var bytes = File.ReadAllBytes("jamesBond.png");
+    var stream = new MemoryStream(bytes);
+    // Load image and link it to the HTML view
+    var passPortPhoto = new LinkedResource(stream, MediaTypeNames.Image.Png)
+    {
+        ContentId = "Image1",
+        ContentType = new ContentType(MediaTypeNames.Image.Png),
+        TransferEncoding = TransferEncoding.Base64
+    };
+
+    htmlView.LinkedResources.Add(passPortPhoto);
     mail.AlternateViews.Add(htmlView);
 
     // Create SMTPClient
