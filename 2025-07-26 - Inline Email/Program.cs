@@ -84,6 +84,7 @@ using Serilog;
     // AlternateView for HTML with linked image
     var htmlView = AlternateView.CreateAlternateViewFromString(htmlBody, null, MediaTypeNames.Text.Html);
 
+    // This can be sourced from anywhere - API, Blob, database, etc 
     var bytes = File.ReadAllBytes("jamesBond.png");
     var stream = new MemoryStream(bytes);
     // Load image and link it to the HTML view
