@@ -1,14 +1,17 @@
 ﻿List<int> list = [0, 1, 2, 3, 4, 5];
 
-// // Print elements
-// list.ForEach(Console.Write);
-// Console.WriteLine();
-// // Sort the list
-// list.Reverse();
-// // Print elements
-// list.ForEach(Console.Write);
-// Console.WriteLine();
-//
+// Mutating
+
+// Print elements
+list.ForEach(Console.Write);
+Console.WriteLine();
+// Sort the list
+list.Reverse();
+// Print elements
+list.ForEach(Console.Write);
+Console.WriteLine();
+
+// Non mutating
 
 list = [0, 1, 2, 3, 4, 5];
 // Print elements
