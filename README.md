@@ -2,6 +2,14 @@
 
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+## Aug 2025
+
+**3 Aug 2025** - [Generating A Cryptographically Random String In C# & .NET](https://www.conradakunga.com/blog/generating-a-cryptographically-random-string-in-c-net/) - Generating a cryptographically random string
+
+**2 Aug 2025** - [Generating A Random String In C# & .NET](https://www.conradakunga.com/blog/generating-a-random-string-in-c-net/) - How to generate a random string
+
+**1 Aug 2025** - [Adding Items To An Existing List In C# & .NET](https://www.conradakunga.com/blog/adding-items-to-an-existing-list-in-c-net/) - Adding items to an existing list
+
 ## July 2025
 
 **30 Jul 2025** - [Mutative vs Non-Mutative List Manipulation In C# & .NET](https://www.conradakunga.com/blog/mutative-vs-non-mutative-list-manipulation-in-c-net/) - Manipulating lists that mutate
