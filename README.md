@@ -4,31 +4,33 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## July 2025
 
-**28 Jun 2025** - [Sending Email In C# & .NET - Part 9 - Sending Multiple Format Email Using SMTP](https://www.conradakunga.com/blog/sending-email-in-c-net-part-9-sending-multiple-format-email-using-smtp/) - Sending mutli-format email
+**30 Jul 2025** - [Mutative vs Non-Mutative List Manipulation In C# & .NET](https://www.conradakunga.com/blog/mutative-vs-non-mutative-list-manipulation-in-c-net/) - Manipulating lists that mutate
 
-**27 Jun 2025** - [Sending Email In C# & .NET - Part 8 - Sending HTML Email Using SMTP](https://www.conradakunga.com/blog/sending-email-in-c-net-part-8-sending-html-email-using-smtp/) - Sending inline images using SMTP
+**28 Jul 2025** - [Sending Email In C# & .NET - Part 9 - Sending Multiple Format Email Using SMTP](https://www.conradakunga.com/blog/sending-email-in-c-net-part-9-sending-multiple-format-email-using-smtp/) - Sending mutli-format email
 
-**26 Jun 2025** - [Sending Email In C# & .NET - Part 7 - Sending Inline Images Using SMTP](https://www.conradakunga.com/blog/sending-email-in-c-net-part-7-sending-inline-images-using-smtp/) - Sending inline images using SMTP
+**27 Jul 2025** - [Sending Email In C# & .NET - Part 8 - Sending HTML Email Using SMTP](https://www.conradakunga.com/blog/sending-email-in-c-net-part-8-sending-html-email-using-smtp/) - Sending inline images using SMTP
 
-**24 Jun 2025** - [Displaying User-Friendly TimeSpans In C# & .NET](https://www.conradakunga.com/blog/displaying-user-friendly-timespans-in-csharp-net/) - Displaying `TimeSpan` objects
+**26 Jul 2025** - [Sending Email In C# & .NET - Part 7 - Sending Inline Images Using SMTP](https://www.conradakunga.com/blog/sending-email-in-c-net-part-7-sending-inline-images-using-smtp/) - Sending inline images using SMTP
 
-**20 Jun 2025** - [Sending Email In C# & .NET - Part 4 - Using Office 365 & MS Graph API](https://www.conradakunga.com/blog/sending-email-in-c-net-part-4-using-office-365-ms-graph-api/) - Sending email - part 4
+**24 Jul 2025** - [Displaying User-Friendly TimeSpans In C# & .NET](https://www.conradakunga.com/blog/displaying-user-friendly-timespans-in-csharp-net/) - Displaying `TimeSpan` objects
 
-**19 Jun 2025** - [Sending Email In C# & .NET - Part 3 - Using Gmail](https://www.conradakunga.com/blog/sending-email-in-c-net-part-3-using-gmail/) - Sending email - part 3
+**20 Jul 2025** - [Sending Email In C# & .NET - Part 4 - Using Office 365 & MS Graph API](https://www.conradakunga.com/blog/sending-email-in-c-net-part-4-using-office-365-ms-graph-api/) - Sending email - part 4
 
-**18 Jun 2025** - [Sending Email In C# & .NET - Part 2 - Delivery](https://www.conradakunga.com/blog/sending-email-in-c-net-part-2-delivery/) - Sending email - part 2 - delivery
+**19 Jul 2025** - [Sending Email In C# & .NET - Part 3 - Using Gmail](https://www.conradakunga.com/blog/sending-email-in-c-net-part-3-using-gmail/) - Sending email - part 3
 
-**17 Jun 2025** - [Sending Email In C# & .NET - Part 1 - Introduction](https://www.conradakunga.com/blog/sending-email-in-c-net-part-1-introduction/) - Sending email - part 1
+**18 Jul 2025** - [Sending Email In C# & .NET - Part 2 - Delivery](https://www.conradakunga.com/blog/sending-email-in-c-net-part-2-delivery/) - Sending email - part 2 - delivery
 
-**16 Jun 2025** - [Pet Peeve - Properly Pluralizing Counts In C# & .NET](https://www.conradakunga.com/blog/pet-peeve-properly-pluralizing-counts-in-c-net/) - Pluralizing counts
+**17 Jul 2025** - [Sending Email In C# & .NET - Part 1 - Introduction](https://www.conradakunga.com/blog/sending-email-in-c-net-part-1-introduction/) - Sending email - part 1
 
-**14 Jun 2025** - [How to Wait in C# & .NET](https://www.conradakunga.com/blog/how-to-wait-in-c-net/) - How to wait in applications
+**16 Jul 2025** - [Pet Peeve - Properly Pluralizing Counts In C# & .NET](https://www.conradakunga.com/blog/pet-peeve-properly-pluralizing-counts-in-c-net/) - Pluralizing counts
 
-**10 Jun 2025** - [Determining The Architecture Of An Emulated 32 Bit Running Process In .NET On Windows](https://www.conradakunga.com/blog/determining-the-architecture-of-an-emulated-32-bit-running-process-in-net-on-windows/) - Determing architecture of a running process
+**14 Jul 2025** - [How to Wait in C# & .NET](https://www.conradakunga.com/blog/how-to-wait-in-c-net/) - How to wait in applications
 
-**6 Jun 2025** - [Get IP Address Of Web Server From ASP.NET WebAPI EndPoint](https://www.conradakunga.com/blog/get-ip-address-of-web-server-from-aspnet-webapi-endpoint/) - Injecting the IServer into endpoints
+**10 Jul 2025** - [Determining The Architecture Of An Emulated 32 Bit Running Process In .NET On Windows](https://www.conradakunga.com/blog/determining-the-architecture-of-an-emulated-32-bit-running-process-in-net-on-windows/) - Determing architecture of a running process
 
-**3 Jun 2025** - [Writing Debugger-Friendly Objects in C# & .NET](https://www.conradakunga.com/blog/writing-debugger-friendly-objects-in-c-net/) - Writting debugger-friendly objects
+**6 Jul 2025** - [Get IP Address Of Web Server From ASP.NET WebAPI EndPoint](https://www.conradakunga.com/blog/get-ip-address-of-web-server-from-aspnet-webapi-endpoint/) - Injecting the IServer into endpoints
+
+**3 Jul 2025** - [Writing Debugger-Friendly Objects in C# & .NET](https://www.conradakunga.com/blog/writing-debugger-friendly-objects-in-c-net/) - Writting debugger-friendly objects
 
 ## June 2025
 
