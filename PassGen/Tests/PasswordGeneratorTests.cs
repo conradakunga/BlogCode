@@ -19,30 +19,11 @@ public class PasswordGeneratorTests
     }
 
     [Theory]
-    [InlineData(-1)]
-    [InlineData(-2)]
-    public void InvalidNumbersThrowsException(int numbers)
-    {
-        var ex = Record.Exception(() => _ = PasswordGenerator.GeneratePassword(numbers, 0, 10));
-        ex.Should().BeOfType<ArgumentOutOfRangeException>();
-    }
-
-    [Theory]
-    [InlineData(-1)]
-    [InlineData(-2)]
-    public void InvalidSymbolsThrowsException(int symbols)
-    {
-        var ex = Record.Exception(() => _ = PasswordGenerator.GeneratePassword(0, symbols, 10));
-        ex.Should().BeOfType<ArgumentOutOfRangeException>();
-    }
-
-    [Theory]
     [InlineData(0)]
     [InlineData(9)]
-    [InlineData(-1)]
-    public void InvalidLengthThrowsException(int symbols)
+    public void InvalidLengthThrowsException(byte passwordLength)
     {
-        var ex = Record.Exception(() => _ = PasswordGenerator.GeneratePassword(0, 0, symbols));
+        var ex = Record.Exception(() => _ = PasswordGenerator.GeneratePassword(0, 0, passwordLength));
         ex.Should().BeOfType<ArgumentOutOfRangeException>();
     }
 
@@ -50,7 +31,7 @@ public class PasswordGeneratorTests
     [InlineData(11, 0, 10)]
     [InlineData(0, 11, 10)]
     [InlineData(6, 5, 10)]
-    public void SymbolsAndNumbersShouldAlignWithRequestedLength(int numbers, int symbols, int passwordLength)
+    public void SymbolsAndNumbersShouldAlignWithRequestedLength(byte numbers, byte symbols, byte passwordLength)
     {
         var ex = Record.Exception(() => _ = PasswordGenerator.GeneratePassword(numbers, symbols, passwordLength));
         ex.Should().BeOfType<ArgumentException>();
@@ -61,7 +42,7 @@ public class PasswordGeneratorTests
     [InlineData(1, 0, 10)]
     [InlineData(0, 1, 10)]
     [InlineData(5, 5, 50)]
-    public void PasswordGeneratedSuccessfully(int numbers, int symbols, int passwordLength)
+    public void PasswordGeneratedSuccessfully(byte numbers, byte symbols, byte passwordLength)
     {
         var password = PasswordGenerator.GeneratePassword(numbers, symbols, passwordLength);
         _helper.WriteLine(password);
@@ -73,7 +54,7 @@ public class PasswordGeneratorTests
     [InlineData(1, 0, 10)]
     [InlineData(0, 1, 10)]
     [InlineData(5, 5, 50)]
-    public void HumanReadablePasswordsAreRespected(int numbers, int symbols, int passwordLength)
+    public void HumanReadablePasswordsAreRespected(byte numbers, byte symbols, byte passwordLength)
     {
         var password = PasswordGenerator.GeneratePassword(numbers, symbols, passwordLength, true);
         _helper.WriteLine(password);

@@ -4,7 +4,7 @@ namespace PassGen;
 
 public static class PasswordGenerator
 {
-    public static string GeneratePassword(int numbers, int symbols, int passwordLength, bool humanReadable = false)
+    public static string GeneratePassword(byte numbers, byte symbols, byte passwordLength, bool humanReadable = false)
     {
         // Ensure the numbers and symbols are valid
         ArgumentOutOfRangeException.ThrowIfNegative(numbers);
@@ -29,17 +29,17 @@ public static class PasswordGenerator
         }
 
         var numericString = new string(Enumerable.Range(0, numbers)
-            .Select(x => numericAlphabet.GetRandomCharacter())
+            .Select(_ => numericAlphabet.GetRandomCharacter())
             .ToArray());
         Log.Debug("Numeric String {String}", numericString);
 
         var symbolString = new string(Enumerable.Range(0, symbols)
-            .Select(x => Constants.SymbolAlphabet.GetRandomCharacter())
+            .Select(_ => Constants.SymbolAlphabet.GetRandomCharacter())
             .ToArray());
         Log.Debug("Symbol String: {String}", symbolString);
 
         var characterString = new string(Enumerable.Range(0, passwordLength - numbers - symbols)
-            .Select(x => characterAlphabet.GetRandomCharacter())
+            .Select(_ => characterAlphabet.GetRandomCharacter())
             .ToArray());
         Log.Debug("Character String: {String}", characterString);
 
@@ -47,6 +47,6 @@ public static class PasswordGenerator
 
         Log.Debug("Raw password: {String}", rawPassword);
 
-        return new string(rawPassword.OrderBy(x => Random.Shared.Next()).ToArray());
+        return new string(rawPassword.OrderBy(_ => Random.Shared.Next()).ToArray());
     }
 }
