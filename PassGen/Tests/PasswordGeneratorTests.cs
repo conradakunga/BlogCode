@@ -42,6 +42,7 @@ public class PasswordGeneratorTests
     [InlineData(1, 0, 10)]
     [InlineData(0, 1, 10)]
     [InlineData(5, 5, 50)]
+    [InlineData(5, 5, 128)]
     public void PasswordGeneratedSuccessfully(byte numbers, byte symbols, byte passwordLength)
     {
         var password = PasswordGenerator.GeneratePassword(numbers, symbols, passwordLength);
@@ -54,6 +55,7 @@ public class PasswordGeneratorTests
     [InlineData(1, 0, 10)]
     [InlineData(0, 1, 10)]
     [InlineData(5, 5, 50)]
+    [InlineData(5, 5, 128)]
     public void HumanReadablePasswordsAreRespected(byte numbers, byte symbols, byte passwordLength)
     {
         var password = PasswordGenerator.GeneratePassword(numbers, symbols, passwordLength, true);
