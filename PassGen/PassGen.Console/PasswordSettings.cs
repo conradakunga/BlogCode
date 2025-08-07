@@ -17,6 +17,10 @@ public sealed class PasswordSettings : CommandSettings
     [Description("Number of special symbols required in the password")]
     public int Symbols { get; set; }
 
+    [CommandOption("-r|--readable")]
+    [Description("Whether passwords should not contaim ambiguous characters")]
+    public bool HumanReadable { get; set; }
+
     public override ValidationResult Validate()
     {
         if (Symbols < 0)

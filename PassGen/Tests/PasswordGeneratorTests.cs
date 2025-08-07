@@ -67,4 +67,18 @@ public class PasswordGeneratorTests
         _helper.WriteLine(password);
         password.Length.Should().Be(passwordLength);
     }
+
+    [Theory]
+    [InlineData(0, 0, 10)]
+    [InlineData(1, 0, 10)]
+    [InlineData(0, 1, 10)]
+    [InlineData(5, 5, 50)]
+    public void HumanReadablePasswordsAreRespected(int numbers, int symbols, int passwordLength)
+    {
+        var password = PasswordGenerator.GeneratePassword(numbers, symbols, passwordLength, true);
+        _helper.WriteLine(password);
+        password.Length.Should().Be(passwordLength);
+        password.Should().NotContainAny(Constants.AmbiguousCharacterAlphabet);
+        password.Should().NotContainAny(Constants.AmbiguousNumericAlphabet);
+    }
 }

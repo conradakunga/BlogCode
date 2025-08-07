@@ -4,7 +4,7 @@ namespace PassGen;
 
 public static class PasswordGenerator
 {
-    public static string GeneratePassword(int numbers, int symbols, int passwordLength)
+    public static string GeneratePassword(int numbers, int symbols, int passwordLength, bool humanReadable = false)
     {
         // Ensure the numbers and symbols are valid
         ArgumentOutOfRangeException.ThrowIfNegative(numbers);
@@ -12,13 +12,24 @@ public static class PasswordGenerator
 
         // Ensure the password lenght is legit
         ArgumentOutOfRangeException.ThrowIfLessThan(passwordLength, Constants.MinimumPasswordLength);
-        
+
         // Ensure the number and symbols are congruent with requested password length
         if (numbers + symbols > passwordLength)
             throw new ArgumentException("numbers and symbols length cannot be greater than requested password length");
 
+        var numericAlphabet = Constants.NumericAlphabet;
+        var characterAlphabet = Constants.CharacterAlphabet;
+        if (humanReadable)
+        {
+            Log.Debug("Filtering out ambiguous characters form alphabets");
+            numericAlphabet =
+                new string(Constants.NumericAlphabet.Except(Constants.AmbiguousNumericAlphabet).ToArray());
+            characterAlphabet =
+                new string(Constants.CharacterAlphabet.Except(Constants.AmbiguousCharacterAlphabet).ToArray());
+        }
+
         var numericString = new string(Enumerable.Range(0, numbers)
-            .Select(x => Constants.NumericAlphabet.GetRandomCharacter())
+            .Select(x => numericAlphabet.GetRandomCharacter())
             .ToArray());
         Log.Debug("Numeric String {String}", numericString);
 
@@ -28,7 +39,7 @@ public static class PasswordGenerator
         Log.Debug("Symbol String: {String}", symbolString);
 
         var characterString = new string(Enumerable.Range(0, passwordLength - numbers - symbols)
-            .Select(x => Constants.CharacterAlphabet.GetRandomCharacter())
+            .Select(x => characterAlphabet.GetRandomCharacter())
             .ToArray());
         Log.Debug("Character String: {String}", characterString);
 

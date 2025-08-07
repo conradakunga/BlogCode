@@ -38,10 +38,11 @@ public class GeneratePasswordCommand : Command<PasswordSettings>
     {
         // Generate password
         string password =
-            PasswordGenerator.GeneratePassword(settings.Numbers, settings.Symbols, settings.PasswordLength);
+            PasswordGenerator.GeneratePassword(settings.Numbers, settings.Symbols, settings.PasswordLength,
+                settings.HumanReadable);
 
         AnsiConsole.MarkupLine(
-            $"Generating password with length {settings.PasswordLength}, {settings.Symbols} symbols and {settings.Numbers} digits!");
+            $"Generating password with length {settings.PasswordLength}, {settings.Symbols} symbols and {settings.Numbers} digits with {(settings.HumanReadable ? "NO " : "")}ambiguous characters");
 
         // Copy generated password to clipboard
         ClipboardService.SetText(password);
