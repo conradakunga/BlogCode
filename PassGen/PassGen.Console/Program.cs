@@ -1,23 +1,26 @@
 ﻿using PassGen;
 using Spectre.Console;
+using Spectre.Console.Cli;
+using TextCopy;
 
-var passwordLength = AnsiConsole.Prompt(
-    new TextPrompt<int>("How long should the password be?"));
-var numbers = AnsiConsole.Prompt(
-    new TextPrompt<int>("How many numbers should the password contain?"));
-var symbols = AnsiConsole.Prompt(
-    new TextPrompt<int>("How many symbols should the password contain?"));
+var app = new CommandApp<GeneratePasswordCommand>();
+return app.Run(args);
 
-AnsiConsole.MarkupLineInterpolated(
-    $"Generating password of length {passwordLength} with {numbers} numbers and {symbols}...");
-
-try
+public class GeneratePasswordCommand : Command<PasswordSettings>
 {
-    var password = PasswordGenerator.GeneratePassword(numbers, symbols, passwordLength);
+    public override int Execute(CommandContext context, PasswordSettings settings)
+    {
+        // Generate password
+        string password =
+            PasswordGenerator.GeneratePassword(settings.Numbers, settings.Symbols, settings.PasswordLength);
 
-    AnsiConsole.MarkupLineInterpolated($"The generated password is [bold red]{password}[/]");
-}
-catch (Exception ex)
-{
-    AnsiConsole.MarkupLineInterpolated($"[bold red]Error generating password: {ex.Message}[/]");
+        AnsiConsole.MarkupLine(
+            $"Generating password with length {settings.PasswordLength}, {settings.Symbols} symbols and {settings.Numbers} digits!");
+
+        // Copy generated password to clipboard
+        ClipboardService.SetText(password);
+
+        AnsiConsole.MarkupLine($"[green]Generated Password successfully, and copied to clipboard[/]");
+        return 0;
+    }
 }
