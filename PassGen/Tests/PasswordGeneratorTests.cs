@@ -1,21 +1,22 @@
 ﻿using AwesomeAssertions;
 using PassGen;
 using Serilog;
+using Serilog.Events;
 using Xunit.Abstractions;
 
 namespace Tests;
 
 public class PasswordGeneratorTests
 {
-    private readonly ITestOutputHelper _helper;
+    private readonly ILogger _output;
 
     public PasswordGeneratorTests(ITestOutputHelper helper)
     {
-        _helper = helper;
-        Log.Logger = new LoggerConfiguration()
-            .MinimumLevel.Debug()
-            .WriteTo.XunitTestOutput(helper)
-            .CreateLogger();
+        _output = new LoggerConfiguration()
+            .MinimumLevel.Verbose()
+            .WriteTo.TestOutput(helper, LogEventLevel.Verbose)
+            .CreateLogger()
+            .ForContext<PasswordGeneratorTests>();
     }
 
     [Theory]
@@ -46,7 +47,7 @@ public class PasswordGeneratorTests
     public void PasswordGeneratedSuccessfully(byte numbers, byte symbols, byte passwordLength)
     {
         var password = PasswordGenerator.GeneratePassword(numbers, symbols, passwordLength);
-        _helper.WriteLine(password);
+        _output.Information("Generated password {Password}", password);
         password.Length.Should().Be(passwordLength);
     }
 
@@ -59,7 +60,7 @@ public class PasswordGeneratorTests
     public void HumanReadablePasswordsAreRespected(byte numbers, byte symbols, byte passwordLength)
     {
         var password = PasswordGenerator.GeneratePassword(numbers, symbols, passwordLength, true);
-        _helper.WriteLine(password);
+        _output.Information("Generated password {Password}", password);
         password.Length.Should().Be(passwordLength);
         password.Should().NotContainAny(Constants.AmbiguousCharacterAlphabet);
         password.Should().NotContainAny(Constants.AmbiguousNumericAlphabet);
