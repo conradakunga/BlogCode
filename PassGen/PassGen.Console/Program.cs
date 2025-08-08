@@ -46,8 +46,15 @@ public class GeneratePasswordCommand : Command<PasswordSettings>
 
         // Copy generated password to clipboard
         ClipboardService.SetText(password);
-
         AnsiConsole.MarkupLine($"[green]Generated Password successfully, and copied to clipboard[/]");
+
+        // Ask the user to confirm password display
+        var viewPassword = AnsiConsole.Prompt(
+            new ConfirmationPrompt("View password?"));
+
+        // If user said yes, print the password
+        if (viewPassword)
+            AnsiConsole.MarkupLine($"[bold]{Markup.Escape(password)}[/]");
         return 0;
     }
 }
