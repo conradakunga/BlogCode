@@ -1,7 +1,6 @@
 ﻿using AwesomeAssertions;
 using PassGen;
 using Serilog;
-using Serilog.Events;
 using Xunit.Abstractions;
 
 namespace Tests;
@@ -14,7 +13,7 @@ public class PasswordGeneratorTests
     {
         _output = new LoggerConfiguration()
             .MinimumLevel.Verbose()
-            .WriteTo.TestOutput(helper, LogEventLevel.Verbose)
+            .WriteTo.TestOutput(helper)
             .CreateLogger()
             .ForContext<PasswordGeneratorTests>();
     }
@@ -64,5 +63,16 @@ public class PasswordGeneratorTests
         password.Length.Should().Be(passwordLength);
         password.Should().NotContainAny(Constants.AmbiguousCharacterAlphabet);
         password.Should().NotContainAny(Constants.AmbiguousNumericAlphabet);
+    }
+
+    [Theory]
+    [Repeat(10)]
+    public void MemorablePasswordsAreGenerated(int count)
+    {
+        var password = PasswordGenerator.GenerateMemorablePassword();
+        _output.Information("Generated password {Count} : {Password}", count, password);
+        password.Length.Should().NotBe(0);
+        password.Count(x => x == Constants.MemorablePasswordSeparator).Should()
+            .Be(Constants.MemorableWordCount - 1);
     }
 }

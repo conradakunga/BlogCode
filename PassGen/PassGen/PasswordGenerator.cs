@@ -4,6 +4,47 @@ namespace PassGen;
 
 public static class PasswordGenerator
 {
+    public static string GenerateMemorablePassword()
+    {
+        // Temporary list to store generated password elements
+        List<string> passwords = new List<string>(Constants.MemorableWordCount);
+
+        // Load the words from file
+        var words = File.ReadAllLines("Content/words.txt");
+
+        // Create a dictionary with 8 elements
+        var wordDictionary = new Dictionary<int, string[]>(Constants.MaximumMemorableWordLength);
+
+        // Populate the dictionary
+        foreach (var wordLength in Enumerable.Range(0, Constants.MaximumMemorableWordLength))
+        {
+            // Check if the word length is between 3 and 8
+            if (wordLength >= Constants.MinimumMemorableWordLength)
+            {
+                // Query the lines for words of corresponding length, and add to the
+                // corresponding dictionary entry array
+                wordDictionary[wordLength] = words.Where(x => x.Length == wordLength).ToArray();
+            }
+            else
+            {
+                // For 0, 1 and 2, we don't need words of this length. Empty list
+                wordDictionary[wordLength] = [];
+            }
+        }
+
+        foreach (var _ in Enumerable.Range(0, Constants.MemorableWordCount))
+        {
+            // Get a random number between 3 and 8
+            var length = Random.Shared.Next(Constants.MinimumMemorableWordLength, Constants.MaximumMemorableWordLength);
+
+            // Pick a random word with corresponding length from dictionary
+            passwords.Add(wordDictionary[length][Random.Shared.Next(wordDictionary[length].Length)]);
+        }
+
+        // Join the elements and return
+        return string.Join(Constants.MemorablePasswordSeparator, passwords);
+    }
+
     public static string GeneratePassword(byte numbers, byte symbols, byte passwordLength, bool humanReadable = false)
     {
         // Ensure the numbers and symbols are valid
