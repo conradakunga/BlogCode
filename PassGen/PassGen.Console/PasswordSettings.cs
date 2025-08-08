@@ -1,7 +1,8 @@
 using System.ComponentModel;
-using PassGen;
 using Spectre.Console;
 using Spectre.Console.Cli;
+
+namespace PassGen.Console;
 
 public sealed class PasswordSettings : CommandSettings
 {
