@@ -4,7 +4,7 @@ namespace PassGen;
 
 public static class PasswordGenerator
 {
-    public static string GenerateMemorablePassword()
+    public static string GenerateMemorablePassword(bool capitalize = false)
     {
         // Temporary list to store generated password elements
         List<string> passwords = new List<string>(Constants.MemorableWordCount);
@@ -39,6 +39,14 @@ public static class PasswordGenerator
 
             // Pick a random word with corresponding length from dictionary
             passwords.Add(wordDictionary[length][Random.Shared.Next(wordDictionary[length].Length)]);
+        }
+
+        // Check if we are capitalizing
+        if (capitalize)
+        {
+            // Pick a random element to capitalize
+            var index = Random.Shared.Next(0, passwords.Count);
+            passwords[index] = passwords[index].ToUpper();
         }
 
         // Join the elements and return

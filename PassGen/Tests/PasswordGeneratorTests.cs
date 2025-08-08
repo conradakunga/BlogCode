@@ -1,11 +1,12 @@
-﻿using AwesomeAssertions;
+﻿using System.Text.RegularExpressions;
+using AwesomeAssertions;
 using PassGen;
 using Serilog;
 using Xunit.Abstractions;
 
 namespace Tests;
 
-public class PasswordGeneratorTests
+public partial class PasswordGeneratorTests
 {
     private readonly ILogger _output;
 
@@ -72,7 +73,28 @@ public class PasswordGeneratorTests
         var password = PasswordGenerator.GenerateMemorablePassword();
         _output.Information("Generated password {Count} : {Password}", count, password);
         password.Length.Should().NotBe(0);
+        // Check for the separators to be one less than the words
         password.Count(x => x == Constants.MemorablePasswordSeparator).Should()
             .Be(Constants.MemorableWordCount - 1);
+        // The password should not have upper case
+        HasUpperCaseRegex().Match(password).Success.Should().BeFalse();
     }
+
+    [Theory]
+    [Repeat(10)]
+    public void MemorableCapitalizedPasswordsAreGenerated(int count)
+    {
+        var password = PasswordGenerator.GenerateMemorablePassword(true);
+        _output.Information("Generated password {Count} : {Password}", count, password);
+        password.Length.Should().NotBe(0);
+        // Check for the separators to be one less than the words
+        password.Count(x => x == Constants.MemorablePasswordSeparator).Should()
+            .Be(Constants.MemorableWordCount - 1);
+        // The password should have upper case
+        HasUpperCaseRegex().Match(password).Success.Should().BeTrue();
+    }
+
+    // Regex to check string contains upper case characters
+    [GeneratedRegex("[A-Z]")]
+    private static partial Regex HasUpperCaseRegex();
 }
