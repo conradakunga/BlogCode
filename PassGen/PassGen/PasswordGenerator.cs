@@ -4,13 +4,18 @@ namespace PassGen;
 
 public static class PasswordGenerator
 {
+    /// <summary>
+    /// Generates a memorable password
+    /// </summary>
+    /// <param name="capitalize"></param>
+    /// <returns></returns>
     public static string GenerateMemorablePassword(bool capitalize = false)
     {
         // Temporary list to store generated password elements
         List<string> passwords = new List<string>(Constants.MemorableWordCount);
 
         // Load the words from file
-        var words = File.ReadAllLines("Content/words.txt");
+        var words = File.ReadAllLines(Path.Combine(AppContext.BaseDirectory, "words.txt"));
 
         // Create a dictionary with 8 elements
         var wordDictionary = new Dictionary<int, string[]>(Constants.MaximumMemorableWordLength);
@@ -53,7 +58,16 @@ public static class PasswordGenerator
         return string.Join(Constants.MemorablePasswordSeparator, passwords);
     }
 
-    public static string GeneratePassword(byte numbers, byte symbols, byte passwordLength, bool humanReadable = false)
+    /// <summary>
+    /// Generates a password
+    /// </summary>
+    /// <param name="numbers"></param>
+    /// <param name="symbols"></param>
+    /// <param name="passwordLength"></param>
+    /// <param name="humanReadable"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentException"></exception>
+    public static string GeneratePassword(int numbers, int symbols, int passwordLength, bool humanReadable = false)
     {
         // Ensure the numbers and symbols are valid
         ArgumentOutOfRangeException.ThrowIfNegative(numbers);

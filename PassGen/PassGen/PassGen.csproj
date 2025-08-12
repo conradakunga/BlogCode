@@ -9,12 +9,12 @@
     <ItemGroup>
         <PackageReference Include="Serilog" Version="4.3.0"/>
         <PackageReference Include="SonarAnalyzer.CSharp" Version="10.15.0.120848">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
     </ItemGroup>
     <ItemGroup>
-        <Content Include="Content\words.txt">
+        <Content Include="words.txt">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </Content>
     </ItemGroup>
