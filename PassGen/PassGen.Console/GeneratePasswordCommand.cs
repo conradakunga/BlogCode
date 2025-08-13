@@ -8,7 +8,7 @@ public sealed class GeneratePasswordCommand : Command<PasswordSettings>
 {
     public override int Execute(CommandContext context, PasswordSettings settings)
     {
-        var password = "";
+        string password;
         if (settings.MemorableUncapitalized)
         {
             //Generate memorable password
