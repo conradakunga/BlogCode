@@ -31,8 +31,16 @@ public sealed class PasswordSettings : CommandSettings
     [Description("Whether passwords generated should be memorable and capitalized")]
     public bool MemorableCapitalized { get; set; }
 
+    [CommandOption("-p|--passwordCount")]
+    [Description("The number of passwords to generate")]
+    [DefaultValue(1)]
+    public int PasswordCount { get; set; }
+
     public override ValidationResult Validate()
     {
+        if (PasswordCount < 0)
+            return ValidationResult.Error("Password count must be greater than 0.");
+
         if (Numbers < 0)
             return ValidationResult.Error("Numbers must be greater than or equal to 0.");
 
