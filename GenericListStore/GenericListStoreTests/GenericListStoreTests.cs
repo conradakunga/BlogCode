@@ -25,6 +25,18 @@ public class GenericListStoreTests
     }
 
     [Fact]
+    public void Store_Should_Remove_Items_Correctly()
+    {
+        List<string> items = ["one", "two", "three"];
+        var store = new GenericListStore();
+        store.Count.Should().Be(0);
+        store.Add("strings", items);
+        store.Count.Should().Be(1);
+        store.Remove("strings");
+        store.Count.Should().Be(0);
+    }
+
+    [Fact]
     public void Store_Should_Store_Multiple_Type_Items_Correctly()
     {
         List<string> stringItems = ["one", "two", "three"];
