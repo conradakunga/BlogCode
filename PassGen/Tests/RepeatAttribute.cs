@@ -33,7 +33,7 @@ public sealed class RepeatAttribute : DataAttribute
     /// <returns></returns>
     public override IEnumerable<object[]> GetData(MethodInfo _)
     {
-        foreach (var iteration in Enumerable.Range(0, _count))
+        foreach (var iteration in Enumerable.Range(1, _count))
         {
             yield return [iteration];
         }
