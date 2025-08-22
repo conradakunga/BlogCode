@@ -37,6 +37,14 @@ public class GenericListStoreTests
     }
 
     [Fact]
+    public void Store_Throws_Exception_When_Removing_NonExistent_Item()
+    {
+        var store = new GenericListStore();
+        var ex = Record.Exception(() => store.Remove("strings"));
+        ex.Should().BeOfType<KeyNotFoundException>();
+    }
+
+    [Fact]
     public void Store_Should_Store_Multiple_Type_Items_Correctly()
     {
         List<string> stringItems = ["one", "two", "three"];

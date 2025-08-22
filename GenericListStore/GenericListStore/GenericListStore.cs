@@ -57,6 +57,7 @@ public sealed class GenericListStore
     /// </summary>
     /// <param name="name"></param>
     /// <exception cref="ArgumentException"></exception>
+    /// <exception cref="KeyNotFoundException"></exception>
     public void Remove(string name)
     {
         if (string.IsNullOrWhiteSpace(name))
@@ -64,8 +65,10 @@ public sealed class GenericListStore
             throw new ArgumentException("Name cannot be null or empty.", nameof(name));
         }
 
-        _dictLists.Remove(name);
+        // Check if the key exists
+        if (!_dictLists.ContainsKey(name))
+            throw new KeyNotFoundException($"No list found with the name '{name}'.");
 
-        // Optionally log or handle the case where the key doesn't exist
+        _dictLists.Remove(name);
     }
 }
