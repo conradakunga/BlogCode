@@ -22,23 +22,23 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 **11 Aug 2025** - [Repeat - xUnit Attribute to Run Tests Multiple Times](https://www.conradakunga.com/blog/repeat-xunit-attribite-to-run-tests-multiple-times/) - Repeat - xUnit Attribute to Run Tests Multiple Times
 
-**10 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 7 - Generating Multiple Passwords](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-7-generating-multiple-passwords/) - Building A Simple Password Generator In C# & .NET - Part 7ting Multiple Passwords
+**10 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 7 - Generating Multiple Passwords](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-7-generating-multiple-passwords/) - Generating Multiple Passwords
 
-**9 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 6 - Updating Console UI For Memorable Password Generation](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-6-updating-console-ui-for-memorable-password-generation/) - Building A Simple Password Generator In C# & .NET - Updating Console UI For Memorable Password Generation
+**9 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 6 - Updating Console UI For Memorable Password Generation](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-6-updating-console-ui-for-memorable-password-generation/) - Updating Console UI For Memorable Password Generation
 
-**8 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 5 - Generating Memorable Passwords](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-5-generating-memorable-passwords/) - Building A Simple Password Generator In C# & .NET - Generating Memorable Passwords
+**8 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 5 - Generating Memorable Passwords](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-5-generating-memorable-passwords/) - Generating Memorable Passwords
 
-**7 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 4 - Generating Human Readable Passwords](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-4-generating-human-readable-passwords/) - Building A Simple Password Generator In C# & .NET - Generating Human Readable Passwords
+**7 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 4 - Generating Human Readable Passwords](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-4-generating-human-readable-passwords/) - Generating Human Readable Passwords
 
-**6 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 3 - Advanced UI With Spectre.Console](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-3-advanced-ui-with-spectreconsole/) - Building A Simple Password Generator In C# & .NET - Advanced UI With Spectre.Console
+**6 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 3 - Advanced UI With Spectre.Console](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-3-advanced-ui-with-spectreconsole/) - Advanced UI With Spectre.Console
 
-**5 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 2 - Novice UI With Spectre.Console](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-2-novice-ui-with-spectre-console/) - Building A Simple Password Generator In C# & .NET - Novice UI With Spectre.Console
+**5 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 2 - Novice UI With Spectre.Console](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-2-novice-ui-with-spectre-console/) - Novice UI With Spectre.Console
 
-**4 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 1](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-1/) - Building A Simple Password Generator In C# & .NET - Part 1
+**4 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 1](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-1/) - Intro
 
 **3 Aug 2025** - [Generating A Cryptographically Random String In C# & .NET](https://www.conradakunga.com/blog/generating-a-cryptographically-random-string-in-c-net/) - Generating a cryptographically random string
 
-**2 Aug 2025** - [Generating A Random String In C# & .NET](https://www.conradakunga.com/blog/generating-a-random-string-in-c-net/) - How to generate a random string
+**2 Aug 2025** - [Generating A Random String In C# & .NET](https://www.conradakunga.com/blog/generating-a-random-string-in-c-net/) - Generating a random string
 
 **1 Aug 2025** - [Adding Items To An Existing List In C# & .NET](https://www.conradakunga.com/blog/adding-items-to-an-existing-list-in-c-net/) - Adding items to an existing list
 
