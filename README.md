@@ -16,7 +16,7 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 **17 Aug 2025** - [Displaying Ordinal Numbers In C# & .NET](https://www.conradakunga.com/blog/displaying-ordinal-numbers-in-c-net/) - Displaying Ordinal Numbers
 
-**13 Aug 2025** - [Class That Stores Multiple Named Typed Generic Lists](https://www.conradakunga.com/blog/class-that-stores-multiple-named-typed-generic-lists-improvement/) - Class That Stores Multiple Named Typed Generic Lists
+**13 Aug 2025** - [Class That Stores Multiple Named Typed Generic Lists - Improvement](https://www.conradakunga.com/blog/class-that-stores-multiple-named-typed-generic-lists-improvement/) - Improvement to the class
 
 **12 Aug 2025** - [Class That Stores Multiple Named Typed Generic Lists](https://www.conradakunga.com/blog/class-that-stores-multiple-named-typed-generic-lists/) - Class That Stores Multiple Named Typed Generic Lists
 
