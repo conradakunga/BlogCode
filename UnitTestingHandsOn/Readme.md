@@ -26,9 +26,6 @@ It should allow us to do the following:
 - **List** all `Spy` entities
 - **Edit** A `Spy`
 - **Search** For A `Spy`
-
-We can also add two convenience methods
-
 - Generate a **random** list of `Spy` entities
 
 To achieve this, we create a **contract** for an object to carry out this work, in the form of an [interface](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface).
