@@ -13,27 +13,22 @@ public class InMemoryManagerUnitTests
         const string agency = "Mi5";
         var dateOfBirth = new DateOnly(1950, 1, 1);
 
-        // Arrange
-        var manager = new InMemorySpyManager();
-        var create = new CreateSpyRequest
-        {
-            Name = name,
-            Agency = agency,
-            DateOfBirth = dateOfBirth,
-        };
-        // Act
-        var newID = manager.Add(create);
-        var spy = manager.Get(newID);
+        // Arrange - act - assert
+
+        // Create a manager
+
+        // Create a spy request
+
+        // Add the request
+
+        // Get the new ID
+
+        // Fetch the spy by ID
 
         // Assert
         // 1. Thew new ID should not be an empty Guid
         // 2. The fetched spy should not be null
         // 3. The name and agency should match what we sent
-        newID.Should().NotBeEmpty();
-        spy.Should().NotBeNull();
-        spy.Name.Should().Be(name);
-        spy.Agency.Should().Be(agency);
-        spy.DateOfBirth.Should().Be(dateOfBirth);
     }
 
     [Fact]
@@ -44,16 +39,11 @@ public class InMemoryManagerUnitTests
         const string agency = "Mi5";
         var dateOfBirth = new DateOnly(1950, 1, 1);
 
-        // Arrange
-        var manager = new InMemorySpyManager();
-        var create = new CreateSpyRequest
-        {
-            Name = name,
-            Agency = agency,
-            DateOfBirth = dateOfBirth,
-        };
+        // Create a manager
 
-        var newID = manager.Add(create);
+        // Create a spy
+
+        // Get The ID
 
         // Edit the spy we just created
 
@@ -61,22 +51,17 @@ public class InMemoryManagerUnitTests
         const string newAgency = "CIA";
         var newDateOfBirth = new DateOnly(1970, 1, 1);
 
-        var request = new UpdateSpyRequest
-        {
-            Name = newName,
-            DateOfBirth = newDateOfBirth,
-            Agency = newAgency,
-        };
+        // Create an update request
 
-        manager.Edit(newID, request);
+        // Edit the spy
 
-        // Fetch the spy again
+        // Fetch the spy by ID again
 
-        var updatedSpy = manager.Get(newID);
-        updatedSpy.Should().NotBeNull();
-        updatedSpy.Name.Should().Be(newName);
-        updatedSpy.Agency.Should().Be(newAgency);
-        updatedSpy.DateOfBirth.Should().Be(newDateOfBirth);
+        // Assert
+        // 1. Should not be null
+        // 2. Validate the new name
+        // 3. Validate the new agency
+        // 4. Validate the new date of birth
     }
 
     [Fact]
@@ -87,51 +72,35 @@ public class InMemoryManagerUnitTests
         const string agency = "Mi5";
         var dateOfBirth = new DateOnly(1950, 1, 1);
 
-        // Arrange
-        var manager = new InMemorySpyManager();
-        var create = new CreateSpyRequest
-        {
-            Name = name,
-            Agency = agency,
-            DateOfBirth = dateOfBirth,
-        };
+        // Create a manager
 
-        var newID = manager.Add(create);
+        // Create a spy
 
-        // Now delete
+        // Fetch the soy
 
-        manager.Delete(newID);
+        // Now delete the spy
 
-        // Check that we can't get the spy back
+        // Fetch the spy by ID
 
-        var spy = manager.Get(newID);
-        spy.Should().BeNull();
+        // Assert it is null
     }
 
     [Fact]
     public void List_Spies_Works()
     {
-        var jamesBond = new CreateSpyRequest
-        {
-            Name = "James Bond",
-            DateOfBirth = new DateOnly(1950, 1, 1),
-            Agency = "Mi5"
-        };
-        var jasonBourne = new CreateSpyRequest
-        {
-            Name = "Jason Bourne",
-            DateOfBirth = new DateOnly(1970, 1, 1),
-            Agency = "CIA"
-        };
+        // Make two Create Spy Requests
 
-        var manager = new InMemorySpyManager();
-        manager.Add(jamesBond);
-        manager.Add(jasonBourne);
+        // Create a manager
 
-        // Get the list
-        var spies = manager.List();
+        // List the current spies
+
+        // Assert they are none
+
+        // Add the twp spies
+
+        // List the current spies
+
         // Assert that the count is 2
-        spies.Count.Should().Be(2);
     }
 
     [Theory]
