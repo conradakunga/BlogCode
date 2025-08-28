@@ -109,6 +109,7 @@ public class InMemorySpyManager : ISpyManager
         var faker = new Faker<Spy>()
             .RuleFor(x => x.SpyID, f => Guid.NewGuid())
             .RuleFor(x => x.Name, f => f.Person.FullName)
+            .RuleFor(x => x.DateOfBirth, f => DateOnly.FromDateTime(f.Date.Past(50)))
             .RuleFor(x => x.Agency, f => f.Company.CompanyName());
 
         // Generate
