@@ -2,7 +2,7 @@ using UnitTestingLogic;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Register a spy manager
+// Register a spy manager for dependency injection
 
 var app = builder.Build();
 
