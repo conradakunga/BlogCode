@@ -9,10 +9,10 @@ The `Spy` entity looks like this:
 ```c#
 public sealed record Spy
 {
-    public required Guid SpyID { get; init; }
-    public required Guid Name { get; init; }
-    public required DateOnly DateOfBirth { get; init; }
-    public required string Agency { get; init; }
+    public required Guid SpyID { get; set; }
+    public required Guid Name { get; set; }
+    public required DateOnly DateOfBirth { get; set; }
+    public required string Agency { get; set; }
 }
 ```
 
@@ -26,7 +26,7 @@ It should allow us to do the following:
 - **List** all `Spy` entities
 - **Edit** A `Spy`
 - **Search** For A `Spy`
-- Generate a **random** list of `Spy` entities
+- Generate a **random** list of n `Spy` entities
 
 To achieve this, we create a **contract** for an object to carry out this work, in the form of an [interface](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface).
 
@@ -44,5 +44,7 @@ public interface ISpyManager
     public List<Spy> GenerateRandom(int number);
 }
 ```
+
+Payload for Create and Update looks like this:
 
 
