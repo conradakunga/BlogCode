@@ -12,6 +12,7 @@ public class InMemorySpyManager : ISpyManager
     public Guid Add(CreateSpyRequest request)
     {
         // Add to the collection 
+        throw new NotImplementedException();
     }
 
     /// <summary>
@@ -50,6 +51,7 @@ public class InMemorySpyManager : ISpyManager
     public Spy? Get(Guid spyID)
     {
         // Get by ID
+        throw new NotImplementedException();
     }
 
     /// <summary>
@@ -59,6 +61,7 @@ public class InMemorySpyManager : ISpyManager
     public List<Spy> List()
     {
         // Return the list? 
+        throw new NotImplementedException();
     }
 
     /// <summary>
@@ -71,6 +74,7 @@ public class InMemorySpyManager : ISpyManager
         // Search the name
 
         // Search the name or agency
+        throw new NotImplementedException();
     }
 
     /// <summary>
@@ -81,9 +85,10 @@ public class InMemorySpyManager : ISpyManager
     public List<Spy> GenerateRandom(int number)
     {
         // Create and configure a faker
-        var faker = new Faker<Spy>()
-            .RuleFor(x => x.SpyID, f => Guid.NewGuid());
+        // var faker = new Faker<Spy>()
+        //     .RuleFor(x => x.SpyID, f => Guid.NewGuid());
         
-        // Generat
+        // Generate
+        throw new NotImplementedException();
     }
 }
