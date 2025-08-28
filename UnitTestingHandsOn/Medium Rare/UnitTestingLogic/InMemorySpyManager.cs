@@ -4,6 +4,8 @@ namespace UnitTestingLogic;
 
 public class InMemorySpyManager : ISpyManager
 {
+    private List<Spy> _spies = [];
+
     /// <summary>
     /// Add a Spy
     /// </summary>
@@ -12,7 +14,17 @@ public class InMemorySpyManager : ISpyManager
     public Guid Add(CreateSpyRequest request)
     {
         // Add to the collection 
-        throw new NotImplementedException();
+        var spy = new Spy
+        {
+            SpyID = Guid.NewGuid(),
+            Name = request.Name,
+            DateOfBirth = request.DateOfBirth,
+            Agency = request.Agency = request.Agency
+        };
+
+        _spies.Add(spy);
+
+        return spy.SpyID;
     }
 
     /// <summary>
@@ -25,9 +37,16 @@ public class InMemorySpyManager : ISpyManager
     {
         // Find the spy by ID
 
+        var spy = _spies.FirstOrDefault(s => s.SpyID == spyID);
+
         // If not found, throw an exception
+        if (spy is null)
+            throw new Exception("Spy not found");
 
         // Otherwise, update
+        spy.Name = request.Name;
+        spy.DateOfBirth = request.DateOfBirth;
+        spy.Agency = request.Agency;
     }
 
     /// <summary>
@@ -38,7 +57,11 @@ public class InMemorySpyManager : ISpyManager
     {
         // Find the spy by ID
 
+        var spy = _spies.FirstOrDefault(s => s.SpyID == spyID);
+
         // If found, remove
+        if (spy is not null)
+            _spies.Remove(spy);
 
         // Alternatively, removeAll directly
     }
@@ -50,8 +73,8 @@ public class InMemorySpyManager : ISpyManager
     /// <returns></returns>
     public Spy? Get(Guid spyID)
     {
-        // Get by ID
-        throw new NotImplementedException();
+        var spy = _spies.FirstOrDefault(s => s.SpyID == spyID);
+        return spy;
     }
 
     /// <summary>
@@ -60,8 +83,7 @@ public class InMemorySpyManager : ISpyManager
     /// <returns></returns>
     public List<Spy> List()
     {
-        // Return the list? 
-        throw new NotImplementedException();
+        return _spies;
     }
 
     /// <summary>
@@ -71,10 +93,9 @@ public class InMemorySpyManager : ISpyManager
     /// <returns></returns>
     public List<Spy> Search(string search)
     {
-        // Search the name
-
-        // Search the name or agency
-        throw new NotImplementedException();
+        return _spies.Where(s => s.Name.Contains(search)
+                                 || s.Agency.Contains(search))
+            .ToList();
     }
 
     /// <summary>
@@ -85,10 +106,12 @@ public class InMemorySpyManager : ISpyManager
     public List<Spy> GenerateRandom(int number)
     {
         // Create and configure a faker
-        // var faker = new Faker<Spy>()
-        //     .RuleFor(x => x.SpyID, f => Guid.NewGuid());
-        
+        var faker = new Faker<Spy>()
+            .RuleFor(x => x.SpyID, f => Guid.NewGuid())
+            .RuleFor(x => x.Name, f => f.Person.FullName)
+            .RuleFor(x => x.Agency, f => f.Company.CompanyName());
+
         // Generate
-        throw new NotImplementedException();
+        return faker.Generate(number);
     }
 }
