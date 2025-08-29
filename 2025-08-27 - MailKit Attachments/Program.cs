@@ -25,7 +25,7 @@ var textBody = new TextPart("plain")
            As requested, kindly find attached a list of the missions I have carried
            out since you took over command.
 
-           Warest regards
+           Warmest regards
            """
 };
 
