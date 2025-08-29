@@ -22,15 +22,15 @@ app.MapPost("/Spy", (ISpyManager manager, CreateSpyRequest request) =>
 app.MapPut("/Spy/{spyID:guid}",
     (ISpyManager manager, Guid spyID, UpdateSpyRequest request) =>
     {
-        // try
-        // {
-        manager.Edit(spyID, request);
-        return Results.NoContent();
-        // }
-        // catch (NotFoundException ex)
-        // {
-        //     return Results.NotFound(ex.Message);
-        // }
+        try
+        {
+            manager.Edit(spyID, request);
+            return Results.NoContent();
+        }
+        catch
+        {
+            return Results.NotFound();
+        }
     });
 
 // Delete spy

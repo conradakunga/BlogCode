@@ -23,14 +23,28 @@ public class APITests : IClassFixture<WebApplicationFactory<Program>>
         const string agency = "Mi5";
         var dateOfBirth = new DateOnly(1950, 1, 1);
 
-        // Make a create request
+        var create = new CreateSpyRequest
+        {
+            Name = name,
+            Agency = agency,
+            DateOfBirth = dateOfBirth,
+        };
 
         // Post the request
+        var response = await _client.PostAsJsonAsync("/Spy", create);
 
         // Assert
         // 1. We get back a 201
         // 2. The created spy should not be null
         // 3. The name and agency should match what we sent
+
+        response.StatusCode.Should().Be(HttpStatusCode.Created);
+
+        var spy = await response.Content.ReadFromJsonAsync<Spy>();
+        spy.Should().NotBeNull();
+        spy.Name.Should().Be(name);
+        spy.Agency.Should().Be(agency);
+        spy.DateOfBirth.Should().Be(dateOfBirth);
     }
 
     [Fact]
@@ -41,11 +55,16 @@ public class APITests : IClassFixture<WebApplicationFactory<Program>>
         const string agency = "Mi5";
         var dateOfBirth = new DateOnly(1950, 1, 1);
 
-        // Make a create request
+        var create = new CreateSpyRequest
+        {
+            Name = name,
+            Agency = agency,
+            DateOfBirth = dateOfBirth,
+        };
 
-        // Post the request and get a response
-
-        // Serialize the response of the new spy
+        // Post the request
+        var response = await _client.PostAsJsonAsync("/Spy", create);
+        var newSpy = await response.Content.ReadFromJsonAsync<Spy>();
 
         // Now update
 
@@ -53,33 +72,47 @@ public class APITests : IClassFixture<WebApplicationFactory<Program>>
         const string newAgency = "CIA";
         var newDateOfBirth = new DateOnly(1980, 1, 1);
 
-        // Create an update request 
+        var request = new UpdateSpyRequest
+        {
+            Name = newName,
+            Agency = newAgency,
+            DateOfBirth = newDateOfBirth,
+        };
 
-        // Post the request and get a response
+        // Post the request
+
+        var updateResponse = await _client.PutAsJsonAsync($"/Spy/{newSpy!.SpyID}", request);
 
         //
-        // Assert We get back a 204
-
-
-        // Now fetch the spy again to see if updated
         // Assert
-        // 1. The fetched spy should not be null
-        // 2. The name and agency should match what we sent
+        // 1. We get back a 204
+        // 2. The fetched spy should not be null
+        // 3. The name and agency should match what we sent
 
+        updateResponse.StatusCode.Should().Be(HttpStatusCode.NoContent);
+
+        // Now fetch again to see if updated
+
+        var spy = await _client.GetFromJsonAsync<Spy>($"/Spy/{newSpy!.SpyID}");
+        spy.Should().NotBeNull();
+        spy.Name.Should().Be(newName);
+        spy.Agency.Should().Be(newAgency);
+        spy.DateOfBirth.Should().Be(newDateOfBirth);
     }
 
     [Fact]
     public async Task Edit_Spy_That_Does_Not_Exist_Returns_NotFound()
     {
-        // Create an update request
+        var request = new UpdateSpyRequest
+        {
+            Name = "James Bond",
+            Agency = "CIA",
+            DateOfBirth = DateOnly.FromDateTime(DateTime.Now),
+        };
 
-        // Post the request for a non-existent spy
+        // Post the request
 
-        // Check the API returned not found
+        var updateResponse = await _client.PutAsJsonAsync($"/Spy/{Guid.NewGuid()}", request);
+        updateResponse.StatusCode.Should().Be(HttpStatusCode.NotFound);
     }
-    
-    
-    // Test for random
-    
-    // Test for delete
 }
