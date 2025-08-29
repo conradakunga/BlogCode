@@ -4,7 +4,11 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## Aug 2025
 
-**29 Aug 2025** - [Sending Email In C# & .NET - Part 10 - Sending Plain Text Email Using MailKit](https://www.conradakunga.com/blog/sending-email-in-c-net-part-10-sending-plain-text-email-using-mailkit/) - How to send email with MailKit
+**26 Aug 2025** - [Sending Email In C# & .NET - Part 12 - Sending Email With Attachments Using MailKit](https://www.conradakunga.com/blog/sending-email-in-c-net-part-12-sending-email-with-attachments-using-mailkit/) - How to send email with attachments using MailKit.
+
+**26 Aug 2025** - [Sending Email In C# & .NET - Part 11 - Sending HTML Email Using MailKit](https://www.conradakunga.com/blog/sending-email-in-c-net-part-11-sending-html-email-using-mailkit/) - How to send HTML email using MailKit
+
+**25 Aug 2025** - [Sending Email In C# & .NET - Part 10 - Sending Plain Text Email Using MailKit](https://www.conradakunga.com/blog/sending-email-in-c-net-part-10-sending-plain-text-email-using-mailkit/) - How to send email with MailKit
 
 **23 Aug 2025** - [Working With Dates In Multiple Locale Formats Simultaneously](https://www.conradakunga.com/blog/working-with-dates-in-multiple-locale-formats-simultaneously/) - Working With Dates In Multiple Locale Formats
 

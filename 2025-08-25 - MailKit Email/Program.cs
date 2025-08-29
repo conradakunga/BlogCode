@@ -33,8 +33,8 @@ using (var client = new SmtpClient())
 {
     Log.Information("Connecting to smtp server...");
     await client.ConnectAsync("localhost", 25, false);
-    //Typically, authenticate here. But we are using PaperCut 
-    //await client.AuthenticateAsync("joey", "password");
+    // Typically, authenticate here. But we are using PaperCut 
+    //await client.AuthenticateAsync("username", "password");
     await client.SendAsync(message);
     Log.Information("Sent message");
     await client.DisconnectAsync(true);

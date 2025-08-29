@@ -14,26 +14,37 @@ message.From.Add(new MailboxAddress("James Bond", "james@mi5.org"));
 // Set the recipient
 message.To.Add(new MailboxAddress("M", "m@mi5.org"));
 // Set the email subject
-message.Subject = "Deployment Status - Follow Up";
+message.Subject = "Mission Listing";
 
-var textBody = new TextPart("html")
+// Create the text body
+var textBody = new TextPart("plain")
 {
     Text = """
            Dear M,
-           <br/>
-           <br/>
-           Subject Refers.
-           <br/>
-           <br/>
-           I would like to <i>kindly</i> follow up on my last email requesting to know my deployment
-           status.
-           <br/>
-           <br/>
-           <b>I have been at home for six weeks now!<b>.
+
+           As requested, kindly find attached a list of the missions I have carried
+           out since you took over command.
+
+           Warest regards
            """
 };
 
-message.Body = textBody;
+// create the attachment
+var attachment = new MimePart("text", "plain")
+{
+    Content = new MimeContent(File.OpenRead("Missions.txt")),
+    ContentDisposition = new ContentDisposition(ContentDisposition.Attachment),
+    ContentTransferEncoding = ContentEncoding.Base64,
+    FileName = "Missions.txt"
+};
+
+// Create a container for the body text & attachment
+var parts = new Multipart("mixed");
+parts.Add(textBody);
+parts.Add(attachment);
+
+// Set the body
+message.Body = parts;
 
 // Now send the email
 using (var client = new SmtpClient())
