@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## Aug 2025
 
+**29 Aug 2025** - [Sending Email In C# & .NET - Part 10 - Sending Plain Text Email Using MailKit](https://www.conradakunga.com/blog/sending-email-in-c-net-part-10-sending-plain-text-email-using-mailkit/) - How to send email with MailKit
+
 **23 Aug 2025** - [Working With Dates In Multiple Locale Formats Simultaneously](https://www.conradakunga.com/blog/working-with-dates-in-multiple-locale-formats-simultaneously/) - Working With Dates In Multiple Locale Formats
 
 **22 Aug 2025** - [How To Sort Strings That Contain Numbers In C# & .NET](https://www.conradakunga.com/blog/how-to-sort-strings-that-contain-numbers-in-c-net/) - How To Sort Strings That Contain Numbers
