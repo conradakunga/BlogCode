@@ -11,4 +11,14 @@
         <PackageReference Include="MailKit" Version="4.13.0"/>
         <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0"/>
     </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="Card.txt">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Include="Bond1.jpeg">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+
 </Project>

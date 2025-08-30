@@ -1,5 +1,6 @@
 ﻿using MailKit.Net.Smtp;
 using MimeKit;
+using MimeKit.Text;
 using MimeKit.Utils;
 using Serilog;
 
@@ -8,61 +9,93 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .CreateLogger();
 
+const string fromAddress = "conradakunga@gmail.com";
+const string toAddress = "cakunga@innova.co.ke";
+const string fromPassword = "<YOUR APP PASSWORD HERE>";
+
 // Create the email
 var message = new MimeMessage();
 // Add the sender
-message.From.Add(new MailboxAddress("James Bond", "james@mi5.org"));
+message.From.Add(new MailboxAddress("James Bond", fromAddress));
 // Set the recipient
-message.To.Add(new MailboxAddress("M", "m@mi5.org"));
+message.To.Add(new MailboxAddress("M", toAddress));
 // Set the email subject
-message.Subject = "Christmas Card";
+message.Subject = "Mission Brief";
 
-var builder = new BodyBuilder();
+var briefStart = new DateTime(2025, 8, 29, 10, 0, 0);
+var briefEnd = new DateTime(2025, 8, 29, 10, 0, 0);
+const string briefLocation = "MI6 HQ, London";
 
-// Create a LinkedResource with the image
-var image1 = builder.LinkedResources.Add("Bond1.jpeg");
-// Generate an ID for use in linkage
-image1.ContentId = MimeUtils.GenerateMessageId();
+var plainText = $"""
+                 Dear sir,
 
-// Add the card attachment
-builder.Attachments.Add("Card.txt");
+                 The schedule for the briefing is as follows:
 
-// Build the html version of the message text using the IDs
-var htmlBody = $"""
-                <p>Dear M,<br/>
-                <p>Merry Christmas From Me<br/>
-                <br/
-                <center>
-                <img src="cid:{image1.ContentId}">
-                </center>
-                <p>James<br>
-                """;
+                 Location: {briefLocation}
 
-// Set the html body
-builder.HtmlBody = htmlBody;
+                 Start Date: {briefStart:d MMM yyyy HH:mm}
+                 End Date: {briefEnd:d MMM yyyy HH:mm}
+                 """;
 
-// Build the html version of the message text using the IDs
-var body = """
-           Dear M,
 
-           Merry Christmas From Me
+var plainTextPart = new TextPart(TextFormat.Plain)
+{
+    Text = plainText
+};
 
-           James
-           """;
+// Build the iCalendar content
+var calendarText = $"""
+                    BEGIN:VCALENDAR
+                    PRODID:-//MI6//Mission Briefing//EN
+                    VERSION:2.0
+                    METHOD:REQUEST
+                    BEGIN:VEVENT
+                    UID:{Guid.NewGuid()}
+                    DTSTAMP:{DateTime.UtcNow:yyyyMMddTHHmmssZ}
+                    DTSTART:{briefStart:yyyyMMddTHHmmssZ}
+                    DTEND:{briefEnd:yyyyMMddTHHmmssZ}
+                    SUMMARY:Mission Briefing
+                    DESCRIPTION:Briefing on the upcoming mission.
+                    LOCATION:{briefLocation}
+                    STATUS:CONFIRMED
+                    SEQUENCE:0
+                    BEGIN:VALARM
+                    TRIGGER:-PT15M
+                    ACTION:DISPLAY
+                    DESCRIPTION:Reminder
+                    END:VALARM
+                    END:VEVENT
+                    END:VCALENDAR
+                    """;
 
-// Set the plain text body
-builder.TextBody = body;
+// Create the calendar part
+var calendarPart = new TextPart("calendar")
+{
+    Text = calendarText,
+    ContentTransferEncoding = ContentEncoding.Base64,
+    ContentDisposition = new ContentDisposition(ContentDisposition.Inline)
+    {
+        FileName = "invite.ics"
+    }
+};
 
-// Set the message body 
-message.Body = builder.ToMessageBody();
+// Set the method and name parameter values
+calendarPart.ContentType.Parameters.Add("method", "REQUEST");
+
+// Create multipart/alternative so clients can pick plain text or calendar
+var alternativePart = new Multipart("alternative");
+alternativePart.Add(plainTextPart);
+alternativePart.Add(calendarPart);
+
+// Set message body
+message.Body = alternativePart;
 
 // Now send the email
 using (var client = new SmtpClient())
 {
     Log.Information("Connecting to smtp server...");
-    await client.ConnectAsync("localhost", 25, false);
-    // Typically, authenticate here. But we are using PaperCut 
-    //await client.AuthenticateAsync("username", "password");
+    await client.ConnectAsync("smtp.gmail.com", 587, false);
+    await client.AuthenticateAsync(fromAddress, fromPassword);
     await client.SendAsync(message);
     Log.Information("Sent message");
     await client.DisconnectAsync(true);
