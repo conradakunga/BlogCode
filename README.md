@@ -2,6 +2,10 @@
 
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+## November 2025
+
+**2 Sep 2025** - [Getting The Version Of RabbitMQ Connected](https://www.conradakunga.com/blog/getting-the-version-of-rabbitmq-connected/) - How to determine the version of RabbitMQ connected to
+
 ## Aug 2025
 
 **27 Aug 2025** - [Sending Email In C# & .NET - Part 12 - Sending Email With Attachments Using MailKit](https://www.conradakunga.com/blog/sending-email-in-c-net-part-12-sending-email-with-attachments-using-mailkit/) - How to send email with attachments using MailKit.
