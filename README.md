@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## November 2025
 
+**3 Sep 2025** - [Other RabbitMQ IConnection Server Properties](https://www.conradakunga.com/blog/other-rabbitmq-iconnection-server-properties/) - Other properties available in the `ServerProperties` object. 
+
 **2 Sep 2025** - [Getting The Version Of RabbitMQ Connected](https://www.conradakunga.com/blog/getting-the-version-of-rabbitmq-connected/) - How to determine the version of RabbitMQ connected to
 
 ## Aug 2025
