@@ -4,105 +4,109 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## September 2025
 
-**3 Sep 2025** - [Other RabbitMQ IConnection Server Properties](https://www.conradakunga.com/blog/other-rabbitmq-iconnection-server-properties/) - Other properties available in the `ServerProperties` object. 
+**5 September 2025** - [Getting the Version of Redis Connected Without Admin Access in C# & .NET](https://www.conradakunga.com/blog/getting-the-version-of-redis-connected-without-admin-access-in-c-net/) - Get version of Redis connected to without admin rights 
 
-**2 Sep 2025** - [Getting The Version Of RabbitMQ Connected](https://www.conradakunga.com/blog/getting-the-version-of-rabbitmq-connected/) - How to determine the version of RabbitMQ connected to
+**4 September 2025** - [Getting the Version of Redis Connected in C# & .NET](https://www.conradakunga.com/blog/getting-the-version-of-redis-connected/) - Get version of Redis connected to
+
+**3 September 2025** - [Other RabbitMQ IConnection Server Properties](https://www.conradakunga.com/blog/other-rabbitmq-iconnection-server-properties/) - Other properties available in the `ServerProperties` object. 
+
+**2 September 2025** - [Getting The Version Of RabbitMQ Connected](https://www.conradakunga.com/blog/getting-the-version-of-rabbitmq-connected/) - How to determine the version of RabbitMQ connected to
 
 ## August 2025
 
-**27 Aug 2025** - [Sending Email In C# & .NET - Part 12 - Sending Email With Attachments Using MailKit](https://www.conradakunga.com/blog/sending-email-in-c-net-part-12-sending-email-with-attachments-using-mailkit/) - How to send email with attachments using MailKit.
+**27 August 2025** - [Sending Email In C# & .NET - Part 12 - Sending Email With Attachments Using MailKit](https://www.conradakunga.com/blog/sending-email-in-c-net-part-12-sending-email-with-attachments-using-mailkit/) - How to send email with attachments using MailKit.
 
-**26 Aug 2025** - [Sending Email In C# & .NET - Part 11 - Sending HTML Email Using MailKit](https://www.conradakunga.com/blog/sending-email-in-c-net-part-11-sending-html-email-using-mailkit/) - How to send HTML email using MailKit
+**26 August 2025** - [Sending Email In C# & .NET - Part 11 - Sending HTML Email Using MailKit](https://www.conradakunga.com/blog/sending-email-in-c-net-part-11-sending-html-email-using-mailkit/) - How to send HTML email using MailKit
 
-**25 Aug 2025** - [Sending Email In C# & .NET - Part 10 - Sending Plain Text Email Using MailKit](https://www.conradakunga.com/blog/sending-email-in-c-net-part-10-sending-plain-text-email-using-mailkit/) - How to send email with MailKit
+**25 August 2025** - [Sending Email In C# & .NET - Part 10 - Sending Plain Text Email Using MailKit](https://www.conradakunga.com/blog/sending-email-in-c-net-part-10-sending-plain-text-email-using-mailkit/) - How to send email with MailKit
 
-**23 Aug 2025** - [Working With Dates In Multiple Locale Formats Simultaneously](https://www.conradakunga.com/blog/working-with-dates-in-multiple-locale-formats-simultaneously/) - Working With Dates In Multiple Locale Formats
+**23 August 2025** - [Working With Dates In Multiple Locale Formats Simultaneously](https://www.conradakunga.com/blog/working-with-dates-in-multiple-locale-formats-simultaneously/) - Working With Dates In Multiple Locale Formats
 
-**22 Aug 2025** - [How To Sort Strings That Contain Numbers In C# & .NET](https://www.conradakunga.com/blog/how-to-sort-strings-that-contain-numbers-in-c-net/) - How To Sort Strings That Contain Numbers
+**22 August 2025** - [How To Sort Strings That Contain Numbers In C# & .NET](https://www.conradakunga.com/blog/how-to-sort-strings-that-contain-numbers-in-c-net/) - How To Sort Strings That Contain Numbers
 
-**20 Aug 2025** - [The Difference Between String.Format and ToString](https://www.conradakunga.com/blog/adding-ordinal-support-to-datetime-format-strings-in-c-net/) - The Difference Between String.Format and ToString
+**20 August 2025** - [The Difference Between String.Format and ToString](https://www.conradakunga.com/blog/adding-ordinal-support-to-datetime-format-strings-in-c-net/) - The Difference Between String.Format and ToString
 
-**19 Aug 2025** - [Adding Ordinal Support To DateTime Format Strings In C# & .NET](https://www.conradakunga.com/blog/adding-ordinal-support-to-datetime-format-strings-in-c-net/) - Adding Ordinal Support To DateTime Format Strings
+**19 August 2025** - [Adding Ordinal Support To DateTime Format Strings In C# & .NET](https://www.conradakunga.com/blog/adding-ordinal-support-to-datetime-format-strings-in-c-net/) - Adding Ordinal Support To DateTime Format Strings
 
-**18 Aug 2025** - [Displaying Ordinal Words In C# & .NET](https://www.conradakunga.com/blog/displaying-ordinal-words-in-c-net/) - Displaying Ordinal Words
+**18 August 2025** - [Displaying Ordinal Words In C# & .NET](https://www.conradakunga.com/blog/displaying-ordinal-words-in-c-net/) - Displaying Ordinal Words
 
-**17 Aug 2025** - [Displaying Ordinal Numbers In C# & .NET](https://www.conradakunga.com/blog/displaying-ordinal-numbers-in-c-net/) - Displaying Ordinal Numbers
+**17 August 2025** - [Displaying Ordinal Numbers In C# & .NET](https://www.conradakunga.com/blog/displaying-ordinal-numbers-in-c-net/) - Displaying Ordinal Numbers
 
-**13 Aug 2025** - [Class That Stores Multiple Named Typed Generic Lists - Improvement](https://www.conradakunga.com/blog/class-that-stores-multiple-named-typed-generic-lists-improvement/) - Improvement to the class
+**13 August 2025** - [Class That Stores Multiple Named Typed Generic Lists - Improvement](https://www.conradakunga.com/blog/class-that-stores-multiple-named-typed-generic-lists-improvement/) - Improvement to the class
 
-**12 Aug 2025** - [Class That Stores Multiple Named Typed Generic Lists](https://www.conradakunga.com/blog/class-that-stores-multiple-named-typed-generic-lists/) - Class That Stores Multiple Named Typed Generic Lists
+**12 August 2025** - [Class That Stores Multiple Named Typed Generic Lists](https://www.conradakunga.com/blog/class-that-stores-multiple-named-typed-generic-lists/) - Class That Stores Multiple Named Typed Generic Lists
 
-**11 Aug 2025** - [Repeat - xUnit Attribute to Run Tests Multiple Times](https://www.conradakunga.com/blog/repeat-xunit-attribite-to-run-tests-multiple-times/) - Repeat - xUnit Attribute to Run Tests Multiple Times
+**11 August 2025** - [Repeat - xUnit Attribute to Run Tests Multiple Times](https://www.conradakunga.com/blog/repeat-xunit-attribite-to-run-tests-multiple-times/) - Repeat - xUnit Attribute to Run Tests Multiple Times
 
-**10 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 7 - Generating Multiple Passwords](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-7-generating-multiple-passwords/) - Generating Multiple Passwords
+**10 August 2025** - [Building A Simple Password Generator In C# & .NET - Part 7 - Generating Multiple Passwords](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-7-generating-multiple-passwords/) - Generating Multiple Passwords
 
-**9 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 6 - Updating Console UI For Memorable Password Generation](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-6-updating-console-ui-for-memorable-password-generation/) - Updating Console UI For Memorable Password Generation
+**9 August 2025** - [Building A Simple Password Generator In C# & .NET - Part 6 - Updating Console UI For Memorable Password Generation](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-6-updating-console-ui-for-memorable-password-generation/) - Updating Console UI For Memorable Password Generation
 
-**8 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 5 - Generating Memorable Passwords](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-5-generating-memorable-passwords/) - Generating Memorable Passwords
+**8 August 2025** - [Building A Simple Password Generator In C# & .NET - Part 5 - Generating Memorable Passwords](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-5-generating-memorable-passwords/) - Generating Memorable Passwords
 
-**7 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 4 - Generating Human Readable Passwords](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-4-generating-human-readable-passwords/) - Generating Human Readable Passwords
+**7 August 2025** - [Building A Simple Password Generator In C# & .NET - Part 4 - Generating Human Readable Passwords](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-4-generating-human-readable-passwords/) - Generating Human Readable Passwords
 
-**6 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 3 - Advanced UI With Spectre.Console](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-3-advanced-ui-with-spectreconsole/) - Advanced UI With Spectre.Console
+**6 August 2025** - [Building A Simple Password Generator In C# & .NET - Part 3 - Advanced UI With Spectre.Console](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-3-advanced-ui-with-spectreconsole/) - Advanced UI With Spectre.Console
 
-**5 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 2 - Novice UI With Spectre.Console](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-2-novice-ui-with-spectre-console/) - Novice UI With Spectre.Console
+**5 August 2025** - [Building A Simple Password Generator In C# & .NET - Part 2 - Novice UI With Spectre.Console](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-2-novice-ui-with-spectre-console/) - Novice UI With Spectre.Console
 
-**4 Aug 2025** - [Building A Simple Password Generator In C# & .NET - Part 1](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-1/) - Intro
+**4 August 2025** - [Building A Simple Password Generator In C# & .NET - Part 1](https://www.conradakunga.com/blog/building-a-simple-password-generator-in-c-net-part-1/) - Intro
 
-**3 Aug 2025** - [Generating A Cryptographically Random String In C# & .NET](https://www.conradakunga.com/blog/generating-a-cryptographically-random-string-in-c-net/) - Generating a cryptographically random string
+**3 August 2025** - [Generating A Cryptographically Random String In C# & .NET](https://www.conradakunga.com/blog/generating-a-cryptographically-random-string-in-c-net/) - Generating a cryptographically random string
 
-**2 Aug 2025** - [Generating A Random String In C# & .NET](https://www.conradakunga.com/blog/generating-a-random-string-in-c-net/) - Generating a random string
+**2 August 2025** - [Generating A Random String In C# & .NET](https://www.conradakunga.com/blog/generating-a-random-string-in-c-net/) - Generating a random string
 
-**1 Aug 2025** - [Adding Items To An Existing List In C# & .NET](https://www.conradakunga.com/blog/adding-items-to-an-existing-list-in-c-net/) - Adding items to an existing list
+**1 August 2025** - [Adding Items To An Existing List In C# & .NET](https://www.conradakunga.com/blog/adding-items-to-an-existing-list-in-c-net/) - Adding items to an existing list
 
 ## July 2025
 
-**30 Jul 2025** - [Mutative vs Non-Mutative List Manipulation In C# & .NET](https://www.conradakunga.com/blog/mutative-vs-non-mutative-list-manipulation-in-c-net/) - Manipulating lists that mutate
+**30 July 2025** - [Mutative vs Non-Mutative List Manipulation In C# & .NET](https://www.conradakunga.com/blog/mutative-vs-non-mutative-list-manipulation-in-c-net/) - Manipulating lists that mutate
 
-**28 Jul 2025** - [Sending Email In C# & .NET - Part 9 - Sending Multiple Format Email Using SMTP](https://www.conradakunga.com/blog/sending-email-in-c-net-part-9-sending-multiple-format-email-using-smtp/) - Sending multi-format email
+**28 July 2025** - [Sending Email In C# & .NET - Part 9 - Sending Multiple Format Email Using SMTP](https://www.conradakunga.com/blog/sending-email-in-c-net-part-9-sending-multiple-format-email-using-smtp/) - Sending multi-format email
 
-**27 Jul 2025** - [Sending Email In C# & .NET - Part 8 - Sending HTML Email Using SMTP](https://www.conradakunga.com/blog/sending-email-in-c-net-part-8-sending-html-email-using-smtp/) - Sending inline images using SMTP
+**27 July 2025** - [Sending Email In C# & .NET - Part 8 - Sending HTML Email Using SMTP](https://www.conradakunga.com/blog/sending-email-in-c-net-part-8-sending-html-email-using-smtp/) - Sending inline images using SMTP
 
-**26 Jul 2025** - [Sending Email In C# & .NET - Part 7 - Sending Inline Images Using SMTP](https://www.conradakunga.com/blog/sending-email-in-c-net-part-7-sending-inline-images-using-smtp/) - Sending inline images using SMTP
+**26 July 2025** - [Sending Email In C# & .NET - Part 7 - Sending Inline Images Using SMTP](https://www.conradakunga.com/blog/sending-email-in-c-net-part-7-sending-inline-images-using-smtp/) - Sending inline images using SMTP
 
-**24 Jul 2025** - [Displaying User-Friendly TimeSpans In C# & .NET](https://www.conradakunga.com/blog/displaying-user-friendly-timespans-in-csharp-net/) - Displaying `TimeSpan` objects
+**24 July 2025** - [Displaying User-Friendly TimeSpans In C# & .NET](https://www.conradakunga.com/blog/displaying-user-friendly-timespans-in-csharp-net/) - Displaying `TimeSpan` objects
 
-**20 Jul 2025** - [Sending Email In C# & .NET - Part 4 - Using Office 365 & MS Graph API](https://www.conradakunga.com/blog/sending-email-in-c-net-part-4-using-office-365-ms-graph-api/) - Sending email - part 4
+**20 July 2025** - [Sending Email In C# & .NET - Part 4 - Using Office 365 & MS Graph API](https://www.conradakunga.com/blog/sending-email-in-c-net-part-4-using-office-365-ms-graph-api/) - Sending email - part 4
 
-**19 Jul 2025** - [Sending Email In C# & .NET - Part 3 - Using Gmail](https://www.conradakunga.com/blog/sending-email-in-c-net-part-3-using-gmail/) - Sending email - part 3
+**19 July 2025** - [Sending Email In C# & .NET - Part 3 - Using Gmail](https://www.conradakunga.com/blog/sending-email-in-c-net-part-3-using-gmail/) - Sending email - part 3
 
-**18 Jul 2025** - [Sending Email In C# & .NET - Part 2 - Delivery](https://www.conradakunga.com/blog/sending-email-in-c-net-part-2-delivery/) - Sending email - part 2 - delivery
+**18 July 2025** - [Sending Email In C# & .NET - Part 2 - Delivery](https://www.conradakunga.com/blog/sending-email-in-c-net-part-2-delivery/) - Sending email - part 2 - delivery
 
-**17 Jul 2025** - [Sending Email In C# & .NET - Part 1 - Introduction](https://www.conradakunga.com/blog/sending-email-in-c-net-part-1-introduction/) - Sending email - part 1
+**17 July 2025** - [Sending Email In C# & .NET - Part 1 - Introduction](https://www.conradakunga.com/blog/sending-email-in-c-net-part-1-introduction/) - Sending email - part 1
 
-**16 Jul 2025** - [Pet Peeve - Properly Pluralizing Counts In C# & .NET](https://www.conradakunga.com/blog/pet-peeve-properly-pluralizing-counts-in-c-net/) - Pluralizing counts
+**16 July 2025** - [Pet Peeve - Properly Pluralizing Counts In C# & .NET](https://www.conradakunga.com/blog/pet-peeve-properly-pluralizing-counts-in-c-net/) - Pluralizing counts
 
-**14 Jul 2025** - [How to Wait in C# & .NET](https://www.conradakunga.com/blog/how-to-wait-in-c-net/) - How to wait in applications
+**14 July 2025** - [How to Wait in C# & .NET](https://www.conradakunga.com/blog/how-to-wait-in-c-net/) - How to wait in applications
 
-**10 Jul 2025** - [Determining The Architecture Of An Emulated 32 Bit Running Process In .NET On Windows](https://www.conradakunga.com/blog/determining-the-architecture-of-an-emulated-32-bit-running-process-in-net-on-windows/) - Determining architecture of a running process
+**10 July 2025** - [Determining The Architecture Of An Emulated 32 Bit Running Process In .NET On Windows](https://www.conradakunga.com/blog/determining-the-architecture-of-an-emulated-32-bit-running-process-in-net-on-windows/) - Determining architecture of a running process
 
-**6 Jul 2025** - [Get IP Address Of Web Server From ASP.NET WebAPI EndPoint](https://www.conradakunga.com/blog/get-ip-address-of-web-server-from-aspnet-webapi-endpoint/) - Injecting the IServer into endpoints
+**6 July 2025** - [Get IP Address Of Web Server From ASP.NET WebAPI EndPoint](https://www.conradakunga.com/blog/get-ip-address-of-web-server-from-aspnet-webapi-endpoint/) - Injecting the IServer into endpoints
 
-**3 Jul 2025** - [Writing Debugger-Friendly Objects in C# & .NET](https://www.conradakunga.com/blog/writing-debugger-friendly-objects-in-c-net/) - Writing debugger-friendly objects
+**3 July 2025** - [Writing Debugger-Friendly Objects in C# & .NET](https://www.conradakunga.com/blog/writing-debugger-friendly-objects-in-c-net/) - Writing debugger-friendly objects
 
 ## June 2025
 
-**27 Jun 2025** - [Connecting to Secured RabbitMQ Over SSL in C# With EasyNetQ](https://www.conradakunga.com/blog/connecting-to-secured-rabbitmq-over-ssl-in-c-with-easynetq/) - Connect to RabbitMQ over SSL.
+**27 June 2025** - [Connecting to Secured RabbitMQ Over SSL in C# With EasyNetQ](https://www.conradakunga.com/blog/connecting-to-secured-rabbitmq-over-ssl-in-c-with-easynetq/) - Connect to RabbitMQ over SSL.
 
-**16 Jun 2025** - [Locale Considerations When Parsing Dates](https://www.conradakunga.com/blog/locale-considerations-when-parsing-dates/) - Locale considerations when parsing dates.
+**16 June 2025** - [Locale Considerations When Parsing Dates](https://www.conradakunga.com/blog/locale-considerations-when-parsing-dates/) - Locale considerations when parsing dates.
 
-**15 Jun 2025** - [Don't Parse - TryParse](https://www.conradakunga.com/blog/dont-parse-tryparse/) - Parsing data safely.
+**15 June 2025** - [Don't Parse - TryParse](https://www.conradakunga.com/blog/dont-parse-tryparse/) - Parsing data safely.
 
-**14 Jun 2025** - [F# Discriminated Unions & Their Benefits](https://www.conradakunga.com/blog/f-discriminated-unions-their-benefits/) - F# Discriminated Unions
+**14 June 2025** - [F# Discriminated Unions & Their Benefits](https://www.conradakunga.com/blog/f-discriminated-unions-their-benefits/) - F# Discriminated Unions
 
-**8 Jun 2025** - [C# Dictionary Usage Optimizations - TryGet](https://www.conradakunga.com/blog/c-dictionary-usage-optimizations-tryget/) - C# Dictionary Usage Optimizations - TryGet
+**8 June 2025** - [C# Dictionary Usage Optimizations - TryGet](https://www.conradakunga.com/blog/c-dictionary-usage-optimizations-tryget/) - C# Dictionary Usage Optimizations - TryGet
 
-**7 Jun 2025** - [C# Dictionary Usage Optimizations - TryAdd](https://www.conradakunga.com/blog/c-dictionary-usage-optimizations-tryadd/) - C# Dictionary Usage Optimizations - TryAdd
+**7 June 2025** - [C# Dictionary Usage Optimizations - TryAdd](https://www.conradakunga.com/blog/c-dictionary-usage-optimizations-tryadd/) - C# Dictionary Usage Optimizations - TryAdd
 
-**5 Jun 2025** - [How to Deserialize JSON Using HttpClient Using C# In .NET](https://www.conradakunga.com/blog/how-to-deserialize-json-using-httpclient-in-using-c-in-net/) - JSON Deserialization options
+**5 June 2025** - [How to Deserialize JSON Using HttpClient Using C# In .NET](https://www.conradakunga.com/blog/how-to-deserialize-json-using-httpclient-in-using-c-in-net/) - JSON Deserialization options
 
-**3 Jun 2025** - [Exposing Collections As Read-Only In C# & .NET](https://www.conradakunga.com/blog/exposing-collections-as-read-only-in-c-net/) - How to expose collections safely.
+**3 June 2025** - [Exposing Collections As Read-Only In C# & .NET](https://www.conradakunga.com/blog/exposing-collections-as-read-only-in-c-net/) - How to expose collections safely.
 
-**2 Jun 2025** - [Using the Generic Math Interface in C# & .NET](https://www.conradakunga.com/blog/using-the-generic-math-interface-in-c-net/) - Simplifying numeric logic with the generic math interface
+**2 June 2025** - [Using the Generic Math Interface in C# & .NET](https://www.conradakunga.com/blog/using-the-generic-math-interface-in-c-net/) - Simplifying numeric logic with the generic math interface
 
 ## May 2025
 
@@ -320,13 +324,13 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## August 2023
 
-**18 Aug 2023** - [Defining Relationships With Enum Attributes For Enum Values In C#](https://www.conradakunga.com/blog/enum-attributes-for-enum-values-in-c/) - How to use attributes to enforce relationships between `Enums`
+**18 August 2023** - [Defining Relationships With Enum Attributes For Enum Values In C#](https://www.conradakunga.com/blog/enum-attributes-for-enum-values-in-c/) - How to use attributes to enforce relationships between `Enums`
 
-**8 Aug 2023** - [Tip - Using JsonSerializationOptions With Refit](https://www.conradakunga.com/blog/tip-using-jsonserializationoptions-with-refit/) - how to control the serialization and deserialization of objects when using Refit
+**8 August 2023** - [Tip - Using JsonSerializationOptions With Refit](https://www.conradakunga.com/blog/tip-using-jsonserializationoptions-with-refit/) - how to control the serialization and deserialization of objects when using Refit
 
 ## July 2023
 
-**21 Jul** - [Tip - Adding x-request-id to a HTTP request without changing case](https://www.conradakunga.com/blog/projecting-named-tuples-in-entity-framework-core/) - a workaround around a problem where the HttpClient changes the case of this particular header when it is added.
+**21 July** - [Tip - Adding x-request-id to a HTTP request without changing case](https://www.conradakunga.com/blog/projecting-named-tuples-in-entity-framework-core/) - a workaround around a problem where the HttpClient changes the case of this particular header when it is added.
 
 ## May 2023
 
@@ -365,9 +369,9 @@ A gotcha in the syntax of how to correctly group using VB.NET
 
 ## August 2022
 
-15 Aug - [A better way to build and maintain URLs](https://www.conradakunga.com/blog/building-urls-in-c-without-concatenation-or-interpolation/)
+15 August - [A better way to build and maintain URLs](https://www.conradakunga.com/blog/building-urls-in-c-without-concatenation-or-interpolation/)
 
-1 Aug - [Using HttpClient To Post JSON In C# & .NET](https://www.conradakunga.com/blog/using-httpclient-to-post-json-in-c-net/)
+1 August - [Using HttpClient To Post JSON In C# & .NET](https://www.conradakunga.com/blog/using-httpclient-to-post-json-in-c-net/)
 
 ## May 2022
 
