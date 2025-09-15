@@ -1,5 +1,4 @@
 ﻿// Get the home location
-
 string homeLocation = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
 // Build the download path
 string downloadLocation = Path.Combine(homeLocation, "Downloads");

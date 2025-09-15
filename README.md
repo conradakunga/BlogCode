@@ -4,7 +4,11 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## September 2025
 
-**9 September 2025** - [Changing The Decimal Separator In C# & .NET](https://www.conradakunga.com/blog/changing-the-decimal-separator-in-c-net/) - Changing the decimal separator in C# & .NET 
+**14 September 2025** - [Getting The Downloads Location On macOS In C# & .NET](https://www.conradakunga.com/blog/getting-the-downloads-location-on-macos-in-c-net/) - Getting the downloads location in macOS
+
+**13 September 2025** - [Getting The Downloads Location On Windows In C# & .NET](https://www.conradakunga.com/blog/getting-the-downloads-location-on-windows-in-c-net/) - Getting the downloads location in Windows
+
+**9 September 2025** - [Changing The Decimal Separator In C# & .NET](https://www.conradakunga.com/blog/changing-the-decimal-separator-in-c-net/) - Changing the decimal separator in C# & .NET
 
 **8 September 2025** - [Sep Is The Short Date Format For September. Sometimes](https://www.conradakunga.com/blog/sep-is-the-short-date-format-for-september-sometimes/) - The short form of September is not what you think
 
