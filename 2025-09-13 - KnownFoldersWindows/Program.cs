@@ -1,13 +1,5 @@
 ﻿using System.Runtime.InteropServices;
 
-// // Get desktop
-// var path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-// // Get parent path
-// var parent = new DirectoryInfo(path).Parent;
-// // Build downloads path
-// var downloadsPath = Path.Combine(parent.FullName, "Downloads");
-// Console.WriteLine(downloadsPath);
-
 var downloadsPath = GetDownloadsPath();
 if (downloadsPath is null)
     Console.WriteLine("Could not find downloads path");
