@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## September 2025
 
+**17 September 2025** - [Documentation Needs Love - Broken Samples](https://www.conradakunga.com/blog/documentation-needs-love-broken-samples/) - MS Graph sample code that compiles
+
 **14 September 2025** - [Getting The Downloads Location On macOS In C# & .NET](https://www.conradakunga.com/blog/getting-the-downloads-location-on-macos-in-c-net/) - Getting the downloads location in macOS
 
 **13 September 2025** - [Getting The Downloads Location On Windows In C# & .NET](https://www.conradakunga.com/blog/getting-the-downloads-location-on-windows-in-c-net/) - Getting the downloads location in Windows
