@@ -1,0 +1,15 @@
+/Users/rad/Projects/BlogCode/RandomSample/bin/Debug/net10.0/RandomSample
+/Users/rad/Projects/BlogCode/RandomSample/bin/Debug/net10.0/RandomSample.deps.json
+/Users/rad/Projects/BlogCode/RandomSample/bin/Debug/net10.0/RandomSample.runtimeconfig.json
+/Users/rad/Projects/BlogCode/RandomSample/bin/Debug/net10.0/RandomSample.dll
+/Users/rad/Projects/BlogCode/RandomSample/bin/Debug/net10.0/RandomSample.pdb
+/Users/rad/Projects/BlogCode/RandomSample/obj/Debug/net10.0/RandomSample.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rad/Projects/BlogCode/RandomSample/obj/Debug/net10.0/RandomSample.AssemblyInfoInputs.cache
+/Users/rad/Projects/BlogCode/RandomSample/obj/Debug/net10.0/RandomSample.AssemblyInfo.cs
+/Users/rad/Projects/BlogCode/RandomSample/obj/Debug/net10.0/RandomSample.csproj.CoreCompileInputs.cache
+/Users/rad/Projects/BlogCode/RandomSample/obj/Debug/net10.0/RandomSample.sourcelink.json
+/Users/rad/Projects/BlogCode/RandomSample/obj/Debug/net10.0/RandomSample.dll
+/Users/rad/Projects/BlogCode/RandomSample/obj/Debug/net10.0/refint/RandomSample.dll
+/Users/rad/Projects/BlogCode/RandomSample/obj/Debug/net10.0/RandomSample.pdb
+/Users/rad/Projects/BlogCode/RandomSample/obj/Debug/net10.0/RandomSample.genruntimeconfig.cache
+/Users/rad/Projects/BlogCode/RandomSample/obj/Debug/net10.0/ref/RandomSample.dll
