@@ -1,16 +1,18 @@
 ﻿using NodaTime;
 using NodaTime.Text;
 
-// Get the current time
-var now = SystemClock.Instance.GetCurrentInstant();
-
-Console.WriteLine($"It is {now:ddd, d MMM yyyy h:mm tt} in Nairobi");
+// Print current system date
+Console.WriteLine($"It is {DateTime.Now:ddd, d MMM yyyy h:mm tt} in Nairobi");
 Console.WriteLine();
+
+// Get the current time as an Instant
+var now = SystemClock.Instance.GetCurrentInstant();
 
 // Build an array of zone info types
 ZoneInfo[] zones =
 [
     new("Algiers", "Africa/Algiers"),
+    new("Atlanta", "America/Los_Angeles"),
     new("Wollongong", "Australia/Sydney"),
     new("London", "Europe/London"),
     new("Dublin", "Europe/Dublin"),
@@ -21,7 +23,7 @@ ZoneInfo[] zones =
 // Build the display pattern for the date and time
 var pattern = ZonedDateTimePattern.CreateWithInvariantCulture("ddd d MMM yyyy, h:mm tt", DateTimeZoneProviders.Tzdb);
 
-foreach (var zone in zones)
+foreach (var zone in zones.OrderBy(x => x.City))
 {
     // Get the current zone date time
     var zonedDateTime = now.InZone(DateTimeZoneProviders.Tzdb[zone.TimeZone]);
