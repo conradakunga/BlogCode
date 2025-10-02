@@ -17,7 +17,8 @@ ZoneInfo[] zones =
     new("London", "Europe/London"),
     new("Dublin", "Europe/Dublin"),
     new("Cape Town", "Africa/Johannesburg"),
-    new("San Francisco", "America/Los_Angeles")
+    new("San Francisco", "America/Los_Angeles"),
+    new("San José", "America/Los_Angeles")
 ];
 
 // Build the display pattern for the date and time
