@@ -2,7 +2,31 @@
 
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+## October 2025
+
+**3 October 2025** - [Getting A Constant Value From A .NET Executable in PowerShell](https://www.conradakunga.com/blog/getting-a-constant-value-from-a-net-executable-in-powershell/) - Extract a constant from an EXE in PowerShell
+
+**1 October 2025** - [Getting The Time In Different Timezones In C# & .NET](https://www.conradakunga.com/blog/getting-the-time-in-different-timezones-in-c-net/) - How to get the time in different time zones
+
 ## September 2025
+
+**30 September 2025** - [Converting Between Calendars AKA October MOSTLY Has 31 Days](https://www.conradakunga.com/blog/converting-between-calendars-aka-october-mostly-has-31-days/) - Differences in dates between calendars.
+
+**29 September 2025** - [Correctly Getting The Number Of Days In A Month In C# & .NET](https://www.conradakunga.com/blog/correctly-getting-the-number-of-days-in-a-month-in-c-net/) - How to correctly get the number of days in a month
+
+**27 September 2025** - [Generating Random Booleans In C# & .NET](https://www.conradakunga.com/blog/documentation-needs-love-broken-samples/) - Generate random booleans
+
+**26 September 2025** - [Generating Random Unsigned 64 Bit Integers In C# & .NET](https://www.conradakunga.com/blog/generating-random-unsigned-64-bit-integers-in-c-net/) - Generate random unsigned 64 bit integers
+
+**25 September 2025** - [Generating Random Unsigned Integers In C# & .NET](https://www.conradakunga.com/blog/generating-random-unsigned-integers-in-c-net/) - Generate random unsigned integers
+
+**24 September 2025** - [Generating Random Values For Other Integral Types In C# & .NET](https://www.conradakunga.com/blog/generating-random-values-for-other-integral-types-in-c-net/) - Generate random values for other integral types
+
+**21 September 2025** - [Random Sampling Of Arrays In C# & .NET](https://www.conradakunga.com/blog/random-sampling-of-arrays-in-c-net/) - Random array sampling
+
+**20 September 2025** - [Shuffling Arrays In C# & .NET](https://www.conradakunga.com/blog/shuffling-arrays-in-c-net/) - Shuffling arrays
+
+**19 September 2025** - [Restricting Numbers To A Range In C# & .NET](https://www.conradakunga.com/blog/restricting-numbers-to-a-range-in-c-net/) - Restringing numbers to a bounded range
 
 **17 September 2025** - [Documentation Needs Love - Broken Samples](https://www.conradakunga.com/blog/documentation-needs-love-broken-samples/) - MS Graph sample code that compiles
 
