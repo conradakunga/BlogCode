@@ -4,6 +4,12 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## October 2025
 
+**8 October 2025** - [Writing To The Windows Event Log In C# & .NET](http://127.0.0.1:4000/blog/writing-to-the-windows-event-log-in-c-net/) - Writing to the Windows Event Log
+
+**6 October 2025** - [Getting The Name Of A File Without Its Extension In C# & .NET](http://127.0.0.1:4000/blog/getting-the-name-of-a-file-without-its-extension-in-c-net/) - Getting the name of a file without its extension
+
+**5 October 2025** - [How To Unit Test A Class With Options In C# & .NET](http://127.0.0.1:4000/blog/how-to-unit-test-a-class-with-options-in-c-net/) - Unit testing a class with constructor injected options
+
 **3 October 2025** - [Getting A Constant Value From A .NET Executable in PowerShell](https://www.conradakunga.com/blog/getting-a-constant-value-from-a-net-executable-in-powershell/) - Extract a constant from an EXE in PowerShell
 
 **1 October 2025** - [Getting The Time In Different Timezones In C# & .NET](https://www.conradakunga.com/blog/getting-the-time-in-different-timezones-in-c-net/) - How to get the time in different time zones
