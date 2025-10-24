@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices.JavaScript;
-using AwesomeAssertions;
+﻿using AwesomeAssertions;
 using DateExtensions;
 
 namespace DateExtensionTests;
