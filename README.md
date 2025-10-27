@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## October 2025
 
+**27 October 2025** - [Adding Date Computations Support To DateTime In C# & .NET](https://www.conradakunga.com/blog/adding-date-computations-support-to-datetime-in-c-net/) - Extension methods for `DateTime`
+
 **26 October 2025** - [Getting The Start and End Of The Next Year In C# & .NET](https://www.conradakunga.com/blog/getting-the-start-and-end-of-the-next-year-in-c-net/) - Get start and end of the next year
 
 **25 October 2025** - [Getting The Start and End Of The Previous Year In C# & .NET](https://www.conradakunga.com/blog/getting-the-start-and-end-of-the-previous-year-in-c-net/) - Get start and end of the previous year
