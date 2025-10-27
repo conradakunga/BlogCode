@@ -4,7 +4,7 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## October 2025
 
-**26 October 2025** - [Getting The Start and End Of A Quarter In C# & .NET](https://www.conradakunga.com/blog/getting-the-start-and-end-of-a-quarter-in-c-net/) - Get start and end of the current quarter
+**26 October 2025** - [Getting The Start and End Of The Next Year In C# & .NET](https://www.conradakunga.com/blog/getting-the-start-and-end-of-the-next-year-in-c-net/) - Get start and end of the next year
 
 **25 October 2025** - [Getting The Start and End Of The Previous Year In C# & .NET](https://www.conradakunga.com/blog/getting-the-start-and-end-of-the-previous-year-in-c-net/) - Get start and end of the previous year
 
