@@ -8,7 +8,7 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 **25 October 2025** - [Getting The Start and End Of A Quarter In C# & .NET](https://www.conradakunga.com/blog/getting-the-start-and-end-of-a-quarter-in-c-net/) - Get start and end of the current quarter
 
-**24 October 2025** - [Getting The Start and End Of A Quarter In C# & .NET](https://www.conradakunga.com/blog/getting-the-start-and-end-of-a-quarter-in-c-net/) - Get start and end of the current quarter
+**24 October 2025** - [Getting The Start and End Of The Current Year In C# & .NET](https://www.conradakunga.com/blog/getting-the-start-and-end-of-the-current-year-in-c-net/) - Get start and end of the current year
 
 **23 October 2025** - [Getting The Start and End Of The Next Quarter In C# & .NET](https://www.conradakunga.com/blog/getting-the-start-and-end-of-the-next-quarter-in-c-net/) - Get start and end of the next quarter
 
