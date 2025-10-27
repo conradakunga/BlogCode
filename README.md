@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## October 2025
 
+**21 October 2025** - [Getting The Start and End Of A Quarter In C# & .NET](https://www.conradakunga.com/blog/getting-the-start-and-end-of-a-quarter-in-c-net/) - Get start and end of the current quarter
+
 **19 October 2025** - [Custom Sorting To Ignore Articles Like 'A' & 'The' In C# & .NET](https://www.conradakunga.com/blog/custom-sorting-to-ignore-articles-like-a-the-in-c-net/) - Custom sorting to ignore articles
 
 **14 October 2025** - [Serializing Enums With System.Text.Json In C# & .NET](https://www.conradakunga.com/blog/serializing-enums-with-systemtextjson-in-c-net/) - Serializing enums
