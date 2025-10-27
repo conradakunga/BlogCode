@@ -4,6 +4,16 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## October 2025
 
+**26 October 2025** - [Getting The Start and End Of A Quarter In C# & .NET](https://www.conradakunga.com/blog/getting-the-start-and-end-of-a-quarter-in-c-net/) - Get start and end of the current quarter
+
+**25 October 2025** - [Getting The Start and End Of A Quarter In C# & .NET](https://www.conradakunga.com/blog/getting-the-start-and-end-of-a-quarter-in-c-net/) - Get start and end of the current quarter
+
+**24 October 2025** - [Getting The Start and End Of A Quarter In C# & .NET](https://www.conradakunga.com/blog/getting-the-start-and-end-of-a-quarter-in-c-net/) - Get start and end of the current quarter
+
+**23 October 2025** - [Getting The Start and End Of A Quarter In C# & .NET](https://www.conradakunga.com/blog/getting-the-start-and-end-of-a-quarter-in-c-net/) - Get start and end of the current quarter
+
+**22 October 2025** - [Getting The Start and End Of The Previous Quarter In C# & .NET](https://www.conradakunga.com/blog/getting-the-start-and-end-of-the-previous-quarter-in-c-net/) - Get start and end of the previous quarter
+
 **21 October 2025** - [Getting The Start and End Of A Quarter In C# & .NET](https://www.conradakunga.com/blog/getting-the-start-and-end-of-a-quarter-in-c-net/) - Get start and end of the current quarter
 
 **19 October 2025** - [Custom Sorting To Ignore Articles Like 'A' & 'The' In C# & .NET](https://www.conradakunga.com/blog/custom-sorting-to-ignore-articles-like-a-the-in-c-net/) - Custom sorting to ignore articles
