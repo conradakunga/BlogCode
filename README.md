@@ -4,6 +4,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## October 2025
 
+**30 October 2025** - [Working With appsettings.json In A Team In C# & .NET](https://www.conradakunga.com/blog/working-with-appsettingsjson-in-a-team-in-c-net/) - A solution to shared appsettings.json problems.
+
+**28 October 2025** - [Using Extension Members To Add Properties To Types In C# & .NET](https://www.conradakunga.com/blog/using-extension-members-to-add-properties-to-types-in-c-net/) - Extension properties
+
 **27 October 2025** - [Adding Date Computations Support To DateTime In C# & .NET](https://www.conradakunga.com/blog/adding-date-computations-support-to-datetime-in-c-net/) - Extension methods for `DateTime`
 
 **26 October 2025** - [Getting The Start and End Of The Next Year In C# & .NET](https://www.conradakunga.com/blog/getting-the-start-and-end-of-the-next-year-in-c-net/) - Get start and end of the next year
