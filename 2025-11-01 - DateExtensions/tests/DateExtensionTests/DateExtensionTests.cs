@@ -1,5 +1,4 @@
-﻿using System.ComponentModel;
-using AwesomeAssertions;
+﻿using AwesomeAssertions;
 using DateExtensions;
 
 namespace DateExtensionTests;
@@ -7,11 +6,12 @@ namespace DateExtensionTests;
 public class DateExtensionTests
 {
     [Theory]
-    [InlineData(2024, 1, 2025)]
-    public void YearTests(int currentYear, int offsetYears, int expectedYear)
+    [InlineData(1)]
+    [InlineData(-1)]
+    public void YearTests(int offsetYears)
     {
-        var provider = new FakeDateTimeProvider
-        var sut = new DateOnly(currentYear, 1, 1);
-        sut.Quarter().Should().Be(quarter);
+        var current = DateTime.Now;
+        var expected = new DateOnly(current.Year + offsetYears, current.Month, current.Day);
+        DateOnly.CreateCurrentWithOffsetYear(offsetYears).Should().Be(expected);
     }
 }
