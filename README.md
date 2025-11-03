@@ -2,9 +2,17 @@
 
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+## November 2025
+
+**2 November 2025** - [Creating Static Extension Properties In C# & .NET](https://www.conradakunga.com/blog/creating-static-extension-properties-in-c-net/) - Static extension properties
+
+**1 November 2025** - [Creating Static Extension Methods In C# & .NET](https://www.conradakunga.com/blog/creating-static-extension-methods-in-c-net/) - Static extension methods
+
 ## October 2025
 
-**30 October 2025** - [Working With appsettings.json In A Team In C# & .NET](https://www.conradakunga.com/blog/working-with-appsettingsjson-in-a-team-in-c-net/) - A solution to shared appsettings.json problems.
+**31 October 2025** - [Writing & Testing Code That Expects The Current Date & Time Using The TimeProvider in C# & .NET](https://www.conradakunga.com/blog/writing-testing-code-that-expects-the-current-date-time-using-the-timeprovider-in-c-net/) - Writing & testing code that uses the current date
+
+**30 October 2025** - [Working With appsettings.json In A Team In C# & .NET](https://www.conradakunga.com/blog/working-with-appsettingsjson-in-a-team-in-c-net/) - A solution to shared appsettings.json problems
 
 **28 October 2025** - [Using Extension Members To Add Properties To Types In C# & .NET](https://www.conradakunga.com/blog/using-extension-members-to-add-properties-to-types-in-c-net/) - Extension properties
 
