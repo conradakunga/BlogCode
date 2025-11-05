@@ -4,6 +4,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## November 2025
 
+**4 November 2025** - [How To Check If You Can Write To A File In C# & .NET](https://www.conradakunga.com/blog/how-to-check-if-you-can-write-to-a-file-in-c-net/) - Checking if you can write to a file
+
+**3 November 2025** - [Using The Field Keyword In C# & .NET](https://www.conradakunga.com/blog/using-the-field-keyword-in-c-net/) - Using the `field` keyword
+
 **2 November 2025** - [Creating Static Extension Properties In C# & .NET](https://www.conradakunga.com/blog/creating-static-extension-properties-in-c-net/) - Static extension properties
 
 **1 November 2025** - [Creating Static Extension Methods In C# & .NET](https://www.conradakunga.com/blog/creating-static-extension-methods-in-c-net/) - Static extension methods
