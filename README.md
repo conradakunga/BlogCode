@@ -4,6 +4,14 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## November 2025
 
+**10 November 2025** - [Splitting A String Into An Array In C# & .NET](https://www.conradakunga.com/blog/splitting-a-string-into-an-array-in-c-net/) - Splitting a string into an array
+
+**9 November 2025** - [Checking If Collection Enumeration Is Cheap In C# & .NET](https://www.conradakunga.com/blog/checking-if-collection-enumeration-is-cheap-in-c-net/) - Cheap checks for collection emptiness
+
+**7 November 2025** - [Beware - Missing Serilog Entries On Application Exit](https://www.conradakunga.com/blog/beware-missing-serilog-entries-on-application-exit/) - Ensuring logs are flushed
+
+**6 November 2025** - [How To Log Complex Objects With Serilog](https://www.conradakunga.com/blog/how-to-log-complex-objects-with-serilog/) - Log complex objects with Serilog
+
 **4 November 2025** - [How To Check If You Can Write To A File In C# & .NET](https://www.conradakunga.com/blog/how-to-check-if-you-can-write-to-a-file-in-c-net/) - Checking if you can write to a file
 
 **3 November 2025** - [Using The Field Keyword In C# & .NET](https://www.conradakunga.com/blog/using-the-field-keyword-in-c-net/) - Using the `field` keyword
