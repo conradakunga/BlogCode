@@ -1,0 +1,15 @@
+/Users/rad/Projects/BlogCode/AggregatedExceptionHandling/bin/Debug/net10.0/AggregatedExceptionHandling
+/Users/rad/Projects/BlogCode/AggregatedExceptionHandling/bin/Debug/net10.0/AggregatedExceptionHandling.deps.json
+/Users/rad/Projects/BlogCode/AggregatedExceptionHandling/bin/Debug/net10.0/AggregatedExceptionHandling.runtimeconfig.json
+/Users/rad/Projects/BlogCode/AggregatedExceptionHandling/bin/Debug/net10.0/AggregatedExceptionHandling.dll
+/Users/rad/Projects/BlogCode/AggregatedExceptionHandling/bin/Debug/net10.0/AggregatedExceptionHandling.pdb
+/Users/rad/Projects/BlogCode/AggregatedExceptionHandling/obj/Debug/net10.0/AggregatedExceptionHandling.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rad/Projects/BlogCode/AggregatedExceptionHandling/obj/Debug/net10.0/AggregatedExceptionHandling.AssemblyInfoInputs.cache
+/Users/rad/Projects/BlogCode/AggregatedExceptionHandling/obj/Debug/net10.0/AggregatedExceptionHandling.AssemblyInfo.cs
+/Users/rad/Projects/BlogCode/AggregatedExceptionHandling/obj/Debug/net10.0/AggregatedExceptionHandling.csproj.CoreCompileInputs.cache
+/Users/rad/Projects/BlogCode/AggregatedExceptionHandling/obj/Debug/net10.0/AggregatedExceptionHandling.sourcelink.json
+/Users/rad/Projects/BlogCode/AggregatedExceptionHandling/obj/Debug/net10.0/AggregatedExceptionHandling.dll
+/Users/rad/Projects/BlogCode/AggregatedExceptionHandling/obj/Debug/net10.0/refint/AggregatedExceptionHandling.dll
+/Users/rad/Projects/BlogCode/AggregatedExceptionHandling/obj/Debug/net10.0/AggregatedExceptionHandling.pdb
+/Users/rad/Projects/BlogCode/AggregatedExceptionHandling/obj/Debug/net10.0/AggregatedExceptionHandling.genruntimeconfig.cache
+/Users/rad/Projects/BlogCode/AggregatedExceptionHandling/obj/Debug/net10.0/ref/AggregatedExceptionHandling.dll
