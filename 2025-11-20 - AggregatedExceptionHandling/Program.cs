@@ -9,7 +9,7 @@
 catch (AggregateException ex)
 {
     Console.WriteLine("There were {0} exceptions ", ex.InnerExceptions.Count);
-
+    
     var counter = 0;
     foreach (var e in ex.InnerExceptions)
     {
