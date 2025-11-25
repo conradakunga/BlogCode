@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## November 2025
 
+**24 November 2025** - [Writing Operating Specific Test Assertion For xUnit In C# & .NET](https://www.conradakunga.com/blog/writing-operating-specific-test-assertion-for-xunit-in-c-net/) - Operating system specific xUnit assertions
+
 **23 November 2025** - [Beware - ParseExact Over Parse When Processing Dates In C# & .NET](https://www.conradakunga.com/blog/beware-parseexact-over-parse-when-processing-dates-in-c-net/) - Gotchas from localization when parsing dates
 
 **22 November 2025** - [How To Flatten Aggregate Exceptions In C# & .NET](https://www.conradakunga.com/blog/how-to-flatten-aggregate-exceptions-in-c-net/) - Flatten aggregate exceptions
