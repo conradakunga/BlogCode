@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## November 2025
 
+**13 November 2025** - [How To Deserialize Numbers Serialized As Strings Using System.Text.Json In C# & .NET](https://www.conradakunga.com/blog/how-to-deserialize-numbers-serialized-as-strings-using-systemtextjson-in-c-net/) - Deserialize numbers serialized as strings in `json`
+
 **10 November 2025** - [Splitting A String Into An Array In C# & .NET](https://www.conradakunga.com/blog/splitting-a-string-into-an-array-in-c-net/) - Splitting a string into an array
 
 **9 November 2025** - [Checking If Collection Enumeration Is Cheap In C# & .NET](https://www.conradakunga.com/blog/checking-if-collection-enumeration-is-cheap-in-c-net/) - Cheap checks for collection emptiness
