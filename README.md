@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## November 2025
 
+**20 November 2025** - [How To Deal With Aggregate Exceptions In C# & .NET](https://www.conradakunga.com/blog/how-to-deal-with-aggregate-exceptions-in-c-net/) - Dealing with aggregate exceptions
+
 **17 November 2025** - [How To Get An Available TCP Port From The Operating System In C# & .NET](https://www.conradakunga.com/blog/how-to-get-an-available-tcp-port-from-the-operating-system-in-c-net/) - Getting a TCP port from the OS
 
 **16 November 2025** - [How To Execute Database Queries In Parallel In C# & .NET](https://www.conradakunga.com/blog/how-to-execute-database-queries-in-parallel-in-c-net/) - Safely execute queries in parallel
