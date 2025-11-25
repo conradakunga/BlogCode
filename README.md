@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## November 2025
 
+**17 November 2025** - [How To Get An Available TCP Port From The Operating System In C# & .NET](https://www.conradakunga.com/blog/how-to-get-an-available-tcp-port-from-the-operating-system-in-c-net/) - Getting a TCP port from the OS
+
 **16 November 2025** - [How To Execute Database Queries In Parallel In C# & .NET](https://www.conradakunga.com/blog/how-to-execute-database-queries-in-parallel-in-c-net/) - Safely execute queries in parallel
 
 **15 November 2025** - [Beware - Parallel.ForEach And Async Don't Play Well Together](https://www.conradakunga.com/blog/beware-parallelforeach-and-async-dont-play-well-together/) - Gotcha when using async code with Parallel constructs
