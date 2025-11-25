@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## November 2025
 
+**23 November 2025** - [Beware - ParseExact Over Parse When Processing Dates In C# & .NET](https://www.conradakunga.com/blog/beware-parseexact-over-parse-when-processing-dates-in-c-net/) - Gotchas from localization when parsing dates
+
 **22 November 2025** - [How To Flatten Aggregate Exceptions In C# & .NET](https://www.conradakunga.com/blog/how-to-flatten-aggregate-exceptions-in-c-net/) - Flatten aggregate exceptions
 
 **21 November 2025** - [How To Deal With Nested Exceptions In C# & .NET](https://www.conradakunga.com/blog/how-to-deal-with-nested-exceptions-in-c-net/) - Dealing with nested exceptions
