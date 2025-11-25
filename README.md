@@ -4,7 +4,9 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## November 2025
 
-**21 November 2025** - [How To Deal With Nested Exceptions In C# & .NET](https://www.conradakunga.com/blog/how-to-deal-with-nested-exceptions-in-c-net/) - Dealing with nexted exceptions
+**22 November 2025** - [How To Flatten Aggregate Exceptions In C# & .NET](https://www.conradakunga.com/blog/how-to-flatten-aggregate-exceptions-in-c-net/) - Flatten aggregate exceptions
+
+**21 November 2025** - [How To Deal With Nested Exceptions In C# & .NET](https://www.conradakunga.com/blog/how-to-deal-with-nested-exceptions-in-c-net/) - Dealing with nested exceptions
 
 **20 November 2025** - [How To Deal With Aggregate Exceptions In C# & .NET](https://www.conradakunga.com/blog/how-to-deal-with-aggregate-exceptions-in-c-net/) - Dealing with aggregate exceptions
 
