@@ -1,4 +1,3 @@
-using System.Runtime.InteropServices;
 using Xunit;
 
 namespace Rad.xUnit.Extensions;
@@ -13,7 +12,10 @@ public sealed class OperatingSystemFactAttribute : FactAttribute
     {
         var isMatch = (os.HasFlag(OSEnum.Windows) && OperatingSystem.IsWindows()) ||
                       (os.HasFlag(OSEnum.macOS) && OperatingSystem.IsMacOS()) ||
-                      (os.HasFlag(OSEnum.Linux) && OperatingSystem.IsLinux());
+                      (os.HasFlag(OSEnum.Android) && OperatingSystem.IsAndroid()) ||
+                      (os.HasFlag(OSEnum.iOS) && OperatingSystem.IsIOS()) ||
+                      (os.HasFlag(OSEnum.tvOS) && OperatingSystem.IsTvOS()) ||
+                      (os.HasFlag(OSEnum.watchOS) && OperatingSystem.IsWatchOS());
 
         if (!isMatch)
         {
