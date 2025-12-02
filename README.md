@@ -4,6 +4,12 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## November 2025
 
+**28 November 2025** - [Writing A Generic Operating System method-level attribute for xUnit in C# & .NET](https://www.conradakunga.com/blog/writing-a-generic-operating-system-method-level-attribute-for-xunit-in-c-net/) - How to create a generic attribute that allows you to specify the operating system(s) to run under
+
+**27 November 2025** - [Writing A Linux-only method-level attribute for xUnit in C# & .NET](https://www.conradakunga.com/blog/writing-a-macos-only-method-level-attribute-for-xunit-in-c-net/) - How to create Linux only test methods
+
+**26 November 2025** - [Writing A macOS-only method-level attribute for xUnit in C# & .NET](https://www.conradakunga.com/blog/writing-a-macos-only-method-level-attribute-for-xunit-in-c-net/) - How to create macOS only test methods
+
 **25 November 2025** - [Writing A Windows-only method-level attribute for xUnit in C# & .NET](https://www.conradakunga.com/blog/writing-a-windows-only-method-level-attribute-for-xunit-in-c-net/) - How to create Windows only test methods
 
 **24 November 2025** - [Writing Operating Specific Test Assertion For xUnit In C# & .NET](https://www.conradakunga.com/blog/writing-operating-specific-test-assertion-for-xunit-in-c-net/) - Operating system specific xUnit assertions
