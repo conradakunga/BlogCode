@@ -2,6 +2,10 @@
 
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+## December 2025
+
+**3 December 2025** - [FIX - The number of row value expressions in the INSERT statement exceeds the maximum allowed number of 1000 row values](https://www.conradakunga.com/blog/fix-the-number-of-row-value-expressions-in-the-insert-statement-exceeds-the-maximum-allowed-number-of-1000-row-values/) - How to overcome the SQL Server 1,000 row bulk insert limit
+
 ## November 2025
 
 **28 November 2025** - [Writing A Generic Operating System method-level attribute for xUnit in C# & .NET](https://www.conradakunga.com/blog/writing-a-generic-operating-system-method-level-attribute-for-xunit-in-c-net/) - How to create a generic attribute that allows you to specify the operating system(s) to run under
