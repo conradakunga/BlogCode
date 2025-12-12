@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## December 2025
 
+**8 December 2025** - [How To Securely Handle Duplicate JSON Properties In C# .NET](https://www.conradakunga.com/blog/how-to-securely-handle-duplicate-json-properties-in-c-net/) - How to deal with duplicate JSON attributes
+
 **3 December 2025** - [FIX - The number of row value expressions in the INSERT statement exceeds the maximum allowed number of 1000 row values](https://www.conradakunga.com/blog/fix-the-number-of-row-value-expressions-in-the-insert-statement-exceeds-the-maximum-allowed-number-of-1000-row-values/) - How to overcome the SQL Server 1,000 row bulk insert limit
 
 ## November 2025
