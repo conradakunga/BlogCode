@@ -4,6 +4,12 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## December 2025
 
+**17 December 2025** - [Conditionally Serializing XML By Request Accept Header In C# & .NET](https://www.conradakunga.com/blog/conditionally-serializing-xml-by-request-accept-header-in-c-net/) - Conditional XML / JSON generation from `Accept` header.
+
+**16 December 2025** - [Extending The Results Type For XML Serialization In C# & .NET](https://www.conradakunga.com/blog/extending-the-result-type-for-xml-serialization-in-c-net/) - Extend the `Results` type to support XML.
+
+**15 December 2025** - [Building A Helper For XML Generation In C# & .NET](https://www.conradakunga.com/blog/building-a-helper-for-xml-generation-in-c-net/) - Helper for XML generation
+
 **14 December 2025** - [Dynamically Changing Decimal & Thousand Separators At Runtime](https://www.conradakunga.com/blog/dynamically-changing-decimal-thousand-separators-at-runtime/) - Configuring thousand and decimal separators
 
 **13 December 2025** - [Manually Generating XML Output in ASP.NET](https://www.conradakunga.com/blog/manually-generating-xml-output-in-aspnet/) - Manually generating XML output
