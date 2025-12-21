@@ -4,6 +4,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## December 2025
 
+**19 December 2025** - [Setting Up Web API Endpoints To Collectively Require Authentication In C# & .NET](https://www.conradakunga.com/blog/setting-up-web-api-endpoints-to-collectively-require-authentication-in-c-net/) - Using `MapGroup` to secure multiple endpoints.
+
+**18 December 2025** - [Security Benefits of Path.Combine & DirectoryInfo in C# & .NET](https://www.conradakunga.com/blog/security-benefits-of-pathcombine-directoryinfo-in-c-net/) - Securing paths with `Path.Combine` and `DirectoryInfo`.
+
 **17 December 2025** - [Conditionally Serializing XML By Request Accept Header In C# & .NET](https://www.conradakunga.com/blog/conditionally-serializing-xml-by-request-accept-header-in-c-net/) - Conditional XML / JSON generation from `Accept` header.
 
 **16 December 2025** - [Extending The Results Type For XML Serialization In C# & .NET](https://www.conradakunga.com/blog/extending-the-result-type-for-xml-serialization-in-c-net/) - Extend the `Results` type to support XML.
