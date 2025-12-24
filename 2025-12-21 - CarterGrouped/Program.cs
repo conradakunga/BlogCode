@@ -14,7 +14,9 @@ builder.Services.AddCarter();
 
 var app = builder.Build();
 // Create a default group and require authentication on it
-app.MapCarter();
+app.MapGroup("")
+    .RequireAuthorization()
+    .MapCarter();
 
 app.UseAuthentication();
 app.UseAuthorization();
