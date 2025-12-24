@@ -4,6 +4,14 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## December 2025
 
+**24 December 2025** - [Overriding EndPoint Authorization When Using A Single ASP.NET Carter Module In C# & .NET](https://www.conradakunga.com/blog/overriding-endpoint-authorization-when-using-a-single-aspnet-carter-module-in-c-net/) - Overriding authorization when using a single `Carter` modules.
+
+**23 December 2025** - [Overriding EndPoint Authorization When Using Multiple ASP.NET Carter Modules In C# & .NET](https://www.conradakunga.com/blog/overriding-endpoint-authorization-when-using-multiple-aspnet-carter-modules-in-c-net/) - Overriding authorization when using multiple `Carter` modules.
+
+**22 December 2025** - [Alternatively Setting Up Web API Endpoints To Collectively Require Authentication With Carter In C# & .NET](https://www.conradakunga.com/blog/alternatively-setting-up-web-api-endpoints-to-collectively-require-authentication-with-carter-in-c-net/) - How to require all endpoints be authorized when using a single `Carter` module.
+
+**21 December 2025** - [Setting Up Web API Endpoints To Collectively Require Authentication With Carter In C# & .NET](https://www.conradakunga.com/blog/setting-up-web-api-endpoints-to-collectively-require-authentication-with-carter-in-c-net/) - How to require all endpoints to use authorization when using multiple `Carter` modules.
+
 **19 December 2025** - [Setting Up Web API Endpoints To Collectively Require Authentication In C# & .NET](https://www.conradakunga.com/blog/setting-up-web-api-endpoints-to-collectively-require-authentication-in-c-net/) - Using `MapGroup` to secure multiple endpoints.
 
 **18 December 2025** - [Security Benefits of Path.Combine & DirectoryInfo in C# & .NET](https://www.conradakunga.com/blog/security-benefits-of-pathcombine-directoryinfo-in-c-net/) - Securing paths with `Path.Combine` and `DirectoryInfo`.
