@@ -13,6 +13,7 @@ builder.Services.AddAuthorization();
 builder.Services.AddCarter();
 
 var app = builder.Build();
+// Create a default group and require authentication on it
 app.MapGroup("")
     .RequireAuthorization()
     .MapCarter();

@@ -1,6 +1,6 @@
 using Carter;
 
-namespace CarterGrouped.Properties;
+namespace CarterGrouped;
 
 public class SubtractModule : ICarterModule
 {
