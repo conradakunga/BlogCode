@@ -9,14 +9,16 @@ try
         .CreateLogger();
 
     var builder = WebApplication.CreateBuilder(args);
-    
+
     // Register Quartz  
     builder.Services.AddSerilog();
     builder.Services.AddQuartz();
     builder.Services.AddQuartzHostedService(opt => { opt.WaitForJobsToComplete = true; });
 
     var app = builder.Build();
-    
+    // Register dummy endpoint
+    app.MapGet("/", () => "OK");
+
     // Fetch a Scheduler Factory from DI
     var schedulerFactory = app.Services.GetRequiredService<ISchedulerFactory>();
     var scheduler = await schedulerFactory.GetScheduler();

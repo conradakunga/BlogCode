@@ -1,6 +1,8 @@
 <Solution>
   <Project Path="Logic/Logic.csproj" />
+  <Project Path="QuartzDatabase/QuartzDatabase.csproj" />
   <Project Path="QuartzTestRecurring/QuartzTestRecurring.csproj" />
   <Project Path="QuartzTestTimed\QuartzTestTimed.csproj" />
   <Project Path="QuartzWeb/QuartzWeb.csproj" />
+  <Project Path="QuartzWorker/QuartzWorker.csproj" />
 </Solution>
