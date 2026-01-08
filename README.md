@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## December 2025
 
+**30 December 2025** - [Scheduling Libraries In C# & .NET - Part 1 - Quartz.NET](https://www.conradakunga.com/blog/scheduling-libraries-in-c-net-part-1-quartznet/) - Quartz.NET
+
 **24 December 2025** - [Overriding EndPoint Authorization When Using A Single ASP.NET Carter Module In C# & .NET](https://www.conradakunga.com/blog/overriding-endpoint-authorization-when-using-a-single-aspnet-carter-module-in-c-net/) - Overriding authorization when using a single `Carter` modules.
 
 **23 December 2025** - [Overriding EndPoint Authorization When Using Multiple ASP.NET Carter Modules In C# & .NET](https://www.conradakunga.com/blog/overriding-endpoint-authorization-when-using-multiple-aspnet-carter-modules-in-c-net/) - Overriding authorization when using multiple `Carter` modules.
