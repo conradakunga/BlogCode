@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="HangfireDashboard\HangfireDashboard.csproj" />
+  <Project Path="HangfireTestRecurring\HangfireTestRecurring.csproj" />
+  <Project Path="HangfireTestTimed\HangfireTestTimed.csproj" />
+  <Project Path="HangfireWeb\HangfireWeb.csproj" />
+  <Project Path="HangfireWorker\HangfireWorker.csproj" />
+  <Project Path="Logic/Logic.csproj" />
+</Solution>
