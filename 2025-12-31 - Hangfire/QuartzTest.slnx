@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="HangfireDashboard\HangfireDashboard.csproj" />
+  <Project Path="HangfireTestBackground\HangfireTestBackground.csproj" />
   <Project Path="HangfireTestRecurring\HangfireTestRecurring.csproj" />
   <Project Path="HangfireTestTimed\HangfireTestTimed.csproj" />
   <Project Path="HangfireWeb\HangfireWeb.csproj" />
