@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="TickerQWebDatabase/TickerQWebDatabase.csproj" />
+  <Project Path="TickerQWeb\TickerQWeb.csproj" />
+</Solution>
