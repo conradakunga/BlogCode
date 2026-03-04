@@ -23,4 +23,4 @@ await using (var archive = await ZipFile.OpenReadAsync(sourceZipFile))
     entry?.ExtractToFile(targetTextFile, overwrite: true);
 }
 
-Log.Information("Written {SourceZipFile} to {TargetTextFile}", sourceZipFile, targetTextFile, targetTextFile);
+Log.Information("Written {SourceZipFile} to {TargetTextFile}", sourceZipFile, targetTextFile);
