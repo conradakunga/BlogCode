@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## January 2026
 
+**5 January 2026** - [How To Zip A Single File In C# & .NET](https://www.conradakunga.com/blog/how-to-zip-a-single-file-in-c-net/) - How to zip a single file
+
 **4 January 2026** - [How To Cancel Running Unit Tests In C# & .NET](https://www.conradakunga.com/blog/how-to-cancel-running-unit-tests-in-c-net/) - How to cancel test runs that are in progress.
 
 **1 January 2025** - [Scheduling Libraries In C# & .NET - Part 3 - TickerQ](https://www.conradakunga.com/blog/scheduling-libraries-in-c-net-part-3-tickerq/) - TickerQ
