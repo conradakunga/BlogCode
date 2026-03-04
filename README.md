@@ -2,6 +2,12 @@
 
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+## January 2026
+
+**4 January 2026** - [How To Cancel Running Unit Tests In C# & .NET](https://www.conradakunga.com/blog/how-to-cancel-running-unit-tests-in-c-net/) - How to cancel test runs that are in progress.
+
+**1 January 2025** - [Scheduling Libraries In C# & .NET - Part 3 - TickerQ](https://www.conradakunga.com/blog/scheduling-libraries-in-c-net-part-3-tickerq/) - TickerQ
+
 ## December 2025
 
 **31 December 2025** - [Scheduling Libraries In C# & .NET - Part 2 - Hangfire](https://www.conradakunga.com/blog/scheduling-libraries-in-c-net-part-2-hangfire/) - Hangfire
