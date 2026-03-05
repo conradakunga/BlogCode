@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## January 2026
 
+**7 January 2026** - [How To Zip Multiple Files In C# & .NET](https://www.conradakunga.com/blog/how-to-zip-multiple-files-in-c-net/) - How to zip multiple files
+
 **6 January 2026** - [How To UnZip A Single File In C# & .NET](https://www.conradakunga.com/blog/how-to-unzip-a-single-file-in-c-net/) - How to unzip a single file
 
 **5 January 2026** - [How To Zip A Single File In C# & .NET](https://www.conradakunga.com/blog/how-to-zip-a-single-file-in-c-net/) - How to zip a single file
