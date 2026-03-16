@@ -6,29 +6,46 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Console().CreateLogger();
 
 // Extract the current folder where the executable is running
-var currentFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+var currentFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)!;
 
 // Construct the full path to the source files
-var folderWithBooks = Path.Combine(currentFolder!, "Books");
+var folderWithBooks = Path.Combine(currentFolder, "Books");
 
 // Construct the full path to the zip file
-var targetZipFile = Path.Combine(folderWithBooks, "Books.zip");
+var targetZipFile = Path.Combine(currentFolder, "Books.zip");
 
-// Delete the zip file if it exists
-if (File.Exists(targetZipFile))
-    File.Delete(targetZipFile);
-
-// Retrieve the files
-var filesToZip = Directory.GetFiles(folderWithBooks);
-
-// Create the zip file on disk
-await using (var archive = ZipFile.Open(targetZipFile, ZipArchiveMode.Create))
+//
+// This is the initial technique
+//
 {
-    foreach (var file in filesToZip)
+    // Delete the zip file if it exists
+    if (File.Exists(targetZipFile))
+        File.Delete(targetZipFile);
+
+    // Retrieve the files
+    var filesToZip = Directory.GetFiles(folderWithBooks);
+
+    // Create the zip file on disk
+    await using (var archive = ZipFile.Open(targetZipFile, ZipArchiveMode.Create))
     {
-        // Add each file to the zip file as an entry
-        await archive.CreateEntryFromFileAsync(file, Path.GetFileName(file), CompressionLevel.Optimal);
+        foreach (var file in filesToZip)
+        {
+            // Add each file to the zip file as an entry
+            await archive.CreateEntryFromFileAsync(file, Path.GetFileName(file), CompressionLevel.Optimal);
+        }
     }
+}
+
+//
+// This is using the static CreateFromDirectory method
+//
+{
+    // Delete the zip file if it exists
+    if (File.Exists(targetZipFile))
+        File.Delete(targetZipFile);
+
+    // Create the zip file
+    await ZipFile.CreateFromDirectoryAsync(folderWithBooks, targetZipFile);
 }
 
 Log.Information("Written files in {SourceFiles} to {TargetZipFile}", folderWithBooks, targetZipFile);
