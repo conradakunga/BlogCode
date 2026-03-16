@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## January 2026
 
+**15 January 2026** - [Passing SqlConnections & Transactions To Functions In C# & .NET](https://www.conradakunga.com/blog/passing-sqlconnections-transactions-to-functions-in-c-net/) - Safely passing a transaction and connection to functions
+
 **14 January 2026** - [Chaining Constructors In Visual Basic.NET](http://127.0.0.1:4000/blog/chaining-constructors-in-visual-basicnet/) - Constructor chaining in VB.NET
 
 **12 January 2026** - [How To Compress Multiple Files Using GZip In C# & .NET](https://www.conradakunga.com/blog/how-to-compress-multiple-files-using-gzip-in-c-net/) - How to gzip multiple files
