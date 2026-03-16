@@ -4,6 +4,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## January 2026
 
+**17 January 2026** - [Deleting A File From A Zip File In C# & .NET](https://www.conradakunga.com/blog/deleting-a-file-from-a-zip-file-in-c-net/) - Deleting a file from an existing zip file
+
+**16 January 2026** - [Adding A File To A Zip File In C# & .NET](https://www.conradakunga.com/blog/adding-a-file-to-a-zip-file-in-c-net/) - Adding a file to an existing zip file
+
 **15 January 2026** - [Passing SqlConnections & Transactions To Functions In C# & .NET](https://www.conradakunga.com/blog/passing-sqlconnections-transactions-to-functions-in-c-net/) - Safely passing a transaction and connection to functions
 
 **14 January 2026** - [Chaining Constructors In Visual Basic.NET](http://127.0.0.1:4000/blog/chaining-constructors-in-visual-basicnet/) - Constructor chaining in VB.NET
