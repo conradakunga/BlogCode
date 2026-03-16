@@ -30,7 +30,7 @@ Log.Logger = new LoggerConfiguration()
     }
 }
 //
-// Multliple connections
+// Multiple connections
 //
 {
     var cn1 = new SqlConnection(
