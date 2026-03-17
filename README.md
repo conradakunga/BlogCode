@@ -4,6 +4,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## January 2026
 
+**19 January 2026** - [ZipArchive FileName vs Name](https://www.conradakunga.com/blog/ziparchive-filename-vs-name/) - Difference between `Name` and `FileName` properties of the `ZipArchiveEntry` class
+
+**18 January 2026** - [Listing The Files In A Zip File In C# & .NET](https://www.conradakunga.com/blog/listing-the-files-in-a-zip-file-in-c-net/) - Listing the files in a zip file
+
 **17 January 2026** - [Deleting A File From A Zip File In C# & .NET](https://www.conradakunga.com/blog/deleting-a-file-from-a-zip-file-in-c-net/) - Deleting a file from an existing zip file
 
 **16 January 2026** - [Adding A File To A Zip File In C# & .NET](https://www.conradakunga.com/blog/adding-a-file-to-a-zip-file-in-c-net/) - Adding a file to an existing zip file
