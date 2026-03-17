@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Reflection;
 using ICSharpCode.SharpZipLib.Zip;
 using Serilog;
@@ -9,9 +10,8 @@ Log.Logger = new LoggerConfiguration()
 // Extract the current folder where the executable is running
 var currentFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)!;
 
-// Set the folder for outputting the files
-
-var outputFolder = Path.Combine(currentFolder, "Extracted");
+// Set the folder with the input files
+var folderWithFiles = Path.Combine(currentFolder, "Books");
 
 // Construct the full path to the zip file
 var zipFile = Path.Combine(currentFolder, "PasswordProtected.zip");
@@ -19,46 +19,43 @@ var zipFile = Path.Combine(currentFolder, "PasswordProtected.zip");
 // Set the password (typically this would come from the user)
 const string password = "A$tr0nGpA$$w)rD";
 
-// Get a stream to the zip file
-await using (var fs = File.OpenRead(zipFile))
+await using (var fs = File.Create(zipFile))
 {
-    // Open the zip file
-    using (var zippedFile = new ZipFile(fs))
+    await using (var zipStream = new ZipOutputStream(fs))
     {
-        // Set the zip file password
-        zippedFile.Password = password;
+        // Set the desired compression level
+        zipStream.SetLevel(9);
 
-        // Loop through each entry and extract
-        foreach (ZipEntry entry in zippedFile)
+        // Set the password
+        zipStream.Password = password;
+
+        // Loop through the files to be added
+        foreach (var file in Directory.GetFiles(folderWithFiles))
         {
-            // Skip directories & non-files
-            if (!entry.IsFile) continue;
+            string entryName = Path.GetRelativePath(currentFolder, file);
 
-            // Get a stream to the file
-            await using (var zipStream = zippedFile.GetInputStream(entry))
+            Log.Information("Adding {File} to archive", entryName);
+
+            // Create a ZipEntry
+            var entry = new ZipEntry(entryName)
             {
-                // Combine the paths of where we want the file to go and what the file path currently is
-                string completeFilePath = Path.GetFullPath(Path.Combine(outputFolder, entry.Name));
+                // Set the date of last modification
+                DateTime = DateTime.Now
+            };
 
-                // Ensure the path is valid
-                if (!completeFilePath.StartsWith(Path.GetFullPath(outputFolder)))
-                {
-                    Log.Error("Invalid file path {Path}", completeFilePath);
-                    return;
-                }
+            // Add the entry to the stream
+            zipStream.PutNextEntry(entry);
 
-                // Ensure directory exists
-                string directory = Path.GetDirectoryName(completeFilePath)!;
-                Directory.CreateDirectory(directory);
+            // Get the bytes from the file
+            byte[] buffer = await File.ReadAllBytesAsync(file);
 
-                // Create a filestream for writing
-                await using (var output = File.Create(completeFilePath))
-                {
-                    // Write to disk
-                    await zipStream.CopyToAsync(output);
-                    Log.Information("Extracted {File}", completeFilePath);
-                }
-            }
+            // Write to the stream
+            zipStream.Write(buffer, 0, buffer.Length);
+
+            // Close the entry stream
+            zipStream.CloseEntry();
         }
     }
 }
+
+Log.Information("Completed adding files to {TargetFile}", zipFile);
