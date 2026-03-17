@@ -9,10 +9,10 @@ Log.Logger = new LoggerConfiguration()
 var currentFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)!;
 
 // Construct the full path to the zip file
-var zilFile = Path.Combine(currentFolder, "Updated.zip");
+var zipFile = Path.Combine(currentFolder, "Updated.zip");
 
 // Open the zip file on disk for update
-await using (var archive = await ZipFile.OpenAsync(zilFile, ZipArchiveMode.Read))
+await using (var archive = await ZipFile.OpenAsync(zipFile, ZipArchiveMode.Read))
 {
     // Loop through all the entries
     for (var i = 0; i < archive.Entries.Count; i++)
