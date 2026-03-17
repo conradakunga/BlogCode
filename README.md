@@ -4,6 +4,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## January 2026
 
+**21 January 2026** - [Creating Password-Protected Zip Files In C# & .NET](https://www.conradakunga.com/blog/creating-password-protected-zip-files-in-c-net/) - Creating a password protected Zip file
+
+**20 January 2026** - [Opening Password-Protected Zip Files in C# & .NET](https://www.conradakunga.com/blog/opening-password-protected-zip-files-in-c-net/) - Opening a password protected zip file
+
 **19 January 2026** - [ZipArchive FileName vs Name](https://www.conradakunga.com/blog/ziparchive-filename-vs-name/) - Difference between `Name` and `FileName` properties of the `ZipArchiveEntry` class
 
 **18 January 2026** - [Listing The Files In A Zip File In C# & .NET](https://www.conradakunga.com/blog/listing-the-files-in-a-zip-file-in-c-net/) - Listing the files in a zip file
