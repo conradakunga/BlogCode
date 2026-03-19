@@ -4,6 +4,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## January 2026
 
+**23 January 2026** - [Accessing Zip File Metadata In A Password-Protected Zip File Using SharpZipLib In C# & .NET](https://www.conradakunga.com/blog/accessing-zip-file-metadata-in-a-password-protected-zip-file-using-sharpziplib-in-c-net/) - Getting metadata from files in a password protected Zip file
+
+**22 January 2026** - [Accessing Zip File Metadata Using System.IO.Compression In C# & .NET](https://www.conradakunga.com/blog/accessing-zip-file-metadata-using-systemiocompression-in-c-net/) - Getting metadata from files in a zip file
+
 **21 January 2026** - [Creating Password-Protected Zip Files In C# & .NET](https://www.conradakunga.com/blog/creating-password-protected-zip-files-in-c-net/) - Creating a password protected Zip file
 
 **20 January 2026** - [Opening Password-Protected Zip Files in C# & .NET](https://www.conradakunga.com/blog/opening-password-protected-zip-files-in-c-net/) - Opening a password protected zip file
