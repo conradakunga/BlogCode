@@ -4,6 +4,16 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## January 2026
 
+**28 January 2026** - [How To Extract Files From A Password-Protected 7-Zip Archive In C# & .NET](https://www.conradakunga.com/blog/how-to-extract-files-from-a-password-protected-7-zip-archive-in-c-net/) - Extract files from a password protected 7z archive
+
+**27 January 2026** - [How To Extract Files From A 7-Zip Archive In C# & .NET](https://www.conradakunga.com/blog/how-to-extract-files-from-a-7-zip-archive-in-c-net/) - Extract files from a 7z archive
+
+**26 January 2026** - [How To Create A Password-Protected 7-Zip Archive In C# & .NET](https://www.conradakunga.com/blog/how-to-create-a-password-protected-7-zip-archive-in-c-net/) - Create a password protected 7z
+
+**25 January 2026** - [How To Create A 7-Zip Archive In C# & .NET](https://www.conradakunga.com/blog/how-to-create-a-7-zip-archive-in-c-net/) - How to create a 7z archive
+
+**24 January 2026** - [What Problems Do Properties Solve & Their Evolution In C# & .NET](https://www.conradakunga.com/blog/what-problems-do-properties-solve-their-evolution-in-c-net/) - About properties in .NET
+
 **23 January 2026** - [Accessing Zip File Metadata In A Password-Protected Zip File Using SharpZipLib In C# & .NET](https://www.conradakunga.com/blog/accessing-zip-file-metadata-in-a-password-protected-zip-file-using-sharpziplib-in-c-net/) - Getting metadata from files in a password protected Zip file
 
 **22 January 2026** - [Accessing Zip File Metadata Using System.IO.Compression In C# & .NET](https://www.conradakunga.com/blog/accessing-zip-file-metadata-using-systemiocompression-in-c-net/) - Getting metadata from files in a zip file
