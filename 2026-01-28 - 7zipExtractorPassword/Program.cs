@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System.IO;
+using System.Reflection;
 using CliWrap;
 using CliWrap.Buffered;
 using Serilog;
@@ -9,26 +10,25 @@ Log.Logger = new LoggerConfiguration()
 // Extract the current folder where the executable is running
 var currentFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)!;
 
-// Construct the full path to the source files
-var folderWithBooks = Path.Combine(currentFolder, "Books");
+// Set the folder we want our files extracted to
+var outputFolder = Path.Combine(currentFolder, "ExtractedBooks");
 
 // Construct the full path to the zip file
-var target7ZipFile = Path.Combine(currentFolder, "Books.7z");
+var source7ZipFile = Path.Combine(currentFolder, "Books.7z");
+
+// Archive password
+const string password = "A$tr0ngP@ssw0rD";
 
 // Path to 7zip executable
 const string executablePath = "/opt/homebrew/bin/7zz";
 
-// Delete 7zip file if it exists
-if (File.Exists(target7ZipFile))
-    File.Delete(target7ZipFile);
-
 var result = await Cli.Wrap(executablePath) // Set the path to the executable
     .WithArguments(args => args
-            .Add("a") //Specify to create an archive
-            .Add("-t7z") // Specify the target format - 7z
-            .Add(target7ZipFile) // Taget file name
-            .Add($"{folderWithBooks}") // The files in the source folder
-            .Add("-mx=9") // max compression
+            .Add("x") //Specify to extract an archive
+            .Add(source7ZipFile) // Source zip file
+            .Add($"-o{outputFolder}") // The output folder
+            .Add($"-p{password}") // The archive password
+            .Add("-y") // Say yes to all prompts
     )
     .ExecuteBufferedAsync();
 
@@ -36,5 +36,5 @@ var result = await Cli.Wrap(executablePath) // Set the path to the executable
 if (result.ExitCode != 0)
     Log.Error("7-Zip failed: {Message}", result.StandardError);
 else
-    Log.Information("Written files in {SourceFiles} to {Target7ZipFile} {Message}", folderWithBooks, target7ZipFile,
+    Log.Information("Extracted files in {SourceFiles} to {TargetFolder} {Message}", source7ZipFile, outputFolder,
         result.StandardOutput);
