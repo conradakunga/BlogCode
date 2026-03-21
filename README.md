@@ -4,7 +4,7 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## January 2026
 
-**28 January 2026** - [About Folder Structures In Archives](https://www.conradakunga.com/blog/about-folder-structures-in-archives/) - Adding folders vs files to archives 
+**28 January 2026** - [About Folder Structures In Archives](https://www.conradakunga.com/blog/about-folder-structures-in-archives/) - Adding folders vs files to archives
 
 **28 January 2026** - [Listing Files In A Password-Protected 7-Zip Archive In C# & .NET](https://www.conradakunga.com/blog/listing-files-in-a-password-protected-7-zip-archive-in-c-net/) - List files in a password protected `7z` archive
 
