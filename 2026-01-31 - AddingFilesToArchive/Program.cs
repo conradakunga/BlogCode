@@ -57,7 +57,7 @@ else
     Log.Information("Added folder to {File}", targetArchiveWithFolder);
 
 //
-// Extract both archives
+// List both archives
 //
 
 result = await Cli.Wrap(executablePath) // Set the path to the executable
