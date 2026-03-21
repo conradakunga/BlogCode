@@ -4,6 +4,12 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## January 2026
 
+**28 January 2026** - [About Folder Structures In Archives](https://www.conradakunga.com/blog/about-folder-structures-in-archives/) - Adding folders vs files to archives 
+
+**28 January 2026** - [Listing Files In A Password-Protected 7-Zip Archive In C# & .NET](https://www.conradakunga.com/blog/listing-files-in-a-password-protected-7-zip-archive-in-c-net/) - List files in a password protected `7z` archive
+
+**29 January 2026** - [Listing Files In A 7-Zip Archive In C# & .NET](https://www.conradakunga.com/blog/listing-files-in-a-7-zip-archive-in-c-net/) - List files in a `7z` archive
+
 **28 January 2026** - [How To Extract Files From A Password-Protected 7-Zip Archive In C# & .NET](https://www.conradakunga.com/blog/how-to-extract-files-from-a-password-protected-7-zip-archive-in-c-net/) - Extract files from a password protected 7z archive
 
 **27 January 2026** - [How To Extract Files From A 7-Zip Archive In C# & .NET](https://www.conradakunga.com/blog/how-to-extract-files-from-a-7-zip-archive-in-c-net/) - Extract files from a 7z archive
