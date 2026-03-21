@@ -77,19 +77,6 @@ else
 result = await Cli.Wrap(executablePath) // Set the path to the executable
     .WithArguments(args => args
             .Add("l") //Specify to list archive contents
-            .Add(targetArchiveWithFolder) // Source zip file
-    )
-    .ExecuteBufferedAsync();
-
-// Check if the process succeeded
-if (result.ExitCode != 0)
-    Log.Error("7-Zip failed: {Message}", result.StandardError);
-else
-    Log.Information("Files In {File} (Folder) - {Listing}", targetArchiveWithFolder, result.StandardOutput);
-
-result = await Cli.Wrap(executablePath) // Set the path to the executable
-    .WithArguments(args => args
-            .Add("l") //Specify to list archive contents
             .Add(targetArchiveWithFiles) // Source zip file
     )
     .ExecuteBufferedAsync();
