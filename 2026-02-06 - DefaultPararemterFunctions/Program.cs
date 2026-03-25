@@ -9,12 +9,6 @@ await using (var cn = new SqlConnection(connection))
     Console.WriteLine(result);
 }
 
-// await using (var cn = new SqlConnection(connection))
-// {
-//     var result = await cn.QuerySingleAsync<string>("SELECT dbo.fn_GetDayOfWeek(@Day)");
-//     Console.WriteLine(result);
-// }
-//
 await using (var cn = new SqlConnection(connection))
 {
     var result = await cn.QuerySingleAsync<string>("SELECT dbo.fn_GetDayOfWeek(DEFAULT)");
