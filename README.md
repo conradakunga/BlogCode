@@ -4,7 +4,7 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## February 2026
 
-**1 February 2026** - [Using EasyNetQ Version 8 in C# & .NET](https://www.conradakunga.com/blog/using-easynetq-version-8-in-c-net/) - EasyNetQ 8 has some breaking changes
+**7 February 2026** - [Using EasyNetQ Version 8 in C# & .NET](https://www.conradakunga.com/blog/using-easynetq-version-8-in-c-net/) - EasyNetQ 8 has some breaking changes
 
 **6 February 2026** - [Passing Default Parameters to PostgreSQL Functions in C# & .NET](https://www.conradakunga.com/blog/passing-default-parameters-to-postgresql-functions-in-c-net/) - Passing default parameters to PostgreSQL functions
 
