@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Version7/Version7.csproj" />
+  <Project Path="Version8/Version8.csproj" />
+</Solution>
