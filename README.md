@@ -4,6 +4,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## February 2026
 
+**9 February 2026** - [Advanced Custom Deserialization With EasyNetQ 8 In C# & .NET](https://www.conradakunga.com/blog/advanced-custom-deserialization-with-easynetq-8-in-c-net/) - Advanced deserialization using `JsonConverters`
+
+**8 February 2026** - [Configuring Serialization For EasyNetQ Version 8 In C# & .NET](https://www.conradakunga.com/blog/configuring-serialization-for-easynetq-version-8-in-c-net/) - How to configure `Json` serialization
+
 **7 February 2026** - [Using EasyNetQ Version 8 in C# & .NET](https://www.conradakunga.com/blog/using-easynetq-version-8-in-c-net/) - EasyNetQ 8 has some breaking changes
 
 **6 February 2026** - [Passing Default Parameters to PostgreSQL Functions in C# & .NET](https://www.conradakunga.com/blog/passing-default-parameters-to-postgresql-functions-in-c-net/) - Passing default parameters to PostgreSQL functions
