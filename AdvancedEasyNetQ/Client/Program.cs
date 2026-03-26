@@ -18,7 +18,7 @@ builder.ConfigureServices((context, services) =>
 {
     const string connection = "host=localhost;username=test;password=test";
 
-    // Configure our serializer to attach the JsonConverer
+    // Configure our serializer to attach the JsonConverter
     var options = new JsonSerializerOptions
     {
         Converters = { new JsonTimeAdjustedConverter() }
