@@ -4,6 +4,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## February 2026
 
+**14 February 2026** - [Code Housekeeping - Part 3 - Eschew Boolean Method Parameters](https://www.conradakunga.com/blog/code-housekeeping-part-3-eschew-boolean-method-parameters/) - Housekeeping - avoid `boolean` parameters
+
+**13 February 2026** - [Code Housekeeping - Part 2 - Don't Store What You Can Compute](https://www.conradakunga.com/blog/code-housekeeping-part-2-dont-store-what-you-can-compute/) - Housekeeping - don't store what you can compute
+
 **11 February 2026** - [How To Serialize Images To JSON Using A JsonConverter In C# & .NET C# & .NET](https://www.conradakunga.com/blog/how-to-serialize-images-to-json-using-a-jsonconverter-in-c-net-c-net/) - How to serialize images using `JsonConverters`
 
 **10 February 2026** - [How To Serialize Images To JSON In C# & .NET](https://www.conradakunga.com/blog/how-to-serialize-images-to-json-in-c-net/) - How to serialize an image
