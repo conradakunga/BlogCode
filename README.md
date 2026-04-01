@@ -4,6 +4,12 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## February 2026
 
+**19 February 2026** - [Generating Unique Identifiers In C# & .NET](https://www.conradakunga.com/blog/generating-unique-identifiers-in-c-net/) - Generating identifiers
+
+**16 February 2026** - [Code Housekeeping - Part 5 - Eschew NULL Foreign Keys](https://www.conradakunga.com/blog/code-housekeeping-part-5-eschew-null-foreign-keys/) - Housekeeping - avoid `NULL` foreign keys
+
+**15 February 2026** - [Code Housekeeping - Part 4 - Avoid NULL Wherever Possible](https://www.conradakunga.com/blog/code-housekeeping-part-4-avoid-null-wherever-possible/) - Housekeeping - avoid `NULL`
+
 **14 February 2026** - [Code Housekeeping - Part 3 - Eschew Boolean Method Parameters](https://www.conradakunga.com/blog/code-housekeeping-part-3-eschew-boolean-method-parameters/) - Housekeeping - avoid `boolean` parameters
 
 **13 February 2026** - [Code Housekeeping - Part 2 - Don't Store What You Can Compute](https://www.conradakunga.com/blog/code-housekeeping-part-2-dont-store-what-you-can-compute/) - Housekeeping - don't store what you can compute
