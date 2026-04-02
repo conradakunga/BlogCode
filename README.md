@@ -4,7 +4,13 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## February 2026
 
-**19 February 2026** - [Generating Unique Identifiers In C# & .NET](https://www.conradakunga.com/blog/generating-unique-identifiers-in-c-net/) - Generating identifiers
+**22 February 2026** - [Leveraging StartTLS Authentication in C# & .NET](https://www.conradakunga.com/blog/leveraging-starttls-authentication-in-c-net/) - Using `StartTLS
+
+**21 February 2026** - [Leveraging LDAPS Authentication in C# & .NET](https://www.conradakunga.com/blog/leveraging-ldaps-authentication-in-c-net/) - Using `LDAPS`
+
+**20 February 2026** - [Leveraging LDAP Authentication in C# & .NET](https://www.conradakunga.com/blog/leveraging-ldap-authentication-in-c-net/) - Using `LDAP`
+
+**10 February 2026** - [Generating Unique Identifiers In C# & .NET](https://www.conradakunga.com/blog/generating-unique-identifiers-in-c-net/) - Generating identifiers
 
 **16 February 2026** - [Code Housekeeping - Part 5 - Eschew NULL Foreign Keys](https://www.conradakunga.com/blog/code-housekeeping-part-5-eschew-null-foreign-keys/) - Housekeeping - avoid `NULL` foreign keys
 
