@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## March 2026
 
+**9 March 2026** - [Code Housekeeping - Part 8 - Favour Object Initializers](https://www.conradakunga.com/blog/code-housekeeping-part-8-favour-object-initializers/) - Benefits of object initializers over constructors
+
 **8 March 2026** - [Code Housekeeping - Part 7 - Eschew Methods With Many Parameters](https://www.conradakunga.com/blog/code-housekeeping-part-7-eschew-methods-with-many-parameters/) - Dealing with methods that have many parameters
 
 **6 March 2026** - [Fix - Deploying CLR Procedures & Functions In SQL Server 2022](https://www.conradakunga.com/blog/fix-deploying-clr-procedures-functions-in-sql-server-2022/) - How to deploy SQL CLR artifacts
