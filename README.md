@@ -2,6 +2,12 @@
 
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+## March 2026
+
+**8 March 2026** - [Code Housekeeping - Part 7 - Eschew Methods With Many Parameters](https://www.conradakunga.com/blog/code-housekeeping-part-7-eschew-methods-with-many-parameters/) - Dealing with methods that have many parameters
+
+**6 March 2026** - [Fix - Deploying CLR Procedures & Functions In SQL Server 2022](https://www.conradakunga.com/blog/fix-deploying-clr-procedures-functions-in-sql-server-2022/) - How to deploy SQL CLR artifacts
+
 ## February 2026
 
 **22 February 2026** - [Leveraging StartTLS Authentication in C# & .NET](https://www.conradakunga.com/blog/leveraging-starttls-authentication-in-c-net/) - Using `StartTLS
