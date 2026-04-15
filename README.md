@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## March 2026
 
+**11 March 2026** - [Code Housekeeping - Part 10 - readonly Members Whenever Possible](https://www.conradakunga.com/blog/code-housekeeping-part-10-readonly-members-whenever-possible/) - Make class members readonly whenever possible
+
 **10 March 2026** - [Code Housekeeping - Part 9 - Seal Classes & Records By Default](https://www.conradakunga.com/blog/code-housekeeping-part-9-seal-classes-records-by-default/) - Seal classes by default until you need extension
 
 **9 March 2026** - [Code Housekeeping - Part 8 - Favour Object Initializers](https://www.conradakunga.com/blog/code-housekeeping-part-8-favour-object-initializers/) - Benefits of object initializers over constructors
