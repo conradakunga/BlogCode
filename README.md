@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## March 2026
 
+**31 March 2026** - [Checking The TLS Version In ASP.NET, C# & .NET](https://www.conradakunga.com/blog/checking-the-tls-version-in-aspnet-c-net/) - Check ASP.NET API / App TLS version
+
 **30 March 2026** - [Code Housekeeping - Part 15 - Use Generic Return Types Whenever Possible](https://www.conradakunga.com/blog/code-housekeeping-part-15-use-generic-return-types-whenever-possible/) - Generic return types whenever possible
 
 **27 March 2026** - [Generating A Series Of Numbers, Dates and Times In PostgreSQL](https://www.conradakunga.com/blog/generating-a-series-of-numbers-dates-and-times-in-postgresql/) - Generating series in PosgtreSQL
