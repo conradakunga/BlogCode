@@ -4,6 +4,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## March 2026
 
+**27 March 2026** - [Generating A Series Of Numbers, Dates and Times In PostgreSQL](https://www.conradakunga.com/blog/generating-a-series-of-numbers-dates-and-times-in-postgresql/) - Generating series in PosgtreSQL
+
+**26 March 2026** - [Generating A Series Of Numbers In SQL Server](https://www.conradakunga.com/blog/generating-a-series-of-numbers-in-sql-server/) - Generating number series in SQL server
+
 **21 March 2026** - [Code Housekeeping - Part 14 - Don't Return NULL Collections](https://www.conradakunga.com/blog/code-housekeeping-part-14-dont-return-null-collections/) - Don't return `null` collections
 
 **15 March 2026** - [Tip - How To Correctly Add Response HttpHeaders In C# & .NET](https://www.conradakunga.com/blog/tip-how-to-correctly-add-response-httpheaders-in-c-net/) - Adding HTTP headers to responses
