@@ -4,6 +4,14 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## March 2026
 
+**21 March 2026** - [Code Housekeeping - Part 14 - Don't Return NULL Collections](https://www.conradakunga.com/blog/code-housekeeping-part-14-dont-return-null-collections/) - Don't return `null` collections
+
+**15 March 2026** - [Tip - How To Correctly Add Response HttpHeaders In C# & .NET](https://www.conradakunga.com/blog/tip-how-to-correctly-add-response-httpheaders-in-c-net/) - Adding HTTP headers to responses
+
+**13 March 2026** - [Code Housekeeping - Part 12 - Make Types Immutable Whenever Possible](https://www.conradakunga.com/blog/code-housekeeping-part-12-make-types-immutable-whenever-possible/) - Make types immutable
+
+**12 March 2026** - [Code Housekeeping - Part 11 - Prefer Records Over Classes For Data Transfer](https://www.conradakunga.com/blog/code-housekeeping-part-11-prefer-records-over-classes-for-data-transfer/) - Prefer `record` over `class`
+
 **11 March 2026** - [Code Housekeeping - Part 10 - readonly Members Whenever Possible](https://www.conradakunga.com/blog/code-housekeeping-part-10-readonly-members-whenever-possible/) - Make class members readonly whenever possible
 
 **10 March 2026** - [Code Housekeeping - Part 9 - Seal Classes & Records By Default](https://www.conradakunga.com/blog/code-housekeeping-part-9-seal-classes-records-by-default/) - Seal classes by default until you need extension
