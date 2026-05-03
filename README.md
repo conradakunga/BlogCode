@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## March 2026
 
+**30 March 2026** - [Code Housekeeping - Part 15 - Use Generic Return Types Whenever Possible](https://www.conradakunga.com/blog/code-housekeeping-part-15-use-generic-return-types-whenever-possible/) - Generic return types whenever possible
+
 **27 March 2026** - [Generating A Series Of Numbers, Dates and Times In PostgreSQL](https://www.conradakunga.com/blog/generating-a-series-of-numbers-dates-and-times-in-postgresql/) - Generating series in PosgtreSQL
 
 **26 March 2026** - [Generating A Series Of Numbers In SQL Server](https://www.conradakunga.com/blog/generating-a-series-of-numbers-in-sql-server/) - Generating number series in SQL server
