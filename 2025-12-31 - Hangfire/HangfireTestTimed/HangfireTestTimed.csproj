@@ -9,14 +9,15 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Hangfire.Core" Version="1.8.22"/>
-        <PackageReference Include="Hangfire.PostgreSql" Version="1.20.13"/>
-        <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.3"/>
-        <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1"/>
+        <PackageReference Include="Hangfire.Core" Version="1.8.23" />
+        <PackageReference Include="Hangfire.PostgreSql" Version="1.21.1" />
+        <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.1" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+        <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Logic\Logic.csproj"/>
+        <ProjectReference Include="..\Logic\Logic.csproj" />
     </ItemGroup>
 
 </Project>
