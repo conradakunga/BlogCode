@@ -1,0 +1,13 @@
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: mystrongpassword123
+      MYSQL_DATABASE: testdb
+      TZ: Africa/Nairobi
+    ports:
+      - "3306:3306"
+    volumes:
+      - /Users/rad/Docker/containers/MySQL:/var/lib/mysql
