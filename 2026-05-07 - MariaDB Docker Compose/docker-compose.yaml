@@ -1,0 +1,13 @@
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: mystrongpassword123
+      TZ: Africa/Nairobi
+      MARIADB_DATABASE: testdb
+    ports:
+      - "3307:3306"
+    volumes:
+      - /Users/rad/Docker/containers/MariaDB:/var/lib/mysql
