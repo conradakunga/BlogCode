@@ -2,6 +2,16 @@
 
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+## April 2026
+
+**9 May 2026** - [Connecting To MySQL & MariaDB using MySql.Data in C# & .NET](https://www.conradakunga.com/blog/connecting-to-mysql-mariadb-using-mysql-data-in-c-net/) - Using `MySql.Data` ADO.NET Driver
+
+**8 May 2026** - [Connecting To MySQL & MariaDB using MySQLConnector in C# & .NET](https://www.conradakunga.com/blog/connecting-to-mysql-mariadb-using-mysqlconnector-in-c-net/) - Using `MySqlConnector` ADO.NET Driver
+
+**7 May 2026** - [Working With MariaDB using Docker](https://www.conradakunga.com/blog/working-with-mariadb-using-docker/) - MariaDB on Docker
+
+**6 May 2026** - [Working With MySQL using Docker ](https://www.conradakunga.com/blog/working-with-mysql-using-docker/) - MySql on Docker
+
 ## March 2026
 
 **31 March 2026** - [Checking The TLS Version In ASP.NET, C# & .NET](https://www.conradakunga.com/blog/checking-the-tls-version-in-aspnet-c-net/) - Check ASP.NET API / App TLS version
