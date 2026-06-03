@@ -2,7 +2,15 @@
 
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+## June 2026
+
+**3 June 2026** - [Beware - NULL Values Can Trip You Up When Using Dapper](https://www.conradakunga.com/blog/beware-null-values-can-trip-you-up-when-using-dapper/) - NULLs and Dapper
+
 ## May 2026
+
+**13 May 2026** - [Formatting Columns Using CSVHelper In C# & .NET](https://www.conradakunga.com/blog/formatting-columns-using-csvhelper-in-c-net/) - Formatting columns with the `CSVHelper` library
+
+**12 May 2026** - [Determining Columns and Order To Write Using CSVHelper In C# & .NET](https://www.conradakunga.com/blog/determining-columns-and-order-to-write-using-csvhelper-in-c-net/) - Determining column order with the `CSVHelper` library
 
 **11 May 2026** - [Interfacing With MySQL & MariaDB Databases using Dapper in C# & .NET](https://www.conradakunga.com/blog/interfacing-with-mysql-mariadb-databases-using-dapper-in-c-net/) - Interfacing with MySQL using `Dapper`
 
