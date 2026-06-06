@@ -4,6 +4,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## June 2026
 
+**6 June 2026** - [Modifying JSON With JsonNode In C# & .NET](https://www.conradakunga.com/blog/modifying-json-with-jsonnode-in-c-net/) - How to read and mutate `Json` using the `JsonNode`
+
+**5 June 2026** - [Posting A Message to Microsoft Teams Via WebHook In C# & .NET](https://www.conradakunga.com/blog/posting-a-message-to-microsoft-teams-via-webhook-in-c-net/) - Posting a message to Microsoft Teams In C#
+
 **3 June 2026** - [Beware - NULL Values Can Trip You Up When Using Dapper](https://www.conradakunga.com/blog/beware-null-values-can-trip-you-up-when-using-dapper/) - NULLs and Dapper
 
 ## May 2026
