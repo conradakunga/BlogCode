@@ -1,0 +1,1 @@
+public record Cat(string Name, byte Legs);
