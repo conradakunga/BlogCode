@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="TeamsNotificationClient/TeamsNotificationClient.csproj" />
+  <Project Path="TeamsNotificationClientTests/TeamsNotificationClientTests.csproj" />
+</Solution>
