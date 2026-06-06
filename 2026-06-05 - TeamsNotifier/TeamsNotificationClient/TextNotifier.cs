@@ -1,6 +1,4 @@
-﻿using System.Net.Http.Headers;
-using System.Net.Mime;
-using System.Text.Json;
+﻿using System.Net.Http.Json;
 
 namespace TeamsNotificationClient;
 
@@ -46,15 +44,10 @@ public sealed class TextNotifier
             }
         };
 
+        // Create a HttpClient
         var client = new HttpClient();
-        // Set our headers
-        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(MediaTypeNames.Application.Json));
-        // Serialize anonymous type to JSON	
-        var adaptiveCardJson = JsonSerializer.Serialize(request);
-        // Create content for posting
-        var content = new StringContent(adaptiveCardJson, System.Text.Encoding.UTF8, MediaTypeNames.Application.Json);
-        // Post
-        var response = await client.PostAsync(webhook, content);
+        // Post the request
+        var response = await client.PostAsJsonAsync(webhook, request);
         // Return success
         return response.IsSuccessStatusCode;
     }
