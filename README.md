@@ -4,7 +4,9 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## June 2026
 
-**21 June 2026** - [Outputting A SHA256 Hash in Hex in .NET Framework](https://www.conradakunga.com/blog/outputting-a-sha256-hash-in-hex-in-net-framework/) - How to compute a `SHA256` hash in .NET framework in Hex
+**18 June 2026** - [Passing Parameters To CSVHelper ClassMap](https://www.conradakunga.com/blog/passing-parameters-to-csvhelper-classmap/) - How to pass parameters to a CSVHelper `ClassMap`
+
+**12 June 2026** - [Outputting A SHA256 Hash in Hex in .NET Framework](https://www.conradakunga.com/blog/outputting-a-sha256-hash-in-hex-in-net-framework/) - How to compute a `SHA256` hash in .NET framework in Hex
 
 **6 June 2026** - [Modifying JSON With JsonNode In C# & .NET](https://www.conradakunga.com/blog/modifying-json-with-jsonnode-in-c-net/) - How to read and mutate `Json` using the `JsonNode`
 
