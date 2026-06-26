@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## June 2026
 
+**25 June 2026** - [.NET 11 Preview - Pascal Case Json Serialization](https://www.conradakunga.com/blog/net-11-preview-pascal-case-json-serialization/) - PascalCasing `JSON` properties.
+
 **18 June 2026** - [Passing Parameters To CSVHelper ClassMap](https://www.conradakunga.com/blog/passing-parameters-to-csvhelper-classmap/) - How to pass parameters to a CSVHelper `ClassMap`
 
 **12 June 2026** - [Outputting A SHA256 Hash in Hex in .NET Framework](https://www.conradakunga.com/blog/outputting-a-sha256-hash-in-hex-in-net-framework/) - How to compute a `SHA256` hash in .NET framework in Hex
