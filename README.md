@@ -2,6 +2,10 @@
 
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+## July 2026
+
+**1 Jul 2026** - [.NET 11 Preview - Passing Environment Variables](https://www.conradakunga.com/blog/net-11-preview-passing-environment-variables/) - Passing environment variables to your application.
+
 ## June 2026
 
 **25 June 2026** - [.NET 11 Preview - Pascal Case Json Serialization](https://www.conradakunga.com/blog/net-11-preview-pascal-case-json-serialization/) - PascalCasing `JSON` properties.
