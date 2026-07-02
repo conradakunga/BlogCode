@@ -1,0 +1,1 @@
+﻿Console.Write(Environment.GetEnvironmentVariable("HOME"));
