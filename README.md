@@ -4,6 +4,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## July 2026
 
+**4 July 2026** - [.NET 11 Preview - Capturing Process Output & Errors](https://www.conradakunga.com/blog/net-11-preview-capturing-process-output-errors/) - Capturing process output and errors.
+
+**3 July 2026** - [.NET 11 Preview - Collection Expression Arguments](https://www.conradakunga.com/blog/net-11-preview-collection-expression-arguments/) - Collection Expression arguments.
+
 **2 July 2026** - [.NET 11 Preview - JsonNamingPolicyAttribute](https://www.conradakunga.com/blog/net-11-preview-jsonnamingpolicyattribute/) - Using the `JsonNamingPolicyAttribute` to control property name casing in `JSON`.
 
 **1 July 2026** - [.NET 11 Preview - Passing Environment Variables](https://www.conradakunga.com/blog/net-11-preview-passing-environment-variables/) - Passing environment variables to your application.
