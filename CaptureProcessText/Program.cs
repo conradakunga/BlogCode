@@ -10,29 +10,28 @@ Log.Logger = new LoggerConfiguration()
 // The old way
 //
 
-//
-// var startInfo = new ProcessStartInfo
-// {
-//     FileName = "pwd",
-//     Arguments = "",
-//     RedirectStandardOutput = true,
-//     RedirectStandardError = true,
-//     UseShellExecute = false,
-//     CreateNoWindow = true
-// };
-//
-// using (var process = Process.Start(startInfo))
-// {
-//     var output = await process.StandardOutput.ReadToEndAsync();
-//     var error = await process.StandardError.ReadToEndAsync();
-//
-//     await process.WaitForExitAsync();
-//
-//     if (process.ExitCode == 0)
-//         Log.Information(output);
-//     else
-//         Log.Error(error);
-// }
+var startInfo = new ProcessStartInfo
+{
+    FileName = "pwd",
+    Arguments = "",
+    RedirectStandardOutput = true,
+    RedirectStandardError = true,
+    UseShellExecute = false,
+    CreateNoWindow = true
+};
+
+using (var process = Process.Start(startInfo))
+{
+    var output = await process.StandardOutput.ReadToEndAsync();
+    var error = await process.StandardError.ReadToEndAsync();
+
+    await process.WaitForExitAsync();
+
+    if (process.ExitCode == 0)
+        Log.Information(output);
+    else
+        Log.Error(error);
+}
 
 //
 // The new way
