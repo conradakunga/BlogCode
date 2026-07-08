@@ -4,6 +4,12 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## July 2026
 
+**7 July 2026** - [.NET 11 Preview - Starting A Detached Process](https://www.conradakunga.com/blog/net-11-preview-starting-a-detached-process/) - Starting a detached process.
+
+**6 July 2026** - [.NET 11 Preview - Starting and Forgetting A Process](https://www.conradakunga.com/blog/net-11-preview-starting-and-forgetting-a-process/) - Starting and forgetting a process.
+
+**5 July 2026** - [.NET 11 Preview - Capturing Process Exit Status](https://www.conradakunga.com/blog/net-11-preview-capturing-process-exit-status/) - Capturing process exit status.
+
 **4 July 2026** - [.NET 11 Preview - Capturing Process Output & Errors](https://www.conradakunga.com/blog/net-11-preview-capturing-process-output-errors/) - Capturing process output and errors.
 
 **3 July 2026** - [.NET 11 Preview - Collection Expression Arguments](https://www.conradakunga.com/blog/net-11-preview-collection-expression-arguments/) - Collection Expression arguments.
