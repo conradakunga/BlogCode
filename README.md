@@ -4,6 +4,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## July 2026
 
+**9 July 2026** - [.NET 11 Preview - Using Zstandard Compression With A HttpClient](https://www.conradakunga.com/blog/net-11-preview-using-zstandard-compression-with-a-httpclient/) - Using Zstandard compression with a `HttpClient`.
+
+**8 July 2026** - [.NET 11 Preview - Zstandard Compression](https://www.conradakunga.com/blog/net-11-preview-zstandard-compression/) - ZStandard compression in .NET 11.
+
 **7 July 2026** - [.NET 11 Preview - Starting A Detached Process](https://www.conradakunga.com/blog/net-11-preview-starting-a-detached-process/) - Starting a detached process.
 
 **6 July 2026** - [.NET 11 Preview - Starting and Forgetting A Process](https://www.conradakunga.com/blog/net-11-preview-starting-and-forgetting-a-process/) - Starting and forgetting a process.
