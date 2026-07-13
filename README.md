@@ -4,6 +4,12 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## July 2026
 
+**12 July 2026** - [.NET 11 Preview - Character Equality Comparison](https://www.conradakunga.com/blog/net-11-preview-character-equality-comparison/) - Character equality comparison improvements.
+
+**11 July 2026** - [.NET 11 Preview - Disabling Zstandard Compression in Kestrel](https://www.conradakunga.com/blog/net-11-preview-disabling-zstandard-compression-in-kestrel/) - Disabling Zstandard compression in Kestrel.
+
+**10 July 2026** - [.NET 11 Preview - Enabling Zstandard Compression in Kestrel](https://www.conradakunga.com/blog/net-11-preview-enabling-zstandard-compression-in-kestrel/) - Enabling Zstandard compression in Kestrel.
+
 **9 July 2026** - [.NET 11 Preview - Using Zstandard Compression With A HttpClient](https://www.conradakunga.com/blog/net-11-preview-using-zstandard-compression-with-a-httpclient/) - Using Zstandard compression with a `HttpClient`.
 
 **8 July 2026** - [.NET 11 Preview - Zstandard Compression](https://www.conradakunga.com/blog/net-11-preview-zstandard-compression/) - ZStandard compression in .NET 11.
