@@ -4,6 +4,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## July 2026
 
+**14 July 2026** - [.NET 11 Preview - RegularExpression NewLine Handling Improvement](https://www.conradakunga.com/blog/net-11-preview-regularexpression-newline-handling-improvement/) - Better matching with the `RegexOptions.AnyNewLine` flag
+
+**13 July 2026** - [.NET 11 Preview - Moving StringBuilder Content With MoveChunks](https://www.conradakunga.com/blog/net-11-preview-moving-stringbuilder-content-with-movechunks/) - Improved moving of content from one StringBuilder to another.
+
 **12 July 2026** - [.NET 11 Preview - Character Equality Comparison](https://www.conradakunga.com/blog/net-11-preview-character-equality-comparison/) - Character equality comparison improvements.
 
 **11 July 2026** - [.NET 11 Preview - Disabling Zstandard Compression in Kestrel](https://www.conradakunga.com/blog/net-11-preview-disabling-zstandard-compression-in-kestrel/) - Disabling Zstandard compression in Kestrel.
