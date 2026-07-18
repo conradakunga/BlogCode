@@ -4,6 +4,12 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## July 2026
 
+**17 July 2026** - [.NET 11 Preview - Finding A Running Process](https://www.conradakunga.com/blog/net-11-preview-finding-a-running-process/) - A better way to find running processes.
+
+**16 July 2026** - [.NET 11 Preview - Stream Adapters](https://www.conradakunga.com/blog/net-11-preview-stream-adapters/) - how to get a `Stream` directly from a `string`.
+
+**15 July 2026** - [.NET 11 Preview - BitArray Improvements - PopCount](https://www.conradakunga.com/blog/net-11-preview-bitarray-improvements-popcount/) - Better way to get the `true` values in a `BitArray`.
+
 **14 July 2026** - [.NET 11 Preview - RegularExpression NewLine Handling Improvement](https://www.conradakunga.com/blog/net-11-preview-regularexpression-newline-handling-improvement/) - Better matching with the `RegexOptions.AnyNewLine` flag
 
 **13 July 2026** - [.NET 11 Preview - Moving StringBuilder Content With MoveChunks](https://www.conradakunga.com/blog/net-11-preview-moving-stringbuilder-content-with-movechunks/) - Improved moving of content from one StringBuilder to another.
