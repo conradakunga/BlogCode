@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## July 2026
 
+**20 July 2026** - [.NET 11 Preview - ZipArchiveEntry CompressionMethod Property](https://www.conradakunga.com/blog/net-11-preview-ziparchive-compressionmethod-property/) - Determining how (if at all) a `ZipArchiveEntry` was compressed.
+
 **17 July 2026** - [.NET 11 Preview - Finding A Running Process](https://www.conradakunga.com/blog/net-11-preview-finding-a-running-process/) - A better way to find running processes.
 
 **16 July 2026** - [.NET 11 Preview - Stream Adapters](https://www.conradakunga.com/blog/net-11-preview-stream-adapters/) - how to get a `Stream` directly from a `string`.
