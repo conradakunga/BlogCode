@@ -1,4 +1,5 @@
 using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Jobs;
 
 namespace GuidGeneration;
 
