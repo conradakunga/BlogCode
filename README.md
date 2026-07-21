@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## July 2026
 
+**21 July 2026** - [How To Benchmark Performance Across .NET Versions](https://www.conradakunga.com/blog/how-to-benchmark-performance-across-net-versions/) - Comparing performance across .NET version.
+
 **20 July 2026** - [.NET 11 Preview - ZipArchiveEntry CompressionMethod Property](https://www.conradakunga.com/blog/net-11-preview-ziparchive-compressionmethod-property/) - Determining how (if at all) a `ZipArchiveEntry` was compressed.
 
 **17 July 2026** - [.NET 11 Preview - Finding A Running Process](https://www.conradakunga.com/blog/net-11-preview-finding-a-running-process/) - A better way to find running processes.
