@@ -9,6 +9,7 @@ public sealed class BenchmarkConfig : ManualConfig
 {
     public BenchmarkConfig()
     {
+        // This is normal .NET 10
         AddJob(
             Job.Default
                 .WithToolchain(
@@ -16,6 +17,7 @@ public sealed class BenchmarkConfig : ManualConfig
                 .WithId("net10")
                 .AsBaseline());
 
+        // This is .NET 11
         AddJob(
             Job.Default
                 .WithToolchain(
