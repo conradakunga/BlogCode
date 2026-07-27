@@ -4,6 +4,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## July 2026
 
+**27 July 2026** - [.NET 11 Preview -Get Nullable Underlying Type Improvements](https://www.conradakunga.com/blog/net-11-preview-get-nullable-underlying-type-improvements/) - Reflection improvements.
+
+**26 July 2026** - [.NET 11 Preview - Round-tripping Hex Formatted Fractional Numbers](https://www.conradakunga.com/blog/net-11-preview-roundtripping-hex-formatted-fractional-numbers/) - Round-tripping hex formatted numbers.
+
 **25 July 2026** - [.NET 11 Preview - Round-tripping Hex Formatted Fractional Numbers](https://www.conradakunga.com/blog/net-11-preview-roundtripping-hex-formatted-fractional-numbers/) - Round-tripping hex formatted numbers.
 
 **22 July 2026** - [How to Benchmark Performance Against Preview Versions of .NET](https://www.conradakunga.com/blog/how-to-benchmark-against-preview-versions-of-net/) - Comparing performance with preview .NET versions.
