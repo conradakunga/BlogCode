@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## July 2026
 
+**28 July 2026** - [.NET 11 Preview - X25519 Diffie-Hellman](https://www.conradakunga.com/blog/net-11-preview-x25519-diffie-hellman/) - .Using the X25519 Diffie-Hellman class.
+
 **27 July 2026** - [.NET 11 Preview -Get Nullable Underlying Type Improvements](https://www.conradakunga.com/blog/net-11-preview-get-nullable-underlying-type-improvements/) - Reflection improvements.
 
 **26 July 2026** - [.NET 11 Preview - Round-tripping Hex Formatted Fractional Numbers](https://www.conradakunga.com/blog/net-11-preview-roundtripping-hex-formatted-fractional-numbers/) - Round-tripping hex formatted numbers.
