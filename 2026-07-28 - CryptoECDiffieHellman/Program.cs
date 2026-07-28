@@ -1,5 +1,6 @@
 ﻿using System.Security.Cryptography;
 
+// .NET 10
 {
     using (var alice = ECDiffieHellman.Create(ECCurve.NamedCurves.nistP256))
     {
