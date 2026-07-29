@@ -13,7 +13,7 @@ let shuffledNumbers = shuffle numbers
 printfn $"Shuffled: %A{shuffledNumbers}"
 
 let otherShuffledNumbers = numbers |> List.randomShuffle
-printfn $"Other Shuffled: %A{shuffledNumbers}"
+printfn $"Other Shuffled: %A{otherShuffledNumbers}"
 
 let numbersArray = [ 0..9 ] |> List.toArray
 printfn $"Original Array: %A{numbersArray}"
