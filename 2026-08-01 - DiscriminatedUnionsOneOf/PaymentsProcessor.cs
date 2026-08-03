@@ -4,7 +4,7 @@ namespace DiscrimiantedUnions;
 
 public static class PaymentsProcessor
 {
-    public static void MakePayment(OneOf<AmericanExpressCard, VisaCard, SafiriCard, MobileMoney> payment,
+    public static void MakePayment(OneOf<AmericanExpressCard, VisaCard, SafiriCard, MobileMoneyPayment> payment,
         decimal Amount)
     {
         payment.Switch(
