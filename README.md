@@ -2,6 +2,14 @@
 
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+## August 2026
+
+**3 Aug 2026** [.NET 11 Preview - Discriminated Unions Support](https://www.conradakunga.com/blog/net-11-preview-discriminated-unions-support/) - Discriminated union support in .NET 11
+
+**2 Aug 2026** [Discriminated Unions - Part 3 - Practical Uses](https://www.conradakunga.com/blog/discriminated-unions-part-3-practical-uses/) - A practical solution to a common problem using discriminated unions
+
+**1 Aug 2026** [Discriminated Unions - Part 2 - Implementation](https://www.conradakunga.com/blog/discriminated-unions-part-2-implementation/) - Implementing discriminated unions using `OneOf`
+
 ## July 2026
 
 **29 July 2026** - [Discriminated Unions - Part 1 - Introduction](https://www.conradakunga.com/blog/discriminated-unions-part-1/) - Introduction to discriminated unions.
