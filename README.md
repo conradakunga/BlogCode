@@ -4,7 +4,15 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## August 2026
 
-**3 Aug 2026** [.NET 11 Preview - Discriminated Unions Support](https://www.conradakunga.com/blog/net-11-preview-discriminated-unions-support/) - Discriminated union support in .NET 11
+**10 Aug 2026** [GuidV7 Considerations for SQL Server](https://www.conradakunga.com/blog/guidv7-considerations-for-sql-server/) - SQL Server sorts GUID values differently.
+
+**9 Aug 2026** [GuidV7 Considerations for Database Keys](https://www.conradakunga.com/blog/guidv7-considerations-for-database-keys/) - Considerations when using Guid V7 for database keys.
+
+**8 Aug 2026** [Beware - GuidV7 Generation In High Throughput Environments Sorting Gotcha](https://www.conradakunga.com/blog/beware-guidv7-generation-in-high-throughput-environments-sorting-gotcha/) - Possible challenge when generating V7 Guid in a high throughput environment.
+
+**7 Aug 2026** [Primary Constructors - A Practical Approach](https://www.conradakunga.com/blog/primary-constructors-a-practical-approach/) - Practical use for primary constructors
+
+**5 Aug 2026** [.NET 11 Preview - Discriminated Unions Support](https://www.conradakunga.com/blog/net-11-preview-discriminated-unions-support/) - Discriminated union support in .NET 11
 
 **2 Aug 2026** [Discriminated Unions - Part 3 - Practical Uses](https://www.conradakunga.com/blog/discriminated-unions-part-3-practical-uses/) - A practical solution to a common problem using discriminated unions
 
