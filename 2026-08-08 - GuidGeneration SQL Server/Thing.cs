@@ -1,1 +1,0 @@
-public sealed record Thing(Guid ID, string Caption);
