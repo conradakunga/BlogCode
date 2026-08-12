@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## August 2026
 
+**10 Aug 2026** [Generating Server-Side Sortable GUIDs for SQL Server](https://www.conradakunga.com/blog/generating-server-side-sortable-guids-for-sql-server/) - Generating sortable Guids on the server side.
+
 **10 Aug 2026** [GuidV7 Considerations for SQL Server](https://www.conradakunga.com/blog/guidv7-considerations-for-sql-server/) - SQL Server sorts GUID values differently.
 
 **9 Aug 2026** [GuidV7 Considerations for Database Keys](https://www.conradakunga.com/blog/guidv7-considerations-for-database-keys/) - Considerations when using Guid V7 for database keys.
