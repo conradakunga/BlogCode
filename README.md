@@ -4,7 +4,11 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## August 2026
 
-**10 Aug 2026** [Generating Server-Side Sortable GUIDs for SQL Server](https://www.conradakunga.com/blog/generating-server-side-sortable-guids-for-sql-server/) - Generating sortable Guids on the server side.
+**13 Aug 2026** [.NET 11 Preview - Opening Password Protected Zip Archives](https://www.conradakunga.com/blog/net-11-preview-opening-password-protected-zip-archives/) - Opening password protected Zip archives.
+
+**12 Aug 2026** [.NET 11 Preview - Generating Password-Protected Zip Archives](https://www.conradakunga.com/blog/net-11-preview-generating-password-protected-zip-archives/) - Generating password protected zip archives.
+
+**11 Aug 2026** [Generating Server-Side Sortable GUIDs for SQL Server](https://www.conradakunga.com/blog/generating-server-side-sortable-guids-for-sql-server/) - Generating sortable Guids on the server side.
 
 **10 Aug 2026** [GuidV7 Considerations for SQL Server](https://www.conradakunga.com/blog/guidv7-considerations-for-sql-server/) - SQL Server sorts GUID values differently.
 
