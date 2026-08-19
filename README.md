@@ -4,6 +4,14 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## August 2026
 
+**19 Aug 2026** [.NET 11 Preview - Customizing HttpClient Zstandard Compression](https://www.conradakunga.com/blog/net-11-preview-customizing-httpclient-zstandard-compression/) - Customizing `HttpClient` Zstandard compression.
+
+**18 Aug 2026** [.NET 11 Preview - Using ZStandard Compression With A HttpClient](https://www.conradakunga.com/blog/net-11-preview-using-zstandard-compression-with-a-httpclient/) - Compressing HttpClient traffic with ZStandard.
+
+**16 Aug 2026** [.NET 11 Preview - Overriding Assembly Location](https://www.conradakunga.com/blog/net-11-preview-overriding-assembly-location/) - Overriding `Assemply.Locaton` return property.
+
+**14 Aug 2026** [.NET 11 Preview - Opening Password-Protected Zip Archives - Incorrect Password Handling](https://www.conradakunga.com/blog/net-11-preview-opening-password-protected-zip-archives-incorrect-password-handling/) - Incorrect archive password handling
+
 **13 Aug 2026** [.NET 11 Preview - Opening Password Protected Zip Archives](https://www.conradakunga.com/blog/net-11-preview-opening-password-protected-zip-archives/) - Opening password protected Zip archives.
 
 **12 Aug 2026** [.NET 11 Preview - Generating Password-Protected Zip Archives](https://www.conradakunga.com/blog/net-11-preview-generating-password-protected-zip-archives/) - Generating password protected zip archives.
