@@ -15,7 +15,7 @@ return;
 
 void Process(Person person)
 {
-    if (person.DateOfBirth.Year >= 1950 && person.DateOfBirth.Year <= 1965)
+    if (person.DateOfBirth is { Year: >= 1950 and <= 1965 })
         Console.WriteLine($"{person.FullName} is eligible!");
 }
 
