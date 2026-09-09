@@ -1,0 +1,1 @@
+public sealed record Person(string FullName, DateOnly DateOfBirth, string HomeTown, Gender Gender);

@@ -15,7 +15,7 @@ return;
 
 void Process(Person person)
 {
-    if (person.DateOfBirth.Year >= 1950 && person.DateOfBirth.Year <= 1965)
+    if (person.DateOfBirth is { Year: >= 1950 and <= 1965 })
         Console.WriteLine($"{person.FullName} is eligible!");
 }
 
@@ -23,12 +23,4 @@ void Process2(Person person)
 {
     if (person.DateOfBirth.Year is >= 1950 and <= 1965)
         Console.WriteLine($"{person.FullName} is eligible!");
-}
-
-public sealed record Person(string FullName, DateOnly DateOfBirth, string HomeTown, Gender Gender);
-
-public enum Gender
-{
-    Male,
-    Famale
 }
