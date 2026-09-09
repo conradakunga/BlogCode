@@ -4,6 +4,10 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## August 2026
 
+**26 Aug 2026** [Using Relational Patterns In C# & .NET](https://www.conradakunga.com/blog/using-relational-patterns-in-c-net/) - Using relational patterns.
+
+**19 Aug 2026** [.NET 11 Preview - Extension Indexers](https://www.conradakunga.com/blog/net-11-preview-extension-indexers/) - Using extension indexers.
+
 **19 Aug 2026** [.NET 11 Preview - Customizing HttpClient Zstandard Compression](https://www.conradakunga.com/blog/net-11-preview-customizing-httpclient-zstandard-compression/) - Customizing `HttpClient` Zstandard compression.
 
 **18 Aug 2026** [.NET 11 Preview - Using ZStandard Compression With A HttpClient](https://www.conradakunga.com/blog/net-11-preview-using-zstandard-compression-with-a-httpclient/) - Compressing HttpClient traffic with ZStandard.
