@@ -1,0 +1,1 @@
+public abstract record Animal(string Name, int Legs);

@@ -1,0 +1,1 @@
+public record Bird(string Name, int Legs, byte Wings) : Animal(Name, Legs);
