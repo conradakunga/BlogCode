@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## August 2026
 
+**26 Aug 2026** [Using Declaration Patterns in C# & .NET](https://www.conradakunga.com/blog/using-declaration-patterns-in-c-net/) - Using declaration patterns.
+
 **26 Aug 2026** [Using Relational Patterns In C# & .NET](https://www.conradakunga.com/blog/using-relational-patterns-in-c-net/) - Using relational patterns.
 
 **19 Aug 2026** [.NET 11 Preview - Extension Indexers](https://www.conradakunga.com/blog/net-11-preview-extension-indexers/) - Using extension indexers.
