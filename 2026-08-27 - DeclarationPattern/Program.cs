@@ -39,19 +39,3 @@ void ProcessNew(Animal animal)
         Console.WriteLine($"Hello {primate.Name} Primate: you have {primate.Legs} legs");
     }
 }
-
-//void Process(Animal animal)
-//{
-//	switch (animal)
-//	{
-//		case Primate:
-//			Console.WriteLine("Primate");
-//			break;
-//		case Bird:
-//			Console.WriteLine("Bird");
-//			break;
-//		default:
-//			Console.WriteLine("Unknown");
-//			break;
-//	}
-//}
