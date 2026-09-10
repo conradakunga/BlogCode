@@ -1,0 +1,1 @@
+public record Primate(string Name, int Legs) : Animal(Name, Legs);
