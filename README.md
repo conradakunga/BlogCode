@@ -4,6 +4,8 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## Septemper
 
+**15 September 2026** [.NET 11 Release Candidate - Stabilization Of Union Types](https://www.conradakunga.com/blog/net-11-release-candidate-stabilization-of-union-types/) - `Union` stabilization in .NET 11 RC 1. 
+
 **13 September 2026** [Leading Spaces Considerations When Using CSVHelper](https://www.conradakunga.com/blog/leading-spaces-considerations-when-using-csvhelper/) - Spaces in CSV generation.
 
 **12 September 2026** [Changing the CSV Delimiter with CSVHelper](https://www.conradakunga.com/blog/changing-the-csv-delimiter-with-csvhelper/) - Changing the delimiter using the `CSVHelper` library.
