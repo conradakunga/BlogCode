@@ -4,7 +4,9 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## Septemper
 
-**12 September 2026** [Changing the CSV Delimiter with CSVHelper](https://www.conradakunga.com/blog/changing-the-csv-delimiter-with-csvhelper/) - Changing the delimiter using the `CSVHelper` library. 
+**13 September 2026** [Leading Spaces Considerations When Using CSVHelper](https://www.conradakunga.com/blog/leading-spaces-considerations-when-using-csvhelper/) - Spaces in CSV generation.
+
+**12 September 2026** [Changing the CSV Delimiter with CSVHelper](https://www.conradakunga.com/blog/changing-the-csv-delimiter-with-csvhelper/) - Changing the delimiter using the `CSVHelper` library.
 
 ## August 2026
 
