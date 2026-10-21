@@ -2,7 +2,7 @@
 
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
-## Septemper
+## September
 
 **15 September 2026** [.NET 11 Release Candidate - Stabilization Of Union Types](https://www.conradakunga.com/blog/net-11-release-candidate-stabilization-of-union-types/) - `Union` stabilization in .NET 11 RC 1.
 
