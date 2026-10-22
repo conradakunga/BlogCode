@@ -2,6 +2,10 @@
 
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+## October
+
+**18 October 2026** [Timing Out Tests in C# & .NET](https://www.conradakunga.com/blog/timing-out-tests-c-net/) - Timing out tests in xUnit, C# & .NET
+
 ## September
 
 **15 September 2026** [.NET 11 Release Candidate - Stabilization Of Union Types](https://www.conradakunga.com/blog/net-11-release-candidate-stabilization-of-union-types/) - `Union` stabilization in .NET 11 RC 1.
