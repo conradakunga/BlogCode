@@ -2,9 +2,13 @@
 
 Code for the examples on my blog - [https://conradakunga.com/blog](https://conradakunga.com/blog)
 
+## November
+
+
+
 ## October
 
-**31 October 2026** [Dynamically Changing Date Separators at Runtime in C# & .NET]() - Changing the date separator dynamically in C#
+**31 October 2026** [Dynamically Changing Date Separators at Runtime in C# & .NET](https://www.conradakunga.com/blog/dynamically-changing-date-separators-at-runtime-in-c-net/) - Changing the date separator dynamically in C#
 
 **18 October 2026** [Timing Out Tests in C# & .NET](https://www.conradakunga.com/blog/timing-out-tests-c-net/) - Timing out tests in xUnit, C# & .NET
 
