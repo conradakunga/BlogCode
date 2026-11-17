@@ -5,6 +5,7 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 ## November
 
 
+**4 November 2026** [Working With Multiple Locales In The Same Application In C# & .NET](https://www.conradakunga.com/blog/working-with-multiple-locales-in-the-same-application-in-c-net/) - Dealing with multiple locales in multiple threads
 
 ## October
 
