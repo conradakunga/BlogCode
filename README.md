@@ -4,6 +4,21 @@ Code for the examples on my blog - [https://conradakunga.com/blog](https://conra
 
 ## November
 
+**17 November 2026** [Using Carter To Create A ASP.NET WebAPI With QUERY Support In C# & .NET](https://www.conradakunga.com/blog/using-carter-to-create-a-aspnet-webapi-with-query-support-in-c-net/) - Creating a ASP.NET Web API method that supports `HTTP QUERY` using `Carter`
+
+**16 November 2026** [Sending A HTTP Query Request With A HttpClient In C# & .NET](https://www.conradakunga.com/blog/sending-a-http-query-request-with-a-httpclient-in-c-net/) - Sending a `HTTP QUERY` request with a `HttpClient`
+
+**15 November 2026** [Creating A Web API Method That Supports QUERY In C# & .NET](https://www.conradakunga.com/blog/creating-a-web-api-method-that-supports-query-in-c-net/) - Creating a ASP.NET Web API method that supports `HTTP QUERY`
+
+**14 November 2026** [What Is Encoding.Default In C# & .NET](https://www.conradakunga.com/blog/what-is-encodingdefault-in-c-net/) - `Encoding.Default` and its meaning.
+
+**13 November 2026** [How to do Mass Base64 Encoding In C# & .NET](https://www.conradakunga.com/blog/how-to-do-mass-base64-encoding-in-c-net/) - Mass `Base64` encoding.
+
+**12 November 2026** [How to Decode Base64 Data In C# & .NET](https://www.conradakunga.com/blog/how-to-decode-base64-data-in-c-net/) - How to decode data encoded in `Base64`
+
+**10 November 2026** [How to Encode Base64 Data In C# & .NET](https://www.conradakunga.com/blog/how-to-encode-base64-data-in-c-net/) - `Base64` encoding of an object in `JSON`
+
+**9 November 2026** [How To Encode An Object For Passing In A URL In C# & .NET](https://www.conradakunga.com/blog/how-to-encode-an-object-for-passing-in-a-url-in-c-net/) - Base64 encoding text for relay in a `string`
 
 **4 November 2026** [Working With Multiple Locales In The Same Application In C# & .NET](https://www.conradakunga.com/blog/working-with-multiple-locales-in-the-same-application-in-c-net/) - Dealing with multiple locales in multiple threads
 
